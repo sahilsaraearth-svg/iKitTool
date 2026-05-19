@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("UNCHECKED_CAST")
 
-package com.t8rin.imagetoolbox.feature.ai_tools.data
+package com.t8rin.ikittool.feature.ai_tools.data
 
 import ai.onnxruntime.OnnxTensor
 import ai.onnxruntime.OrtSession
@@ -27,31 +27,31 @@ import android.graphics.BitmapFactory
 import android.graphics.Canvas
 import android.graphics.Color
 import androidx.core.graphics.createBitmap
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.resource.ResourceManager
-import com.t8rin.imagetoolbox.core.domain.saving.KeepAliveService
-import com.t8rin.imagetoolbox.core.domain.saving.track
-import com.t8rin.imagetoolbox.core.domain.saving.updateProgress
-import com.t8rin.imagetoolbox.core.utils.extractMessage
-import com.t8rin.imagetoolbox.core.utils.makeLog
-import com.t8rin.imagetoolbox.feature.ai_tools.data.model.ModelInfo
-import com.t8rin.imagetoolbox.feature.ai_tools.data.model.TensorSize
-import com.t8rin.imagetoolbox.feature.ai_tools.data.model.Tile
-import com.t8rin.imagetoolbox.feature.ai_tools.data.model.TileFiles
-import com.t8rin.imagetoolbox.feature.ai_tools.data.model.TileGrid
-import com.t8rin.imagetoolbox.feature.ai_tools.data.utils.AiExtensions.LOG_TAG
-import com.t8rin.imagetoolbox.feature.ai_tools.data.utils.AiExtensions.OPAQUE
-import com.t8rin.imagetoolbox.feature.ai_tools.data.utils.appendControlInputs
-import com.t8rin.imagetoolbox.feature.ai_tools.data.utils.clamp255
-import com.t8rin.imagetoolbox.feature.ai_tools.data.utils.createInputTensor
-import com.t8rin.imagetoolbox.feature.ai_tools.data.utils.extractOutputArray
-import com.t8rin.imagetoolbox.feature.ai_tools.data.utils.fitToTensorSize
-import com.t8rin.imagetoolbox.feature.ai_tools.data.utils.mixColors
-import com.t8rin.imagetoolbox.feature.ai_tools.data.utils.readModelInput
-import com.t8rin.imagetoolbox.feature.ai_tools.data.utils.smoothStep
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.AiProgressListener
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.model.NeuralModel
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.model.NeuralParams
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.resource.ResourceManager
+import com.t8rin.ikittool.core.domain.saving.KeepAliveService
+import com.t8rin.ikittool.core.domain.saving.track
+import com.t8rin.ikittool.core.domain.saving.updateProgress
+import com.t8rin.ikittool.core.utils.extractMessage
+import com.t8rin.ikittool.core.utils.makeLog
+import com.t8rin.ikittool.feature.ai_tools.data.model.ModelInfo
+import com.t8rin.ikittool.feature.ai_tools.data.model.TensorSize
+import com.t8rin.ikittool.feature.ai_tools.data.model.Tile
+import com.t8rin.ikittool.feature.ai_tools.data.model.TileFiles
+import com.t8rin.ikittool.feature.ai_tools.data.model.TileGrid
+import com.t8rin.ikittool.feature.ai_tools.data.utils.AiExtensions.LOG_TAG
+import com.t8rin.ikittool.feature.ai_tools.data.utils.AiExtensions.OPAQUE
+import com.t8rin.ikittool.feature.ai_tools.data.utils.appendControlInputs
+import com.t8rin.ikittool.feature.ai_tools.data.utils.clamp255
+import com.t8rin.ikittool.feature.ai_tools.data.utils.createInputTensor
+import com.t8rin.ikittool.feature.ai_tools.data.utils.extractOutputArray
+import com.t8rin.ikittool.feature.ai_tools.data.utils.fitToTensorSize
+import com.t8rin.ikittool.feature.ai_tools.data.utils.mixColors
+import com.t8rin.ikittool.feature.ai_tools.data.utils.readModelInput
+import com.t8rin.ikittool.feature.ai_tools.data.utils.smoothStep
+import com.t8rin.ikittool.feature.ai_tools.domain.AiProgressListener
+import com.t8rin.ikittool.feature.ai_tools.domain.model.NeuralModel
+import com.t8rin.ikittool.feature.ai_tools.domain.model.NeuralParams
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.atomicfu.atomic
 import kotlinx.coroutines.coroutineScope

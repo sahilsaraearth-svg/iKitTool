@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,14 +15,14 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.color_picker
+package com.t8rin.ikittool.core.ui.widget.color_picker
 
 import androidx.compose.ui.graphics.Color
 import com.t8rin.dynamic.theme.ColorTuple
 import com.t8rin.dynamic.theme.calculateSecondaryColor
 import com.t8rin.dynamic.theme.calculateSurfaceColor
 import com.t8rin.dynamic.theme.calculateTertiaryColor
-import com.t8rin.imagetoolbox.core.ui.theme.toColor
+import com.t8rin.ikittool.core.ui.theme.toColor
 
 object ColorTupleDefaults {
     val defaultColorTuples by lazy {

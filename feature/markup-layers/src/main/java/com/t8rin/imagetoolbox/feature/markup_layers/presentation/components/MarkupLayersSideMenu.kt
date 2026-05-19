@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.presentation.components
+package com.t8rin.ikittool.feature.markup_layers.presentation.components
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedContent
@@ -39,7 +39,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.systemBars
 import androidx.compose.foundation.layout.union
 import androidx.compose.foundation.layout.width
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -54,17 +54,17 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.utils.roundTo
-import com.t8rin.imagetoolbox.core.resources.icons.Build
-import com.t8rin.imagetoolbox.core.resources.icons.Delete
-import com.t8rin.imagetoolbox.core.resources.icons.StackSticky
-import com.t8rin.imagetoolbox.core.resources.icons.StackStickyOff
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedSlider
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.tappable
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.uiCornerRadiusPercent
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.screenLogic.MarkupLayersComponent
+import com.t8rin.ikittool.core.domain.utils.roundTo
+import com.t8rin.ikittool.core.resources.icons.Build
+import com.t8rin.ikittool.core.resources.icons.Delete
+import com.t8rin.ikittool.core.resources.icons.StackSticky
+import com.t8rin.ikittool.core.resources.icons.StackStickyOff
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedSlider
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.tappable
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.uiCornerRadiusPercent
+import com.t8rin.ikittool.feature.markup_layers.presentation.screenLogic.MarkupLayersComponent
 import com.t8rin.modalsheet.FullscreenPopup
 
 @Composable

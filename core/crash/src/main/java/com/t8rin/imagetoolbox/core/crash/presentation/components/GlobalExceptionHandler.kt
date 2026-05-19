@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,14 +15,14 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.crash.presentation.components
+package com.t8rin.ikittool.core.crash.presentation.components
 
 import android.content.Context
 import android.content.Intent
-import com.t8rin.imagetoolbox.core.crash.di.CrashModule
-import com.t8rin.imagetoolbox.core.crash.presentation.CrashActivity
-import com.t8rin.imagetoolbox.core.domain.remote.AnalyticsManager
-import com.t8rin.imagetoolbox.core.utils.makeLog
+import com.t8rin.ikittool.core.crash.di.CrashModule
+import com.t8rin.ikittool.core.crash.presentation.CrashActivity
+import com.t8rin.ikittool.core.domain.remote.AnalyticsManager
+import com.t8rin.ikittool.core.utils.makeLog
 import kotlin.system.exitProcess
 
 private class GlobalExceptionHandler<T : CrashHandler> private constructor(

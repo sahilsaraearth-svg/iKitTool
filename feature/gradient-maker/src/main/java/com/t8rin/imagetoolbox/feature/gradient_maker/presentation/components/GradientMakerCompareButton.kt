@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.gradient_maker.presentation.components
+package com.t8rin.ikittool.feature.gradient_maker.presentation.components
 
 import android.net.Uri
 import androidx.compose.foundation.layout.aspectRatio
@@ -26,12 +26,12 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.CompareButton
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
-import com.t8rin.imagetoolbox.feature.compare.presentation.components.CompareSheet
-import com.t8rin.imagetoolbox.feature.gradient_maker.presentation.components.model.canPickImage
-import com.t8rin.imagetoolbox.feature.gradient_maker.presentation.components.model.isMesh
-import com.t8rin.imagetoolbox.feature.gradient_maker.presentation.screenLogic.GradientMakerComponent
+import com.t8rin.ikittool.core.ui.widget.buttons.CompareButton
+import com.t8rin.ikittool.core.ui.widget.image.Picture
+import com.t8rin.ikittool.feature.compare.presentation.components.CompareSheet
+import com.t8rin.ikittool.feature.gradient_maker.presentation.components.model.canPickImage
+import com.t8rin.ikittool.feature.gradient_maker.presentation.components.model.isMesh
+import com.t8rin.ikittool.feature.gradient_maker.presentation.screenLogic.GradientMakerComponent
 
 @Composable
 internal fun GradientMakerCompareButton(component: GradientMakerComponent) {

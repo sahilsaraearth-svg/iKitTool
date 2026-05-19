@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.utils.helper
+package com.t8rin.ikittool.core.ui.utils.helper
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -53,20 +53,20 @@ import androidx.core.graphics.drawable.IconCompat
 import androidx.core.graphics.toColorInt
 import androidx.core.net.toUri
 import androidx.core.os.LocaleListCompat
-import com.t8rin.imagetoolbox.core.domain.model.PerformanceClass
-import com.t8rin.imagetoolbox.core.domain.utils.FileMode
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.ui.utils.helper.image_vector.toImageBitmap
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.utils.permission.PermissionStatus
-import com.t8rin.imagetoolbox.core.ui.utils.permission.PermissionUtils.askUserToRequestPermissionExplicitly
-import com.t8rin.imagetoolbox.core.ui.utils.permission.PermissionUtils.checkPermissions
-import com.t8rin.imagetoolbox.core.ui.utils.permission.PermissionUtils.hasPermissionAllowed
-import com.t8rin.imagetoolbox.core.ui.utils.permission.PermissionUtils.setPermissionsAllowed
-import com.t8rin.imagetoolbox.core.ui.widget.other.ToastDuration
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.core.utils.filename
-import com.t8rin.imagetoolbox.core.utils.makeLog
+import com.t8rin.ikittool.core.domain.model.PerformanceClass
+import com.t8rin.ikittool.core.domain.utils.FileMode
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.ui.utils.helper.image_vector.toImageBitmap
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.utils.permission.PermissionStatus
+import com.t8rin.ikittool.core.ui.utils.permission.PermissionUtils.askUserToRequestPermissionExplicitly
+import com.t8rin.ikittool.core.ui.utils.permission.PermissionUtils.checkPermissions
+import com.t8rin.ikittool.core.ui.utils.permission.PermissionUtils.hasPermissionAllowed
+import com.t8rin.ikittool.core.ui.utils.permission.PermissionUtils.setPermissionsAllowed
+import com.t8rin.ikittool.core.ui.widget.other.ToastDuration
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.core.utils.filename
+import com.t8rin.ikittool.core.utils.makeLog
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File

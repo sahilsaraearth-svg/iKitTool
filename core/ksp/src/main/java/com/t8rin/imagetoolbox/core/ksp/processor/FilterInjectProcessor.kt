@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("unused")
 
-package com.t8rin.imagetoolbox.core.ksp.processor
+package com.t8rin.ikittool.core.ksp.processor
 
 import com.google.devtools.ksp.processing.Dependencies
 import com.google.devtools.ksp.processing.Resolver
@@ -95,6 +95,6 @@ private class FilterInjectProcessorImpl(
     }
 
     companion object {
-        private const val PACKAGE = "com.t8rin.imagetoolbox"
+        private const val PACKAGE = "com.t8rin.ikittool"
     }
 }

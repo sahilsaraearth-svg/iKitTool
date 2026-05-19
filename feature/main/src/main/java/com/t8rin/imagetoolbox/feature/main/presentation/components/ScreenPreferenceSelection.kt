@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.main.presentation.components
+package com.t8rin.ikittool.feature.main.presentation.components
 
 import android.content.ClipboardManager
 import android.net.Uri
@@ -70,30 +70,30 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.content.getSystemService
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Bookmark
-import com.t8rin.imagetoolbox.core.resources.icons.BookmarkOff
-import com.t8rin.imagetoolbox.core.resources.icons.BookmarkRemove
-import com.t8rin.imagetoolbox.core.resources.icons.ContentPaste
-import com.t8rin.imagetoolbox.core.resources.icons.ContentPasteOff
-import com.t8rin.imagetoolbox.core.resources.icons.LayersSearchOutline
-import com.t8rin.imagetoolbox.core.resources.icons.SearchOff
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.helper.clipList
-import com.t8rin.imagetoolbox.core.ui.utils.helper.rememberClipboardData
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedBadge
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedFloatingActionButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedFloatingActionButtonType
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.other.BoxAnimatedVisibility
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItemOverload
-import com.t8rin.imagetoolbox.core.utils.getString
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Bookmark
+import com.t8rin.ikittool.core.resources.icons.BookmarkOff
+import com.t8rin.ikittool.core.resources.icons.BookmarkRemove
+import com.t8rin.ikittool.core.resources.icons.ContentPaste
+import com.t8rin.ikittool.core.resources.icons.ContentPasteOff
+import com.t8rin.ikittool.core.resources.icons.LayersSearchOutline
+import com.t8rin.ikittool.core.resources.icons.SearchOff
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.helper.clipList
+import com.t8rin.ikittool.core.ui.utils.helper.rememberClipboardData
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedBadge
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedFloatingActionButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedFloatingActionButtonType
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedFlingBehavior
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.other.BoxAnimatedVisibility
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItemOverload
+import com.t8rin.ikittool.core.utils.getString
 
 @Composable
 internal fun RowScope.ScreenPreferenceSelection(

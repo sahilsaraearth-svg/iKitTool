@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.mesh_gradients.presentation
+package com.t8rin.ikittool.feature.mesh_gradients.presentation
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.foundation.layout.Arrangement
@@ -24,7 +24,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -37,17 +37,17 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.ArrowBack
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.rememberHumanFileSize
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedLoadingIndicator
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedTopAppBar
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedTopAppBarType
-import com.t8rin.imagetoolbox.core.ui.widget.image.ImagePreviewGrid
-import com.t8rin.imagetoolbox.core.ui.widget.other.TopAppBarEmoji
-import com.t8rin.imagetoolbox.core.ui.widget.text.marquee
-import com.t8rin.imagetoolbox.feature.mesh_gradients.presentation.screenLogic.MeshGradientsComponent
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.ArrowBack
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.rememberHumanFileSize
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedLoadingIndicator
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedTopAppBar
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedTopAppBarType
+import com.t8rin.ikittool.core.ui.widget.image.ImagePreviewGrid
+import com.t8rin.ikittool.core.ui.widget.other.TopAppBarEmoji
+import com.t8rin.ikittool.core.ui.widget.text.marquee
+import com.t8rin.ikittool.feature.mesh_gradients.presentation.screenLogic.MeshGradientsComponent
 
 @Composable
 fun MeshGradientsContent(

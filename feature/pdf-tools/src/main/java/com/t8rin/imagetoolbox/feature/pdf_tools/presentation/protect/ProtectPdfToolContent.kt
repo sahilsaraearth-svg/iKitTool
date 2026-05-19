@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,13 +15,13 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.pdf_tools.presentation.protect
+package com.t8rin.ikittool.feature.pdf_tools.presentation.protect
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -30,17 +30,17 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.model.MimeType
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Cancel
-import com.t8rin.imagetoolbox.core.resources.icons.Shuffle
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberFilePicker
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.text.RoundedTextField
-import com.t8rin.imagetoolbox.feature.pdf_tools.presentation.common.BasePdfToolContent
-import com.t8rin.imagetoolbox.feature.pdf_tools.presentation.common.PdfPreviewItem
-import com.t8rin.imagetoolbox.feature.pdf_tools.presentation.protect.screenLogic.ProtectPdfToolComponent
+import com.t8rin.ikittool.core.domain.model.MimeType
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Cancel
+import com.t8rin.ikittool.core.resources.icons.Shuffle
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberFilePicker
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.text.RoundedTextField
+import com.t8rin.ikittool.feature.pdf_tools.presentation.common.BasePdfToolContent
+import com.t8rin.ikittool.feature.pdf_tools.presentation.common.PdfPreviewItem
+import com.t8rin.ikittool.feature.pdf_tools.presentation.protect.screenLogic.ProtectPdfToolComponent
 
 @Composable
 fun ProtectPdfToolContent(

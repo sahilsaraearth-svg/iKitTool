@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.filters.data.utils
+package com.t8rin.ikittool.feature.filters.data.utils
 
 import android.graphics.Bitmap
 import android.graphics.Matrix
@@ -24,10 +24,10 @@ import androidx.core.graphics.createBitmap
 import androidx.core.graphics.scale
 import coil3.size.Size
 import coil3.size.pxOrElse
-import com.t8rin.imagetoolbox.core.data.image.utils.drawBitmap
-import com.t8rin.imagetoolbox.core.data.utils.aspectRatio
-import com.t8rin.imagetoolbox.core.data.utils.safeConfig
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.MirrorSide
+import com.t8rin.ikittool.core.data.image.utils.drawBitmap
+import com.t8rin.ikittool.core.data.utils.aspectRatio
+import com.t8rin.ikittool.core.data.utils.safeConfig
+import com.t8rin.ikittool.core.filters.domain.model.enums.MirrorSide
 import java.lang.Integer.max
 
 internal fun Bitmap.flexible(size: Size): Bitmap = flexibleResize(

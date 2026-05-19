@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *  
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("unused")
 
-package com.t8rin.imagetoolbox.core.ui.utils.content_pickers
+package com.t8rin.ikittool.core.ui.utils.content_pickers
 
 import android.Manifest
 import android.content.Context
@@ -47,17 +47,17 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Person
-import com.t8rin.imagetoolbox.core.ui.theme.mixedContainer
-import com.t8rin.imagetoolbox.core.ui.theme.onMixedContainer
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalComponentActivity
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.core.utils.makeLog
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Person
+import com.t8rin.ikittool.core.ui.theme.mixedContainer
+import com.t8rin.ikittool.core.ui.theme.onMixedContainer
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.provider.LocalComponentActivity
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.core.utils.makeLog
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

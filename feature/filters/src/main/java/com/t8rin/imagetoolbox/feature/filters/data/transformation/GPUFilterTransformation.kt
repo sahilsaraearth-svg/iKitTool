@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,15 +15,15 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.filters.data.transformation
+package com.t8rin.ikittool.feature.filters.data.transformation
 
 import android.graphics.Bitmap
 import coil3.size.Size
-import com.t8rin.imagetoolbox.core.data.utils.asCoil
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.transformation.Transformation
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.feature.filters.data.utils.flexible
+import com.t8rin.ikittool.core.data.utils.asCoil
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.transformation.Transformation
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.feature.filters.data.utils.flexible
 import jp.co.cyberagent.android.gpuimage.GPUImage
 import jp.co.cyberagent.android.gpuimage.filter.GPUImageFilter
 import coil3.transform.Transformation as CoilTransformation

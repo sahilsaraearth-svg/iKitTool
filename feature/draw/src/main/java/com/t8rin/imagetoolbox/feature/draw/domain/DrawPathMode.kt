@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,23 +15,23 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.draw.domain
+package com.t8rin.ikittool.feature.draw.domain
 
-import com.t8rin.imagetoolbox.core.domain.model.ColorModel
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.model.Pt
-import com.t8rin.imagetoolbox.core.domain.model.pt
-import com.t8rin.imagetoolbox.core.domain.utils.safeCast
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode.FloodFill
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode.Lasso
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode.OutlinedOval
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode.OutlinedRect
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode.Oval
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode.Polygon
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode.Rect
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode.Spray
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode.Star
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode.Triangle
+import com.t8rin.ikittool.core.domain.model.ColorModel
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.model.Pt
+import com.t8rin.ikittool.core.domain.model.pt
+import com.t8rin.ikittool.core.domain.utils.safeCast
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode.FloodFill
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode.Lasso
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode.OutlinedOval
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode.OutlinedRect
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode.Oval
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode.Polygon
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode.Rect
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode.Spray
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode.Star
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode.Triangle
 
 sealed class DrawPathMode(
     val ordinal: Int

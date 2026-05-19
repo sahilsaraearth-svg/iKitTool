@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.enhanced
+package com.t8rin.ikittool.core.ui.widget.enhanced
 
 
 import androidx.compose.animation.AnimatedContent
@@ -42,19 +42,19 @@ import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.settings.domain.model.SwitchType
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ProvidesValue
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.switches.CupertinoSwitch
-import com.t8rin.imagetoolbox.core.ui.widget.switches.CupertinoSwitchDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.switches.FluentSwitch
-import com.t8rin.imagetoolbox.core.ui.widget.switches.HyperOSSwitch
-import com.t8rin.imagetoolbox.core.ui.widget.switches.LiquidGlassSwitch
-import com.t8rin.imagetoolbox.core.ui.widget.switches.M3Switch
-import com.t8rin.imagetoolbox.core.ui.widget.switches.OneUISwitch
-import com.t8rin.imagetoolbox.core.ui.widget.switches.PixelSwitch
+import com.t8rin.ikittool.core.settings.domain.model.SwitchType
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.utils.helper.ProvidesValue
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.switches.CupertinoSwitch
+import com.t8rin.ikittool.core.ui.widget.switches.CupertinoSwitchDefaults
+import com.t8rin.ikittool.core.ui.widget.switches.FluentSwitch
+import com.t8rin.ikittool.core.ui.widget.switches.HyperOSSwitch
+import com.t8rin.ikittool.core.ui.widget.switches.LiquidGlassSwitch
+import com.t8rin.ikittool.core.ui.widget.switches.M3Switch
+import com.t8rin.ikittool.core.ui.widget.switches.OneUISwitch
+import com.t8rin.ikittool.core.ui.widget.switches.PixelSwitch
 
 @Composable
 fun EnhancedSwitch(

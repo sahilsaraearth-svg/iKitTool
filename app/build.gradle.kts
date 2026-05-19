@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ plugins {
 android {
     val supportedAbi = arrayOf("armeabi-v7a", "arm64-v8a", "x86_64")
 
-    namespace = "com.t8rin.imagetoolbox"
+    namespace = "com.t8rin.ikittool"
 
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
@@ -64,8 +64,8 @@ android {
     buildTypes {
         debug {
             applicationIdSuffix = ".debug"
-            resValue("string", "app_launcher_name", "Image Toolbox DEBUG")
-            resValue("string", "file_provider", "com.t8rin.imagetoolbox.fileprovider.debug")
+            resValue("string", "app_launcher_name", "iKit Tool DEBUG")
+            resValue("string", "file_provider", "com.t8rin.ikittool.fileprovider.debug")
         }
         release {
             isMinifyEnabled = true
@@ -74,8 +74,8 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            resValue("string", "app_launcher_name", "Image Toolbox")
-            resValue("string", "file_provider", "com.t8rin.imagetoolbox.fileprovider")
+            resValue("string", "app_launcher_name", "iKit Tool")
+            resValue("string", "file_provider", "com.t8rin.ikittool.fileprovider")
         }
         create("benchmark") {
             initWith(buildTypes.getByName("release"))

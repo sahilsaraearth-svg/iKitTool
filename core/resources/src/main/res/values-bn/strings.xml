@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1367,8 +1367,8 @@
     <string name="recently_used">সম্প্রতি ব্যবহৃত</string>
     <string name="ci_channel">সিআই চ্যানেল</string>
     <string name="group">গ্রুপ</string>
-    <string name="image_toolbox_in_telegram">টেলিগ্রামে ইমেজ টুলবক্স 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">আমাদের চ্যাটে যোগ দিন যেখানে আপনি যা চান তা নিয়ে আলোচনা করতে পারেন এবং CI চ্যানেলটিও দেখতে পারেন যেখানে আমি বেটা এবং ঘোষণা পোস্ট করি</string>
+    <string name="ikit_tool_in_telegram">টেলিগ্রামে ইমেজ টুলবক্স 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">আমাদের চ্যাটে যোগ দিন যেখানে আপনি যা চান তা নিয়ে আলোচনা করতে পারেন এবং CI চ্যানেলটিও দেখতে পারেন যেখানে আমি বেটা এবং ঘোষণা পোস্ট করি</string>
     <string name="ci_channel_sub">অ্যাপের নতুন সংস্করণ সম্পর্কে বিজ্ঞপ্তি পান এবং ঘোষণা পড়ুন</string>
     <string name="fit_description">প্রদত্ত মাত্রার সাথে একটি চিত্র ফিট করুন এবং পটভূমিতে অস্পষ্ট বা রঙ প্রয়োগ করুন</string>
     <string name="tools_arrangement">টুলস ব্যবস্থা</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">বিভিন্ন ফরম্যাটে জেনারেট করা প্যালেট রপ্তানি করুন</string>
     <string name="add_color_palette_sub">বর্তমান প্যালেটে নতুন রঙ যোগ করে</string>
     <string name="palette_name_not_supported">%1$s বিন্যাস প্যালেট নাম প্রদান সমর্থন করে না</string>
-    <string name="wallpapers_export_not_avaialbe">প্লে স্টোর নীতির কারণে, এই বৈশিষ্ট্যটি বর্তমান বিল্ডে অন্তর্ভুক্ত করা যাবে না। এই কার্যকারিতা অ্যাক্সেস করতে, একটি বিকল্প উৎস থেকে ImageToolbox ডাউনলোড করুন। আপনি নীচে গিটহাবে উপলব্ধ বিল্ডগুলি খুঁজে পেতে পারেন।</string>
+    <string name="wallpapers_export_not_avaialbe">প্লে স্টোর নীতির কারণে, এই বৈশিষ্ট্যটি বর্তমান বিল্ডে অন্তর্ভুক্ত করা যাবে না। এই কার্যকারিতা অ্যাক্সেস করতে, একটি বিকল্প উৎস থেকে iKitTool ডাউনলোড করুন। আপনি নীচে গিটহাবে উপলব্ধ বিল্ডগুলি খুঁজে পেতে পারেন।</string>
     <string name="open_github_page">Github পৃষ্ঠা খুলুন</string>
     <string name="overwrite_files_sub_short">আসল ফাইলটি নির্বাচিত ফোল্ডারে সংরক্ষণ করার পরিবর্তে নতুন একটি দিয়ে প্রতিস্থাপিত হবে</string>
     <string name="hidden_watermark_text_detected">লুকানো ওয়াটারমার্ক টেক্সট সনাক্ত করা হয়েছে</string>
@@ -2141,7 +2141,7 @@
     <string name="grayscale_pdf_sub">সমস্ত নথি এমবেড করা ছবিকে গ্রেস্কেলে রূপান্তর করুন</string>
     <string name="compress_pdf">পিডিএফ কম্প্রেস করুন</string>
     <string name="compress_pdf_sub">সহজে ভাগ করার জন্য আপনার নথি ফাইলের আকার অপ্টিমাইজ করুন</string>
-    <string name="repair_info">ImageToolbox অভ্যন্তরীণ ক্রস-রেফারেন্স টেবিল পুনর্নির্মাণ করে এবং স্ক্র্যাচ থেকে ফাইল গঠন পুনরুত্পাদন করে। এটি অনেক ফাইলের অ্যাক্সেস পুনরুদ্ধার করতে পারে যা \\"খোলা যাবে না\\"</string>
+    <string name="repair_info">iKitTool অভ্যন্তরীণ ক্রস-রেফারেন্স টেবিল পুনর্নির্মাণ করে এবং স্ক্র্যাচ থেকে ফাইল গঠন পুনরুত্পাদন করে। এটি অনেক ফাইলের অ্যাক্সেস পুনরুদ্ধার করতে পারে যা \\"খোলা যাবে না\\"</string>
     <string name="grayscale_info">এই টুলটি সমস্ত নথির ছবিকে গ্রেস্কেলে রূপান্তর করে। ফাইলের আকার মুদ্রণ এবং হ্রাস করার জন্য সেরা</string>
     <string name="metadata">মেটাডেটা</string>
     <string name="metadata_pdf_sub">ভাল গোপনীয়তার জন্য নথি বৈশিষ্ট্য সম্পাদনা করুন</string>

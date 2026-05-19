@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.presentation.components
+package com.t8rin.ikittool.feature.markup_layers.presentation.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
@@ -48,59 +48,59 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.t8rin.colors.util.roundToTwoDigits
-import com.t8rin.imagetoolbox.core.domain.model.Outline
-import com.t8rin.imagetoolbox.core.domain.utils.ListUtils.toggle
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.emoji.Emoji
-import com.t8rin.imagetoolbox.core.resources.icons.AddPhotoAlt
-import com.t8rin.imagetoolbox.core.resources.icons.BackgroundColor
-import com.t8rin.imagetoolbox.core.resources.icons.BorderColor
-import com.t8rin.imagetoolbox.core.resources.icons.BorderStyle
-import com.t8rin.imagetoolbox.core.resources.icons.FormatAlignCenter
-import com.t8rin.imagetoolbox.core.resources.icons.FormatAlignLeft
-import com.t8rin.imagetoolbox.core.resources.icons.FormatAlignRight
-import com.t8rin.imagetoolbox.core.resources.icons.MiniEdit
-import com.t8rin.imagetoolbox.core.resources.icons.MiniEditLarge
-import com.t8rin.imagetoolbox.core.resources.icons.Percent
-import com.t8rin.imagetoolbox.core.resources.icons.Rectangle
-import com.t8rin.imagetoolbox.core.resources.icons.SkewMore
-import com.t8rin.imagetoolbox.core.resources.icons.StackSticky
-import com.t8rin.imagetoolbox.core.resources.shapes.MaterialStarShape
-import com.t8rin.imagetoolbox.core.settings.presentation.model.toUiFont
-import com.t8rin.imagetoolbox.core.ui.theme.inverseByLuma
-import com.t8rin.imagetoolbox.core.ui.theme.takeColorFromScheme
-import com.t8rin.imagetoolbox.core.ui.theme.toColor
-import com.t8rin.imagetoolbox.core.ui.utils.provider.SafeLocalContainerColor
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.AlphaSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.BlendingModeSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ColorRowSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.FontSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ImageSelector
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButtonGroup
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedModalBottomSheet
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedSliderItem
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedVerticalScroll
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItemOverload
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceRowSwitch
-import com.t8rin.imagetoolbox.core.ui.widget.sheets.EmojiSelectionSheet
-import com.t8rin.imagetoolbox.core.ui.widget.text.RoundedTextField
-import com.t8rin.imagetoolbox.core.ui.widget.text.RoundedTextFieldColors
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.DomainTextDecoration
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.LayerType
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.LayerType.Text.Alignment
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.TextGeometricTransform
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.UiMarkupLayer
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.icon
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.titleRes
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.withCoerceToBoundsRecursively
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.screenLogic.MarkupLayersComponent
+import com.t8rin.ikittool.core.domain.model.Outline
+import com.t8rin.ikittool.core.domain.utils.ListUtils.toggle
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.emoji.Emoji
+import com.t8rin.ikittool.core.resources.icons.AddPhotoAlt
+import com.t8rin.ikittool.core.resources.icons.BackgroundColor
+import com.t8rin.ikittool.core.resources.icons.BorderColor
+import com.t8rin.ikittool.core.resources.icons.BorderStyle
+import com.t8rin.ikittool.core.resources.icons.FormatAlignCenter
+import com.t8rin.ikittool.core.resources.icons.FormatAlignLeft
+import com.t8rin.ikittool.core.resources.icons.FormatAlignRight
+import com.t8rin.ikittool.core.resources.icons.MiniEdit
+import com.t8rin.ikittool.core.resources.icons.MiniEditLarge
+import com.t8rin.ikittool.core.resources.icons.Percent
+import com.t8rin.ikittool.core.resources.icons.Rectangle
+import com.t8rin.ikittool.core.resources.icons.SkewMore
+import com.t8rin.ikittool.core.resources.icons.StackSticky
+import com.t8rin.ikittool.core.resources.shapes.MaterialStarShape
+import com.t8rin.ikittool.core.settings.presentation.model.toUiFont
+import com.t8rin.ikittool.core.ui.theme.inverseByLuma
+import com.t8rin.ikittool.core.ui.theme.takeColorFromScheme
+import com.t8rin.ikittool.core.ui.theme.toColor
+import com.t8rin.ikittool.core.ui.utils.provider.SafeLocalContainerColor
+import com.t8rin.ikittool.core.ui.widget.controls.selection.AlphaSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.BlendingModeSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ColorRowSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.FontSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ImageSelector
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButtonGroup
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedModalBottomSheet
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedSliderItem
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedVerticalScroll
+import com.t8rin.ikittool.core.ui.widget.image.Picture
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItemOverload
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceRowSwitch
+import com.t8rin.ikittool.core.ui.widget.sheets.EmojiSelectionSheet
+import com.t8rin.ikittool.core.ui.widget.text.RoundedTextField
+import com.t8rin.ikittool.core.ui.widget.text.RoundedTextFieldColors
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.feature.markup_layers.domain.DomainTextDecoration
+import com.t8rin.ikittool.feature.markup_layers.domain.LayerType
+import com.t8rin.ikittool.feature.markup_layers.domain.LayerType.Text.Alignment
+import com.t8rin.ikittool.feature.markup_layers.domain.TextGeometricTransform
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.UiMarkupLayer
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.icon
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.titleRes
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.withCoerceToBoundsRecursively
+import com.t8rin.ikittool.feature.markup_layers.presentation.screenLogic.MarkupLayersComponent
 import kotlin.math.roundToInt
 
 @Composable

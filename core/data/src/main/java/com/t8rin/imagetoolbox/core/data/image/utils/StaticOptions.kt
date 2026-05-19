@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,13 +15,13 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.data.image.utils
+package com.t8rin.ikittool.core.data.image.utils
 
 import coil3.gif.repeatCount
 import coil3.request.ImageRequest
 import com.awxkee.jxlcoder.coil.enableJxlAnimation
 import com.github.awxkee.avifcoil.decoder.animation.enableAvifAnimation
-import com.t8rin.imagetoolbox.core.data.coil.SvgDecoderCompat
+import com.t8rin.ikittool.core.data.coil.SvgDecoderCompat
 
 fun ImageRequest.Builder.static() = repeatCount(0)
     .enableAvifAnimation(false)

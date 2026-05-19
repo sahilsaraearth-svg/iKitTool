@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.draw.presentation.components.element
+package com.t8rin.ikittool.feature.draw.presentation.components.element
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -29,18 +29,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedModalBottomSheet
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedVerticalScroll
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.text.AutoSizeText
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.getIcon
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.getSubtitle
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.getTitle
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedModalBottomSheet
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedVerticalScroll
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.text.AutoSizeText
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.getIcon
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.getSubtitle
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.getTitle
 
 @Composable
 internal fun DrawPathModeInfoSheet(

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.sheets
+package com.t8rin.ikittool.core.ui.widget.sheets
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.animateDpAsState
@@ -60,29 +60,29 @@ import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.emoji.Emoji
-import com.t8rin.imagetoolbox.core.resources.icons.Face5
-import com.t8rin.imagetoolbox.core.resources.icons.Face6
-import com.t8rin.imagetoolbox.core.resources.icons.KeyboardArrowDown
-import com.t8rin.imagetoolbox.core.resources.icons.Shuffle
-import com.t8rin.imagetoolbox.core.resources.shapes.CloverShape
-import com.t8rin.imagetoolbox.core.ui.utils.provider.SafeLocalContainerColor
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedBottomSheetDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedModalBottomSheet
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.hapticsClickable
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.shapeByInteraction
-import com.t8rin.imagetoolbox.core.ui.widget.other.EmojiItem
-import com.t8rin.imagetoolbox.core.ui.widget.other.GradientEdge
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceRowSwitch
-import com.t8rin.imagetoolbox.core.ui.widget.text.AutoSizeText
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.emoji.Emoji
+import com.t8rin.ikittool.core.resources.icons.Face5
+import com.t8rin.ikittool.core.resources.icons.Face6
+import com.t8rin.ikittool.core.resources.icons.KeyboardArrowDown
+import com.t8rin.ikittool.core.resources.icons.Shuffle
+import com.t8rin.ikittool.core.resources.shapes.CloverShape
+import com.t8rin.ikittool.core.ui.utils.provider.SafeLocalContainerColor
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedBottomSheetDefaults
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedModalBottomSheet
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedFlingBehavior
+import com.t8rin.ikittool.core.ui.widget.enhanced.hapticsClickable
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.shapeByInteraction
+import com.t8rin.ikittool.core.ui.widget.other.EmojiItem
+import com.t8rin.ikittool.core.ui.widget.other.GradientEdge
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceRowSwitch
+import com.t8rin.ikittool.core.ui.widget.text.AutoSizeText
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlin.random.Random

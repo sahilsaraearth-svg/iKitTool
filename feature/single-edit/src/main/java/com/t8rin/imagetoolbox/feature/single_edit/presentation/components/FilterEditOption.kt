@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.single_edit.presentation.components
+package com.t8rin.ikittool.feature.single_edit.presentation.components
 
 import android.graphics.Bitmap
 import androidx.compose.animation.AnimatedVisibility
@@ -36,7 +36,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -60,38 +60,38 @@ import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import coil3.toBitmap
-import com.t8rin.imagetoolbox.core.data.utils.toCoil
-import com.t8rin.imagetoolbox.core.domain.transformation.Transformation
-import com.t8rin.imagetoolbox.core.filters.domain.model.TemplateFilter
-import com.t8rin.imagetoolbox.core.filters.presentation.model.UiFilter
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.FilterItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.FilterReorderSheet
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.FilterTemplateCreationSheet
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.FilterTemplateCreationSheetComponent
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.addFilters.AddFiltersSheet
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.addFilters.AddFiltersSheetComponent
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.AutoFixHigh
-import com.t8rin.imagetoolbox.core.resources.icons.Done
-import com.t8rin.imagetoolbox.core.resources.icons.Eyedropper
-import com.t8rin.imagetoolbox.core.ui.theme.mixedContainer
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ProvideFilterPreview
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalScreenSize
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedFloatingActionButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedTopAppBar
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedTopAppBarType
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.tappable
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.transparencyChecker
-import com.t8rin.imagetoolbox.core.ui.widget.saver.ColorSaver
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
-import com.t8rin.imagetoolbox.core.ui.widget.text.marquee
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.OpenColorPickerCard
-import com.t8rin.imagetoolbox.feature.pick_color.presentation.components.PickColorFromImageSheet
+import com.t8rin.ikittool.core.data.utils.toCoil
+import com.t8rin.ikittool.core.domain.transformation.Transformation
+import com.t8rin.ikittool.core.filters.domain.model.TemplateFilter
+import com.t8rin.ikittool.core.filters.presentation.model.UiFilter
+import com.t8rin.ikittool.core.filters.presentation.widget.FilterItem
+import com.t8rin.ikittool.core.filters.presentation.widget.FilterReorderSheet
+import com.t8rin.ikittool.core.filters.presentation.widget.FilterTemplateCreationSheet
+import com.t8rin.ikittool.core.filters.presentation.widget.FilterTemplateCreationSheetComponent
+import com.t8rin.ikittool.core.filters.presentation.widget.addFilters.AddFiltersSheet
+import com.t8rin.ikittool.core.filters.presentation.widget.addFilters.AddFiltersSheetComponent
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.AutoFixHigh
+import com.t8rin.ikittool.core.resources.icons.Done
+import com.t8rin.ikittool.core.resources.icons.Eyedropper
+import com.t8rin.ikittool.core.ui.theme.mixedContainer
+import com.t8rin.ikittool.core.ui.utils.helper.ProvideFilterPreview
+import com.t8rin.ikittool.core.ui.utils.provider.LocalScreenSize
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedFloatingActionButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedTopAppBar
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedTopAppBarType
+import com.t8rin.ikittool.core.ui.widget.image.Picture
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.tappable
+import com.t8rin.ikittool.core.ui.widget.modifier.transparencyChecker
+import com.t8rin.ikittool.core.ui.widget.saver.ColorSaver
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.core.ui.widget.text.marquee
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.feature.draw.presentation.components.OpenColorPickerCard
+import com.t8rin.ikittool.feature.pick_color.presentation.components.PickColorFromImageSheet
 import kotlinx.coroutines.launch
 import net.engawapg.lib.zoomable.rememberZoomState
 import net.engawapg.lib.zoomable.zoomable

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("COMPOSE_APPLIER_CALL_MISMATCH")
 
-package com.t8rin.imagetoolbox.feature.pdf_tools.presentation.root.components
+package com.t8rin.ikittool.feature.pdf_tools.presentation.root.components
 
 import android.net.Uri
 import androidx.compose.animation.AnimatedContent
@@ -29,11 +29,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedLoadingIndicator
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.animateContentSizeNoClip
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.canUseNewPdf
-import com.t8rin.imagetoolbox.feature.pdf_tools.presentation.root.components.viewer.LegacyPdfViewer
-import com.t8rin.imagetoolbox.feature.pdf_tools.presentation.root.components.viewer.ModernPdfViewer
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedLoadingIndicator
+import com.t8rin.ikittool.core.ui.widget.modifier.animateContentSizeNoClip
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.canUseNewPdf
+import com.t8rin.ikittool.feature.pdf_tools.presentation.root.components.viewer.LegacyPdfViewer
+import com.t8rin.ikittool.feature.pdf_tools.presentation.root.components.viewer.ModernPdfViewer
 
 @Composable
 fun PdfViewer(

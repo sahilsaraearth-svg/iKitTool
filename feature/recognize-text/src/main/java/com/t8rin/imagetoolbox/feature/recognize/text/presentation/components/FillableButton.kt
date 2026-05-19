@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.recognize.text.presentation.components
+package com.t8rin.ikittool.feature.recognize.text.presentation.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -29,9 +29,9 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.hapticsClickable
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.AutoCircleShape
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.enhanced.hapticsClickable
+import com.t8rin.ikittool.core.ui.widget.modifier.AutoCircleShape
+import com.t8rin.ikittool.core.ui.widget.modifier.container
 
 @Composable
 internal fun FillableButton(

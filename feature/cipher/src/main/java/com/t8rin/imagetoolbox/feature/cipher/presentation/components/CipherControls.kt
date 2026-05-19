@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.cipher.presentation.components
+package com.t8rin.ikittool.feature.cipher.presentation.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
@@ -48,35 +48,35 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.t8rin.imagetoolbox.core.domain.model.CipherType
-import com.t8rin.imagetoolbox.core.domain.utils.toInt
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Cancel
-import com.t8rin.imagetoolbox.core.resources.icons.CheckCircle
-import com.t8rin.imagetoolbox.core.resources.icons.Download
-import com.t8rin.imagetoolbox.core.resources.icons.File
-import com.t8rin.imagetoolbox.core.resources.icons.HashTag
-import com.t8rin.imagetoolbox.core.resources.icons.HelpOutline
-import com.t8rin.imagetoolbox.core.resources.icons.Share
-import com.t8rin.imagetoolbox.core.resources.icons.Shuffle
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.theme.Green
-import com.t8rin.imagetoolbox.core.ui.theme.outlineVariant
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberFileCreator
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.rememberFilename
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.rememberHumanFileSize
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.DataSelector
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButtonGroup
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItem
-import com.t8rin.imagetoolbox.core.ui.widget.text.AutoSizeText
-import com.t8rin.imagetoolbox.core.ui.widget.text.RoundedTextField
-import com.t8rin.imagetoolbox.feature.cipher.presentation.screenLogic.CipherComponent
+import com.t8rin.ikittool.core.domain.model.CipherType
+import com.t8rin.ikittool.core.domain.utils.toInt
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Cancel
+import com.t8rin.ikittool.core.resources.icons.CheckCircle
+import com.t8rin.ikittool.core.resources.icons.Download
+import com.t8rin.ikittool.core.resources.icons.File
+import com.t8rin.ikittool.core.resources.icons.HashTag
+import com.t8rin.ikittool.core.resources.icons.HelpOutline
+import com.t8rin.ikittool.core.resources.icons.Share
+import com.t8rin.ikittool.core.resources.icons.Shuffle
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.theme.Green
+import com.t8rin.ikittool.core.ui.theme.outlineVariant
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberFileCreator
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.rememberFilename
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.rememberHumanFileSize
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.widget.controls.selection.DataSelector
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButtonGroup
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItem
+import com.t8rin.ikittool.core.ui.widget.text.AutoSizeText
+import com.t8rin.ikittool.core.ui.widget.text.RoundedTextField
+import com.t8rin.ikittool.feature.cipher.presentation.screenLogic.CipherComponent
 import kotlin.random.Random
 
 @Composable

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.image
+package com.t8rin.ikittool.core.ui.widget.image
 
 import android.net.Uri
 import androidx.compose.animation.AnimatedContent
@@ -28,7 +28,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -46,31 +46,31 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.t8rin.imagetoolbox.core.domain.image.toMap
-import com.t8rin.imagetoolbox.core.domain.utils.humanFileSize
-import com.t8rin.imagetoolbox.core.domain.utils.timestamp
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Exif
-import com.t8rin.imagetoolbox.core.ui.theme.inverse
-import com.t8rin.imagetoolbox.core.ui.theme.onSecondaryContainerFixed
-import com.t8rin.imagetoolbox.core.ui.theme.secondaryContainerFixed
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.localizedName
-import com.t8rin.imagetoolbox.core.ui.utils.provider.rememberImageMetadataAsState
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.SupportingButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedBottomSheetDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedModalBottomSheet
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.text.RoundedTextField
-import com.t8rin.imagetoolbox.core.ui.widget.text.RoundedTextFieldColors
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
-import com.t8rin.imagetoolbox.core.utils.dateAdded
-import com.t8rin.imagetoolbox.core.utils.fileSize
-import com.t8rin.imagetoolbox.core.utils.filename
-import com.t8rin.imagetoolbox.core.utils.lastModified
-import com.t8rin.imagetoolbox.core.utils.path
+import com.t8rin.ikittool.core.domain.image.toMap
+import com.t8rin.ikittool.core.domain.utils.humanFileSize
+import com.t8rin.ikittool.core.domain.utils.timestamp
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Exif
+import com.t8rin.ikittool.core.ui.theme.inverse
+import com.t8rin.ikittool.core.ui.theme.onSecondaryContainerFixed
+import com.t8rin.ikittool.core.ui.theme.secondaryContainerFixed
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.localizedName
+import com.t8rin.ikittool.core.ui.utils.provider.rememberImageMetadataAsState
+import com.t8rin.ikittool.core.ui.widget.buttons.SupportingButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedBottomSheetDefaults
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedModalBottomSheet
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedFlingBehavior
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.text.RoundedTextField
+import com.t8rin.ikittool.core.ui.widget.text.RoundedTextFieldColors
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.core.utils.dateAdded
+import com.t8rin.ikittool.core.utils.fileSize
+import com.t8rin.ikittool.core.utils.filename
+import com.t8rin.ikittool.core.utils.lastModified
+import com.t8rin.ikittool.core.utils.path
 
 @Composable
 fun MetadataPreviewButton(

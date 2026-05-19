@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,14 +15,14 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.erase_background.data
+package com.t8rin.ikittool.feature.erase_background.data
 
 import android.graphics.Bitmap
-import com.t8rin.imagetoolbox.feature.erase_background.data.backend.GenericBackgroundRemoverBackend
-import com.t8rin.imagetoolbox.feature.erase_background.data.backend.MlKitBackgroundRemoverBackend
-import com.t8rin.imagetoolbox.feature.erase_background.domain.AutoBackgroundRemoverBackend
-import com.t8rin.imagetoolbox.feature.erase_background.domain.AutoBackgroundRemoverBackendFactory
-import com.t8rin.imagetoolbox.feature.erase_background.domain.model.BgModelType
+import com.t8rin.ikittool.feature.erase_background.data.backend.GenericBackgroundRemoverBackend
+import com.t8rin.ikittool.feature.erase_background.data.backend.MlKitBackgroundRemoverBackend
+import com.t8rin.ikittool.feature.erase_background.domain.AutoBackgroundRemoverBackend
+import com.t8rin.ikittool.feature.erase_background.domain.AutoBackgroundRemoverBackendFactory
+import com.t8rin.ikittool.feature.erase_background.domain.model.BgModelType
 import javax.inject.Inject
 
 internal class AndroidAutoBackgroundRemoverBackendFactory @Inject constructor() :

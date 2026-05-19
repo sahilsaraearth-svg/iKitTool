@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.pdf_tools.data
+package com.t8rin.ikittool.feature.pdf_tools.data
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -25,37 +25,37 @@ import androidx.core.text.HtmlCompat
 import com.awxkee.aire.Aire
 import com.awxkee.aire.ResizeFunction
 import com.awxkee.aire.ScaleColorSpace
-import com.t8rin.imagetoolbox.core.data.utils.aspectRatio
-import com.t8rin.imagetoolbox.core.data.utils.observeHasChanges
-import com.t8rin.imagetoolbox.core.domain.PDF
-import com.t8rin.imagetoolbox.core.domain.coroutines.AppScope
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.ImageScaler
-import com.t8rin.imagetoolbox.core.domain.image.ShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.model.ResizeType
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.utils.runSuspendCatching
-import com.t8rin.imagetoolbox.core.domain.utils.timestamp
-import com.t8rin.imagetoolbox.core.utils.filename
-import com.t8rin.imagetoolbox.core.utils.makeLog
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.HocrData
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.HocrPageBox
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.HocrWord
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.PdfRenderer
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.asXObject
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.createPage
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.createPdf
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.pageIndices
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.safeOpenPdf
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.save
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.setMetadata
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.PdfHelper
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PageSize
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfCheckResult
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfCreationParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfMetadata
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PrintPdfParams
+import com.t8rin.ikittool.core.data.utils.aspectRatio
+import com.t8rin.ikittool.core.data.utils.observeHasChanges
+import com.t8rin.ikittool.core.domain.PDF
+import com.t8rin.ikittool.core.domain.coroutines.AppScope
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.ImageScaler
+import com.t8rin.ikittool.core.domain.image.ShareProvider
+import com.t8rin.ikittool.core.domain.image.model.ResizeType
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.utils.runSuspendCatching
+import com.t8rin.ikittool.core.domain.utils.timestamp
+import com.t8rin.ikittool.core.utils.filename
+import com.t8rin.ikittool.core.utils.makeLog
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.HocrData
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.HocrPageBox
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.HocrWord
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.PdfRenderer
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.asXObject
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.createPage
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.createPdf
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.pageIndices
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.safeOpenPdf
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.save
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.setMetadata
+import com.t8rin.ikittool.feature.pdf_tools.domain.PdfHelper
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PageSize
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfCheckResult
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfCreationParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfMetadata
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PrintPdfParams
 import com.tom_roush.pdfbox.pdmodel.PDDocument
 import com.tom_roush.pdfbox.pdmodel.PDPage
 import com.tom_roush.pdfbox.pdmodel.PDPageContentStream

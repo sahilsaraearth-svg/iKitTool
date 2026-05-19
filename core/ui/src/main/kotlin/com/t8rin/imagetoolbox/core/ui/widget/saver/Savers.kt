@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.saver
+package com.t8rin.ikittool.core.ui.widget.saver
 
 import androidx.compose.runtime.saveable.Saver
 import androidx.compose.runtime.saveable.listSaver
@@ -24,10 +24,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.model.Pt
-import com.t8rin.imagetoolbox.core.domain.model.pt
-import com.t8rin.imagetoolbox.core.settings.presentation.model.PicturePickerMode
-import com.t8rin.imagetoolbox.core.ui.theme.toColor
+import com.t8rin.ikittool.core.domain.model.Pt
+import com.t8rin.ikittool.core.domain.model.pt
+import com.t8rin.ikittool.core.settings.presentation.model.PicturePickerMode
+import com.t8rin.ikittool.core.ui.theme.toColor
 
 val ColorSaver: Saver<Color, Int> = Saver(
     save = {

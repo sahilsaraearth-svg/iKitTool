@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,45 +15,45 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.data.saving
+package com.t8rin.ikittool.core.data.saving
 
 import android.content.Context
 import android.net.Uri
 import androidx.core.net.toUri
-import com.t8rin.imagetoolbox.core.data.utils.computeFromByteArray
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageScaleMode
-import com.t8rin.imagetoolbox.core.domain.image.model.Preset
-import com.t8rin.imagetoolbox.core.domain.image.model.title
-import com.t8rin.imagetoolbox.core.domain.resource.ResourceManager
-import com.t8rin.imagetoolbox.core.domain.saving.FilenameCreator
-import com.t8rin.imagetoolbox.core.domain.saving.RandomStringGenerator
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Date
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.DateUpper
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Extension
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.ExtensionUpper
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Height
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.OriginalName
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.OriginalNameUpper
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Prefix
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.PrefixUpper
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.PresetInfo
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.PresetInfoUpper
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Rand
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.ScaleMode
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.ScaleModeUpper
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Sequence
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Suffix
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.SuffixUpper
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Width
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.replace
-import com.t8rin.imagetoolbox.core.domain.saving.model.ImageSaveTarget
-import com.t8rin.imagetoolbox.core.domain.utils.timestamp
-import com.t8rin.imagetoolbox.core.settings.domain.SettingsManager
-import com.t8rin.imagetoolbox.core.settings.domain.model.FilenameBehavior
-import com.t8rin.imagetoolbox.core.utils.filename
-import com.t8rin.imagetoolbox.core.utils.makeLog
+import com.t8rin.ikittool.core.data.utils.computeFromByteArray
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.model.ImageScaleMode
+import com.t8rin.ikittool.core.domain.image.model.Preset
+import com.t8rin.ikittool.core.domain.image.model.title
+import com.t8rin.ikittool.core.domain.resource.ResourceManager
+import com.t8rin.ikittool.core.domain.saving.FilenameCreator
+import com.t8rin.ikittool.core.domain.saving.RandomStringGenerator
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Date
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.DateUpper
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Extension
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.ExtensionUpper
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Height
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.OriginalName
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.OriginalNameUpper
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Prefix
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.PrefixUpper
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.PresetInfo
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.PresetInfoUpper
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Rand
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.ScaleMode
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.ScaleModeUpper
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Sequence
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Suffix
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.SuffixUpper
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Width
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.replace
+import com.t8rin.ikittool.core.domain.saving.model.ImageSaveTarget
+import com.t8rin.ikittool.core.domain.utils.timestamp
+import com.t8rin.ikittool.core.settings.domain.SettingsManager
+import com.t8rin.ikittool.core.settings.domain.model.FilenameBehavior
+import com.t8rin.ikittool.core.utils.filename
+import com.t8rin.ikittool.core.utils.makeLog
 import dagger.hilt.android.qualifiers.ApplicationContext
 import java.util.Date
 import java.util.Locale

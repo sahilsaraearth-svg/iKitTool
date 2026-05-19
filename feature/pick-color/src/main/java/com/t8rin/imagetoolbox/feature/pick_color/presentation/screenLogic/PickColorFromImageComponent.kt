@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.pick_color.presentation.screenLogic
+package com.t8rin.ikittool.feature.pick_color.presentation.screenLogic
 
 import android.graphics.Bitmap
 import android.net.Uri
@@ -24,11 +24,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.graphics.Color
 import com.arkivanov.decompose.ComponentContext
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.utils.runSuspendCatching
-import com.t8rin.imagetoolbox.core.ui.utils.BaseComponent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.utils.runSuspendCatching
+import com.t8rin.ikittool.core.ui.utils.BaseComponent
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject

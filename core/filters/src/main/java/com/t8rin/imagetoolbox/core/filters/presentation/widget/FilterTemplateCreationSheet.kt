@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.filters.presentation.widget
+package com.t8rin.ikittool.core.filters.presentation.widget
 
 import android.graphics.Bitmap
 import android.net.Uri
@@ -38,7 +38,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.text.KeyboardOptions
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -61,44 +61,44 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import com.arkivanov.decompose.ComponentContext
 import com.arkivanov.decompose.childContext
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.model.ImageModel
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.filters.domain.FilterParamsInteractor
-import com.t8rin.imagetoolbox.core.filters.domain.FilterProvider
-import com.t8rin.imagetoolbox.core.filters.domain.model.TemplateFilter
-import com.t8rin.imagetoolbox.core.filters.presentation.model.UiFilter
-import com.t8rin.imagetoolbox.core.filters.presentation.model.toUiFilter
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.addFilters.AddFiltersSheet
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.addFilters.AddFiltersSheetComponent
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.ArrowBack
-import com.t8rin.imagetoolbox.core.resources.icons.Extension
-import com.t8rin.imagetoolbox.core.ui.utils.BaseComponent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.helper.LocalFilterPreviewModelProvider
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.utils.state.update
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ImageSelector
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.ExitWithoutSavingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedBottomSheetDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedModalBottomSheet
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
-import com.t8rin.imagetoolbox.core.ui.widget.image.ImageHeaderState
-import com.t8rin.imagetoolbox.core.ui.widget.image.SimplePicture
-import com.t8rin.imagetoolbox.core.ui.widget.image.imageStickyHeader
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.CornerSides
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.drawHorizontalStroke
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.only
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.shimmer
-import com.t8rin.imagetoolbox.core.ui.widget.text.RoundedTextField
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
-import com.t8rin.imagetoolbox.core.ui.widget.utils.rememberAvailableHeight
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.model.ImageModel
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.filters.domain.FilterParamsInteractor
+import com.t8rin.ikittool.core.filters.domain.FilterProvider
+import com.t8rin.ikittool.core.filters.domain.model.TemplateFilter
+import com.t8rin.ikittool.core.filters.presentation.model.UiFilter
+import com.t8rin.ikittool.core.filters.presentation.model.toUiFilter
+import com.t8rin.ikittool.core.filters.presentation.widget.addFilters.AddFiltersSheet
+import com.t8rin.ikittool.core.filters.presentation.widget.addFilters.AddFiltersSheetComponent
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.ArrowBack
+import com.t8rin.ikittool.core.resources.icons.Extension
+import com.t8rin.ikittool.core.ui.utils.BaseComponent
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.helper.LocalFilterPreviewModelProvider
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.utils.state.update
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ImageSelector
+import com.t8rin.ikittool.core.ui.widget.dialogs.ExitWithoutSavingDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedBottomSheetDefaults
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedModalBottomSheet
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedFlingBehavior
+import com.t8rin.ikittool.core.ui.widget.image.ImageHeaderState
+import com.t8rin.ikittool.core.ui.widget.image.SimplePicture
+import com.t8rin.ikittool.core.ui.widget.image.imageStickyHeader
+import com.t8rin.ikittool.core.ui.widget.modifier.CornerSides
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.drawHorizontalStroke
+import com.t8rin.ikittool.core.ui.widget.modifier.only
+import com.t8rin.ikittool.core.ui.widget.modifier.shimmer
+import com.t8rin.ikittool.core.ui.widget.text.RoundedTextField
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.core.ui.widget.utils.rememberAvailableHeight
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject

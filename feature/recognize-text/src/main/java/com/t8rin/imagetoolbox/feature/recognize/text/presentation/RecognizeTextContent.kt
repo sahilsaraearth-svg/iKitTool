@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.recognize.text.presentation
+package com.t8rin.ikittool.feature.recognize.text.presentation
 
 import android.net.Uri
 import androidx.compose.animation.AnimatedContent
@@ -24,7 +24,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.padding
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -38,35 +38,35 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.model.MimeType
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Save
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberFileCreator
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberImagePicker
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.safeAspectRatio
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.widget.AdaptiveLayoutScreen
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.ShareButton
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.ZoomButton
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.LoadingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.image.AutoFilePicker
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
-import com.t8rin.imagetoolbox.core.ui.widget.image.UrisPreview
-import com.t8rin.imagetoolbox.core.ui.widget.image.urisPreview
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.animateContentSizeNoClip
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.other.TopAppBarEmoji
-import com.t8rin.imagetoolbox.core.ui.widget.sheets.ZoomModalSheet
-import com.t8rin.imagetoolbox.core.ui.widget.text.TopAppBarTitle
-import com.t8rin.imagetoolbox.core.ui.widget.utils.AutoContentBasedColors
-import com.t8rin.imagetoolbox.feature.recognize.text.presentation.components.RecognizeTextButtons
-import com.t8rin.imagetoolbox.feature.recognize.text.presentation.components.RecognizeTextControls
-import com.t8rin.imagetoolbox.feature.recognize.text.presentation.components.RecognizeTextDownloadDataDialog
-import com.t8rin.imagetoolbox.feature.recognize.text.presentation.components.RecognizeTextNoDataControls
-import com.t8rin.imagetoolbox.feature.recognize.text.presentation.screenLogic.RecognizeTextComponent
-import com.t8rin.imagetoolbox.feature.single_edit.presentation.components.CropEditOption
+import com.t8rin.ikittool.core.domain.model.MimeType
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Save
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberFileCreator
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberImagePicker
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.safeAspectRatio
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.widget.AdaptiveLayoutScreen
+import com.t8rin.ikittool.core.ui.widget.buttons.ShareButton
+import com.t8rin.ikittool.core.ui.widget.buttons.ZoomButton
+import com.t8rin.ikittool.core.ui.widget.dialogs.LoadingDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.image.AutoFilePicker
+import com.t8rin.ikittool.core.ui.widget.image.Picture
+import com.t8rin.ikittool.core.ui.widget.image.UrisPreview
+import com.t8rin.ikittool.core.ui.widget.image.urisPreview
+import com.t8rin.ikittool.core.ui.widget.modifier.animateContentSizeNoClip
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.other.TopAppBarEmoji
+import com.t8rin.ikittool.core.ui.widget.sheets.ZoomModalSheet
+import com.t8rin.ikittool.core.ui.widget.text.TopAppBarTitle
+import com.t8rin.ikittool.core.ui.widget.utils.AutoContentBasedColors
+import com.t8rin.ikittool.feature.recognize.text.presentation.components.RecognizeTextButtons
+import com.t8rin.ikittool.feature.recognize.text.presentation.components.RecognizeTextControls
+import com.t8rin.ikittool.feature.recognize.text.presentation.components.RecognizeTextDownloadDataDialog
+import com.t8rin.ikittool.feature.recognize.text.presentation.components.RecognizeTextNoDataControls
+import com.t8rin.ikittool.feature.recognize.text.presentation.screenLogic.RecognizeTextComponent
+import com.t8rin.ikittool.feature.single_edit.presentation.components.CropEditOption
 
 
 @Composable

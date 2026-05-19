@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -861,7 +861,7 @@
     <string name="pick">Wählen</string>
     <string name="header_today">Heute</string>
     <string name="header_yesterday">Gestern</string>
-    <string name="embedded_picker_sub">Image Toolbox\'s Bildauswahl</string>
+    <string name="embedded_picker_sub">iKit Tool\'s Bildauswahl</string>
     <string name="no_permissions">Keine Berechtigungen</string>
     <string name="channels_configuration">Kanal-Konfiguration</string>
     <string name="embedded_picker">Integrierte Auswahl</string>
@@ -1079,7 +1079,7 @@
     <string name="document_scanner">Dokumentenscanner</string>
     <string name="add_favorites">Favoriten hinzufügen</string>
     <string name="no_favorite_options_selected">Keine bevorzugten Optionen ausgewählt, füge sie auf der Seite Tools hinzu</string>
-    <string name="open_edit_instead_of_preview_sub">Wenn du ein Bild auswählst, um es in ImageToolbox zu öffnen (Vorschau), wird anstatt der Vorschau das Auswahlblatt \"Bearbeiten\" geöffnet</string>
+    <string name="open_edit_instead_of_preview_sub">Wenn du ein Bild auswählst, um es in iKitTool zu öffnen (Vorschau), wird anstatt der Vorschau das Auswahlblatt \"Bearbeiten\" geöffnet</string>
     <string name="qr_code_sub">Scanne den QR-Code und rufe seinen Inhalt ab oder füge deine Zeichenfolge ein, um einen neuen zu erstellen</string>
     <string name="scan_qr_code_to_replace_content">Scanne einen beliebigen Barcode, um den Inhalt des Feldes zu ersetzen, oder schreib etwas, um einen neuen Barcode mit dem ausgewählten Typ zu erzeugen</string>
     <string name="tag_jpeg_interchange_format_length">JPEG Austauschformat Länge</string>
@@ -1355,9 +1355,9 @@
     <string name="ci_channel">CI-Kanal</string>
     <string name="group">Gruppe</string>
     <string name="ci_channel_sub">Lass dich über neue Versionen der App benachrichtigen und lies Ankündigungen</string>
-    <string name="image_toolbox_in_telegram_sub">Tritt unserem Chat bei, in dem du alles besprechen kannst, was du willst, und schau auch in den CI-Kanal, wo ich Betas und Ankündigungen poste</string>
+    <string name="ikit_tool_in_telegram_sub">Tritt unserem Chat bei, in dem du alles besprechen kannst, was du willst, und schau auch in den CI-Kanal, wo ich Betas und Ankündigungen poste</string>
     <string name="manage_storage_extra_types">Kein vollständiger Zugriff auf Dateien</string>
-    <string name="manage_storage_extra_types_sub">Erlaube allen Dateien den Zugriff, um JXL, QOI und andere Bilder zu sehen, die unter Android nicht als Bilder erkannt werden. Ohne diese Berechtigung kann Image Toolbox diese Bilder nicht anzeigen</string>
+    <string name="manage_storage_extra_types_sub">Erlaube allen Dateien den Zugriff, um JXL, QOI und andere Bilder zu sehen, die unter Android nicht als Bilder erkannt werden. Ohne diese Berechtigung kann iKit Tool diese Bilder nicht anzeigen</string>
     <string name="one_time_save_location">Einmaliger Speicherort</string>
     <string name="one_time_save_location_sub">Einmalige Speicherorte anzeigen und bearbeiten, die du durch langes Drücken der Speichertaste in fast allen Optionen verwenden kannst</string>
     <string name="gif_type_to_webp">GIF zu WEBP</string>
@@ -1369,7 +1369,7 @@
     <string name="webp_type_to_webp_sub">Stapel an Bildern in eine WEBP-Datei umwandeln</string>
     <string name="webp_type_to_webp">Bilder zu WEBP</string>
     <string name="select_webp_image_to_start">WEBP-Bild zum Starten auswählen</string>
-    <string name="image_toolbox_in_telegram">Image Toolbox in Telegram 🎉</string>
+    <string name="ikit_tool_in_telegram">iKit Tool in Telegram 🎉</string>
     <string name="custom_options">Eigene Optionen</string>
     <string name="custom_params_info">Optionen sollten nach folgendem Muster eingegeben werden: \"--{option_name} {value}\"</string>
     <string name="free_corners">Freie Ecken</string>
@@ -1854,7 +1854,7 @@
     <string name="export_palette_sub">Exportieren Sie die generierte Palette in verschiedene Formate</string>
     <string name="add_color_palette_sub">Fügt der aktuellen Palette eine neue Farbe hinzu</string>
     <string name="palette_name_not_supported">Das Format %1$s unterstützt die Angabe des Palettennamens nicht</string>
-    <string name="wallpapers_export_not_avaialbe">Aufgrund der Play Store-Richtlinien kann diese Funktion nicht in den aktuellen Build aufgenommen werden. Um auf diese Funktionalität zuzugreifen, laden Sie ImageToolbox bitte von einer alternativen Quelle herunter. Die verfügbaren Builds finden Sie unten auf GitHub.</string>
+    <string name="wallpapers_export_not_avaialbe">Aufgrund der Play Store-Richtlinien kann diese Funktion nicht in den aktuellen Build aufgenommen werden. Um auf diese Funktionalität zuzugreifen, laden Sie iKitTool bitte von einer alternativen Quelle herunter. Die verfügbaren Builds finden Sie unten auf GitHub.</string>
     <string name="open_github_page">Öffnen Sie die Github-Seite</string>
     <string name="overwrite_files_sub_short">Die Originaldatei wird durch eine neue ersetzt, anstatt sie im ausgewählten Ordner zu speichern</string>
     <string name="hidden_watermark_text_detected">Versteckter Wasserzeichentext erkannt</string>
@@ -2141,7 +2141,7 @@
     <string name="grayscale_pdf_sub">Konvertieren Sie alle in Dokumente eingebetteten Bilder in Graustufen</string>
     <string name="compress_pdf">PDF komprimieren</string>
     <string name="compress_pdf_sub">Optimieren Sie die Dateigröße Ihres Dokuments für eine einfachere Weitergabe</string>
-    <string name="repair_info">ImageToolbox erstellt die interne Querverweistabelle neu und generiert die Dateistruktur von Grund auf neu. Dadurch kann der Zugriff auf viele Dateien wiederhergestellt werden, die „nicht geöffnet werden können“.</string>
+    <string name="repair_info">iKitTool erstellt die interne Querverweistabelle neu und generiert die Dateistruktur von Grund auf neu. Dadurch kann der Zugriff auf viele Dateien wiederhergestellt werden, die „nicht geöffnet werden können“.</string>
     <string name="grayscale_info">Dieses Tool konvertiert alle Dokumentbilder in Graustufen. Am besten zum Drucken und Reduzieren der Dateigröße geeignet</string>
     <string name="metadata">Metadaten</string>
     <string name="metadata_pdf_sub">Bearbeiten Sie die Dokumenteigenschaften, um den Datenschutz zu verbessern</string>
@@ -2193,11 +2193,11 @@
     <string name="background_color_for_alpha_formats">Hintergrundfarbe für Alpha-Formate</string>
     <string name="background_color_for_alpha_formats_sub">Fügt die Möglichkeit hinzu, die Hintergrundfarbe für jedes Bildformat mit Alpha-Unterstützung festzulegen. Wenn diese Option deaktiviert ist, ist sie nur für Nicht-Alpha-Formate verfügbar</string>
     <string name="open_markup_project">Projekt öffnen</string>
-    <string name="open_markup_project_sub">Bearbeiten Sie weiterhin ein zuvor gespeichertes Image Toolbox-Projekt</string>
-    <string name="markup_project_open_failed">Das Image Toolbox-Projekt kann nicht geöffnet werden</string>
-    <string name="markup_project_missing_data">Im Image Toolbox-Projekt fehlen Projektdaten</string>
-    <string name="markup_project_corrupted">Das Image Toolbox-Projekt ist beschädigt</string>
-    <string name="unsupported_markup_project_version">Nicht unterstützte Image Toolbox-Projektversion: %1$d</string>
+    <string name="open_markup_project_sub">Bearbeiten Sie weiterhin ein zuvor gespeichertes iKit Tool-Projekt</string>
+    <string name="markup_project_open_failed">Das iKit Tool-Projekt kann nicht geöffnet werden</string>
+    <string name="markup_project_missing_data">Im iKit Tool-Projekt fehlen Projektdaten</string>
+    <string name="markup_project_corrupted">Das iKit Tool-Projekt ist beschädigt</string>
+    <string name="unsupported_markup_project_version">Nicht unterstützte iKit Tool-Projektversion: %1$d</string>
     <string name="save_markup_project">Projekt speichern</string>
     <string name="save_markup_project_sub">Speichern Sie Ebenen, Hintergrund und Bearbeitungsverlauf in einer bearbeitbaren Projektdatei</string>
     <string name="failed_to_open">Öffnen fehlgeschlagen</string>

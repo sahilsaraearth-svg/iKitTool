@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -55,7 +55,7 @@
     <string name="donation">Aukojimas</string>
     <string name="search_option">Paieška</string>
     <string name="search_option_sub">Suteikia galimybę ieškoti visų pagrindiniame ekrane esančių įrankių.</string>
-    <string name="image_toolbox_in_telegram_sub">Junkitės prie mūsų pokalbio, kuriame galite aptarti viską, ką norite, ir taip pat pažvelkite į CI kanalą, kuriame skelbiu beta versijas ir skelbimus.</string>
+    <string name="ikit_tool_in_telegram_sub">Junkitės prie mūsų pokalbio, kuriame galite aptarti viską, ką norite, ir taip pat pažvelkite į CI kanalą, kuriame skelbiu beta versijas ir skelbimus.</string>
     <string name="reset_settings_sub">Tai sugrąžins jūsų nustatymus į numatytąsias reikšmes. Atkreipkite dėmesį, kad to negalima anuliuoti be pirmiau minėto atsarginės kopijos failo.</string>
     <string name="send_logs">Siųsti žurnalus</string>
     <string name="send_logs_sub">Spustelėkite norint bendrinti programėlės žurnalų failą. Tai gali padėti man pastebėti ir išspręsti problemas.</string>
@@ -69,7 +69,7 @@
     <string name="allow_betas">Leisti beta versijų</string>
     <string name="ci_channel">CI kanalas</string>
     <string name="group">Grupė</string>
-    <string name="image_toolbox_in_telegram">„Image Toolbox“ programėlėje „Telegram“ 🎉</string>
+    <string name="ikit_tool_in_telegram">„iKit Tool“ programėlėje „Telegram“ 🎉</string>
     <string name="ci_channel_sub">Gaukite pranešimų apie naujas programėlės versijas ir skaitykite skelbimus.</string>
     <string name="crash_subtitle">Galite susisiekti su manimi naudojant žemiau nurodytas parinktis ir aš bandysiu surasti sprendimą.\n\n(Nepamirškite pridėti žurnalus).</string>
     <string name="explicit">Aiškus</string>
@@ -1094,7 +1094,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">Įgalina antialiasing, kad būtų išvengta aštrių kraštų</string>
     <string name="open_edit_instead_of_preview">Atidarykite Redaguoti, o ne peržiūrą</string>
-    <string name="open_edit_instead_of_preview_sub">Pasirinkus vaizdą, kurį norite atidaryti (peržiūrėti) „ImageToolbox“, bus atidarytas redagavimo pasirinkimo lapas, o ne peržiūra</string>
+    <string name="open_edit_instead_of_preview_sub">Pasirinkus vaizdą, kurį norite atidaryti (peržiūrėti) „iKitTool“, bus atidarytas redagavimo pasirinkimo lapas, o ne peržiūra</string>
     <string name="document_scanner">Dokumentų skaitytuvas</string>
     <string name="document_scanner_sub">Nuskaitykite dokumentus ir kurkite PDF arba atskirkite iš jų vaizdus</string>
     <string name="click_to_start_scanning">Spustelėkite norėdami pradėti nuskaitymą</string>
@@ -1369,7 +1369,7 @@
     <string name="webp_type_to_webp">Vaizdai į WEBP</string>
     <string name="select_webp_image_to_start">Norėdami pradėti, pasirinkite WEBP vaizdą</string>
     <string name="manage_storage_extra_types">Nėra visiškos prieigos prie failų</string>
-    <string name="manage_storage_extra_types_sub">Leiskite visiems failams pasiekti JXL, QOI ir kitus vaizdus, ​​kurie „Android“ neatpažįstami kaip vaizdai. Be leidimo „Image Toolbox“ negali rodyti tų vaizdų</string>
+    <string name="manage_storage_extra_types_sub">Leiskite visiems failams pasiekti JXL, QOI ir kitus vaizdus, ​​kurie „Android“ neatpažįstami kaip vaizdai. Be leidimo „iKit Tool“ negali rodyti tų vaizdų</string>
     <string name="default_draw_color">Numatytoji piešimo spalva</string>
     <string name="default_draw_path_mode">Numatytasis piešimo kelio režimas</string>
     <string name="add_timestamp">Pridėti laiko žymą</string>
@@ -1841,7 +1841,7 @@
     <string name="export_palette_sub">Eksportuokite sugeneruotą paletę į skirtingus formatus</string>
     <string name="add_color_palette_sub">Prideda naują spalvą į dabartinę paletę</string>
     <string name="palette_name_not_supported">%1$s formatas nepalaiko paletės pavadinimo</string>
-    <string name="wallpapers_export_not_avaialbe">Dėl „Play“ parduotuvės politikos šios funkcijos negalima įtraukti į dabartinę versiją. Norėdami pasiekti šią funkciją, atsisiųskite ImageToolbox iš alternatyvaus šaltinio. Galimas versijas „GitHub“ rasite toliau.</string>
+    <string name="wallpapers_export_not_avaialbe">Dėl „Play“ parduotuvės politikos šios funkcijos negalima įtraukti į dabartinę versiją. Norėdami pasiekti šią funkciją, atsisiųskite iKitTool iš alternatyvaus šaltinio. Galimas versijas „GitHub“ rasite toliau.</string>
     <string name="open_github_page">Atidarykite „Github“ puslapį</string>
     <string name="overwrite_files_sub_short">Originalus failas bus pakeistas nauju, o ne išsaugoti pasirinktame aplanke</string>
     <string name="hidden_watermark_text_detected">Aptiktas paslėptas vandens ženklo tekstas</string>
@@ -2144,7 +2144,7 @@
     <string name="grayscale_pdf_sub">Konvertuoti visus dokumento įterptus vaizdus į pilkos spalvos tonus</string>
     <string name="compress_pdf">Suspausti PDF</string>
     <string name="compress_pdf_sub">Optimizuokite dokumento failo dydį, kad būtų lengviau bendrinti</string>
-    <string name="repair_info">„ImageToolbox“ atkuria vidinę kryžminių nuorodų lentelę ir atkuria failo struktūrą nuo nulio. Tai gali atkurti prieigą prie daugelio failų, kurių \\"negalima atidaryti\\"</string>
+    <string name="repair_info">„iKitTool“ atkuria vidinę kryžminių nuorodų lentelę ir atkuria failo struktūrą nuo nulio. Tai gali atkurti prieigą prie daugelio failų, kurių \\"negalima atidaryti\\"</string>
     <string name="grayscale_info">Šis įrankis konvertuoja visus dokumentų vaizdus į pilkos spalvos tonus. Geriausiai tinka spausdinti ir sumažinti failo dydį</string>
     <string name="metadata">Metaduomenys</string>
     <string name="metadata_pdf_sub">Redaguokite dokumento ypatybes, kad užtikrintumėte didesnį privatumą</string>
@@ -2197,10 +2197,10 @@
     <string name="background_color_for_alpha_formats_sub">Pridedama galimybė nustatyti fono spalvą kiekvienam vaizdo formatui su alfa palaikymu, kai išjungta, tai galima tik ne alfa formatams</string>
     <string name="open_markup_project">Atviras projektas</string>
     <string name="open_markup_project_sub">Tęskite anksčiau išsaugoto vaizdo įrankių dėžės projekto redagavimą</string>
-    <string name="markup_project_open_failed">Nepavyko atidaryti „Image Toolbox“ projekto</string>
+    <string name="markup_project_open_failed">Nepavyko atidaryti „iKit Tool“ projekto</string>
     <string name="markup_project_missing_data">Vaizdo įrankių dėžutės projekte trūksta projekto duomenų</string>
     <string name="markup_project_corrupted">Vaizdo įrankių dėžutės projektas sugadintas</string>
-    <string name="unsupported_markup_project_version">Nepalaikoma „Image Toolbox“ projekto versija: %1$d</string>
+    <string name="unsupported_markup_project_version">Nepalaikoma „iKit Tool“ projekto versija: %1$d</string>
     <string name="save_markup_project">Išsaugoti projektą</string>
     <string name="save_markup_project_sub">Saugokite sluoksnius, foną ir redaguokite istoriją redaguojamame projekto faile</string>
     <string name="failed_to_open">Nepavyko atidaryti</string>

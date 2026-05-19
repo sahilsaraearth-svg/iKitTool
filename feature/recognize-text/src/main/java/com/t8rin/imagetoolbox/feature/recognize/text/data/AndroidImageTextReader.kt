@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,32 +15,32 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.recognize.text.data
+package com.t8rin.ikittool.feature.recognize.text.data
 
 import android.content.Context
 import android.graphics.Bitmap
 import androidx.core.net.toUri
 import com.googlecode.tesseract.android.TessBaseAPI
-import com.t8rin.imagetoolbox.core.domain.coroutines.AppScope
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.ShareProvider
-import com.t8rin.imagetoolbox.core.domain.remote.DownloadManager
-import com.t8rin.imagetoolbox.core.domain.remote.DownloadProgress
-import com.t8rin.imagetoolbox.core.domain.resource.ResourceManager
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.utils.createZip
-import com.t8rin.imagetoolbox.core.utils.putEntry
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.DownloadData
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.ImageTextReader
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.OCRLanguage
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.OcrEngineMode
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.RecognitionData
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.RecognitionType
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.SegmentationMode
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.TessConstants
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.TessParams
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.TextRecognitionResult
+import com.t8rin.ikittool.core.domain.coroutines.AppScope
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.ShareProvider
+import com.t8rin.ikittool.core.domain.remote.DownloadManager
+import com.t8rin.ikittool.core.domain.remote.DownloadProgress
+import com.t8rin.ikittool.core.domain.resource.ResourceManager
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.utils.createZip
+import com.t8rin.ikittool.core.utils.putEntry
+import com.t8rin.ikittool.feature.recognize.text.domain.DownloadData
+import com.t8rin.ikittool.feature.recognize.text.domain.ImageTextReader
+import com.t8rin.ikittool.feature.recognize.text.domain.OCRLanguage
+import com.t8rin.ikittool.feature.recognize.text.domain.OcrEngineMode
+import com.t8rin.ikittool.feature.recognize.text.domain.RecognitionData
+import com.t8rin.ikittool.feature.recognize.text.domain.RecognitionType
+import com.t8rin.ikittool.feature.recognize.text.domain.SegmentationMode
+import com.t8rin.ikittool.feature.recognize.text.domain.TessConstants
+import com.t8rin.ikittool.feature.recognize.text.domain.TessParams
+import com.t8rin.ikittool.feature.recognize.text.domain.TextRecognitionResult
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.channelFlow
 import kotlinx.coroutines.isActive

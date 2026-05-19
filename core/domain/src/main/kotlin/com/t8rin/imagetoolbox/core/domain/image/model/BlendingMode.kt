@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,30 +15,30 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.domain.image.model
+package com.t8rin.ikittool.core.domain.image.model
 
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.Color
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.ColorBurn
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.ColorDodge
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.Difference
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.DstAtop
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.DstIn
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.DstOut
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.DstOver
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.Exclusion
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.Hardlight
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.Hue
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.Luminosity
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.Modulate
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.Multiply
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.Overlay
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.Saturation
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.Screen
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.Softlight
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.SrcAtop
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.SrcIn
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.SrcOut
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode.Companion.SrcOver
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.Color
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.ColorBurn
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.ColorDodge
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.Difference
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.DstAtop
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.DstIn
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.DstOut
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.DstOver
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.Exclusion
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.Hardlight
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.Hue
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.Luminosity
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.Modulate
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.Multiply
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.Overlay
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.Saturation
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.Screen
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.Softlight
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.SrcAtop
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.SrcIn
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.SrcOut
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode.Companion.SrcOver
 
 
 @JvmInline

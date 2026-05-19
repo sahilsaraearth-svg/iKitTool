@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.compare.presentation.components
+package com.t8rin.ikittool.feature.compare.presentation.components
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.AnimatedVisibility
@@ -40,7 +40,7 @@ import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -66,31 +66,31 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.dp
 import coil3.transform.Transformation
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.AddPhotoAlt
-import com.t8rin.imagetoolbox.core.resources.icons.Highlight
-import com.t8rin.imagetoolbox.core.resources.icons.Pix
-import com.t8rin.imagetoolbox.core.resources.icons.Tune
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.ImagePicker
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.Picker
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalScreenSize
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ColorRowSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.DataSelector
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.OneTimeImagePickingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedFloatingActionButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedModalBottomSheet
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedSlider
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedVerticalScroll
-import com.t8rin.imagetoolbox.core.ui.widget.image.ImageNotPickedWidget
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.drawHorizontalStroke
-import com.t8rin.imagetoolbox.core.ui.widget.other.BoxAnimatedVisibility
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
-import com.t8rin.imagetoolbox.feature.compare.presentation.components.model.CompareData
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.AddPhotoAlt
+import com.t8rin.ikittool.core.resources.icons.Highlight
+import com.t8rin.ikittool.core.resources.icons.Pix
+import com.t8rin.ikittool.core.resources.icons.Tune
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.utils.content_pickers.ImagePicker
+import com.t8rin.ikittool.core.ui.utils.content_pickers.Picker
+import com.t8rin.ikittool.core.ui.utils.provider.LocalScreenSize
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ColorRowSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.DataSelector
+import com.t8rin.ikittool.core.ui.widget.dialogs.OneTimeImagePickingDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedFloatingActionButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedModalBottomSheet
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedSlider
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedVerticalScroll
+import com.t8rin.ikittool.core.ui.widget.image.ImageNotPickedWidget
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.drawHorizontalStroke
+import com.t8rin.ikittool.core.ui.widget.other.BoxAnimatedVisibility
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.feature.compare.presentation.components.model.CompareData
 import net.engawapg.lib.zoomable.ZoomableDefaults.defaultZoomOnDoubleTap
 import net.engawapg.lib.zoomable.rememberZoomState
 import net.engawapg.lib.zoomable.zoomable

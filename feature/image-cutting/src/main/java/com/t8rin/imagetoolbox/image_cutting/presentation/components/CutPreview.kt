@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.image_cutting.presentation.components
+package com.t8rin.ikittool.image_cutting.presentation.components
 
 import android.net.Uri
 import androidx.compose.foundation.Canvas
@@ -44,15 +44,15 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
 import coil3.toBitmap
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.theme.Black
-import com.t8rin.imagetoolbox.core.ui.theme.ImageToolboxThemeForPreview
-import com.t8rin.imagetoolbox.core.ui.utils.helper.EnPreview
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.safeAspectRatio
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
-import com.t8rin.imagetoolbox.core.ui.widget.other.rememberAnimatedBorderPhase
-import com.t8rin.imagetoolbox.image_cutting.domain.CutParams
-import com.t8rin.imagetoolbox.image_cutting.domain.PivotPair
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.theme.Black
+import com.t8rin.ikittool.core.ui.theme.iKitToolThemeForPreview
+import com.t8rin.ikittool.core.ui.utils.helper.EnPreview
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.safeAspectRatio
+import com.t8rin.ikittool.core.ui.widget.image.Picture
+import com.t8rin.ikittool.core.ui.widget.other.rememberAnimatedBorderPhase
+import com.t8rin.ikittool.image_cutting.domain.CutParams
+import com.t8rin.ikittool.image_cutting.domain.PivotPair
 import kotlin.math.abs
 import kotlin.math.hypot
 
@@ -273,7 +273,7 @@ private fun Float.isCloseTo(
 
 @EnPreview
 @Composable
-private fun Preview() = ImageToolboxThemeForPreview(false) {
+private fun Preview() = iKitToolThemeForPreview(false) {
     CutPreview(
         uri = "111".toUri(),
         params = CutParams(

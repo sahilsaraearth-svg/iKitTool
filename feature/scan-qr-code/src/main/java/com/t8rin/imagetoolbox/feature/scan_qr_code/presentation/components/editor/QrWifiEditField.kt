@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.scan_qr_code.presentation.components.editor
+package com.t8rin.ikittool.feature.scan_qr_code.presentation.components.editor
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.Arrangement
@@ -24,7 +24,7 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -33,17 +33,17 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.model.QrType
-import com.t8rin.imagetoolbox.core.domain.model.QrType.Wifi.EncryptionType
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Build
-import com.t8rin.imagetoolbox.core.resources.icons.CheckCircle
-import com.t8rin.imagetoolbox.core.resources.icons.Password
-import com.t8rin.imagetoolbox.core.resources.icons.Security
-import com.t8rin.imagetoolbox.core.resources.icons.TextFields
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.DataSelector
-import com.t8rin.imagetoolbox.core.ui.widget.text.RoundedTextField
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.core.domain.model.QrType
+import com.t8rin.ikittool.core.domain.model.QrType.Wifi.EncryptionType
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Build
+import com.t8rin.ikittool.core.resources.icons.CheckCircle
+import com.t8rin.ikittool.core.resources.icons.Password
+import com.t8rin.ikittool.core.resources.icons.Security
+import com.t8rin.ikittool.core.resources.icons.TextFields
+import com.t8rin.ikittool.core.ui.widget.controls.selection.DataSelector
+import com.t8rin.ikittool.core.ui.widget.text.RoundedTextField
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
 
 @Composable
 internal fun QrWifiEditField(

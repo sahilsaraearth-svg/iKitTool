@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.presentation.components
+package com.t8rin.ikittool.feature.markup_layers.presentation.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateDpAsState
@@ -34,14 +34,14 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageInfo
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.ui.widget.controls.ResizeImageField
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.AutoCornersShape
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.BackgroundBehavior
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.ImageInfo
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.ui.widget.controls.ResizeImageField
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.modifier.AutoCornersShape
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.BackgroundBehavior
 
 @Composable
 internal fun BackgroundCanvasSizeControls(

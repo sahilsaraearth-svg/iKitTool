@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,14 +15,14 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.delete_exif.presentation
+package com.t8rin.ikittool.feature.delete_exif.presentation
 
 
 import android.net.Uri
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
@@ -33,40 +33,40 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Exif
-import com.t8rin.imagetoolbox.core.resources.icons.MiniEdit
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.Picker
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberImagePicker
-import com.t8rin.imagetoolbox.core.ui.utils.helper.Clipboard
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.localizedName
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.rememberFileSize
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.widget.AdaptiveLayoutScreen
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.BottomButtonsBlock
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.ShareButton
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.ZoomButton
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.ExitWithoutSavingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.LoadingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.OneTimeImagePickingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.OneTimeSaveLocationSelectionDialog
-import com.t8rin.imagetoolbox.core.ui.widget.image.AutoFilePicker
-import com.t8rin.imagetoolbox.core.ui.widget.image.ImageContainer
-import com.t8rin.imagetoolbox.core.ui.widget.image.ImageCounter
-import com.t8rin.imagetoolbox.core.ui.widget.image.ImageNotPickedWidget
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.detectSwipes
-import com.t8rin.imagetoolbox.core.ui.widget.other.TopAppBarEmoji
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItem
-import com.t8rin.imagetoolbox.core.ui.widget.sheets.AddExifSheet
-import com.t8rin.imagetoolbox.core.ui.widget.sheets.PickImageFromUrisSheet
-import com.t8rin.imagetoolbox.core.ui.widget.sheets.ProcessImagesPreferenceSheet
-import com.t8rin.imagetoolbox.core.ui.widget.sheets.ZoomModalSheet
-import com.t8rin.imagetoolbox.core.ui.widget.text.TopAppBarTitle
-import com.t8rin.imagetoolbox.core.ui.widget.utils.AutoContentBasedColors
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.feature.delete_exif.presentation.screenLogic.DeleteExifComponent
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Exif
+import com.t8rin.ikittool.core.resources.icons.MiniEdit
+import com.t8rin.ikittool.core.ui.utils.content_pickers.Picker
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberImagePicker
+import com.t8rin.ikittool.core.ui.utils.helper.Clipboard
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.localizedName
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.rememberFileSize
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.widget.AdaptiveLayoutScreen
+import com.t8rin.ikittool.core.ui.widget.buttons.BottomButtonsBlock
+import com.t8rin.ikittool.core.ui.widget.buttons.ShareButton
+import com.t8rin.ikittool.core.ui.widget.buttons.ZoomButton
+import com.t8rin.ikittool.core.ui.widget.dialogs.ExitWithoutSavingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.LoadingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.OneTimeImagePickingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.OneTimeSaveLocationSelectionDialog
+import com.t8rin.ikittool.core.ui.widget.image.AutoFilePicker
+import com.t8rin.ikittool.core.ui.widget.image.ImageContainer
+import com.t8rin.ikittool.core.ui.widget.image.ImageCounter
+import com.t8rin.ikittool.core.ui.widget.image.ImageNotPickedWidget
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.detectSwipes
+import com.t8rin.ikittool.core.ui.widget.other.TopAppBarEmoji
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItem
+import com.t8rin.ikittool.core.ui.widget.sheets.AddExifSheet
+import com.t8rin.ikittool.core.ui.widget.sheets.PickImageFromUrisSheet
+import com.t8rin.ikittool.core.ui.widget.sheets.ProcessImagesPreferenceSheet
+import com.t8rin.ikittool.core.ui.widget.sheets.ZoomModalSheet
+import com.t8rin.ikittool.core.ui.widget.text.TopAppBarTitle
+import com.t8rin.ikittool.core.ui.widget.utils.AutoContentBasedColors
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.feature.delete_exif.presentation.screenLogic.DeleteExifComponent
 
 @Composable
 fun DeleteExifContent(

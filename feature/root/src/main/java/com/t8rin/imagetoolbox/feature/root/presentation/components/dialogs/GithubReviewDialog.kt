@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,20 +15,20 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.root.presentation.components.dialogs
+package com.t8rin.ikittool.feature.root.presentation.components.dialogs
 
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
-import com.t8rin.imagetoolbox.core.domain.APP_GITHUB_LINK
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Star
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedAlertDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.domain.APP_GITHUB_LINK
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Star
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedAlertDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
 
 @Composable
 internal fun GithubReviewDialog(

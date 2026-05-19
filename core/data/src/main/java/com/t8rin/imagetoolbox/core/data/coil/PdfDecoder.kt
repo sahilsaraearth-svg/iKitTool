@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("FunctionName", "unused")
 
-package com.t8rin.imagetoolbox.core.data.coil
+package com.t8rin.ikittool.core.data.coil
 
 import coil3.Extras
 import coil3.ImageLoader
@@ -31,10 +31,10 @@ import coil3.request.ImageRequest
 import coil3.request.Options
 import coil3.size.Size
 import coil3.size.pxOrElse
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.model.flexibleResize
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.core.utils.makeLog
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.model.flexibleResize
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.core.utils.makeLog
 import com.tom_roush.pdfbox.pdmodel.PDDocument
 import com.tom_roush.pdfbox.rendering.PDFRenderer
 import okio.ByteString.Companion.toByteString

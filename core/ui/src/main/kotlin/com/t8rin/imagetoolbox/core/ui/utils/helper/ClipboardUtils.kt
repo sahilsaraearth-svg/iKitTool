@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.utils.helper
+package com.t8rin.ikittool.core.ui.utils.helper
 
 import android.content.ClipData
 import android.content.ClipDescription
@@ -30,9 +30,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.ClipEntry
 import androidx.compose.ui.platform.LocalContext
 import androidx.core.content.getSystemService
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.isFromAppFileProvider
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.moveToCache
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.isFromAppFileProvider
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.moveToCache
 
 @Composable
 fun rememberClipboardData(): State<List<Uri>> {

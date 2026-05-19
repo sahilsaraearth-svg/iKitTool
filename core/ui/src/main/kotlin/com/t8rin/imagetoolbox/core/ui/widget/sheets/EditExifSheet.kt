@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.sheets
+package com.t8rin.ikittool.core.ui.widget.sheets
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.Arrangement
@@ -34,7 +34,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.text.KeyboardOptions
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.MaterialTheme
@@ -55,25 +55,25 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.t8rin.imagetoolbox.core.domain.image.Metadata
-import com.t8rin.imagetoolbox.core.domain.image.model.MetadataTag
-import com.t8rin.imagetoolbox.core.domain.image.toMap
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.AddCircle
-import com.t8rin.imagetoolbox.core.resources.icons.DeleteSweep
-import com.t8rin.imagetoolbox.core.resources.icons.Exif
-import com.t8rin.imagetoolbox.core.resources.icons.RemoveCircle
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.localizedName
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedAlertDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedBottomSheetDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedModalBottomSheet
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.text.AutoSizeText
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.core.domain.image.Metadata
+import com.t8rin.ikittool.core.domain.image.model.MetadataTag
+import com.t8rin.ikittool.core.domain.image.toMap
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.AddCircle
+import com.t8rin.ikittool.core.resources.icons.DeleteSweep
+import com.t8rin.ikittool.core.resources.icons.Exif
+import com.t8rin.ikittool.core.resources.icons.RemoveCircle
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.localizedName
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedAlertDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedBottomSheetDefaults
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedModalBottomSheet
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedFlingBehavior
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.text.AutoSizeText
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
 
 @Composable
 fun EditExifSheet(

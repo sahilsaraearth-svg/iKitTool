@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.draw.presentation.components
+package com.t8rin.ikittool.feature.draw.presentation.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -41,38 +41,38 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.t8rin.imagetoolbox.core.domain.model.Pt
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.FilterTemplateCreationSheetComponent
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.addFilters.AddFiltersSheetComponent
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.AutoFixHigh
-import com.t8rin.imagetoolbox.core.resources.icons.BlurCircular
-import com.t8rin.imagetoolbox.core.resources.icons.Cube
-import com.t8rin.imagetoolbox.core.resources.icons.Healing
-import com.t8rin.imagetoolbox.core.resources.icons.Highlighter
-import com.t8rin.imagetoolbox.core.resources.icons.Image
-import com.t8rin.imagetoolbox.core.resources.icons.MeshGradient
-import com.t8rin.imagetoolbox.core.resources.icons.NeonBrush
-import com.t8rin.imagetoolbox.core.resources.icons.Pen
-import com.t8rin.imagetoolbox.core.resources.icons.TextFormat
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.SupportingButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButtonGroup
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedModalBottomSheet
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedVerticalScroll
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.text.AutoSizeText
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawMode
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.element.CustomPathEffectParamsSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.element.ImageParamsSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.element.PixelationParamsSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.element.PrivacyBlurParamsSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.element.SpotHealParamsSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.element.TextParamsSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.element.WarpParamsSelector
+import com.t8rin.ikittool.core.domain.model.Pt
+import com.t8rin.ikittool.core.filters.presentation.widget.FilterTemplateCreationSheetComponent
+import com.t8rin.ikittool.core.filters.presentation.widget.addFilters.AddFiltersSheetComponent
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.AutoFixHigh
+import com.t8rin.ikittool.core.resources.icons.BlurCircular
+import com.t8rin.ikittool.core.resources.icons.Cube
+import com.t8rin.ikittool.core.resources.icons.Healing
+import com.t8rin.ikittool.core.resources.icons.Highlighter
+import com.t8rin.ikittool.core.resources.icons.Image
+import com.t8rin.ikittool.core.resources.icons.MeshGradient
+import com.t8rin.ikittool.core.resources.icons.NeonBrush
+import com.t8rin.ikittool.core.resources.icons.Pen
+import com.t8rin.ikittool.core.resources.icons.TextFormat
+import com.t8rin.ikittool.core.ui.widget.buttons.SupportingButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButtonGroup
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedModalBottomSheet
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedVerticalScroll
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.text.AutoSizeText
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.feature.draw.domain.DrawMode
+import com.t8rin.ikittool.feature.draw.presentation.components.element.CustomPathEffectParamsSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.element.ImageParamsSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.element.PixelationParamsSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.element.PrivacyBlurParamsSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.element.SpotHealParamsSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.element.TextParamsSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.element.WarpParamsSelector
 
 @Composable
 fun DrawModeSelector(

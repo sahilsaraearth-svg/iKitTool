@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1079,7 +1079,7 @@
     <string name="antialias">Антыаліас</string>
     <string name="antialias_sub">Уключае згладжванне для прадухілення вострых краёў</string>
     <string name="open_edit_instead_of_preview">Адкрыйце праўку замест папярэдняга прагляду</string>
-    <string name="open_edit_instead_of_preview_sub">Калі вы выбіраеце відарыс для адкрыцця (прагляду) у ImageToolbox, замест папярэдняга прагляду будзе адкрыты аркуш выбару рэдагавання</string>
+    <string name="open_edit_instead_of_preview_sub">Калі вы выбіраеце відарыс для адкрыцця (прагляду) у iKitTool, замест папярэдняга прагляду будзе адкрыты аркуш выбару рэдагавання</string>
     <string name="document_scanner">Сканер дакументаў</string>
     <string name="document_scanner_sub">Сканіруйце дакументы і стварайце PDF або асобныя выявы з іх</string>
     <string name="click_to_start_scanning">Націсніце, каб пачаць сканаванне</string>
@@ -1354,7 +1354,7 @@
     <string name="webp_type_to_webp">Выявы ў WEBP</string>
     <string name="select_webp_image_to_start">Каб пачаць, абярыце малюнак WEBP</string>
     <string name="manage_storage_extra_types">Няма поўнага доступу да файлаў</string>
-    <string name="manage_storage_extra_types_sub">Дазволіць доступ да ўсіх файлаў, каб бачыць JXL, QOI і іншыя выявы, якія не распазнаюцца як выявы на Android. Без дазволу Image Toolbox не можа паказаць гэтыя выявы</string>
+    <string name="manage_storage_extra_types_sub">Дазволіць доступ да ўсіх файлаў, каб бачыць JXL, QOI і іншыя выявы, якія не распазнаюцца як выявы на Android. Без дазволу iKit Tool не можа паказаць гэтыя выявы</string>
     <string name="default_draw_color">Колер малявання па змаўчанні</string>
     <string name="default_draw_path_mode">Рэжым шляху малявання па змаўчанні</string>
     <string name="add_timestamp">Дадаць метку часу</string>
@@ -1367,8 +1367,8 @@
     <string name="recently_used">Нядаўна выкарыстаны</string>
     <string name="ci_channel">Канал CI</string>
     <string name="group">Група</string>
-    <string name="image_toolbox_in_telegram">Панэль інструментаў малюнкаў у Telegram 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">Далучайцеся да нашага чата, дзе вы можаце абмяркоўваць усё, што заўгодна, а таксама зазірніце ў канал CI, дзе я публікую бэта-версіі і аб\'явы</string>
+    <string name="ikit_tool_in_telegram">Панэль інструментаў малюнкаў у Telegram 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">Далучайцеся да нашага чата, дзе вы можаце абмяркоўваць усё, што заўгодна, а таксама зазірніце ў канал CI, дзе я публікую бэта-версіі і аб\'явы</string>
     <string name="ci_channel_sub">Атрымлівайце апавяшчэнні аб новых версіях праграмы і чытайце аб\'явы</string>
     <string name="fit_description">Адагнайце малюнак да зададзеных памераў і прымяніце размыццё або колер фону</string>
     <string name="tools_arrangement">Размяшчэнне інструментаў</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">Экспарт згенераванай палітры ў розныя фарматы</string>
     <string name="add_color_palette_sub">Дадае новы колер да бягучай палітры</string>
     <string name="palette_name_not_supported">Фармат %1$s не падтрымлівае назву палітры</string>
-    <string name="wallpapers_export_not_avaialbe">З-за палітыкі Крамы Play гэтая функцыя не можа быць уключана ў бягучую зборку. Каб атрымаць доступ да гэтай функцыі, загрузіце ImageToolbox з альтэрнатыўнай крыніцы. Вы можаце знайсці даступныя зборкі на GitHub ніжэй.</string>
+    <string name="wallpapers_export_not_avaialbe">З-за палітыкі Крамы Play гэтая функцыя не можа быць уключана ў бягучую зборку. Каб атрымаць доступ да гэтай функцыі, загрузіце iKitTool з альтэрнатыўнай крыніцы. Вы можаце знайсці даступныя зборкі на GitHub ніжэй.</string>
     <string name="open_github_page">Адкрыць старонку Github</string>
     <string name="overwrite_files_sub_short">Арыгінальны файл будзе заменены новым замест захавання ў выбранай папцы</string>
     <string name="hidden_watermark_text_detected">Выяўлены схаваны тэкст вадзянога знака</string>
@@ -2143,7 +2143,7 @@
     <string name="grayscale_pdf_sub">Пераўтварыце ўсе выявы, убудаваныя ў дакумент, у адценні шэрага</string>
     <string name="compress_pdf">Сціснуць PDF</string>
     <string name="compress_pdf_sub">Аптымізуйце памер файла дакумента для палягчэння абмену</string>
-    <string name="repair_info">ImageToolbox аднаўляе ўнутраную табліцу крыжаваных спасылак і аднаўляе структуру файла з нуля. Гэта можа аднавіць доступ да многіх файлаў, якія \\"немагчыма адкрыць\\"</string>
+    <string name="repair_info">iKitTool аднаўляе ўнутраную табліцу крыжаваных спасылак і аднаўляе структуру файла з нуля. Гэта можа аднавіць доступ да многіх файлаў, якія \\"немагчыма адкрыць\\"</string>
     <string name="grayscale_info">Гэты інструмент пераўтворыць усе выявы дакументаў у адценні шэрага. Лепшы для друку і памяншэння памеру файла</string>
     <string name="metadata">Метададзеныя</string>
     <string name="metadata_pdf_sub">Рэдагуйце ўласцівасці дакумента для лепшай прыватнасці</string>
@@ -2195,11 +2195,11 @@
     <string name="background_color_for_alpha_formats">Колер фону для альфа-фарматаў</string>
     <string name="background_color_for_alpha_formats_sub">Дадае магчымасць усталёўваць колер фону для кожнага фармату выявы з падтрымкай альфа-версіі, калі адключана, гэта даступна толькі для неальфа-фармату</string>
     <string name="open_markup_project">Адкрыты праект</string>
-    <string name="open_markup_project_sub">Працягнуць рэдагаванне раней захаванага праекта Image Toolbox</string>
-    <string name="markup_project_open_failed">Немагчыма адкрыць праект Image Toolbox</string>
-    <string name="markup_project_missing_data">У праекце Image Toolbox адсутнічаюць даныя праекта</string>
-    <string name="markup_project_corrupted">Праект Image Toolbox пашкоджаны</string>
-    <string name="unsupported_markup_project_version">Непадтрымоўваная версія праекта Image Toolbox: %1$d</string>
+    <string name="open_markup_project_sub">Працягнуць рэдагаванне раней захаванага праекта iKit Tool</string>
+    <string name="markup_project_open_failed">Немагчыма адкрыць праект iKit Tool</string>
+    <string name="markup_project_missing_data">У праекце iKit Tool адсутнічаюць даныя праекта</string>
+    <string name="markup_project_corrupted">Праект iKit Tool пашкоджаны</string>
+    <string name="unsupported_markup_project_version">Непадтрымоўваная версія праекта iKit Tool: %1$d</string>
     <string name="save_markup_project">Захаваць праект</string>
     <string name="save_markup_project_sub">Захоўвайце слаі, фон і гісторыю рэдагавання ў файле праекта, які можна рэдагаваць</string>
     <string name="failed_to_open">Не ўдалося адкрыць</string>

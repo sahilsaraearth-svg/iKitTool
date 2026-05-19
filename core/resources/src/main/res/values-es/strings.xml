@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -888,7 +888,7 @@
     <string name="recently_used">Usados recientemente</string>
     <string name="ci_channel">Canal CI</string>
     <string name="group">Grupo</string>
-    <string name="image_toolbox_in_telegram">ImageToolbox en Telegram 🎉</string>
+    <string name="ikit_tool_in_telegram">iKitTool en Telegram 🎉</string>
     <string name="font_size">Tamaño de fuente</string>
     <string name="watermark_size">Tamaño de marca de agua</string>
     <string name="custom_options">Opciones personalizadas</string>
@@ -951,7 +951,7 @@
     <string name="lut512x512">512x512 2D LUT</string>
     <string name="lut">LUT</string>
     <string name="kodak">Kodak</string>
-    <string name="image_toolbox_in_telegram_sub">Únete a nuestra conversación donde charlamos de todo lo que quieras y también échale un vistazo al canal CI donde publico versiones betas y comunicados</string>
+    <string name="ikit_tool_in_telegram_sub">Únete a nuestra conversación donde charlamos de todo lo que quieras y también échale un vistazo al canal CI donde publico versiones betas y comunicados</string>
     <string name="ci_channel_sub">Recibe notificaciones sobre nuevas versiones de la aplicación, y leer los comunicados</string>
     <string name="show_all">Mostrar todos</string>
     <string name="hide_nav_bar">Ocultar barra de navegación</string>
@@ -1044,7 +1044,7 @@
     <string name="default_line_width">Anchura de línea predeterminada</string>
     <string name="show_settings_in_landscape">Mostrar ajustes en vista horizontal</string>
     <string name="embedded_picker">Selector integrado</string>
-    <string name="embedded_picker_sub">Selector de imágenes de Image Toolbox</string>
+    <string name="embedded_picker_sub">Selector de imágenes de iKit Tool</string>
     <string name="no_permissions">Sin permisos</string>
     <string name="request">Solicitar</string>
     <string name="auto_paste">Pegado automático</string>
@@ -1231,7 +1231,7 @@
     <string name="fluent_switch">Fluido</string>
     <string name="tag_device_setting_description">Descripción de ajustes de dispositivo</string>
     <string name="reset_curves_sub">Las curvas serán reestablecidas al valor predeterminado</string>
-    <string name="open_edit_instead_of_preview_sub">Cuando seleccionas una imagen para abrir (vista previa) en ImageToolbox, la hoja de selección de edición se abrirá en vez de mostrar la vista previa</string>
+    <string name="open_edit_instead_of_preview_sub">Cuando seleccionas una imagen para abrir (vista previa) en iKitTool, la hoja de selección de edición se abrirá en vez de mostrar la vista previa</string>
     <string name="barcodes_sub">Escanea cualquier código de barras (QR, EAN, AZTEC, …) y obtén su contenido o pega tu texto para generar uno nuevo</string>
     <string name="lanczos2_jinc_sub">Una variante del filtro Lanczos 2 que usa la función jinc, proveyendo interpolación de alta calidad con distorsiones mínimas</string>
     <string name="compose_switch_sub">Un interruptor Jetpack Compose Material You</string>
@@ -1325,7 +1325,7 @@
     <string name="golden_forest">Bosque Dorado</string>
     <string name="webp_tools_sub">Convierte imágenes a imágenes WEBP animadas o extrae frames de un archivo WEBP animado dado</string>
     <string name="ico_size_warning">Los archivos ICO sólo pueden ser guardados con tamaño máximo de 256 x 256</string>
-    <string name="manage_storage_extra_types_sub">Permite acceso a todos los archivos para ver JXL, QOI y otras imágenes que no son reconocidas como imágenes en Android. Sin los permisos, Image Toolbox no podrá mostrar esas imágenes</string>
+    <string name="manage_storage_extra_types_sub">Permite acceso a todos los archivos para ver JXL, QOI y otras imágenes que no son reconocidas como imágenes en Android. Sin los permisos, iKit Tool no podrá mostrar esas imágenes</string>
     <string name="formatted_timestamp">Marca de tiempo con formato</string>
     <string name="formatted_timestamp_sub">Habilita el formateo de marcas de tiempo (Timestamps) en el nombre del archivo de salida, en lugar de milisegundos básicos</string>
     <string name="auto">Auto</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">Exportar paleta generada a diferentes formatos.</string>
     <string name="add_color_palette_sub">Agrega un nuevo color a la paleta actual</string>
     <string name="palette_name_not_supported">El formato %1$s no admite proporcionar el nombre de la paleta</string>
-    <string name="wallpapers_export_not_avaialbe">Debido a las políticas de Play Store, esta función no se puede incluir en la versión actual. Para acceder a esta funcionalidad, descargue ImageToolbox desde una fuente alternativa. Puede encontrar las compilaciones disponibles en GitHub a continuación.</string>
+    <string name="wallpapers_export_not_avaialbe">Debido a las políticas de Play Store, esta función no se puede incluir en la versión actual. Para acceder a esta funcionalidad, descargue iKitTool desde una fuente alternativa. Puede encontrar las compilaciones disponibles en GitHub a continuación.</string>
     <string name="open_github_page">Abrir página de Github</string>
     <string name="overwrite_files_sub_short">El archivo original será reemplazado por uno nuevo en lugar de guardarse en la carpeta seleccionada.</string>
     <string name="hidden_watermark_text_detected">Texto de marca de agua oculto detectado</string>
@@ -2141,7 +2141,7 @@
     <string name="grayscale_pdf_sub">Convierta todas las imágenes incrustadas en documentos a escala de grises</string>
     <string name="compress_pdf">Comprimir PDF</string>
     <string name="compress_pdf_sub">Optimice el tamaño del archivo de su documento para compartirlo más fácilmente</string>
-    <string name="repair_info">ImageToolbox reconstruye la tabla de referencias cruzadas interna y regenera la estructura del archivo desde cero. Esto puede restaurar el acceso a muchos archivos que \\"no se pueden abrir\\"</string>
+    <string name="repair_info">iKitTool reconstruye la tabla de referencias cruzadas interna y regenera la estructura del archivo desde cero. Esto puede restaurar el acceso a muchos archivos que \\"no se pueden abrir\\"</string>
     <string name="grayscale_info">Esta herramienta convierte todas las imágenes de documentos a escala de grises. Lo mejor para imprimir y reducir el tamaño del archivo</string>
     <string name="metadata">Metadatos</string>
     <string name="metadata_pdf_sub">Edite las propiedades del documento para una mayor privacidad</string>
@@ -2193,11 +2193,11 @@
     <string name="background_color_for_alpha_formats">Color de fondo para formatos alfa</string>
     <string name="background_color_for_alpha_formats_sub">Agrega la capacidad de establecer el color de fondo para cada formato de imagen con soporte alfa; cuando está deshabilitado, está disponible solo para los que no son alfa.</string>
     <string name="open_markup_project">Abrir proyecto</string>
-    <string name="open_markup_project_sub">Continuar editando un proyecto de Image Toolbox previamente guardado</string>
-    <string name="markup_project_open_failed">No se puede abrir el proyecto de Image Toolbox</string>
-    <string name="markup_project_missing_data">Al proyecto Image Toolbox le faltan datos del proyecto</string>
-    <string name="markup_project_corrupted">El proyecto Image Toolbox está dañado</string>
-    <string name="unsupported_markup_project_version">Versión del proyecto Image Toolbox no compatible: %1$d</string>
+    <string name="open_markup_project_sub">Continuar editando un proyecto de iKit Tool previamente guardado</string>
+    <string name="markup_project_open_failed">No se puede abrir el proyecto de iKit Tool</string>
+    <string name="markup_project_missing_data">Al proyecto iKit Tool le faltan datos del proyecto</string>
+    <string name="markup_project_corrupted">El proyecto iKit Tool está dañado</string>
+    <string name="unsupported_markup_project_version">Versión del proyecto iKit Tool no compatible: %1$d</string>
     <string name="save_markup_project">Guardar proyecto</string>
     <string name="save_markup_project_sub">Almacene capas, fondos y edite el historial en un archivo de proyecto editable</string>
     <string name="failed_to_open">No se pudo abrir</string>

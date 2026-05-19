@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.crash.presentation.components
+package com.t8rin.ikittool.core.crash.presentation.components
 
 import android.content.Intent
 import androidx.compose.foundation.layout.Arrangement
@@ -31,12 +31,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.crash.presentation.screenLogic.CrashComponent
-import com.t8rin.imagetoolbox.core.settings.presentation.model.toUiState
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppActivityClass
-import com.t8rin.imagetoolbox.core.ui.utils.helper.Clipboard
-import com.t8rin.imagetoolbox.core.ui.utils.provider.ImageToolboxCompositionLocals
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedVerticalScroll
+import com.t8rin.ikittool.core.crash.presentation.screenLogic.CrashComponent
+import com.t8rin.ikittool.core.settings.presentation.model.toUiState
+import com.t8rin.ikittool.core.ui.utils.helper.AppActivityClass
+import com.t8rin.ikittool.core.ui.utils.helper.Clipboard
+import com.t8rin.ikittool.core.ui.utils.provider.iKitToolCompositionLocals
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedVerticalScroll
 
 @Composable
 internal fun CrashRootContent(component: CrashComponent) {
@@ -44,7 +44,7 @@ internal fun CrashRootContent(component: CrashComponent) {
     val crashInfo = component.crashInfo
 
 
-    ImageToolboxCompositionLocals(
+    iKitToolCompositionLocals(
         settingsState = component.settingsState.toUiState()
     ) {
         val copyCrashInfo: () -> Unit = {

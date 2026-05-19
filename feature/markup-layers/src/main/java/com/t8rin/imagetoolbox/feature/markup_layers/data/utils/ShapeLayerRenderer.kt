@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.data.utils
+package com.t8rin.ikittool.feature.markup_layers.data.utils
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -34,21 +34,21 @@ import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Fill
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.core.graphics.createBitmap
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.ui.theme.toColor
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.LayerType
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.ShapeMode
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.arrowAngle
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.arrowSizeScale
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.cornerRadius
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.innerRadiusRatio
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.isFilledShapeMode
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.isOutlinedShapeMode
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.isRegular
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.outlinedFillColorInt
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.rotationDegrees
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.usesStrokeWidth
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.vertices
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.ui.theme.toColor
+import com.t8rin.ikittool.feature.markup_layers.domain.LayerType
+import com.t8rin.ikittool.feature.markup_layers.domain.ShapeMode
+import com.t8rin.ikittool.feature.markup_layers.domain.arrowAngle
+import com.t8rin.ikittool.feature.markup_layers.domain.arrowSizeScale
+import com.t8rin.ikittool.feature.markup_layers.domain.cornerRadius
+import com.t8rin.ikittool.feature.markup_layers.domain.innerRadiusRatio
+import com.t8rin.ikittool.feature.markup_layers.domain.isFilledShapeMode
+import com.t8rin.ikittool.feature.markup_layers.domain.isOutlinedShapeMode
+import com.t8rin.ikittool.feature.markup_layers.domain.isRegular
+import com.t8rin.ikittool.feature.markup_layers.domain.outlinedFillColorInt
+import com.t8rin.ikittool.feature.markup_layers.domain.rotationDegrees
+import com.t8rin.ikittool.feature.markup_layers.domain.usesStrokeWidth
+import com.t8rin.ikittool.feature.markup_layers.domain.vertices
 import kotlin.math.abs
 import kotlin.math.cos
 import kotlin.math.max

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.draw.presentation.components.utils
+package com.t8rin.ikittool.feature.draw.presentation.components.utils
 
 import android.graphics.Bitmap
 import android.graphics.PorterDuff
@@ -35,13 +35,13 @@ import androidx.compose.ui.graphics.asAndroidBitmap
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.graphics.toArgb
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.model.Pt
-import com.t8rin.imagetoolbox.core.filters.domain.model.Filter
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.createScaledBitmap
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawMode
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.UiPathPaint
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.model.Pt
+import com.t8rin.ikittool.core.filters.domain.model.Filter
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.createScaledBitmap
+import com.t8rin.ikittool.feature.draw.domain.DrawMode
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode
+import com.t8rin.ikittool.feature.draw.presentation.components.UiPathPaint
 import android.graphics.Path as NativePath
 
 @Composable

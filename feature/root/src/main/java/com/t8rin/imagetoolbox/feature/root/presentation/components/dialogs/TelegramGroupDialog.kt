@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,23 +15,23 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.root.presentation.components.dialogs
+package com.t8rin.ikittool.feature.root.presentation.components.dialogs
 
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
-import com.t8rin.imagetoolbox.core.domain.TELEGRAM_CHANNEL_LINK
-import com.t8rin.imagetoolbox.core.domain.TELEGRAM_GROUP_LINK
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Cancel
-import com.t8rin.imagetoolbox.core.resources.icons.Telegram
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedAlertDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.domain.TELEGRAM_CHANNEL_LINK
+import com.t8rin.ikittool.core.domain.TELEGRAM_GROUP_LINK
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Cancel
+import com.t8rin.ikittool.core.resources.icons.Telegram
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedAlertDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
 
 @Composable
 fun TelegramGroupDialog(
@@ -49,10 +49,10 @@ fun TelegramGroupDialog(
             )
         },
         title = {
-            Text(stringResource(R.string.image_toolbox_in_telegram))
+            Text(stringResource(R.string.ikit_tool_in_telegram))
         },
         text = {
-            Text(stringResource(R.string.image_toolbox_in_telegram_sub))
+            Text(stringResource(R.string.ikit_tool_in_telegram_sub))
         },
         confirmButton = {
             EnhancedButton(

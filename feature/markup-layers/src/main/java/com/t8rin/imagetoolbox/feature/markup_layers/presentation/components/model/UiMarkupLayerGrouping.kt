@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,14 +15,14 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model
+package com.t8rin.ikittool.feature.markup_layers.presentation.components.model
 
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.unit.IntSize
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupLayer
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.layerCornerRadiusPercent
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.EditBoxState
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupLayer
+import com.t8rin.ikittool.feature.markup_layers.domain.layerCornerRadiusPercent
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.EditBoxState
 import kotlin.math.PI
 import kotlin.math.abs
 import kotlin.math.ceil
@@ -293,10 +293,10 @@ internal fun UiMarkupLayer.visualBounds(): LayerBounds {
 
 internal data class UiMarkupLayerSnapshot(
     val id: Long,
-    val type: com.t8rin.imagetoolbox.feature.markup_layers.domain.LayerType,
+    val type: com.t8rin.ikittool.feature.markup_layers.domain.LayerType,
     val visibleLineCount: Int?,
     val cornerRadiusPercent: Int,
-    val blendingMode: com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode,
+    val blendingMode: com.t8rin.ikittool.core.domain.image.model.BlendingMode,
     val isLocked: Boolean,
     val groupedLayers: List<UiMarkupLayerSnapshot>,
     val state: EditBoxStateSnapshot

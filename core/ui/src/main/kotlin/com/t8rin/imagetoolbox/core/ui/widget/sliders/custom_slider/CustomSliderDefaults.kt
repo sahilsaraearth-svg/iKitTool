@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.sliders.custom_slider
+package com.t8rin.ikittool.core.ui.widget.sliders.custom_slider
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
@@ -46,9 +46,9 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.ui.utils.helper.rememberRipple
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.materialShadow
+import com.t8rin.ikittool.core.ui.utils.helper.rememberRipple
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.materialShadow
 
 /**
  * Object to hold defaults used by [CustomSlider]

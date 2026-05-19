@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -882,7 +882,7 @@
     <string name="compression_type">Тип стиснення</string>
     <string name="speed_sub">Контролює швидкість декодування результуючого зображення, це має допомогти швидше відкрити результуюче зображення, значення %1$s означає найповільніше декодування, тоді як %2$s – найшвидше, цей параметр може збільшити розмір вихідного зображення</string>
     <string name="embedded_picker">Вбудований засіб вибору</string>
-    <string name="embedded_picker_sub">Вибір зображень у Image Toolbox</string>
+    <string name="embedded_picker_sub">Вибір зображень у iKit Tool</string>
     <string name="pick_multiple_media">Виберіть кілька медіа</string>
     <string name="pick_single_media">Виберіть один медіафайл</string>
     <string name="pick">Вибрати</string>
@@ -1079,7 +1079,7 @@
     <string name="antialias">Згладжування</string>
     <string name="antialias_sub">Увімкнення згладжування для запобігання різким краям</string>
     <string name="open_edit_instead_of_preview">Відкрити редагування замість попереднього перегляду</string>
-    <string name="open_edit_instead_of_preview_sub">Коли ви вибираєте зображення для відкриття (попереднього перегляду) в ImageToolbox, замість попереднього перегляду відкриється аркуш редагування вибору.</string>
+    <string name="open_edit_instead_of_preview_sub">Коли ви вибираєте зображення для відкриття (попереднього перегляду) в iKitTool, замість попереднього перегляду відкриється аркуш редагування вибору.</string>
     <string name="document_scanner">Сканер документів</string>
     <string name="document_scanner_sub">Скануйте документи та створюйте PDF-файли або окремі зображення з них</string>
     <string name="click_to_start_scanning">Натисніть, щоб розпочати сканування</string>
@@ -1354,7 +1354,7 @@
     <string name="webp_type_to_webp">Зображення до WEBP</string>
     <string name="select_webp_image_to_start">Виберіть зображення WEBP для початку</string>
     <string name="manage_storage_extra_types">Немає повного доступу до файлів</string>
-    <string name="manage_storage_extra_types_sub">Надайте доступ до всіх файлів, щоб переглядати JXL, QOI та інші зображення, які не розпізнаються як зображення на Android. Без дозволу Image Toolbox не зможе показати ці зображення.</string>
+    <string name="manage_storage_extra_types_sub">Надайте доступ до всіх файлів, щоб переглядати JXL, QOI та інші зображення, які не розпізнаються як зображення на Android. Без дозволу iKit Tool не зможе показати ці зображення.</string>
     <string name="default_draw_color">Колір малювання за замовчуванням</string>
     <string name="default_draw_path_mode">Режим малювання контуру за замовчуванням</string>
     <string name="add_timestamp">Додати позначку часу</string>
@@ -1367,8 +1367,8 @@
     <string name="recently_used">Нещодавно використані</string>
     <string name="ci_channel">Канал CI</string>
     <string name="group">Група</string>
-    <string name="image_toolbox_in_telegram">Інструменти для роботи з зображеннями в Telegram 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">Приєднуйтесь до нашого чату, де ви можете обговорити все, що забажаєте, а також загляньте в канал CI, де я публікую бета-версії та анонси.</string>
+    <string name="ikit_tool_in_telegram">Інструменти для роботи з зображеннями в Telegram 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">Приєднуйтесь до нашого чату, де ви можете обговорити все, що забажаєте, а також загляньте в канал CI, де я публікую бета-версії та анонси.</string>
     <string name="ci_channel_sub">Отримуйте сповіщення про нові версії програми та читайте оголошення</string>
     <string name="fit_description">Підігнати зображення до заданих розмірів та застосувати розмиття або колір до фону</string>
     <string name="tools_arrangement">Розташування інструментів</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">Експорт згенерованої палітри в різні формати</string>
     <string name="add_color_palette_sub">Додає новий колір до поточної палітри</string>
     <string name="palette_name_not_supported">Формат %1$s не підтримує надання назви палітри</string>
-    <string name="wallpapers_export_not_avaialbe">Через політику Play Store цю функцію неможливо включити до поточної збірки. Щоб отримати доступ до цієї функції, завантажте ImageToolbox з альтернативного джерела. Ви можете знайти доступні збірки на GitHub нижче.</string>
+    <string name="wallpapers_export_not_avaialbe">Через політику Play Store цю функцію неможливо включити до поточної збірки. Щоб отримати доступ до цієї функції, завантажте iKitTool з альтернативного джерела. Ви можете знайти доступні збірки на GitHub нижче.</string>
     <string name="open_github_page">Відкрити сторінку Github</string>
     <plurals name="color_count">
         <item quantity="one">%1$s колір</item>
@@ -2143,7 +2143,7 @@
     <string name="grayscale_pdf_sub">Перетворення всіх зображень, вбудованих у документ, у відтінки сірого</string>
     <string name="compress_pdf">Стиснути PDF</string>
     <string name="compress_pdf_sub">Оптимізуйте розмір файлу документа, щоб простіше ділитися ним</string>
-    <string name="repair_info">ImageToolbox перебудовує внутрішню таблицю перехресних посилань і генерує файлову структуру з нуля. Це може відновити доступ до багатьох файлів, які \\"неможливо відкрити\\"</string>
+    <string name="repair_info">iKitTool перебудовує внутрішню таблицю перехресних посилань і генерує файлову структуру з нуля. Це може відновити доступ до багатьох файлів, які \\"неможливо відкрити\\"</string>
     <string name="grayscale_info">Цей інструмент перетворює всі зображення документів на градації сірого. Найкраще підходить для друку та зменшення розміру файлу</string>
     <string name="metadata">Метадані</string>
     <string name="metadata_pdf_sub">Відредагуйте властивості документа для кращої конфіденційності</string>
@@ -2195,11 +2195,11 @@
     <string name="background_color_for_alpha_formats">Колір фону для альфа-форматів</string>
     <string name="background_color_for_alpha_formats_sub">Додає можливість установлювати фоновий колір для кожного формату зображення з підтримкою альфа-версії, якщо вимкнено, це доступно лише для неальфа-версії</string>
     <string name="open_markup_project">Відкритий проект</string>
-    <string name="open_markup_project_sub">Продовжити редагування раніше збереженого проекту Image Toolbox</string>
-    <string name="markup_project_open_failed">Неможливо відкрити проект Image Toolbox</string>
-    <string name="markup_project_missing_data">У проекті Image Toolbox відсутні дані проекту</string>
-    <string name="markup_project_corrupted">Проект Image Toolbox пошкоджено</string>
-    <string name="unsupported_markup_project_version">Непідтримувана версія проекту Image Toolbox: %1$d</string>
+    <string name="open_markup_project_sub">Продовжити редагування раніше збереженого проекту iKit Tool</string>
+    <string name="markup_project_open_failed">Неможливо відкрити проект iKit Tool</string>
+    <string name="markup_project_missing_data">У проекті iKit Tool відсутні дані проекту</string>
+    <string name="markup_project_corrupted">Проект iKit Tool пошкоджено</string>
+    <string name="unsupported_markup_project_version">Непідтримувана версія проекту iKit Tool: %1$d</string>
     <string name="save_markup_project">Зберегти проект</string>
     <string name="save_markup_project_sub">Зберігайте шари, фон і історію редагування у файлі проекту, який можна редагувати</string>
     <string name="failed_to_open">Не вдалося відкрити</string>

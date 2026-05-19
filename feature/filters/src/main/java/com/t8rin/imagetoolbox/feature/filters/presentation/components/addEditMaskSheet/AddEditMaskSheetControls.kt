@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.filters.presentation.components.addEditMaskSheet
+package com.t8rin.ikittool.feature.filters.presentation.components.addEditMaskSheet
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.AnimatedVisibility
@@ -49,40 +49,40 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.model.Pt
-import com.t8rin.imagetoolbox.core.domain.model.pt
-import com.t8rin.imagetoolbox.core.filters.domain.model.TemplateFilter
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.AddFilterButton
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.FilterItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.FilterReorderSheet
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.FilterTemplateCreationSheet
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.addFilters.AddFiltersSheet
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Preview
-import com.t8rin.imagetoolbox.core.resources.icons.Redo
-import com.t8rin.imagetoolbox.core.resources.icons.Undo
-import com.t8rin.imagetoolbox.core.ui.theme.outlineVariant
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.EraseModeButton
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.PanModeButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedLoadingIndicator
-import com.t8rin.imagetoolbox.core.ui.widget.image.HistogramChart
-import com.t8rin.imagetoolbox.core.ui.widget.image.ImageHeaderState
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.other.BoxAnimatedVisibility
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItemOverload
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceRowSwitch
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawMode
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.BrushSoftnessSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.DrawColorSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.DrawPathModeSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.LineWidthSelector
+import com.t8rin.ikittool.core.domain.model.Pt
+import com.t8rin.ikittool.core.domain.model.pt
+import com.t8rin.ikittool.core.filters.domain.model.TemplateFilter
+import com.t8rin.ikittool.core.filters.presentation.widget.AddFilterButton
+import com.t8rin.ikittool.core.filters.presentation.widget.FilterItem
+import com.t8rin.ikittool.core.filters.presentation.widget.FilterReorderSheet
+import com.t8rin.ikittool.core.filters.presentation.widget.FilterTemplateCreationSheet
+import com.t8rin.ikittool.core.filters.presentation.widget.addFilters.AddFiltersSheet
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Preview
+import com.t8rin.ikittool.core.resources.icons.Redo
+import com.t8rin.ikittool.core.resources.icons.Undo
+import com.t8rin.ikittool.core.ui.theme.outlineVariant
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.widget.buttons.EraseModeButton
+import com.t8rin.ikittool.core.ui.widget.buttons.PanModeButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedLoadingIndicator
+import com.t8rin.ikittool.core.ui.widget.image.HistogramChart
+import com.t8rin.ikittool.core.ui.widget.image.ImageHeaderState
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.other.BoxAnimatedVisibility
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItemOverload
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceRowSwitch
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.feature.draw.domain.DrawMode
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode
+import com.t8rin.ikittool.feature.draw.presentation.components.BrushSoftnessSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.DrawColorSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.DrawPathModeSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.LineWidthSelector
 
 
 @Composable

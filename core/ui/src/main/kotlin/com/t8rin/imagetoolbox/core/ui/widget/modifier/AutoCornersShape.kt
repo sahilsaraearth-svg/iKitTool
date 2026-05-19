@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@
 @file:SuppressLint("ComposableNaming")
 @file:Suppress("FunctionName")
 
-package com.t8rin.imagetoolbox.core.ui.widget.modifier
+package com.t8rin.ikittool.core.ui.widget.modifier
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.shape.CircleShape
@@ -36,8 +36,8 @@ import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.kyant.capsule.Continuity
-import com.t8rin.imagetoolbox.core.settings.domain.model.ShapeType
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.settings.domain.model.ShapeType
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
 import sv.lib.squircleshape.CornerSmoothing
 import sv.lib.squircleshape.SquircleShape
 

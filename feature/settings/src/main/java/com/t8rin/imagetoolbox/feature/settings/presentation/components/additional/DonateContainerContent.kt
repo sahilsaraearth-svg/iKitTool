@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,14 +15,14 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.settings.presentation.components.additional
+package com.t8rin.ikittool.feature.settings.presentation.components.additional
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -34,32 +34,32 @@ import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.BOOSTY_LINK
-import com.t8rin.imagetoolbox.core.domain.BTC_WALLET
-import com.t8rin.imagetoolbox.core.domain.TON_SPACE_WALLET
-import com.t8rin.imagetoolbox.core.domain.TON_WALLET
-import com.t8rin.imagetoolbox.core.domain.USDT_WALLET
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Bitcoin
-import com.t8rin.imagetoolbox.core.resources.icons.Boosty
-import com.t8rin.imagetoolbox.core.resources.icons.ContentCopy
-import com.t8rin.imagetoolbox.core.resources.icons.Link
-import com.t8rin.imagetoolbox.core.resources.icons.Ton
-import com.t8rin.imagetoolbox.core.resources.icons.USDT
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.theme.BitcoinColor
-import com.t8rin.imagetoolbox.core.ui.theme.BoostyColor
-import com.t8rin.imagetoolbox.core.ui.theme.TONColor
-import com.t8rin.imagetoolbox.core.ui.theme.TONSpaceColor
-import com.t8rin.imagetoolbox.core.ui.theme.USDTColor
-import com.t8rin.imagetoolbox.core.ui.theme.blend
-import com.t8rin.imagetoolbox.core.ui.theme.inverse
-import com.t8rin.imagetoolbox.core.ui.utils.helper.Clipboard
-import com.t8rin.imagetoolbox.core.ui.widget.icon_shape.LocalIconShapeContainerColor
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.other.InfoContainer
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItem
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItemDefaults
+import com.t8rin.ikittool.core.domain.BOOSTY_LINK
+import com.t8rin.ikittool.core.domain.BTC_WALLET
+import com.t8rin.ikittool.core.domain.TON_SPACE_WALLET
+import com.t8rin.ikittool.core.domain.TON_WALLET
+import com.t8rin.ikittool.core.domain.USDT_WALLET
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Bitcoin
+import com.t8rin.ikittool.core.resources.icons.Boosty
+import com.t8rin.ikittool.core.resources.icons.ContentCopy
+import com.t8rin.ikittool.core.resources.icons.Link
+import com.t8rin.ikittool.core.resources.icons.Ton
+import com.t8rin.ikittool.core.resources.icons.USDT
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.theme.BitcoinColor
+import com.t8rin.ikittool.core.ui.theme.BoostyColor
+import com.t8rin.ikittool.core.ui.theme.TONColor
+import com.t8rin.ikittool.core.ui.theme.TONSpaceColor
+import com.t8rin.ikittool.core.ui.theme.USDTColor
+import com.t8rin.ikittool.core.ui.theme.blend
+import com.t8rin.ikittool.core.ui.theme.inverse
+import com.t8rin.ikittool.core.ui.utils.helper.Clipboard
+import com.t8rin.ikittool.core.ui.widget.icon_shape.LocalIconShapeContainerColor
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.other.InfoContainer
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItem
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItemDefaults
 
 @Composable
 fun DonateContainerContent(

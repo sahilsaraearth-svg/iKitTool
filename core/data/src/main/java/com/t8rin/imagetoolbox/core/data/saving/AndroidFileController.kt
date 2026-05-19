@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.data.saving
+package com.t8rin.ikittool.core.data.saving
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -30,46 +30,46 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.documentfile.provider.DocumentFile
 import coil3.ImageLoader
 import com.t8rin.exif.ExifInterface
-import com.t8rin.imagetoolbox.core.data.coil.remove
-import com.t8rin.imagetoolbox.core.data.image.toMetadata
-import com.t8rin.imagetoolbox.core.data.saving.io.UriReadable
-import com.t8rin.imagetoolbox.core.data.saving.io.UriWriteable
-import com.t8rin.imagetoolbox.core.data.utils.cacheSize
-import com.t8rin.imagetoolbox.core.data.utils.clearCache
-import com.t8rin.imagetoolbox.core.data.utils.isExternalStorageWritable
-import com.t8rin.imagetoolbox.core.data.utils.openFileDescriptor
-import com.t8rin.imagetoolbox.core.domain.coroutines.AppScope
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.Metadata
-import com.t8rin.imagetoolbox.core.domain.image.ShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.clearAllAttributes
-import com.t8rin.imagetoolbox.core.domain.image.copyTo
-import com.t8rin.imagetoolbox.core.domain.image.model.MetadataTag
-import com.t8rin.imagetoolbox.core.domain.image.readOnly
-import com.t8rin.imagetoolbox.core.domain.json.JsonParser
-import com.t8rin.imagetoolbox.core.domain.resource.ResourceManager
-import com.t8rin.imagetoolbox.core.domain.saving.FileController
-import com.t8rin.imagetoolbox.core.domain.saving.FilenameCreator
-import com.t8rin.imagetoolbox.core.domain.saving.io.Writeable
-import com.t8rin.imagetoolbox.core.domain.saving.io.use
-import com.t8rin.imagetoolbox.core.domain.saving.model.ImageSaveTarget
-import com.t8rin.imagetoolbox.core.domain.saving.model.SaveResult
-import com.t8rin.imagetoolbox.core.domain.saving.model.SaveTarget
-import com.t8rin.imagetoolbox.core.domain.utils.FileMode
-import com.t8rin.imagetoolbox.core.domain.utils.runSuspendCatching
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.settings.domain.SettingsManager
-import com.t8rin.imagetoolbox.core.settings.domain.model.CopyToClipboardMode
-import com.t8rin.imagetoolbox.core.settings.domain.model.FilenameBehavior
-import com.t8rin.imagetoolbox.core.settings.domain.model.OneTimeSaveLocation
-import com.t8rin.imagetoolbox.core.utils.fileSize
-import com.t8rin.imagetoolbox.core.utils.filename
-import com.t8rin.imagetoolbox.core.utils.getPath
-import com.t8rin.imagetoolbox.core.utils.listFilesInDirectory
-import com.t8rin.imagetoolbox.core.utils.listFilesInDirectoryProgressive
-import com.t8rin.imagetoolbox.core.utils.makeLog
-import com.t8rin.imagetoolbox.core.utils.tryExtractOriginal
-import com.t8rin.imagetoolbox.core.utils.uiPath
+import com.t8rin.ikittool.core.data.coil.remove
+import com.t8rin.ikittool.core.data.image.toMetadata
+import com.t8rin.ikittool.core.data.saving.io.UriReadable
+import com.t8rin.ikittool.core.data.saving.io.UriWriteable
+import com.t8rin.ikittool.core.data.utils.cacheSize
+import com.t8rin.ikittool.core.data.utils.clearCache
+import com.t8rin.ikittool.core.data.utils.isExternalStorageWritable
+import com.t8rin.ikittool.core.data.utils.openFileDescriptor
+import com.t8rin.ikittool.core.domain.coroutines.AppScope
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.Metadata
+import com.t8rin.ikittool.core.domain.image.ShareProvider
+import com.t8rin.ikittool.core.domain.image.clearAllAttributes
+import com.t8rin.ikittool.core.domain.image.copyTo
+import com.t8rin.ikittool.core.domain.image.model.MetadataTag
+import com.t8rin.ikittool.core.domain.image.readOnly
+import com.t8rin.ikittool.core.domain.json.JsonParser
+import com.t8rin.ikittool.core.domain.resource.ResourceManager
+import com.t8rin.ikittool.core.domain.saving.FileController
+import com.t8rin.ikittool.core.domain.saving.FilenameCreator
+import com.t8rin.ikittool.core.domain.saving.io.Writeable
+import com.t8rin.ikittool.core.domain.saving.io.use
+import com.t8rin.ikittool.core.domain.saving.model.ImageSaveTarget
+import com.t8rin.ikittool.core.domain.saving.model.SaveResult
+import com.t8rin.ikittool.core.domain.saving.model.SaveTarget
+import com.t8rin.ikittool.core.domain.utils.FileMode
+import com.t8rin.ikittool.core.domain.utils.runSuspendCatching
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.settings.domain.SettingsManager
+import com.t8rin.ikittool.core.settings.domain.model.CopyToClipboardMode
+import com.t8rin.ikittool.core.settings.domain.model.FilenameBehavior
+import com.t8rin.ikittool.core.settings.domain.model.OneTimeSaveLocation
+import com.t8rin.ikittool.core.utils.fileSize
+import com.t8rin.ikittool.core.utils.filename
+import com.t8rin.ikittool.core.utils.getPath
+import com.t8rin.ikittool.core.utils.listFilesInDirectory
+import com.t8rin.ikittool.core.utils.listFilesInDirectoryProgressive
+import com.t8rin.ikittool.core.utils.makeLog
+import com.t8rin.ikittool.core.utils.tryExtractOriginal
+import com.t8rin.ikittool.core.utils.uiPath
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first

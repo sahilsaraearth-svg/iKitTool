@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,23 +15,23 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.color_tools.presentation.components
+package com.t8rin.ikittool.color_tools.presentation.components
 
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Analogous
-import com.t8rin.imagetoolbox.core.resources.icons.AnalogousComplementary
-import com.t8rin.imagetoolbox.core.resources.icons.Complementary
-import com.t8rin.imagetoolbox.core.resources.icons.SplitComplementary
-import com.t8rin.imagetoolbox.core.resources.icons.SquareHarmony
-import com.t8rin.imagetoolbox.core.resources.icons.Tetradic
-import com.t8rin.imagetoolbox.core.resources.icons.Triadic
-import com.t8rin.imagetoolbox.core.ui.theme.toColor
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Analogous
+import com.t8rin.ikittool.core.resources.icons.AnalogousComplementary
+import com.t8rin.ikittool.core.resources.icons.Complementary
+import com.t8rin.ikittool.core.resources.icons.SplitComplementary
+import com.t8rin.ikittool.core.resources.icons.SquareHarmony
+import com.t8rin.ikittool.core.resources.icons.Tetradic
+import com.t8rin.ikittool.core.resources.icons.Triadic
+import com.t8rin.ikittool.core.ui.theme.toColor
 import android.graphics.Color as AndroidColor
 
 fun Color.applyHarmony(

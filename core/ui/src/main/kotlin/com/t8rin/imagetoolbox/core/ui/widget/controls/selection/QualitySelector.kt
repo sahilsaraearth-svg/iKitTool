@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.controls.selection
+package com.t8rin.ikittool.core.ui.widget.controls.selection
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.expandVertically
@@ -33,7 +33,7 @@ import androidx.compose.foundation.lazy.staggeredgrid.LazyHorizontalStaggeredGri
 import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridCells
 import androidx.compose.foundation.lazy.staggeredgrid.items
 import androidx.compose.foundation.lazy.staggeredgrid.rememberLazyStaggeredGridState
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -54,27 +54,27 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.Quality
-import com.t8rin.imagetoolbox.core.domain.image.model.TiffCompressionScheme
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Palette
-import com.t8rin.imagetoolbox.core.resources.icons.QualityHigh
-import com.t8rin.imagetoolbox.core.resources.icons.QualityLow
-import com.t8rin.imagetoolbox.core.resources.icons.QualityMedium
-import com.t8rin.imagetoolbox.core.resources.icons.Speed
-import com.t8rin.imagetoolbox.core.resources.icons.Stream
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButtonGroup
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedChip
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedSliderItem
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.fadingEdges
-import com.t8rin.imagetoolbox.core.ui.widget.saver.OneTimeEffect
-import com.t8rin.imagetoolbox.core.ui.widget.text.AutoSizeText
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.Quality
+import com.t8rin.ikittool.core.domain.image.model.TiffCompressionScheme
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Palette
+import com.t8rin.ikittool.core.resources.icons.QualityHigh
+import com.t8rin.ikittool.core.resources.icons.QualityLow
+import com.t8rin.ikittool.core.resources.icons.QualityMedium
+import com.t8rin.ikittool.core.resources.icons.Speed
+import com.t8rin.ikittool.core.resources.icons.Stream
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButtonGroup
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedChip
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedSliderItem
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedFlingBehavior
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.fadingEdges
+import com.t8rin.ikittool.core.ui.widget.saver.OneTimeEffect
+import com.t8rin.ikittool.core.ui.widget.text.AutoSizeText
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlin.math.roundToInt

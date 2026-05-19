@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,17 +15,17 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.image_splitting.data
+package com.t8rin.ikittool.image_splitting.data
 
 import android.graphics.Bitmap
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.ImageShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageInfo
-import com.t8rin.imagetoolbox.core.domain.image.model.Quality
-import com.t8rin.imagetoolbox.image_splitting.domain.ImageSplitter
-import com.t8rin.imagetoolbox.image_splitting.domain.SplitParams
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.ImageShareProvider
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.ImageInfo
+import com.t8rin.ikittool.core.domain.image.model.Quality
+import com.t8rin.ikittool.image_splitting.domain.ImageSplitter
+import com.t8rin.ikittool.image_splitting.domain.SplitParams
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.async
 import kotlinx.coroutines.withContext

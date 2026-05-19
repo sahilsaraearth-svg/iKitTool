@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.ai_tools.presentation.screenLogic
+package com.t8rin.ikittool.feature.ai_tools.presentation.screenLogic
 
 import android.graphics.Bitmap
 import android.net.Uri
@@ -26,35 +26,35 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.snapshots.SnapshotStateMap
 import androidx.core.net.toUri
 import com.arkivanov.decompose.ComponentContext
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageCompressor
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.ImageShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.remote.DownloadProgress
-import com.t8rin.imagetoolbox.core.domain.saving.FileController
-import com.t8rin.imagetoolbox.core.domain.saving.model.ImageSaveTarget
-import com.t8rin.imagetoolbox.core.domain.saving.model.SaveResult
-import com.t8rin.imagetoolbox.core.domain.saving.model.onSuccess
-import com.t8rin.imagetoolbox.core.domain.utils.runSuspendCatching
-import com.t8rin.imagetoolbox.core.domain.utils.smartJob
-import com.t8rin.imagetoolbox.core.domain.utils.update
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.CheckCircle
-import com.t8rin.imagetoolbox.core.resources.icons.Info
-import com.t8rin.imagetoolbox.core.ui.utils.BaseComponent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.utils.state.savable
-import com.t8rin.imagetoolbox.core.ui.utils.state.update
-import com.t8rin.imagetoolbox.core.ui.utils.state.updateNotNull
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.AiProgressListener
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.AiToolsRepository
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.model.NeuralModel
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.model.NeuralParams
-import com.t8rin.imagetoolbox.feature.ai_tools.presentation.components.NeuralSaveProgress
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageCompressor
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.ImageShareProvider
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.remote.DownloadProgress
+import com.t8rin.ikittool.core.domain.saving.FileController
+import com.t8rin.ikittool.core.domain.saving.model.ImageSaveTarget
+import com.t8rin.ikittool.core.domain.saving.model.SaveResult
+import com.t8rin.ikittool.core.domain.saving.model.onSuccess
+import com.t8rin.ikittool.core.domain.utils.runSuspendCatching
+import com.t8rin.ikittool.core.domain.utils.smartJob
+import com.t8rin.ikittool.core.domain.utils.update
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.CheckCircle
+import com.t8rin.ikittool.core.resources.icons.Info
+import com.t8rin.ikittool.core.ui.utils.BaseComponent
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.utils.state.savable
+import com.t8rin.ikittool.core.ui.utils.state.update
+import com.t8rin.ikittool.core.ui.utils.state.updateNotNull
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.feature.ai_tools.domain.AiProgressListener
+import com.t8rin.ikittool.feature.ai_tools.domain.AiToolsRepository
+import com.t8rin.ikittool.feature.ai_tools.domain.model.NeuralModel
+import com.t8rin.ikittool.feature.ai_tools.domain.model.NeuralParams
+import com.t8rin.ikittool.feature.ai_tools.presentation.components.NeuralSaveProgress
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject

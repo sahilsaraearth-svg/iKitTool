@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.settings.presentation.model
+package com.t8rin.ikittool.core.settings.presentation.model
 
 import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -24,26 +24,26 @@ import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.resources.shapes.ArrowShape
-import com.t8rin.imagetoolbox.core.resources.shapes.BookmarkShape
-import com.t8rin.imagetoolbox.core.resources.shapes.BurgerShape
-import com.t8rin.imagetoolbox.core.resources.shapes.CloverShape
-import com.t8rin.imagetoolbox.core.resources.shapes.DropletShape
-import com.t8rin.imagetoolbox.core.resources.shapes.EggShape
-import com.t8rin.imagetoolbox.core.resources.shapes.ExplosionShape
-import com.t8rin.imagetoolbox.core.resources.shapes.HeartShape
-import com.t8rin.imagetoolbox.core.resources.shapes.MapShape
-import com.t8rin.imagetoolbox.core.resources.shapes.MaterialStarShape
-import com.t8rin.imagetoolbox.core.resources.shapes.OctagonShape
-import com.t8rin.imagetoolbox.core.resources.shapes.OvalShape
-import com.t8rin.imagetoolbox.core.resources.shapes.PentagonShape
-import com.t8rin.imagetoolbox.core.resources.shapes.PillShape
-import com.t8rin.imagetoolbox.core.resources.shapes.ShieldShape
-import com.t8rin.imagetoolbox.core.resources.shapes.ShurikenShape
-import com.t8rin.imagetoolbox.core.resources.shapes.SimpleHeartShape
-import com.t8rin.imagetoolbox.core.resources.shapes.SmallMaterialStarShape
-import com.t8rin.imagetoolbox.core.resources.shapes.SquircleShape
-import com.t8rin.imagetoolbox.core.settings.presentation.utils.toShape
+import com.t8rin.ikittool.core.resources.shapes.ArrowShape
+import com.t8rin.ikittool.core.resources.shapes.BookmarkShape
+import com.t8rin.ikittool.core.resources.shapes.BurgerShape
+import com.t8rin.ikittool.core.resources.shapes.CloverShape
+import com.t8rin.ikittool.core.resources.shapes.DropletShape
+import com.t8rin.ikittool.core.resources.shapes.EggShape
+import com.t8rin.ikittool.core.resources.shapes.ExplosionShape
+import com.t8rin.ikittool.core.resources.shapes.HeartShape
+import com.t8rin.ikittool.core.resources.shapes.MapShape
+import com.t8rin.ikittool.core.resources.shapes.MaterialStarShape
+import com.t8rin.ikittool.core.resources.shapes.OctagonShape
+import com.t8rin.ikittool.core.resources.shapes.OvalShape
+import com.t8rin.ikittool.core.resources.shapes.PentagonShape
+import com.t8rin.ikittool.core.resources.shapes.PillShape
+import com.t8rin.ikittool.core.resources.shapes.ShieldShape
+import com.t8rin.ikittool.core.resources.shapes.ShurikenShape
+import com.t8rin.ikittool.core.resources.shapes.SimpleHeartShape
+import com.t8rin.ikittool.core.resources.shapes.SmallMaterialStarShape
+import com.t8rin.ikittool.core.resources.shapes.SquircleShape
+import com.t8rin.ikittool.core.settings.presentation.utils.toShape
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toPersistentList
 

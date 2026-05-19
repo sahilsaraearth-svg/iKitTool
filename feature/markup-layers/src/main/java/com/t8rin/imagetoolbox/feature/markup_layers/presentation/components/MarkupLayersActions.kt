@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.presentation.components
+package com.t8rin.ikittool.feature.markup_layers.presentation.components
 
 import android.net.Uri
 import androidx.compose.animation.AnimatedVisibility
@@ -40,29 +40,29 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.emoji.Emoji
-import com.t8rin.imagetoolbox.core.resources.icons.AddSticky
-import com.t8rin.imagetoolbox.core.resources.icons.EmojiSticky
-import com.t8rin.imagetoolbox.core.resources.icons.ImageSticky
-import com.t8rin.imagetoolbox.core.resources.icons.Layers
-import com.t8rin.imagetoolbox.core.resources.icons.Redo
-import com.t8rin.imagetoolbox.core.resources.icons.StarSticky
-import com.t8rin.imagetoolbox.core.resources.icons.TextSticky
-import com.t8rin.imagetoolbox.core.resources.icons.Undo
-import com.t8rin.imagetoolbox.core.ui.theme.takeColorFromScheme
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberImagePicker
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedHorizontalScroll
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.fadingEdges
-import com.t8rin.imagetoolbox.core.ui.widget.sheets.EmojiSelectionSheet
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.LayerType
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.withPreferredInitialGeometryFor
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.UiMarkupLayer
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.screenLogic.MarkupLayersComponent
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.emoji.Emoji
+import com.t8rin.ikittool.core.resources.icons.AddSticky
+import com.t8rin.ikittool.core.resources.icons.EmojiSticky
+import com.t8rin.ikittool.core.resources.icons.ImageSticky
+import com.t8rin.ikittool.core.resources.icons.Layers
+import com.t8rin.ikittool.core.resources.icons.Redo
+import com.t8rin.ikittool.core.resources.icons.StarSticky
+import com.t8rin.ikittool.core.resources.icons.TextSticky
+import com.t8rin.ikittool.core.resources.icons.Undo
+import com.t8rin.ikittool.core.ui.theme.takeColorFromScheme
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberImagePicker
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedHorizontalScroll
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.fadingEdges
+import com.t8rin.ikittool.core.ui.widget.sheets.EmojiSelectionSheet
+import com.t8rin.ikittool.feature.markup_layers.domain.LayerType
+import com.t8rin.ikittool.feature.markup_layers.domain.withPreferredInitialGeometryFor
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.UiMarkupLayer
+import com.t8rin.ikittool.feature.markup_layers.presentation.screenLogic.MarkupLayersComponent
 
 @Composable
 internal fun MarkupLayersActions(

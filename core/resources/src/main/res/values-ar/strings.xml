@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -865,7 +865,7 @@
     <string name="header_today">اليوم</string>
     <string name="header_yesterday">أمس</string>
     <string name="embedded_picker">المنتقى المضمن</string>
-    <string name="embedded_picker_sub">يستخدم منتقي الصور الخاص بـ Image Toolbox بدلاً من الصور المحددة مسبقًا في النظام</string>
+    <string name="embedded_picker_sub">يستخدم منتقي الصور الخاص بـ iKit Tool بدلاً من الصور المحددة مسبقًا في النظام</string>
     <string name="no_permissions">لا أذونات</string>
     <string name="request">الطلب</string>
     <string name="pick_multiple_media">اختر صور متعددة</string>
@@ -1079,7 +1079,7 @@
     <string name="antialias">الحواف</string>
     <string name="antialias_sub">يفعّل الحواف لمنع الحواف الحادة</string>
     <string name="open_edit_instead_of_preview">افتح تحرير بدلاً من المعاينة</string>
-    <string name="open_edit_instead_of_preview_sub">عند تحديد صورة لفتحها (معاينة) في ImageToolbox، سيتم فتح ورقة تحديد التحرير بدلاً من المعاينة</string>
+    <string name="open_edit_instead_of_preview_sub">عند تحديد صورة لفتحها (معاينة) في iKitTool، سيتم فتح ورقة تحديد التحرير بدلاً من المعاينة</string>
     <string name="document_scanner">ماسح ضوئي للمستندات</string>
     <string name="document_scanner_sub">امسح المستندات ضوئيًا وإنشاء ملف PDF أو افصل الصور عنها</string>
     <string name="click_to_start_scanning">انقر لبدء المسح</string>
@@ -1354,7 +1354,7 @@
     <string name="webp_type_to_webp">الصور إلى WEBP</string>
     <string name="select_webp_image_to_start">اختر صورة WEBP للبدء</string>
     <string name="manage_storage_extra_types">لا يوجد وصول كامل إلى الملفات</string>
-    <string name="manage_storage_extra_types_sub">السماح لجميع الملفات بالوصول لرؤية JXL وQOI والصور الأخرى التي لم يتم التعرف عليها كصور على Android. بدون إذن، يتعذر على Image Toolbox عرض تلك الصور</string>
+    <string name="manage_storage_extra_types_sub">السماح لجميع الملفات بالوصول لرؤية JXL وQOI والصور الأخرى التي لم يتم التعرف عليها كصور على Android. بدون إذن، يتعذر على iKit Tool عرض تلك الصور</string>
     <string name="default_draw_color">لون الرسم الافتراضي</string>
     <string name="default_draw_path_mode">وضع رسم المسار الافتراضي</string>
     <string name="add_timestamp">أضف الطابع الزمني</string>
@@ -1367,8 +1367,8 @@
     <string name="recently_used">المستخدمة مؤخرا</string>
     <string name="ci_channel">قناة سي.اي</string>
     <string name="group">مجموعة</string>
-    <string name="image_toolbox_in_telegram">صندوق أدوات الصور في Telegram 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">انضم إلى محادثتنا حيث يمكنك مناقشة أي شيء تريده وكذلك الاطلاع على قناة CI حيث أنشر الإصدارات التجريبية والإعلانات</string>
+    <string name="ikit_tool_in_telegram">صندوق أدوات الصور في Telegram 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">انضم إلى محادثتنا حيث يمكنك مناقشة أي شيء تريده وكذلك الاطلاع على قناة CI حيث أنشر الإصدارات التجريبية والإعلانات</string>
     <string name="ci_channel_sub">احصل على إشعارات بشأن الإصدارات الجديدة من التطبيق، واقرأ الإعلانات</string>
     <string name="fit_description">لائم الصورة مع أبعاد معينة وطبّق التمويه أو اللون على الخلفية</string>
     <string name="tools_arrangement">ترتيب الأدوات</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">صدِّر اللوحة التي المولّدة إلى تنسيقات مختلفة</string>
     <string name="add_color_palette_sub">يضيف لونًا جديدًا إلى اللوحة الحالية</string>
     <string name="palette_name_not_supported">تنسيق %1$s لا يدعم توفير اسم اللوحة</string>
-    <string name="wallpapers_export_not_avaialbe">نظرًا لسياسات متجر Play، لا يمكن تضمين هذه الميزة في الإصدار الحالي. للوصول إلى هذه الوظيفة، يُرجى تنزيل ImageToolbox من مصدر بديل. يمكنك العثور على الإصدارات المتاحة على GitHub أدناه.</string>
+    <string name="wallpapers_export_not_avaialbe">نظرًا لسياسات متجر Play، لا يمكن تضمين هذه الميزة في الإصدار الحالي. للوصول إلى هذه الوظيفة، يُرجى تنزيل iKitTool من مصدر بديل. يمكنك العثور على الإصدارات المتاحة على GitHub أدناه.</string>
     <string name="open_github_page">افتح صفحة Github</string>
     <string name="overwrite_files_sub_short">سيتم استبدال الملف الأصلي بملف جديد بدلاً من حفظه في المجلد المحدد</string>
     <string name="hidden_watermark_text_detected">تم اكتشاف نص العلامة المائية المخفية</string>
@@ -2145,7 +2145,7 @@
     <string name="grayscale_pdf_sub">تحويل كافة الصور المضمنة في الوثيقة إلى التدرج الرمادي</string>
     <string name="compress_pdf">اضغط PDF</string>
     <string name="compress_pdf_sub">حسّن حجم ملف مستندك لتسهيل المشاركة</string>
-    <string name="repair_info">يقوم ImageToolbox بإعادة بناء جدول الإسناد الترافقي الداخلي ويعيد توليد بنية الملف من البداية. يمكن أن يؤدي هذا إلى استعادة الوصول إلى العديد من الملفات التي \"لا يمكن فتحها\"</string>
+    <string name="repair_info">يقوم iKitTool بإعادة بناء جدول الإسناد الترافقي الداخلي ويعيد توليد بنية الملف من البداية. يمكن أن يؤدي هذا إلى استعادة الوصول إلى العديد من الملفات التي \"لا يمكن فتحها\"</string>
     <string name="grayscale_info">تقوم هذه الأداة بتحويل جميع صور المستندات إلى تدرج رمادي. الأفضل للطباعة وتقليل حجم الملف</string>
     <string name="metadata">البيانات الوصفية</string>
     <string name="metadata_pdf_sub">حرِّر خصائص الوثيقة لتحسين الخصوصية</string>
@@ -2197,11 +2197,11 @@
     <string name="background_color_for_alpha_formats">لون الخلفية لتنسيقات ألفا</string>
     <string name="background_color_for_alpha_formats_sub">يضيف القدرة على تعيين لون الخلفية لكل تنسيق صورة مع دعم ألفا، عند تعطيله يكون هذا متاحًا للتنسيقات غير ألفا فقط</string>
     <string name="open_markup_project">مشروع مفتوح</string>
-    <string name="open_markup_project_sub">استمر في تحرير مشروع Image Toolbox المحفوظ مسبقًا</string>
-    <string name="markup_project_open_failed">غير قادر على فتح مشروع Image Toolbox</string>
-    <string name="markup_project_missing_data">يفتقد مشروع Image Toolbox بيانات المشروع</string>
-    <string name="markup_project_corrupted">مشروع Image Toolbox تالف</string>
-    <string name="unsupported_markup_project_version">إصدار مشروع Image Toolbox غير مدعوم: %1$d</string>
+    <string name="open_markup_project_sub">استمر في تحرير مشروع iKit Tool المحفوظ مسبقًا</string>
+    <string name="markup_project_open_failed">غير قادر على فتح مشروع iKit Tool</string>
+    <string name="markup_project_missing_data">يفتقد مشروع iKit Tool بيانات المشروع</string>
+    <string name="markup_project_corrupted">مشروع iKit Tool تالف</string>
+    <string name="unsupported_markup_project_version">إصدار مشروع iKit Tool غير مدعوم: %1$d</string>
     <string name="save_markup_project">حفظ المشروع</string>
     <string name="save_markup_project_sub">قم بتخزين الطبقات والخلفية وسجل التحرير في ملف مشروع قابل للتحرير</string>
     <string name="failed_to_open">فشل في الفتح</string>

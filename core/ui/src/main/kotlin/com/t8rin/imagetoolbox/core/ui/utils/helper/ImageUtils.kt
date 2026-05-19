@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.utils.helper
+package com.t8rin.ikittool.core.ui.utils.helper
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -42,14 +42,14 @@ import androidx.core.graphics.drawable.toBitmap
 import androidx.core.graphics.scale
 import androidx.core.text.isDigitsOnly
 import coil3.Image
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageInfo
-import com.t8rin.imagetoolbox.core.domain.image.model.MetadataTag
-import com.t8rin.imagetoolbox.core.domain.utils.FileMode
-import com.t8rin.imagetoolbox.core.domain.utils.humanFileSize
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.getStringLocalized
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.core.utils.fileSize
+import com.t8rin.ikittool.core.domain.image.model.ImageInfo
+import com.t8rin.ikittool.core.domain.image.model.MetadataTag
+import com.t8rin.ikittool.core.domain.utils.FileMode
+import com.t8rin.ikittool.core.domain.utils.humanFileSize
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.getStringLocalized
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.core.utils.fileSize
 import java.util.Locale
 
 

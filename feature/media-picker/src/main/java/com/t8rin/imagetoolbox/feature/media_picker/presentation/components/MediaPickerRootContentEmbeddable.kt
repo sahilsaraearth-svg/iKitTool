@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.media_picker.presentation.components
+package com.t8rin.ikittool.feature.media_picker.presentation.components
 
 import android.Manifest
 import android.net.Uri
@@ -34,7 +34,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -55,26 +55,26 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.app.ActivityCompat
-import com.t8rin.imagetoolbox.core.domain.utils.tryAll
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.ArrowBack
-import com.t8rin.imagetoolbox.core.resources.icons.BrokenImageAlt
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.appSettingsIntent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.isInstalledFromPlayStore
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.manageAllFilesIntent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.manageAppAllFilesIntent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.requestPermissions
-import com.t8rin.imagetoolbox.core.ui.utils.permission.PermissionStatus
-import com.t8rin.imagetoolbox.core.ui.utils.permission.PermissionUtils.checkPermissions
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalComponentActivity
-import com.t8rin.imagetoolbox.core.ui.utils.provider.rememberCurrentLifecycleEvent
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedTopAppBar
-import com.t8rin.imagetoolbox.core.ui.widget.other.TopAppBarEmoji
-import com.t8rin.imagetoolbox.core.ui.widget.text.marquee
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.AllowedMedia
-import com.t8rin.imagetoolbox.feature.media_picker.presentation.screenLogic.MediaPickerComponent
+import com.t8rin.ikittool.core.domain.utils.tryAll
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.ArrowBack
+import com.t8rin.ikittool.core.resources.icons.BrokenImageAlt
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.appSettingsIntent
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.isInstalledFromPlayStore
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.manageAllFilesIntent
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.manageAppAllFilesIntent
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.requestPermissions
+import com.t8rin.ikittool.core.ui.utils.permission.PermissionStatus
+import com.t8rin.ikittool.core.ui.utils.permission.PermissionUtils.checkPermissions
+import com.t8rin.ikittool.core.ui.utils.provider.LocalComponentActivity
+import com.t8rin.ikittool.core.ui.utils.provider.rememberCurrentLifecycleEvent
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedTopAppBar
+import com.t8rin.ikittool.core.ui.widget.other.TopAppBarEmoji
+import com.t8rin.ikittool.core.ui.widget.text.marquee
+import com.t8rin.ikittool.feature.media_picker.domain.model.AllowedMedia
+import com.t8rin.ikittool.feature.media_picker.presentation.screenLogic.MediaPickerComponent
 
 @Composable
 fun MediaPickerRootContentEmbeddable(

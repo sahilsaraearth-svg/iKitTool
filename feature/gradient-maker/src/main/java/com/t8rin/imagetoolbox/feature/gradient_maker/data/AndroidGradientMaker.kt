@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.gradient_maker.data
+package com.t8rin.ikittool.feature.gradient_maker.data
 
 import android.graphics.Bitmap
 import androidx.compose.ui.geometry.Offset
@@ -36,12 +36,12 @@ import androidx.compose.ui.graphics.drawscope.CanvasDrawScope
 import androidx.compose.ui.graphics.drawscope.scale
 import androidx.compose.ui.graphics.lerp
 import androidx.core.graphics.createBitmap
-import com.t8rin.imagetoolbox.core.data.utils.safeConfig
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.feature.gradient_maker.domain.GradientMaker
-import com.t8rin.imagetoolbox.feature.gradient_maker.domain.GradientState
-import com.t8rin.imagetoolbox.feature.gradient_maker.domain.MeshGradientState
+import com.t8rin.ikittool.core.data.utils.safeConfig
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.feature.gradient_maker.domain.GradientMaker
+import com.t8rin.ikittool.feature.gradient_maker.domain.GradientState
+import com.t8rin.ikittool.feature.gradient_maker.domain.MeshGradientState
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 

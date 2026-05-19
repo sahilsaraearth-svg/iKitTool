@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,12 +15,12 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.filters.data.utils.image
+package com.t8rin.ikittool.feature.filters.data.utils.image
 
 import coil3.imageLoader
 import coil3.request.ImageRequest
 import coil3.toBitmap
-import com.t8rin.imagetoolbox.core.utils.appContext
+import com.t8rin.ikittool.core.utils.appContext
 
 internal suspend fun Any.loadBitmap(size: Int? = null) = appContext.imageLoader.execute(
     ImageRequest.Builder(appContext)

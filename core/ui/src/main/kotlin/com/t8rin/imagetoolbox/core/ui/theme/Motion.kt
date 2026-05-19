@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,14 +17,14 @@
 
 @file:Suppress("unused", "UNCHECKED_CAST")
 
-package com.t8rin.imagetoolbox.core.ui.theme
+package com.t8rin.ikittool.core.ui.theme
 
 import androidx.compose.animation.core.FiniteAnimationSpec
 import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
 import androidx.compose.material3.MotionScheme
-import com.t8rin.imagetoolbox.core.domain.utils.cast
-import com.t8rin.imagetoolbox.core.ui.utils.animation.FancyTransitionEasing
+import com.t8rin.ikittool.core.domain.utils.cast
+import com.t8rin.ikittool.core.ui.utils.animation.FancyTransitionEasing
 
 
 internal val CustomMotionScheme: MotionScheme = object : MotionScheme {

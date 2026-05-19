@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,21 +15,21 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.transformation
+package com.t8rin.ikittool.core.ui.transformation
 
 import android.graphics.Bitmap
 import coil3.size.Size
 import coil3.size.pxOrElse
-import com.t8rin.imagetoolbox.core.domain.image.ImagePreviewCreator
-import com.t8rin.imagetoolbox.core.domain.image.ImageScaler
-import com.t8rin.imagetoolbox.core.domain.image.ImageShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.ImageTransformer
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageInfo
-import com.t8rin.imagetoolbox.core.domain.image.model.Preset
-import com.t8rin.imagetoolbox.core.domain.image.model.ResizeType
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.transformation.Transformation
-import com.t8rin.imagetoolbox.core.ui.utils.helper.asCoil
+import com.t8rin.ikittool.core.domain.image.ImagePreviewCreator
+import com.t8rin.ikittool.core.domain.image.ImageScaler
+import com.t8rin.ikittool.core.domain.image.ImageShareProvider
+import com.t8rin.ikittool.core.domain.image.ImageTransformer
+import com.t8rin.ikittool.core.domain.image.model.ImageInfo
+import com.t8rin.ikittool.core.domain.image.model.Preset
+import com.t8rin.ikittool.core.domain.image.model.ResizeType
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.transformation.Transformation
+import com.t8rin.ikittool.core.ui.utils.helper.asCoil
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject

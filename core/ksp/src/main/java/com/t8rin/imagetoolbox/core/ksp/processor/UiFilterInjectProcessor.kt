@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("unused")
 
-package com.t8rin.imagetoolbox.core.ksp.processor
+package com.t8rin.ikittool.core.ksp.processor
 
 import com.google.devtools.ksp.processing.Dependencies
 import com.google.devtools.ksp.processing.KSPLogger
@@ -29,7 +29,7 @@ import com.google.devtools.ksp.symbol.KSAnnotated
 import com.google.devtools.ksp.symbol.KSClassDeclaration
 import com.google.devtools.ksp.symbol.KSType
 import com.google.devtools.ksp.symbol.Variance
-import com.t8rin.imagetoolbox.core.ksp.annotations.UiFilterInject
+import com.t8rin.ikittool.core.ksp.annotations.UiFilterInject
 
 internal class UiFilterInjectProcessor : SymbolProcessorProvider {
     override fun create(
@@ -297,9 +297,9 @@ private class UiFilterInjectProcessorImpl(
     )
 
     private companion object {
-        private const val PACKAGE = "com.t8rin.imagetoolbox"
+        private const val PACKAGE = "com.t8rin.ikittool"
         private const val GENERATED_PACKAGE =
-            "com.t8rin.imagetoolbox.core.filters.presentation.model.generated"
+            "com.t8rin.ikittool.core.filters.presentation.model.generated"
         private const val GENERATED_FILE = "UiFilterMappings"
 
         private val GROUP_ORDER = listOf(

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,13 +15,13 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.domain.saving
+package com.t8rin.ikittool.core.domain.saving
 
-import com.t8rin.imagetoolbox.core.domain.image.Metadata
-import com.t8rin.imagetoolbox.core.domain.image.MetadataProvider
-import com.t8rin.imagetoolbox.core.domain.saving.io.Writeable
-import com.t8rin.imagetoolbox.core.domain.saving.model.SaveResult
-import com.t8rin.imagetoolbox.core.domain.saving.model.SaveTarget
+import com.t8rin.ikittool.core.domain.image.Metadata
+import com.t8rin.ikittool.core.domain.image.MetadataProvider
+import com.t8rin.ikittool.core.domain.saving.io.Writeable
+import com.t8rin.ikittool.core.domain.saving.model.SaveResult
+import com.t8rin.ikittool.core.domain.saving.model.SaveTarget
 import kotlinx.coroutines.flow.Flow
 
 interface FileController : ObjectSaver, MetadataProvider {

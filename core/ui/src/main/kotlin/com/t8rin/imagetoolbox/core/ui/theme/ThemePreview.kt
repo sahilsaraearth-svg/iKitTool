@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.theme
+package com.t8rin.ikittool.core.ui.theme
 
 import android.graphics.BlurMaskFilter
 import android.graphics.Canvas
@@ -42,27 +42,27 @@ import coil3.size.pxOrElse
 import com.t8rin.dynamic.theme.ColorTuple
 import com.t8rin.dynamic.theme.DynamicTheme
 import com.t8rin.dynamic.theme.rememberDynamicThemeState
-import com.t8rin.imagetoolbox.core.domain.model.ColorModel
-import com.t8rin.imagetoolbox.core.domain.resource.ResourceManager
-import com.t8rin.imagetoolbox.core.settings.domain.SimpleSettingsInteractor
-import com.t8rin.imagetoolbox.core.settings.domain.model.OneTimeSaveLocation
-import com.t8rin.imagetoolbox.core.settings.domain.model.SettingsState
-import com.t8rin.imagetoolbox.core.settings.domain.model.ShapeType
-import com.t8rin.imagetoolbox.core.settings.presentation.model.defaultColorTuple
-import com.t8rin.imagetoolbox.core.settings.presentation.model.toUiState
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSimpleSettingsInteractor
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.getStringLocalized
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalResourceManager
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalScreenSize
-import com.t8rin.imagetoolbox.core.ui.utils.provider.rememberScreenSize
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.core.utils.initAppContext
+import com.t8rin.ikittool.core.domain.model.ColorModel
+import com.t8rin.ikittool.core.domain.resource.ResourceManager
+import com.t8rin.ikittool.core.settings.domain.SimpleSettingsInteractor
+import com.t8rin.ikittool.core.settings.domain.model.OneTimeSaveLocation
+import com.t8rin.ikittool.core.settings.domain.model.SettingsState
+import com.t8rin.ikittool.core.settings.domain.model.ShapeType
+import com.t8rin.ikittool.core.settings.presentation.model.defaultColorTuple
+import com.t8rin.ikittool.core.settings.presentation.model.toUiState
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSimpleSettingsInteractor
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.getStringLocalized
+import com.t8rin.ikittool.core.ui.utils.provider.LocalResourceManager
+import com.t8rin.ikittool.core.ui.utils.provider.LocalScreenSize
+import com.t8rin.ikittool.core.ui.utils.provider.rememberScreenSize
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.core.utils.initAppContext
 import java.util.Locale
 import kotlin.math.max
 
 @Composable
-fun ImageToolboxThemeForPreview(
+fun iKitToolThemeForPreview(
     isDarkTheme: Boolean,
     keyColor: Color? = defaultColorTuple.primary,
     shapesType: ShapeType = ShapeType.Rounded(),

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem
+package com.t8rin.ikittool.core.filters.presentation.widget.filterItem
 
 import android.graphics.Bitmap
 import androidx.compose.foundation.layout.Box
@@ -40,11 +40,11 @@ import coil3.request.ImageRequest
 import coil3.toBitmap
 import com.t8rin.curves.ImageCurvesEditor
 import com.t8rin.curves.ImageCurvesEditorState
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.ToneCurvesParams
-import com.t8rin.imagetoolbox.core.filters.presentation.model.UiFilter
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.ui.utils.helper.LocalFilterPreviewModelProvider
-import com.t8rin.imagetoolbox.core.utils.appContext
+import com.t8rin.ikittool.core.filters.domain.model.params.ToneCurvesParams
+import com.t8rin.ikittool.core.filters.presentation.model.UiFilter
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.ui.utils.helper.LocalFilterPreviewModelProvider
+import com.t8rin.ikittool.core.utils.appContext
 
 @Composable
 internal fun ToneCurvesParamsItem(

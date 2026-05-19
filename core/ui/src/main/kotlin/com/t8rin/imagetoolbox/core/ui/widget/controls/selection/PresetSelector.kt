@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.controls.selection
+package com.t8rin.ikittool.core.ui.widget.controls.selection
 
 
 import androidx.compose.animation.AnimatedVisibility
@@ -35,7 +35,7 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.text.KeyboardOptions
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -56,37 +56,37 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.image.model.Preset
-import com.t8rin.imagetoolbox.core.domain.model.DomainAspectRatio
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.AspectRatio
-import com.t8rin.imagetoolbox.core.resources.icons.EditAlt
-import com.t8rin.imagetoolbox.core.resources.icons.FitScreen
-import com.t8rin.imagetoolbox.core.resources.icons.Info
-import com.t8rin.imagetoolbox.core.resources.icons.Telegram
-import com.t8rin.imagetoolbox.core.settings.domain.model.FilenameBehavior
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalEditPresetsController
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.SupportingButton
-import com.t8rin.imagetoolbox.core.ui.widget.controls.OOMWarning
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedAlertDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedChip
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
-import com.t8rin.imagetoolbox.core.ui.widget.image.AspectRatioSelector
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.animateContentSizeNoClip
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.fadingEdges
-import com.t8rin.imagetoolbox.core.ui.widget.other.RevealDirection
-import com.t8rin.imagetoolbox.core.ui.widget.other.RevealValue
-import com.t8rin.imagetoolbox.core.ui.widget.other.SwipeToReveal
-import com.t8rin.imagetoolbox.core.ui.widget.other.rememberRevealState
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceRowSwitch
-import com.t8rin.imagetoolbox.core.ui.widget.text.AutoSizeText
-import com.t8rin.imagetoolbox.core.ui.widget.text.RoundedTextField
-import com.t8rin.imagetoolbox.core.ui.widget.text.RoundedTextFieldColors
+import com.t8rin.ikittool.core.domain.image.model.Preset
+import com.t8rin.ikittool.core.domain.model.DomainAspectRatio
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.AspectRatio
+import com.t8rin.ikittool.core.resources.icons.EditAlt
+import com.t8rin.ikittool.core.resources.icons.FitScreen
+import com.t8rin.ikittool.core.resources.icons.Info
+import com.t8rin.ikittool.core.resources.icons.Telegram
+import com.t8rin.ikittool.core.settings.domain.model.FilenameBehavior
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalEditPresetsController
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.widget.buttons.SupportingButton
+import com.t8rin.ikittool.core.ui.widget.controls.OOMWarning
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedAlertDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedChip
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedFlingBehavior
+import com.t8rin.ikittool.core.ui.widget.image.AspectRatioSelector
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.animateContentSizeNoClip
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.fadingEdges
+import com.t8rin.ikittool.core.ui.widget.other.RevealDirection
+import com.t8rin.ikittool.core.ui.widget.other.RevealValue
+import com.t8rin.ikittool.core.ui.widget.other.SwipeToReveal
+import com.t8rin.ikittool.core.ui.widget.other.rememberRevealState
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceRowSwitch
+import com.t8rin.ikittool.core.ui.widget.text.AutoSizeText
+import com.t8rin.ikittool.core.ui.widget.text.RoundedTextField
+import com.t8rin.ikittool.core.ui.widget.text.RoundedTextFieldColors
 import kotlinx.coroutines.launch
 
 

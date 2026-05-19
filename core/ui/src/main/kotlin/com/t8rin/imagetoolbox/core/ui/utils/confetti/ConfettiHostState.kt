@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.utils.confetti
+package com.t8rin.ikittool.core.ui.utils.confetti
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
@@ -32,12 +32,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import com.t8rin.imagetoolbox.core.settings.domain.model.ColorHarmonizer
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.widget.other.ToastDuration
-import com.t8rin.imagetoolbox.core.ui.widget.other.ToastHost
-import com.t8rin.imagetoolbox.core.ui.widget.other.ToastHostState
+import com.t8rin.ikittool.core.settings.domain.model.ColorHarmonizer
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.widget.other.ToastDuration
+import com.t8rin.ikittool.core.ui.widget.other.ToastHost
+import com.t8rin.ikittool.core.ui.widget.other.ToastHostState
 import nl.dionsegijn.konfetti.compose.KonfettiView
 import nl.dionsegijn.konfetti.core.Party
 

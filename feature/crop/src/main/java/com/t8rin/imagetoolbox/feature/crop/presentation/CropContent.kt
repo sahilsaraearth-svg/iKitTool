@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.crop.presentation
+package com.t8rin.ikittool.feature.crop.presentation
 
 
 import android.net.Uri
@@ -30,7 +30,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.SheetValue
@@ -47,44 +47,44 @@ import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.t8rin.cropper.model.OutlineType
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormatGroup
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.AddPhotoAlt
-import com.t8rin.imagetoolbox.core.resources.icons.CropSmall
-import com.t8rin.imagetoolbox.core.resources.icons.ImageReset
-import com.t8rin.imagetoolbox.core.resources.icons.Tune
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.Picker
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberImagePicker
-import com.t8rin.imagetoolbox.core.ui.utils.helper.Clipboard
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.widget.AdaptiveBottomScaffoldLayoutScreen
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.BottomButtonsBlock
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.ShareButton
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ImageFormatSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.MagnifierEnabledSelector
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.ExitWithoutSavingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.LoadingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.OneTimeImagePickingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.OneTimeSaveLocationSelectionDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.ResetDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedFloatingActionButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.image.AspectRatioSelector
-import com.t8rin.imagetoolbox.core.ui.widget.image.AutoFilePicker
-import com.t8rin.imagetoolbox.core.ui.widget.image.ImageNotPickedWidget
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.other.BoxAnimatedVisibility
-import com.t8rin.imagetoolbox.core.ui.widget.other.TopAppBarEmoji
-import com.t8rin.imagetoolbox.core.ui.widget.sheets.ProcessImagesPreferenceSheet
-import com.t8rin.imagetoolbox.core.ui.widget.text.TopAppBarTitle
-import com.t8rin.imagetoolbox.core.ui.widget.utils.AutoContentBasedColors
-import com.t8rin.imagetoolbox.feature.crop.presentation.components.CoercePointsToImageBoundsToggle
-import com.t8rin.imagetoolbox.feature.crop.presentation.components.CropMaskSelection
-import com.t8rin.imagetoolbox.feature.crop.presentation.components.CropRotationSelector
-import com.t8rin.imagetoolbox.feature.crop.presentation.components.CropType
-import com.t8rin.imagetoolbox.feature.crop.presentation.components.Cropper
-import com.t8rin.imagetoolbox.feature.crop.presentation.components.FreeCornersCropToggle
-import com.t8rin.imagetoolbox.feature.crop.presentation.screenLogic.CropComponent
+import com.t8rin.ikittool.core.domain.image.model.ImageFormatGroup
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.AddPhotoAlt
+import com.t8rin.ikittool.core.resources.icons.CropSmall
+import com.t8rin.ikittool.core.resources.icons.ImageReset
+import com.t8rin.ikittool.core.resources.icons.Tune
+import com.t8rin.ikittool.core.ui.utils.content_pickers.Picker
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberImagePicker
+import com.t8rin.ikittool.core.ui.utils.helper.Clipboard
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.widget.AdaptiveBottomScaffoldLayoutScreen
+import com.t8rin.ikittool.core.ui.widget.buttons.BottomButtonsBlock
+import com.t8rin.ikittool.core.ui.widget.buttons.ShareButton
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ImageFormatSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.MagnifierEnabledSelector
+import com.t8rin.ikittool.core.ui.widget.dialogs.ExitWithoutSavingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.LoadingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.OneTimeImagePickingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.OneTimeSaveLocationSelectionDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.ResetDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedFloatingActionButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.image.AspectRatioSelector
+import com.t8rin.ikittool.core.ui.widget.image.AutoFilePicker
+import com.t8rin.ikittool.core.ui.widget.image.ImageNotPickedWidget
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.other.BoxAnimatedVisibility
+import com.t8rin.ikittool.core.ui.widget.other.TopAppBarEmoji
+import com.t8rin.ikittool.core.ui.widget.sheets.ProcessImagesPreferenceSheet
+import com.t8rin.ikittool.core.ui.widget.text.TopAppBarTitle
+import com.t8rin.ikittool.core.ui.widget.utils.AutoContentBasedColors
+import com.t8rin.ikittool.feature.crop.presentation.components.CoercePointsToImageBoundsToggle
+import com.t8rin.ikittool.feature.crop.presentation.components.CropMaskSelection
+import com.t8rin.ikittool.feature.crop.presentation.components.CropRotationSelector
+import com.t8rin.ikittool.feature.crop.presentation.components.CropType
+import com.t8rin.ikittool.feature.crop.presentation.components.Cropper
+import com.t8rin.ikittool.feature.crop.presentation.components.FreeCornersCropToggle
+import com.t8rin.ikittool.feature.crop.presentation.screenLogic.CropComponent
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

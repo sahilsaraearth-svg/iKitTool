@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,14 +15,14 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.ai_tools.presentation.components
+package com.t8rin.ikittool.feature.ai_tools.presentation.components
 
 import android.net.Uri
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -34,14 +34,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.remote.DownloadProgress
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.MiniEdit
-import com.t8rin.imagetoolbox.core.resources.icons.Neurology
-import com.t8rin.imagetoolbox.core.ui.theme.ImageToolboxThemeForPreview
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItem
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.model.NeuralModel
+import com.t8rin.ikittool.core.domain.remote.DownloadProgress
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.MiniEdit
+import com.t8rin.ikittool.core.resources.icons.Neurology
+import com.t8rin.ikittool.core.ui.theme.iKitToolThemeForPreview
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItem
+import com.t8rin.ikittool.feature.ai_tools.domain.model.NeuralModel
 
 @Composable
 internal fun NeuralModelSelector(
@@ -116,7 +116,7 @@ internal fun NeuralModelSelector(
 
 @Preview
 @Composable
-private fun Preview() = ImageToolboxThemeForPreview(
+private fun Preview() = iKitToolThemeForPreview(
     isDarkTheme = false,
     keyColor = Color.Green
 ) {

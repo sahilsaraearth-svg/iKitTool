@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,14 +15,14 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.settings.presentation.components
+package com.t8rin.ikittool.feature.settings.presentation.components
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -42,22 +42,22 @@ import androidx.compose.ui.unit.dp
 import com.t8rin.dynamic.theme.ColorTuple
 import com.t8rin.dynamic.theme.ColorTupleItem
 import com.t8rin.dynamic.theme.PaletteStyle
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.MiniEdit
-import com.t8rin.imagetoolbox.core.resources.icons.Palette
-import com.t8rin.imagetoolbox.core.resources.icons.PaletteBox
-import com.t8rin.imagetoolbox.core.resources.shapes.MaterialStarShape
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.rememberAppColorTuple
-import com.t8rin.imagetoolbox.core.ui.theme.inverse
-import com.t8rin.imagetoolbox.core.ui.theme.outlineVariant
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.widget.color_picker.AvailableColorTuplesSheet
-import com.t8rin.imagetoolbox.core.ui.widget.color_picker.ColorTuplePicker
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceRow
-import com.t8rin.imagetoolbox.core.utils.getString
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.MiniEdit
+import com.t8rin.ikittool.core.resources.icons.Palette
+import com.t8rin.ikittool.core.resources.icons.PaletteBox
+import com.t8rin.ikittool.core.resources.shapes.MaterialStarShape
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.settings.presentation.provider.rememberAppColorTuple
+import com.t8rin.ikittool.core.ui.theme.inverse
+import com.t8rin.ikittool.core.ui.theme.outlineVariant
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.widget.color_picker.AvailableColorTuplesSheet
+import com.t8rin.ikittool.core.ui.widget.color_picker.ColorTuplePicker
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceRow
+import com.t8rin.ikittool.core.utils.getString
 
 @Composable
 fun ColorSchemeSettingItem(

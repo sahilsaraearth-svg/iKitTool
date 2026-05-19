@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,16 +15,16 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-import com.t8rin.imagetoolbox.implementation
-import com.t8rin.imagetoolbox.ksp
-import com.t8rin.imagetoolbox.libs
+import com.t8rin.ikittool.implementation
+import com.t8rin.ikittool.ksp
+import com.t8rin.ikittool.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.dependencies
 
 @Suppress("UNUSED")
-class ImageToolboxHiltPlugin : Plugin<Project> {
+class iKitToolHiltPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             apply(plugin = "dagger.hilt.android.plugin")

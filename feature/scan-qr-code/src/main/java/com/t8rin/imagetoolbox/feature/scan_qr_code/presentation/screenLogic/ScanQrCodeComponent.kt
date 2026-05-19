@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,40 +15,40 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.scan_qr_code.presentation.screenLogic
+package com.t8rin.ikittool.feature.scan_qr_code.presentation.screenLogic
 
 
 import android.graphics.Bitmap
 import android.net.Uri
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.core.net.toUri
 import com.arkivanov.decompose.ComponentContext
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageCompressor
-import com.t8rin.imagetoolbox.core.domain.image.ImageShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageInfo
-import com.t8rin.imagetoolbox.core.domain.image.model.Quality
-import com.t8rin.imagetoolbox.core.domain.model.QrType
-import com.t8rin.imagetoolbox.core.domain.saving.FileController
-import com.t8rin.imagetoolbox.core.domain.saving.model.ImageSaveTarget
-import com.t8rin.imagetoolbox.core.domain.utils.onResult
-import com.t8rin.imagetoolbox.core.domain.utils.smartJob
-import com.t8rin.imagetoolbox.core.filters.domain.FilterParamsInteractor
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.AutoFixHigh
-import com.t8rin.imagetoolbox.core.settings.domain.SettingsProvider
-import com.t8rin.imagetoolbox.core.settings.domain.model.SettingsState
-import com.t8rin.imagetoolbox.core.settings.presentation.model.toUiFont
-import com.t8rin.imagetoolbox.core.ui.utils.BaseComponent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.state.update
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.feature.scan_qr_code.domain.ImageBarcodeReader
-import com.t8rin.imagetoolbox.feature.scan_qr_code.presentation.components.QrPreviewParams
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageCompressor
+import com.t8rin.ikittool.core.domain.image.ImageShareProvider
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.ImageInfo
+import com.t8rin.ikittool.core.domain.image.model.Quality
+import com.t8rin.ikittool.core.domain.model.QrType
+import com.t8rin.ikittool.core.domain.saving.FileController
+import com.t8rin.ikittool.core.domain.saving.model.ImageSaveTarget
+import com.t8rin.ikittool.core.domain.utils.onResult
+import com.t8rin.ikittool.core.domain.utils.smartJob
+import com.t8rin.ikittool.core.filters.domain.FilterParamsInteractor
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.AutoFixHigh
+import com.t8rin.ikittool.core.settings.domain.SettingsProvider
+import com.t8rin.ikittool.core.settings.domain.model.SettingsState
+import com.t8rin.ikittool.core.settings.presentation.model.toUiFont
+import com.t8rin.ikittool.core.ui.utils.BaseComponent
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.state.update
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.feature.scan_qr_code.domain.ImageBarcodeReader
+import com.t8rin.ikittool.feature.scan_qr_code.presentation.components.QrPreviewParams
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject

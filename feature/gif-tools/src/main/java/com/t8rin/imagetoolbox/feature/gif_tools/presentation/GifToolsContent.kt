@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,12 +15,12 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.gif_tools.presentation
+package com.t8rin.ikittool.feature.gif_tools.presentation
 
 import android.net.Uri
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.layout.WindowInsets
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -28,32 +28,32 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFrames
-import com.t8rin.imagetoolbox.core.domain.model.MimeType
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Gif
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.Picker
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberFileCreator
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberFilePicker
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberImagePicker
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.widget.AdaptiveLayoutScreen
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.BottomButtonsBlock
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.ShareButton
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.ExitWithoutSavingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.LoadingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.OneTimeImagePickingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.OneTimeSaveLocationSelectionDialog
-import com.t8rin.imagetoolbox.core.ui.widget.text.TopAppBarTitle
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.core.utils.isGif
-import com.t8rin.imagetoolbox.feature.gif_tools.presentation.components.GifToolsControls
-import com.t8rin.imagetoolbox.feature.gif_tools.presentation.components.GifToolsImagePreview
-import com.t8rin.imagetoolbox.feature.gif_tools.presentation.components.GifToolsNoDataControls
-import com.t8rin.imagetoolbox.feature.gif_tools.presentation.components.GifToolsTopAppBarActions
-import com.t8rin.imagetoolbox.feature.gif_tools.presentation.screenLogic.GifToolsComponent
+import com.t8rin.ikittool.core.domain.image.model.ImageFrames
+import com.t8rin.ikittool.core.domain.model.MimeType
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Gif
+import com.t8rin.ikittool.core.ui.utils.content_pickers.Picker
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberFileCreator
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberFilePicker
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberImagePicker
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.widget.AdaptiveLayoutScreen
+import com.t8rin.ikittool.core.ui.widget.buttons.BottomButtonsBlock
+import com.t8rin.ikittool.core.ui.widget.buttons.ShareButton
+import com.t8rin.ikittool.core.ui.widget.dialogs.ExitWithoutSavingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.LoadingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.OneTimeImagePickingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.OneTimeSaveLocationSelectionDialog
+import com.t8rin.ikittool.core.ui.widget.text.TopAppBarTitle
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.core.utils.isGif
+import com.t8rin.ikittool.feature.gif_tools.presentation.components.GifToolsControls
+import com.t8rin.ikittool.feature.gif_tools.presentation.components.GifToolsImagePreview
+import com.t8rin.ikittool.feature.gif_tools.presentation.components.GifToolsNoDataControls
+import com.t8rin.ikittool.feature.gif_tools.presentation.components.GifToolsTopAppBarActions
+import com.t8rin.ikittool.feature.gif_tools.presentation.screenLogic.GifToolsComponent
 
 @Composable
 fun GifToolsContent(

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("unused")
 
-package com.t8rin.imagetoolbox.core.ui.widget.enhanced
+package com.t8rin.ikittool.core.ui.widget.enhanced
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.foundation.layout.Arrangement
@@ -33,7 +33,7 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredWidth
 import androidx.compose.foundation.rememberScrollState
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.AlertDialogDefaults
 import androidx.compose.material3.DatePicker
 import androidx.compose.material3.DatePickerColors
@@ -72,12 +72,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.fastFirst
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Keyboard
-import com.t8rin.imagetoolbox.core.resources.icons.Schedule
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.alertDialogBorder
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.fadingEdges
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Keyboard
+import com.t8rin.ikittool.core.resources.icons.Schedule
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.widget.modifier.alertDialogBorder
+import com.t8rin.ikittool.core.ui.widget.modifier.fadingEdges
 import kotlin.math.truncate
 
 @Composable

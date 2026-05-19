@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.load_net_image.presentation
+package com.t8rin.ikittool.feature.load_net_image.presentation
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.foundation.layout.Arrangement
@@ -27,22 +27,22 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.ui.theme.takeUnless
-import com.t8rin.imagetoolbox.core.ui.utils.helper.Clipboard
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.widget.AdaptiveLayoutScreen
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.LoadingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.image.ImageNotPickedWidget
-import com.t8rin.imagetoolbox.core.ui.widget.text.TopAppBarTitle
-import com.t8rin.imagetoolbox.core.ui.widget.utils.AutoContentBasedColors
-import com.t8rin.imagetoolbox.feature.load_net_image.presentation.components.LoadNetImageActionButtons
-import com.t8rin.imagetoolbox.feature.load_net_image.presentation.components.LoadNetImageAdaptiveActions
-import com.t8rin.imagetoolbox.feature.load_net_image.presentation.components.LoadNetImageTopAppBarActions
-import com.t8rin.imagetoolbox.feature.load_net_image.presentation.components.LoadNetImageUrlTextField
-import com.t8rin.imagetoolbox.feature.load_net_image.presentation.components.ParsedImagePreview
-import com.t8rin.imagetoolbox.feature.load_net_image.presentation.components.ParsedImagesSelection
-import com.t8rin.imagetoolbox.feature.load_net_image.presentation.screenLogic.LoadNetImageComponent
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.ui.theme.takeUnless
+import com.t8rin.ikittool.core.ui.utils.helper.Clipboard
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.widget.AdaptiveLayoutScreen
+import com.t8rin.ikittool.core.ui.widget.dialogs.LoadingDialog
+import com.t8rin.ikittool.core.ui.widget.image.ImageNotPickedWidget
+import com.t8rin.ikittool.core.ui.widget.text.TopAppBarTitle
+import com.t8rin.ikittool.core.ui.widget.utils.AutoContentBasedColors
+import com.t8rin.ikittool.feature.load_net_image.presentation.components.LoadNetImageActionButtons
+import com.t8rin.ikittool.feature.load_net_image.presentation.components.LoadNetImageAdaptiveActions
+import com.t8rin.ikittool.feature.load_net_image.presentation.components.LoadNetImageTopAppBarActions
+import com.t8rin.ikittool.feature.load_net_image.presentation.components.LoadNetImageUrlTextField
+import com.t8rin.ikittool.feature.load_net_image.presentation.components.ParsedImagePreview
+import com.t8rin.ikittool.feature.load_net_image.presentation.components.ParsedImagesSelection
+import com.t8rin.ikittool.feature.load_net_image.presentation.screenLogic.LoadNetImageComponent
 
 @Composable
 fun LoadNetImageContent(

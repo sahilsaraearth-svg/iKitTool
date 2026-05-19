@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.modifier
+package com.t8rin.ikittool.core.ui.widget.modifier
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Surface
@@ -28,10 +28,10 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.model.pt
-import com.t8rin.imagetoolbox.core.ui.theme.ImageToolboxThemeForPreview
-import com.t8rin.imagetoolbox.core.ui.theme.toColor
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.model.pt
+import com.t8rin.ikittool.core.ui.theme.iKitToolThemeForPreview
+import com.t8rin.ikittool.core.ui.theme.toColor
 
 @Stable
 @Immutable
@@ -104,7 +104,7 @@ fun Modifier.drawHelperGrid(
 
 @Composable
 @Preview
-private fun Preview() = ImageToolboxThemeForPreview(false) {
+private fun Preview() = iKitToolThemeForPreview(false) {
     Surface(
         modifier = Modifier
             .fillMaxSize()

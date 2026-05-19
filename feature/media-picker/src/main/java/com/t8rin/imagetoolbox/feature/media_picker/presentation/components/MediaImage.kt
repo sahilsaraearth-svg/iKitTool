@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.media_picker.presentation.components
+package com.t8rin.ikittool.feature.media_picker.presentation.components
 
 import androidx.compose.animation.animateColor
 import androidx.compose.animation.core.animateDp
@@ -28,7 +28,7 @@ import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -49,19 +49,19 @@ import androidx.compose.ui.unit.dp
 import coil3.request.ImageRequest
 import coil3.request.allowHardware
 import coil3.size.Precision
-import com.t8rin.imagetoolbox.core.resources.icons.BrokenImageAlt
-import com.t8rin.imagetoolbox.core.resources.icons.CheckCircle
-import com.t8rin.imagetoolbox.core.resources.icons.Error
-import com.t8rin.imagetoolbox.core.ui.theme.White
-import com.t8rin.imagetoolbox.core.ui.theme.takeColorFromScheme
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.MediaCheckBox
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.hapticsCombinedClickable
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.AutoCornersShape
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.animateShape
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.Media
+import com.t8rin.ikittool.core.resources.icons.BrokenImageAlt
+import com.t8rin.ikittool.core.resources.icons.CheckCircle
+import com.t8rin.ikittool.core.resources.icons.Error
+import com.t8rin.ikittool.core.ui.theme.White
+import com.t8rin.ikittool.core.ui.theme.takeColorFromScheme
+import com.t8rin.ikittool.core.ui.widget.buttons.MediaCheckBox
+import com.t8rin.ikittool.core.ui.widget.enhanced.hapticsCombinedClickable
+import com.t8rin.ikittool.core.ui.widget.image.Picture
+import com.t8rin.ikittool.core.ui.widget.modifier.AutoCornersShape
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.animateShape
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.feature.media_picker.domain.model.Media
 
 @Composable
 fun MediaImage(

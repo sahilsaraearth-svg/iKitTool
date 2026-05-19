@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1367,8 +1367,8 @@
     <string name="recently_used">Недавно коришћено</string>
     <string name="ci_channel">ЦИ канал</string>
     <string name="group">Група</string>
-    <string name="image_toolbox_in_telegram">Кутија са алаткама за слике у Телеграму 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">Придружите се нашем ћаскању где можете да разговарате о свему што желите и такође погледајте ЦИ канал где објављујем бета верзије и најаве</string>
+    <string name="ikit_tool_in_telegram">Кутија са алаткама за слике у Телеграму 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">Придружите се нашем ћаскању где можете да разговарате о свему што желите и такође погледајте ЦИ канал где објављујем бета верзије и најаве</string>
     <string name="ci_channel_sub">Добијајте обавештења о новим верзијама апликације и читајте најаве</string>
     <string name="fit_description">Прилагодите слику датим димензијама и примените замућење или боју на позадину</string>
     <string name="tools_arrangement">Аранжман алата</string>

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.single_edit.presentation.components
+package com.t8rin.ikittool.feature.single_edit.presentation.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
@@ -39,7 +39,7 @@ import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.BottomSheetScaffold
 import androidx.compose.material3.BottomSheetScaffoldState
@@ -65,23 +65,23 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Close
-import com.t8rin.imagetoolbox.core.resources.icons.Tune
-import com.t8rin.imagetoolbox.core.ui.utils.helper.PredictiveBackObserver
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalScreenSize
-import com.t8rin.imagetoolbox.core.ui.utils.provider.ProvideContainerDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.ExitBackHandler
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.ExitWithoutSavingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedBottomSheetDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedVerticalScroll
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.clearFocusOnTap
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.drawHorizontalStroke
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.onSwipeDown
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.toShape
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.withLayoutCorners
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Close
+import com.t8rin.ikittool.core.resources.icons.Tune
+import com.t8rin.ikittool.core.ui.utils.helper.PredictiveBackObserver
+import com.t8rin.ikittool.core.ui.utils.provider.LocalScreenSize
+import com.t8rin.ikittool.core.ui.utils.provider.ProvideContainerDefaults
+import com.t8rin.ikittool.core.ui.widget.dialogs.ExitBackHandler
+import com.t8rin.ikittool.core.ui.widget.dialogs.ExitWithoutSavingDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedBottomSheetDefaults
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedVerticalScroll
+import com.t8rin.ikittool.core.ui.widget.modifier.clearFocusOnTap
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.drawHorizontalStroke
+import com.t8rin.ikittool.core.ui.widget.modifier.onSwipeDown
+import com.t8rin.ikittool.core.ui.widget.modifier.toShape
+import com.t8rin.ikittool.core.ui.widget.modifier.withLayoutCorners
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

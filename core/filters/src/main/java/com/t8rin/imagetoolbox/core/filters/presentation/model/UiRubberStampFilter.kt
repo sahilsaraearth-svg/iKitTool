@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,12 +15,12 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.filters.presentation.model
+package com.t8rin.ikittool.core.filters.presentation.model
 
-import com.t8rin.imagetoolbox.core.filters.domain.model.Filter
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.RubberStampParams
-import com.t8rin.imagetoolbox.core.ksp.annotations.UiFilterInject
-import com.t8rin.imagetoolbox.core.resources.R
+import com.t8rin.ikittool.core.filters.domain.model.Filter
+import com.t8rin.ikittool.core.filters.domain.model.params.RubberStampParams
+import com.t8rin.ikittool.core.ksp.annotations.UiFilterInject
+import com.t8rin.ikittool.core.resources.R
 
 @UiFilterInject(group = UiFilterInject.Groups.COLOR)
 class UiRubberStampFilter(

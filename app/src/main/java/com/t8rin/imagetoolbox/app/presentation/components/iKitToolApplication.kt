@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,33 +15,33 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.app.presentation.components
+package com.t8rin.ikittool.app.presentation.components
 
-import com.t8rin.imagetoolbox.app.presentation.components.functions.attachLogWriter
-import com.t8rin.imagetoolbox.app.presentation.components.functions.initCollages
-import com.t8rin.imagetoolbox.app.presentation.components.functions.initColorNames
-import com.t8rin.imagetoolbox.app.presentation.components.functions.initNeuralTool
-import com.t8rin.imagetoolbox.app.presentation.components.functions.initOpenCV
-import com.t8rin.imagetoolbox.app.presentation.components.functions.initPdfBox
-import com.t8rin.imagetoolbox.app.presentation.components.functions.initQrScanner
-import com.t8rin.imagetoolbox.app.presentation.components.functions.injectBaseComponent
-import com.t8rin.imagetoolbox.app.presentation.components.functions.registerSecurityProviders
-import com.t8rin.imagetoolbox.app.presentation.components.functions.setupFlags
-import com.t8rin.imagetoolbox.app.presentation.components.utils.isMain
-import com.t8rin.imagetoolbox.core.crash.presentation.components.applyGlobalExceptionHandler
-import com.t8rin.imagetoolbox.core.domain.coroutines.AppScope
-import com.t8rin.imagetoolbox.core.domain.remote.AnalyticsManager
-import com.t8rin.imagetoolbox.core.domain.saving.KeepAliveService
-import com.t8rin.imagetoolbox.core.resources.emoji.Emoji.initEmoji
-import com.t8rin.imagetoolbox.core.ui.utils.ComposeApplication
-import com.t8rin.imagetoolbox.core.utils.initAppContext
+import com.t8rin.ikittool.app.presentation.components.functions.attachLogWriter
+import com.t8rin.ikittool.app.presentation.components.functions.initCollages
+import com.t8rin.ikittool.app.presentation.components.functions.initColorNames
+import com.t8rin.ikittool.app.presentation.components.functions.initNeuralTool
+import com.t8rin.ikittool.app.presentation.components.functions.initOpenCV
+import com.t8rin.ikittool.app.presentation.components.functions.initPdfBox
+import com.t8rin.ikittool.app.presentation.components.functions.initQrScanner
+import com.t8rin.ikittool.app.presentation.components.functions.injectBaseComponent
+import com.t8rin.ikittool.app.presentation.components.functions.registerSecurityProviders
+import com.t8rin.ikittool.app.presentation.components.functions.setupFlags
+import com.t8rin.ikittool.app.presentation.components.utils.isMain
+import com.t8rin.ikittool.core.crash.presentation.components.applyGlobalExceptionHandler
+import com.t8rin.ikittool.core.domain.coroutines.AppScope
+import com.t8rin.ikittool.core.domain.remote.AnalyticsManager
+import com.t8rin.ikittool.core.domain.saving.KeepAliveService
+import com.t8rin.ikittool.core.resources.emoji.Emoji.initEmoji
+import com.t8rin.ikittool.core.ui.utils.ComposeApplication
+import com.t8rin.ikittool.core.utils.initAppContext
 import dagger.hilt.android.HiltAndroidApp
 import io.ktor.client.HttpClient
 import javax.inject.Inject
 
 
 @HiltAndroidApp
-class ImageToolboxApplication : ComposeApplication() {
+class iKitToolApplication : ComposeApplication() {
 
     @Inject
     lateinit var keepAliveService: KeepAliveService

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@
 @file:Suppress("DEPRECATION")
 @file:SuppressLint("UnnecessaryComposedModifier")
 
-package com.t8rin.imagetoolbox.core.ui.widget.enhanced
+package com.t8rin.ikittool.core.ui.widget.enhanced
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -43,7 +43,7 @@ import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.semantics.Role
 import androidx.core.content.getSystemService
-import com.t8rin.imagetoolbox.core.utils.makeLog
+import com.t8rin.ikittool.core.utils.makeLog
 
 private fun View.vibrate() =
     reallyPerformHapticFeedback(HapticFeedbackConstants.CONTEXT_CLICK)

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.utils
+package com.t8rin.ikittool.core.utils
 
 import android.content.ContentResolver
 import android.content.ContentUris
@@ -29,11 +29,11 @@ import android.webkit.MimeTypeMap
 import androidx.core.net.toFile
 import androidx.core.net.toUri
 import androidx.documentfile.provider.DocumentFile
-import com.t8rin.imagetoolbox.core.domain.model.FileModel
-import com.t8rin.imagetoolbox.core.domain.model.ImageModel
-import com.t8rin.imagetoolbox.core.domain.model.SortType
-import com.t8rin.imagetoolbox.core.domain.utils.ListUtils.sortedByKey
-import com.t8rin.imagetoolbox.core.resources.R
+import com.t8rin.ikittool.core.domain.model.FileModel
+import com.t8rin.ikittool.core.domain.model.ImageModel
+import com.t8rin.ikittool.core.domain.model.SortType
+import com.t8rin.ikittool.core.domain.utils.ListUtils.sortedByKey
+import com.t8rin.ikittool.core.resources.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.Flow

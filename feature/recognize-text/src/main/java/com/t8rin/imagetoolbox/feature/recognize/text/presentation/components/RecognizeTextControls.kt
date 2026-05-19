@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,38 +15,38 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.recognize.text.presentation.components
+package com.t8rin.ikittool.feature.recognize.text.presentation.components
 
 import android.net.Uri
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.model.MimeType
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.CameraAlt
-import com.t8rin.imagetoolbox.core.resources.icons.CropSmall
-import com.t8rin.imagetoolbox.core.ui.theme.mixedContainer
-import com.t8rin.imagetoolbox.core.ui.theme.onMixedContainer
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.ImagePickerMode
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.Picker
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.localImagePickerMode
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberFileCreator
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberFilePicker
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberImagePicker
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.widget.controls.ImageTransformBar
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.other.LinkPreviewList
-import com.t8rin.imagetoolbox.feature.recognize.text.presentation.screenLogic.RecognizeTextComponent
+import com.t8rin.ikittool.core.domain.model.MimeType
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.CameraAlt
+import com.t8rin.ikittool.core.resources.icons.CropSmall
+import com.t8rin.ikittool.core.ui.theme.mixedContainer
+import com.t8rin.ikittool.core.ui.theme.onMixedContainer
+import com.t8rin.ikittool.core.ui.utils.content_pickers.ImagePickerMode
+import com.t8rin.ikittool.core.ui.utils.content_pickers.Picker
+import com.t8rin.ikittool.core.ui.utils.content_pickers.localImagePickerMode
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberFileCreator
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberFilePicker
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberImagePicker
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.widget.controls.ImageTransformBar
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.other.LinkPreviewList
+import com.t8rin.ikittool.feature.recognize.text.presentation.screenLogic.RecognizeTextComponent
 
 @Composable
 internal fun RecognizeTextControls(

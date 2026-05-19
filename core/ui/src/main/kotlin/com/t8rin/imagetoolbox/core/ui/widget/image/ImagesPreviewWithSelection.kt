@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.image
+package com.t8rin.ikittool.core.ui.widget.image
 
 import android.net.Uri
 import androidx.compose.animation.AnimatedContent
@@ -67,22 +67,22 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.net.toUri
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFrames
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.icons.BrokenImageAlt
-import com.t8rin.imagetoolbox.core.resources.icons.CheckCircle
-import com.t8rin.imagetoolbox.core.resources.icons.RadioButtonUnchecked
-import com.t8rin.imagetoolbox.core.ui.theme.White
-import com.t8rin.imagetoolbox.core.ui.theme.takeColorFromScheme
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.rememberFileExtension
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.rememberHumanFileSize
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalScreenSize
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedLoadingIndicator
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.AutoCornersShape
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.advancedShadow
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.dragHandler
+import com.t8rin.ikittool.core.domain.image.model.ImageFrames
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.icons.BrokenImageAlt
+import com.t8rin.ikittool.core.resources.icons.CheckCircle
+import com.t8rin.ikittool.core.resources.icons.RadioButtonUnchecked
+import com.t8rin.ikittool.core.ui.theme.White
+import com.t8rin.ikittool.core.ui.theme.takeColorFromScheme
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.rememberFileExtension
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.rememberHumanFileSize
+import com.t8rin.ikittool.core.ui.utils.provider.LocalScreenSize
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedLoadingIndicator
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedFlingBehavior
+import com.t8rin.ikittool.core.ui.widget.modifier.AutoCornersShape
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.advancedShadow
+import com.t8rin.ikittool.core.ui.widget.modifier.dragHandler
 
 @Composable
 fun ImagesPreviewWithSelection(

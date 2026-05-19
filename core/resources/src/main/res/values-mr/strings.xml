@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1083,7 +1083,7 @@
     <string name="antialias">अँटिलियास</string>
     <string name="antialias_sub">तीक्ष्ण कडा रोखण्यासाठी अँटिलायझिंग सक्षम करते</string>
     <string name="open_edit_instead_of_preview">पूर्वावलोकनाऐवजी संपादन उघडा</string>
-    <string name="open_edit_instead_of_preview_sub">जेव्हा तुम्ही ImageToolbox मध्ये उघडण्यासाठी (पूर्वावलोकन) प्रतिमा निवडता, तेव्हा पूर्वावलोकन करण्याऐवजी संपादन निवड पत्रक उघडले जाईल</string>
+    <string name="open_edit_instead_of_preview_sub">जेव्हा तुम्ही iKitTool मध्ये उघडण्यासाठी (पूर्वावलोकन) प्रतिमा निवडता, तेव्हा पूर्वावलोकन करण्याऐवजी संपादन निवड पत्रक उघडले जाईल</string>
     <string name="document_scanner">दस्तऐवज स्कॅनर</string>
     <string name="document_scanner_sub">दस्तऐवज स्कॅन करा आणि त्यांच्यापासून PDF किंवा वेगळ्या प्रतिमा तयार करा</string>
     <string name="click_to_start_scanning">स्कॅनिंग सुरू करण्यासाठी क्लिक करा</string>
@@ -1370,8 +1370,8 @@
     <string name="recently_used">अलीकडे वापरले</string>
     <string name="ci_channel">सीआय चॅनेल</string>
     <string name="group">गट</string>
-    <string name="image_toolbox_in_telegram">टेलीग्राम मधील इमेज टूलबॉक्स 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">आमच्या चॅटमध्ये सामील व्हा जिथे तुम्ही तुम्हाला पाहिजे असलेल्या कोणत्याही गोष्टीवर चर्चा करू शकता आणि मी बीटा आणि घोषणा पोस्ट करत असलेल्या CI चॅनेलमध्ये देखील पाहू शकता</string>
+    <string name="ikit_tool_in_telegram">टेलीग्राम मधील इमेज टूलबॉक्स 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">आमच्या चॅटमध्ये सामील व्हा जिथे तुम्ही तुम्हाला पाहिजे असलेल्या कोणत्याही गोष्टीवर चर्चा करू शकता आणि मी बीटा आणि घोषणा पोस्ट करत असलेल्या CI चॅनेलमध्ये देखील पाहू शकता</string>
     <string name="ci_channel_sub">ॲपच्या नवीन आवृत्त्यांबद्दल सूचना मिळवा आणि घोषणा वाचा</string>
     <string name="fit_description">दिलेल्या परिमाणांमध्ये प्रतिमा फिट करा आणि पार्श्वभूमीला अस्पष्ट किंवा रंग लागू करा</string>
     <string name="tools_arrangement">साधने व्यवस्था</string>

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.gif_tools.data
+package com.t8rin.ikittool.feature.gif_tools.data
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -31,20 +31,20 @@ import com.awxkee.jxlcoder.JxlEffort
 import com.t8rin.awebp.encoder.AnimatedWebpEncoder
 import com.t8rin.gif_converter.GifDecoder
 import com.t8rin.gif_converter.GifEncoder
-import com.t8rin.imagetoolbox.core.data.image.utils.drawBitmap
-import com.t8rin.imagetoolbox.core.data.utils.safeConfig
-import com.t8rin.imagetoolbox.core.data.utils.toSoftware
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.ImageShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFrames
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageInfo
-import com.t8rin.imagetoolbox.core.domain.image.model.Quality
-import com.t8rin.imagetoolbox.core.domain.saving.FailureNotifier
-import com.t8rin.imagetoolbox.core.domain.utils.runSuspendCatching
-import com.t8rin.imagetoolbox.feature.gif_tools.domain.GifConverter
-import com.t8rin.imagetoolbox.feature.gif_tools.domain.GifParams
+import com.t8rin.ikittool.core.data.image.utils.drawBitmap
+import com.t8rin.ikittool.core.data.utils.safeConfig
+import com.t8rin.ikittool.core.data.utils.toSoftware
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.ImageShareProvider
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.ImageFrames
+import com.t8rin.ikittool.core.domain.image.model.ImageInfo
+import com.t8rin.ikittool.core.domain.image.model.Quality
+import com.t8rin.ikittool.core.domain.saving.FailureNotifier
+import com.t8rin.ikittool.core.domain.utils.runSuspendCatching
+import com.t8rin.ikittool.feature.gif_tools.domain.GifConverter
+import com.t8rin.ikittool.feature.gif_tools.domain.GifParams
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.currentCoroutineContext

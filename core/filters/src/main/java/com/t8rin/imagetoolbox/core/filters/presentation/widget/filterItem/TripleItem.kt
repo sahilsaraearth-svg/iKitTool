@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,25 +15,25 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem
+package com.t8rin.ikittool.core.filters.presentation.widget.filterItem
 
 import androidx.compose.runtime.Composable
-import com.t8rin.imagetoolbox.core.domain.model.ColorModel
-import com.t8rin.imagetoolbox.core.domain.model.ImageModel
-import com.t8rin.imagetoolbox.core.domain.utils.cast
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.BlurEdgeMode
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.PaletteTransferSpace
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.PopArtBlendingMode
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.TransferFunc
-import com.t8rin.imagetoolbox.core.filters.presentation.model.UiFilter
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.triple_components.ColorModelTripleItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.triple_components.FloatPaletteImageModelTripleItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.triple_components.NumberColorModelColorModelTripleItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.triple_components.NumberColorModelPopArtTripleItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.triple_components.NumberNumberBlurEdgeModeTripleItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.triple_components.NumberNumberColorModelTripleItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.triple_components.NumberTransferFuncBlurEdgeModeTripleItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.triple_components.NumberTripleItem
+import com.t8rin.ikittool.core.domain.model.ColorModel
+import com.t8rin.ikittool.core.domain.model.ImageModel
+import com.t8rin.ikittool.core.domain.utils.cast
+import com.t8rin.ikittool.core.filters.domain.model.enums.BlurEdgeMode
+import com.t8rin.ikittool.core.filters.domain.model.enums.PaletteTransferSpace
+import com.t8rin.ikittool.core.filters.domain.model.enums.PopArtBlendingMode
+import com.t8rin.ikittool.core.filters.domain.model.enums.TransferFunc
+import com.t8rin.ikittool.core.filters.presentation.model.UiFilter
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.triple_components.ColorModelTripleItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.triple_components.FloatPaletteImageModelTripleItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.triple_components.NumberColorModelColorModelTripleItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.triple_components.NumberColorModelPopArtTripleItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.triple_components.NumberNumberBlurEdgeModeTripleItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.triple_components.NumberNumberColorModelTripleItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.triple_components.NumberTransferFuncBlurEdgeModeTripleItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.triple_components.NumberTripleItem
 
 @Composable
 internal fun TripleItem(

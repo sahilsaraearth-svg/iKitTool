@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,50 +15,50 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.data.project
+package com.t8rin.ikittool.feature.markup_layers.data.project
 
 import android.net.Uri
 import androidx.core.net.toUri
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.model.Outline
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.settings.domain.SettingsManager
-import com.t8rin.imagetoolbox.core.settings.domain.model.DomainFontFamily
-import com.t8rin.imagetoolbox.core.settings.domain.model.FontType
-import com.t8rin.imagetoolbox.core.settings.presentation.model.UiFontFamily
-import com.t8rin.imagetoolbox.core.settings.presentation.model.asFontType
-import com.t8rin.imagetoolbox.core.settings.presentation.model.asUi
-import com.t8rin.imagetoolbox.core.ui.utils.helper.entries
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.core.utils.extension
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.core.utils.makeLog
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.DropShadow
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.LayerPosition
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.LayerType
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupLayer
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupProject
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupProjectHistorySnapshot
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupProjectResult
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.ProjectBackground
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.TextGeometricTransform
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.arrowAngle
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.arrowSizeScale
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.cornerRadius
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.innerRadiusRatio
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.isRegular
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.layerCornerRadiusPercent
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.ordinal
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.outlinedFillColorInt
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.resolveMarkupLayerShapeMode
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.rotationDegrees
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.updateArrow
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.updatePolygon
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.updateRect
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.updateStar
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.vertices
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.withOutlinedFillColor
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.model.Outline
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.settings.domain.SettingsManager
+import com.t8rin.ikittool.core.settings.domain.model.DomainFontFamily
+import com.t8rin.ikittool.core.settings.domain.model.FontType
+import com.t8rin.ikittool.core.settings.presentation.model.UiFontFamily
+import com.t8rin.ikittool.core.settings.presentation.model.asFontType
+import com.t8rin.ikittool.core.settings.presentation.model.asUi
+import com.t8rin.ikittool.core.ui.utils.helper.entries
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.core.utils.extension
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.core.utils.makeLog
+import com.t8rin.ikittool.feature.markup_layers.domain.DropShadow
+import com.t8rin.ikittool.feature.markup_layers.domain.LayerPosition
+import com.t8rin.ikittool.feature.markup_layers.domain.LayerType
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupLayer
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupProject
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupProjectHistorySnapshot
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupProjectResult
+import com.t8rin.ikittool.feature.markup_layers.domain.ProjectBackground
+import com.t8rin.ikittool.feature.markup_layers.domain.TextGeometricTransform
+import com.t8rin.ikittool.feature.markup_layers.domain.arrowAngle
+import com.t8rin.ikittool.feature.markup_layers.domain.arrowSizeScale
+import com.t8rin.ikittool.feature.markup_layers.domain.cornerRadius
+import com.t8rin.ikittool.feature.markup_layers.domain.innerRadiusRatio
+import com.t8rin.ikittool.feature.markup_layers.domain.isRegular
+import com.t8rin.ikittool.feature.markup_layers.domain.layerCornerRadiusPercent
+import com.t8rin.ikittool.feature.markup_layers.domain.ordinal
+import com.t8rin.ikittool.feature.markup_layers.domain.outlinedFillColorInt
+import com.t8rin.ikittool.feature.markup_layers.domain.resolveMarkupLayerShapeMode
+import com.t8rin.ikittool.feature.markup_layers.domain.rotationDegrees
+import com.t8rin.ikittool.feature.markup_layers.domain.updateArrow
+import com.t8rin.ikittool.feature.markup_layers.domain.updatePolygon
+import com.t8rin.ikittool.feature.markup_layers.domain.updateRect
+import com.t8rin.ikittool.feature.markup_layers.domain.updateStar
+import com.t8rin.ikittool.feature.markup_layers.domain.vertices
+import com.t8rin.ikittool.feature.markup_layers.domain.withOutlinedFillColor
 import java.io.File
 import javax.inject.Inject
 

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.collage_maker.presentation
+package com.t8rin.ikittool.collage_maker.presentation
 
 import android.content.pm.ActivityInfo
 import android.graphics.drawable.Drawable
@@ -71,60 +71,60 @@ import com.t8rin.collages.Collage
 import com.t8rin.collages.CollageTypeSelection
 import com.t8rin.collages.public.CollageConstants
 import com.t8rin.colors.util.roundToTwoDigits
-import com.t8rin.imagetoolbox.collage_maker.presentation.screenLogic.CollageMakerComponent
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormatGroup
-import com.t8rin.imagetoolbox.core.domain.model.DomainAspectRatio
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Add
-import com.t8rin.imagetoolbox.core.resources.icons.BackgroundColor
-import com.t8rin.imagetoolbox.core.resources.icons.Collage
-import com.t8rin.imagetoolbox.core.resources.icons.Delete
-import com.t8rin.imagetoolbox.core.resources.icons.FormatLineSpacing
-import com.t8rin.imagetoolbox.core.resources.icons.ImageReset
-import com.t8rin.imagetoolbox.core.resources.icons.PhotoSizeSelectSmall
-import com.t8rin.imagetoolbox.core.resources.icons.PinEnd
-import com.t8rin.imagetoolbox.core.resources.icons.RoundedCorner
-import com.t8rin.imagetoolbox.core.resources.icons.SwapHoriz
-import com.t8rin.imagetoolbox.core.resources.icons.SwipeVertical
-import com.t8rin.imagetoolbox.core.resources.icons.Tune
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.Picker
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberImagePicker
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.helper.Clipboard
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.widget.AdaptiveBottomScaffoldLayoutScreen
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.BottomButtonsBlock
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.ShareButton
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ColorRowSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ImageFormatSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.QualitySelector
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.ExitWithoutSavingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.LoadingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.OneTimeImagePickingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.OneTimeSaveLocationSelectionDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.ResetDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedBadge
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedSliderItem
-import com.t8rin.imagetoolbox.core.ui.widget.image.AspectRatioSelector
-import com.t8rin.imagetoolbox.core.ui.widget.image.AutoFilePicker
-import com.t8rin.imagetoolbox.core.ui.widget.image.ImageNotPickedWidget
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.fadingEdges
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.scaleOnTap
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.shimmer
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.transparencyChecker
-import com.t8rin.imagetoolbox.core.ui.widget.other.InfoContainer
-import com.t8rin.imagetoolbox.core.ui.widget.other.LockScreenOrientation
-import com.t8rin.imagetoolbox.core.ui.widget.other.TopAppBarEmoji
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceRowSwitch
-import com.t8rin.imagetoolbox.core.ui.widget.sheets.ProcessImagesPreferenceSheet
-import com.t8rin.imagetoolbox.core.ui.widget.text.TopAppBarTitle
-import com.t8rin.imagetoolbox.core.ui.widget.text.marquee
-import com.t8rin.imagetoolbox.core.utils.getString
+import com.t8rin.ikittool.collage_maker.presentation.screenLogic.CollageMakerComponent
+import com.t8rin.ikittool.core.domain.image.model.ImageFormatGroup
+import com.t8rin.ikittool.core.domain.model.DomainAspectRatio
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Add
+import com.t8rin.ikittool.core.resources.icons.BackgroundColor
+import com.t8rin.ikittool.core.resources.icons.Collage
+import com.t8rin.ikittool.core.resources.icons.Delete
+import com.t8rin.ikittool.core.resources.icons.FormatLineSpacing
+import com.t8rin.ikittool.core.resources.icons.ImageReset
+import com.t8rin.ikittool.core.resources.icons.PhotoSizeSelectSmall
+import com.t8rin.ikittool.core.resources.icons.PinEnd
+import com.t8rin.ikittool.core.resources.icons.RoundedCorner
+import com.t8rin.ikittool.core.resources.icons.SwapHoriz
+import com.t8rin.ikittool.core.resources.icons.SwipeVertical
+import com.t8rin.ikittool.core.resources.icons.Tune
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.utils.content_pickers.Picker
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberImagePicker
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.helper.Clipboard
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.widget.AdaptiveBottomScaffoldLayoutScreen
+import com.t8rin.ikittool.core.ui.widget.buttons.BottomButtonsBlock
+import com.t8rin.ikittool.core.ui.widget.buttons.ShareButton
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ColorRowSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ImageFormatSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.QualitySelector
+import com.t8rin.ikittool.core.ui.widget.dialogs.ExitWithoutSavingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.LoadingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.OneTimeImagePickingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.OneTimeSaveLocationSelectionDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.ResetDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedBadge
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedSliderItem
+import com.t8rin.ikittool.core.ui.widget.image.AspectRatioSelector
+import com.t8rin.ikittool.core.ui.widget.image.AutoFilePicker
+import com.t8rin.ikittool.core.ui.widget.image.ImageNotPickedWidget
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.fadingEdges
+import com.t8rin.ikittool.core.ui.widget.modifier.scaleOnTap
+import com.t8rin.ikittool.core.ui.widget.modifier.shimmer
+import com.t8rin.ikittool.core.ui.widget.modifier.transparencyChecker
+import com.t8rin.ikittool.core.ui.widget.other.InfoContainer
+import com.t8rin.ikittool.core.ui.widget.other.LockScreenOrientation
+import com.t8rin.ikittool.core.ui.widget.other.TopAppBarEmoji
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceRowSwitch
+import com.t8rin.ikittool.core.ui.widget.sheets.ProcessImagesPreferenceSheet
+import com.t8rin.ikittool.core.ui.widget.text.TopAppBarTitle
+import com.t8rin.ikittool.core.ui.widget.text.marquee
+import com.t8rin.ikittool.core.utils.getString
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import net.engawapg.lib.zoomable.rememberZoomState

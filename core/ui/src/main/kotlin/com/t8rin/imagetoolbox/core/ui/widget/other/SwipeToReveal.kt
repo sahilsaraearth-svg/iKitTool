@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("TYPEALIAS_EXPANSION_DEPRECATION", "DEPRECATION")
 
-package com.t8rin.imagetoolbox.core.ui.widget.other
+package com.t8rin.ikittool.core.ui.widget.other
 
 import androidx.compose.animation.core.Easing
 import androidx.compose.foundation.gestures.Orientation
@@ -47,7 +47,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.ui.utils.animation.AlphaEasing
+import com.t8rin.ikittool.core.ui.utils.animation.AlphaEasing
 import kotlin.math.absoluteValue
 import kotlin.math.roundToInt
 

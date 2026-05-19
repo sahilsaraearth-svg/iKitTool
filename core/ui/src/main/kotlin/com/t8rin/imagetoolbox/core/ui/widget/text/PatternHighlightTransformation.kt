@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.text
+package com.t8rin.ikittool.core.ui.widget.text
 
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
@@ -29,10 +29,10 @@ import androidx.compose.ui.text.input.OffsetMapping
 import androidx.compose.ui.text.input.TransformedText
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern
-import com.t8rin.imagetoolbox.core.ui.theme.ImageToolboxThemeForPreview
-import com.t8rin.imagetoolbox.core.ui.theme.blend
-import com.t8rin.imagetoolbox.core.ui.theme.takeColorFromScheme
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern
+import com.t8rin.ikittool.core.ui.theme.iKitToolThemeForPreview
+import com.t8rin.ikittool.core.ui.theme.blend
+import com.t8rin.ikittool.core.ui.theme.takeColorFromScheme
 
 data class PatternHighlightTransformation(
     private val mapping: Map<Regex, Color>
@@ -96,7 +96,7 @@ private val UPPER_PATTERN_TOKENS = Regex(
 
 @Preview
 @Composable
-private fun Preview() = ImageToolboxThemeForPreview(
+private fun Preview() = iKitToolThemeForPreview(
     isDarkTheme = true,
     keyColor = Color.Blue
 ) {
@@ -109,7 +109,7 @@ private fun Preview() = ImageToolboxThemeForPreview(
 
 @Preview
 @Composable
-private fun Preview1() = ImageToolboxThemeForPreview(
+private fun Preview1() = iKitToolThemeForPreview(
     isDarkTheme = false,
     keyColor = Color.Blue
 ) {

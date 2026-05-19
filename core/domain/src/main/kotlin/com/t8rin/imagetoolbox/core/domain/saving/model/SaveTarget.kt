@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,9 +15,9 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.domain.saving.model
+package com.t8rin.ikittool.core.domain.saving.model
 
-import com.t8rin.imagetoolbox.core.domain.model.MimeType
+import com.t8rin.ikittool.core.domain.model.MimeType
 
 interface SaveTarget {
     val originalUri: String

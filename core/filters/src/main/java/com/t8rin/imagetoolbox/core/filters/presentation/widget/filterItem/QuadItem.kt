@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,15 +15,15 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem
+package com.t8rin.ikittool.core.filters.presentation.widget.filterItem
 
 import androidx.compose.runtime.Composable
-import com.t8rin.imagetoolbox.core.domain.model.ColorModel
-import com.t8rin.imagetoolbox.core.domain.utils.Quad
-import com.t8rin.imagetoolbox.core.domain.utils.cast
-import com.t8rin.imagetoolbox.core.filters.presentation.model.UiFilter
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.quad_components.NumberColorModelQuadItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.quad_components.NumberQuadItem
+import com.t8rin.ikittool.core.domain.model.ColorModel
+import com.t8rin.ikittool.core.domain.utils.Quad
+import com.t8rin.ikittool.core.domain.utils.cast
+import com.t8rin.ikittool.core.filters.presentation.model.UiFilter
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.quad_components.NumberColorModelQuadItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.quad_components.NumberQuadItem
 
 
 @Composable

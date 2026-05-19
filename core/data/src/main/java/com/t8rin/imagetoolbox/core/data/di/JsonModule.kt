@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,16 +15,16 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.data.di
+package com.t8rin.ikittool.core.data.di
 
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.adapters.PolymorphicJsonAdapterFactory
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
-import com.t8rin.imagetoolbox.core.data.json.MoshiParser
-import com.t8rin.imagetoolbox.core.domain.image.model.Quality
-import com.t8rin.imagetoolbox.core.domain.json.JsonParser
-import com.t8rin.imagetoolbox.core.settings.domain.model.FilenameBehavior
-import com.t8rin.imagetoolbox.core.settings.domain.model.ShapeType
+import com.t8rin.ikittool.core.data.json.MoshiParser
+import com.t8rin.ikittool.core.domain.image.model.Quality
+import com.t8rin.ikittool.core.domain.json.JsonParser
+import com.t8rin.ikittool.core.settings.domain.model.FilenameBehavior
+import com.t8rin.ikittool.core.settings.domain.model.ShapeType
 import dagger.Binds
 import dagger.Module
 import dagger.Provides

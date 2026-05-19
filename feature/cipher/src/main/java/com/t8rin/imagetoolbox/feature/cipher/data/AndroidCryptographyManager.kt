@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,15 +17,15 @@
 
 @file:Suppress("PrivatePropertyName", "SpellCheckingInspection")
 
-package com.t8rin.imagetoolbox.feature.cipher.data
+package com.t8rin.ikittool.feature.cipher.data
 
-import com.t8rin.imagetoolbox.core.data.saving.io.StringReadable
-import com.t8rin.imagetoolbox.core.data.utils.computeBytesFromReadable
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.model.CipherType
-import com.t8rin.imagetoolbox.core.domain.model.HashingType
-import com.t8rin.imagetoolbox.feature.cipher.domain.CryptographyManager
-import com.t8rin.imagetoolbox.feature.cipher.domain.WrongKeyException
+import com.t8rin.ikittool.core.data.saving.io.StringReadable
+import com.t8rin.ikittool.core.data.utils.computeBytesFromReadable
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.model.CipherType
+import com.t8rin.ikittool.core.domain.model.HashingType
+import com.t8rin.ikittool.feature.cipher.domain.CryptographyManager
+import com.t8rin.ikittool.feature.cipher.domain.WrongKeyException
 import kotlinx.coroutines.withContext
 import java.security.Key
 import java.security.SecureRandom

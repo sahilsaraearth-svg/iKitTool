@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.wallpapers_export.data
+package com.t8rin.ikittool.feature.wallpapers_export.data
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -29,18 +29,18 @@ import android.os.Build
 import android.os.Environment
 import androidx.core.graphics.drawable.toBitmap
 import androidx.core.graphics.drawable.toDrawable
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageInfo
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.ui.utils.permission.PermissionUtils.hasPermissionAllowed
-import com.t8rin.imagetoolbox.core.utils.makeLog
-import com.t8rin.imagetoolbox.feature.wallpapers_export.domain.WallpapersProvider
-import com.t8rin.imagetoolbox.feature.wallpapers_export.domain.model.Permission
-import com.t8rin.imagetoolbox.feature.wallpapers_export.domain.model.Wallpaper
-import com.t8rin.imagetoolbox.feature.wallpapers_export.domain.model.WallpapersResult
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageShareProvider
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.ImageInfo
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.ui.utils.permission.PermissionUtils.hasPermissionAllowed
+import com.t8rin.ikittool.core.utils.makeLog
+import com.t8rin.ikittool.feature.wallpapers_export.domain.WallpapersProvider
+import com.t8rin.ikittool.feature.wallpapers_export.domain.model.Permission
+import com.t8rin.ikittool.feature.wallpapers_export.domain.model.Wallpaper
+import com.t8rin.ikittool.feature.wallpapers_export.domain.model.WallpapersResult
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

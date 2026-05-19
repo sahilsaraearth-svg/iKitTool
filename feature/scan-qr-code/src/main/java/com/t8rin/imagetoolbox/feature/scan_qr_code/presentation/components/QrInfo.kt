@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,41 +15,41 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.scan_qr_code.presentation.components
+package com.t8rin.ikittool.feature.scan_qr_code.presentation.components
 
 import android.content.Intent
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.t8rin.imagetoolbox.core.domain.model.QrType
-import com.t8rin.imagetoolbox.core.domain.model.QrType.Wifi.EncryptionType
-import com.t8rin.imagetoolbox.core.domain.utils.trimTrailingZero
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.AlternateEmail
-import com.t8rin.imagetoolbox.core.resources.icons.Badge
-import com.t8rin.imagetoolbox.core.resources.icons.Business
-import com.t8rin.imagetoolbox.core.resources.icons.Description
-import com.t8rin.imagetoolbox.core.resources.icons.Event
-import com.t8rin.imagetoolbox.core.resources.icons.Flag
-import com.t8rin.imagetoolbox.core.resources.icons.HashTag
-import com.t8rin.imagetoolbox.core.resources.icons.Home
-import com.t8rin.imagetoolbox.core.resources.icons.Info
-import com.t8rin.imagetoolbox.core.resources.icons.Latitude
-import com.t8rin.imagetoolbox.core.resources.icons.Link
-import com.t8rin.imagetoolbox.core.resources.icons.Longitude
-import com.t8rin.imagetoolbox.core.resources.icons.NoteSticky
-import com.t8rin.imagetoolbox.core.resources.icons.Password
-import com.t8rin.imagetoolbox.core.resources.icons.Person
-import com.t8rin.imagetoolbox.core.resources.icons.Phone
-import com.t8rin.imagetoolbox.core.resources.icons.Place
-import com.t8rin.imagetoolbox.core.resources.icons.Public
-import com.t8rin.imagetoolbox.core.resources.icons.RecordVoiceOver
-import com.t8rin.imagetoolbox.core.resources.icons.Security
-import com.t8rin.imagetoolbox.core.resources.icons.ShortText
-import com.t8rin.imagetoolbox.core.resources.icons.Start
-import com.t8rin.imagetoolbox.core.resources.icons.TextFields
-import com.t8rin.imagetoolbox.core.resources.icons.Topic
-import com.t8rin.imagetoolbox.core.utils.getString
+import com.t8rin.ikittool.core.domain.model.QrType
+import com.t8rin.ikittool.core.domain.model.QrType.Wifi.EncryptionType
+import com.t8rin.ikittool.core.domain.utils.trimTrailingZero
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.AlternateEmail
+import com.t8rin.ikittool.core.resources.icons.Badge
+import com.t8rin.ikittool.core.resources.icons.Business
+import com.t8rin.ikittool.core.resources.icons.Description
+import com.t8rin.ikittool.core.resources.icons.Event
+import com.t8rin.ikittool.core.resources.icons.Flag
+import com.t8rin.ikittool.core.resources.icons.HashTag
+import com.t8rin.ikittool.core.resources.icons.Home
+import com.t8rin.ikittool.core.resources.icons.Info
+import com.t8rin.ikittool.core.resources.icons.Latitude
+import com.t8rin.ikittool.core.resources.icons.Link
+import com.t8rin.ikittool.core.resources.icons.Longitude
+import com.t8rin.ikittool.core.resources.icons.NoteSticky
+import com.t8rin.ikittool.core.resources.icons.Password
+import com.t8rin.ikittool.core.resources.icons.Person
+import com.t8rin.ikittool.core.resources.icons.Phone
+import com.t8rin.ikittool.core.resources.icons.Place
+import com.t8rin.ikittool.core.resources.icons.Public
+import com.t8rin.ikittool.core.resources.icons.RecordVoiceOver
+import com.t8rin.ikittool.core.resources.icons.Security
+import com.t8rin.ikittool.core.resources.icons.ShortText
+import com.t8rin.ikittool.core.resources.icons.Start
+import com.t8rin.ikittool.core.resources.icons.TextFields
+import com.t8rin.ikittool.core.resources.icons.Topic
+import com.t8rin.ikittool.core.utils.getString
 import java.text.DateFormat
 
 internal data class InfoEntry(

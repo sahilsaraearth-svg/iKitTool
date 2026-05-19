@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.ai_tools.presentation.components
+package com.t8rin.ikittool.feature.ai_tools.presentation.components
 
 import androidx.compose.foundation.LocalIndication
 import androidx.compose.foundation.background
@@ -44,37 +44,37 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.utils.humanFileSize
-import com.t8rin.imagetoolbox.core.domain.utils.roundTo
-import com.t8rin.imagetoolbox.core.domain.utils.trimTrailingZero
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.AutoFixHigh
-import com.t8rin.imagetoolbox.core.resources.icons.Bolt
-import com.t8rin.imagetoolbox.core.resources.icons.BrokenImageAlt
-import com.t8rin.imagetoolbox.core.resources.icons.Cloud
-import com.t8rin.imagetoolbox.core.resources.icons.DirectionsWalk
-import com.t8rin.imagetoolbox.core.resources.icons.Eraser
-import com.t8rin.imagetoolbox.core.resources.icons.Eyedropper
-import com.t8rin.imagetoolbox.core.resources.icons.File
-import com.t8rin.imagetoolbox.core.resources.icons.Jpg
-import com.t8rin.imagetoolbox.core.resources.icons.Manga
-import com.t8rin.imagetoolbox.core.resources.icons.NoiseAlt
-import com.t8rin.imagetoolbox.core.resources.icons.QualityHigh
-import com.t8rin.imagetoolbox.core.resources.icons.Rabbit
-import com.t8rin.imagetoolbox.core.resources.icons.Scanner
-import com.t8rin.imagetoolbox.core.resources.icons.Snail
-import com.t8rin.imagetoolbox.core.resources.icons.Tortoise
-import com.t8rin.imagetoolbox.core.ui.theme.ImageToolboxThemeForPreview
-import com.t8rin.imagetoolbox.core.ui.theme.blend
-import com.t8rin.imagetoolbox.core.ui.theme.takeColorFromScheme
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.hapticsClickable
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.shapeByInteraction
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.model.NeuralConstants
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.model.NeuralModel
+import com.t8rin.ikittool.core.domain.utils.humanFileSize
+import com.t8rin.ikittool.core.domain.utils.roundTo
+import com.t8rin.ikittool.core.domain.utils.trimTrailingZero
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.AutoFixHigh
+import com.t8rin.ikittool.core.resources.icons.Bolt
+import com.t8rin.ikittool.core.resources.icons.BrokenImageAlt
+import com.t8rin.ikittool.core.resources.icons.Cloud
+import com.t8rin.ikittool.core.resources.icons.DirectionsWalk
+import com.t8rin.ikittool.core.resources.icons.Eraser
+import com.t8rin.ikittool.core.resources.icons.Eyedropper
+import com.t8rin.ikittool.core.resources.icons.File
+import com.t8rin.ikittool.core.resources.icons.Jpg
+import com.t8rin.ikittool.core.resources.icons.Manga
+import com.t8rin.ikittool.core.resources.icons.NoiseAlt
+import com.t8rin.ikittool.core.resources.icons.QualityHigh
+import com.t8rin.ikittool.core.resources.icons.Rabbit
+import com.t8rin.ikittool.core.resources.icons.Scanner
+import com.t8rin.ikittool.core.resources.icons.Snail
+import com.t8rin.ikittool.core.resources.icons.Tortoise
+import com.t8rin.ikittool.core.ui.theme.iKitToolThemeForPreview
+import com.t8rin.ikittool.core.ui.theme.blend
+import com.t8rin.ikittool.core.ui.theme.takeColorFromScheme
+import com.t8rin.ikittool.core.ui.widget.enhanced.hapticsClickable
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.shapeByInteraction
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.feature.ai_tools.domain.model.NeuralConstants
+import com.t8rin.ikittool.feature.ai_tools.domain.model.NeuralModel
 import java.io.File
 import kotlin.random.Random
 
@@ -393,7 +393,7 @@ fun NeuralModelSizeBadge(
 
 @Preview
 @Composable
-private fun PreviewSpeed() = ImageToolboxThemeForPreview(
+private fun PreviewSpeed() = iKitToolThemeForPreview(
     isDarkTheme = true,
     keyColor = Color.Green
 ) {
@@ -418,7 +418,7 @@ private fun PreviewSpeed() = ImageToolboxThemeForPreview(
 
 @Preview
 @Composable
-private fun PreviewType() = ImageToolboxThemeForPreview(
+private fun PreviewType() = iKitToolThemeForPreview(
     isDarkTheme = true,
     keyColor = Color.Green
 ) {
@@ -443,7 +443,7 @@ private fun PreviewType() = ImageToolboxThemeForPreview(
 
 @Preview
 @Composable
-private fun PreviewMixed() = ImageToolboxThemeForPreview(
+private fun PreviewMixed() = iKitToolThemeForPreview(
     isDarkTheme = true,
     keyColor = Color.Green
 ) {

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.erase_background.presentation
+package com.t8rin.ikittool.feature.erase_background.presentation
 
 import android.graphics.Bitmap
 import android.net.Uri
@@ -35,7 +35,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.SheetValue
@@ -56,56 +56,56 @@ import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormatGroup
-import com.t8rin.imagetoolbox.core.domain.model.pt
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Delete
-import com.t8rin.imagetoolbox.core.resources.icons.Redo
-import com.t8rin.imagetoolbox.core.resources.icons.Tune
-import com.t8rin.imagetoolbox.core.resources.icons.Undo
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.theme.outlineVariant
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.Picker
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberImagePicker
-import com.t8rin.imagetoolbox.core.ui.utils.helper.Clipboard
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalScreenSize
-import com.t8rin.imagetoolbox.core.ui.widget.AdaptiveBottomScaffoldLayoutScreen
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.BottomButtonsBlock
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.PanModeButton
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.ShareButton
-import com.t8rin.imagetoolbox.core.ui.widget.controls.SaveExifWidget
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.HelperGridParamsSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ImageFormatSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.MagnifierEnabledSelector
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.ExitWithoutSavingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.LoadingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.OneTimeImagePickingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.OneTimeSaveLocationSelectionDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.image.AutoFilePicker
-import com.t8rin.imagetoolbox.core.ui.widget.image.ImageNotPickedWidget
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.other.BoxAnimatedVisibility
-import com.t8rin.imagetoolbox.core.ui.widget.other.DrawLockScreenOrientation
-import com.t8rin.imagetoolbox.core.ui.widget.other.TopAppBarEmoji
-import com.t8rin.imagetoolbox.core.ui.widget.saver.PtSaver
-import com.t8rin.imagetoolbox.core.ui.widget.sheets.ProcessImagesPreferenceSheet
-import com.t8rin.imagetoolbox.core.ui.widget.text.TopAppBarTitle
-import com.t8rin.imagetoolbox.core.ui.widget.utils.AutoContentBasedColors
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawMode
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.BrushSoftnessSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.DrawPathModeSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.LineWidthSelector
-import com.t8rin.imagetoolbox.feature.erase_background.presentation.components.AutoEraseBackgroundCard
-import com.t8rin.imagetoolbox.feature.erase_background.presentation.components.BitmapEraser
-import com.t8rin.imagetoolbox.feature.erase_background.presentation.components.OriginalImagePreviewAlphaSelector
-import com.t8rin.imagetoolbox.feature.erase_background.presentation.components.RecoverModeButton
-import com.t8rin.imagetoolbox.feature.erase_background.presentation.components.RecoverModeCard
-import com.t8rin.imagetoolbox.feature.erase_background.presentation.components.TrimImageToggle
-import com.t8rin.imagetoolbox.feature.erase_background.presentation.screenLogic.EraseBackgroundComponent
+import com.t8rin.ikittool.core.domain.image.model.ImageFormatGroup
+import com.t8rin.ikittool.core.domain.model.pt
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Delete
+import com.t8rin.ikittool.core.resources.icons.Redo
+import com.t8rin.ikittool.core.resources.icons.Tune
+import com.t8rin.ikittool.core.resources.icons.Undo
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.theme.outlineVariant
+import com.t8rin.ikittool.core.ui.utils.content_pickers.Picker
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberImagePicker
+import com.t8rin.ikittool.core.ui.utils.helper.Clipboard
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.utils.provider.LocalScreenSize
+import com.t8rin.ikittool.core.ui.widget.AdaptiveBottomScaffoldLayoutScreen
+import com.t8rin.ikittool.core.ui.widget.buttons.BottomButtonsBlock
+import com.t8rin.ikittool.core.ui.widget.buttons.PanModeButton
+import com.t8rin.ikittool.core.ui.widget.buttons.ShareButton
+import com.t8rin.ikittool.core.ui.widget.controls.SaveExifWidget
+import com.t8rin.ikittool.core.ui.widget.controls.selection.HelperGridParamsSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ImageFormatSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.MagnifierEnabledSelector
+import com.t8rin.ikittool.core.ui.widget.dialogs.ExitWithoutSavingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.LoadingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.OneTimeImagePickingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.OneTimeSaveLocationSelectionDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.image.AutoFilePicker
+import com.t8rin.ikittool.core.ui.widget.image.ImageNotPickedWidget
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.other.BoxAnimatedVisibility
+import com.t8rin.ikittool.core.ui.widget.other.DrawLockScreenOrientation
+import com.t8rin.ikittool.core.ui.widget.other.TopAppBarEmoji
+import com.t8rin.ikittool.core.ui.widget.saver.PtSaver
+import com.t8rin.ikittool.core.ui.widget.sheets.ProcessImagesPreferenceSheet
+import com.t8rin.ikittool.core.ui.widget.text.TopAppBarTitle
+import com.t8rin.ikittool.core.ui.widget.utils.AutoContentBasedColors
+import com.t8rin.ikittool.feature.draw.domain.DrawMode
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode
+import com.t8rin.ikittool.feature.draw.presentation.components.BrushSoftnessSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.DrawPathModeSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.LineWidthSelector
+import com.t8rin.ikittool.feature.erase_background.presentation.components.AutoEraseBackgroundCard
+import com.t8rin.ikittool.feature.erase_background.presentation.components.BitmapEraser
+import com.t8rin.ikittool.feature.erase_background.presentation.components.OriginalImagePreviewAlphaSelector
+import com.t8rin.ikittool.feature.erase_background.presentation.components.RecoverModeButton
+import com.t8rin.ikittool.feature.erase_background.presentation.components.RecoverModeCard
+import com.t8rin.ikittool.feature.erase_background.presentation.components.TrimImageToggle
+import com.t8rin.ikittool.feature.erase_background.presentation.screenLogic.EraseBackgroundComponent
 import kotlinx.coroutines.launch
 
 @Composable

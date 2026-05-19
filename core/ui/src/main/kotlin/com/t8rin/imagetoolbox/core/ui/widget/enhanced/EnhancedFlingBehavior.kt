@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.enhanced
+package com.t8rin.ikittool.core.ui.widget.enhanced
 
 import androidx.compose.foundation.OverscrollEffect
 import androidx.compose.foundation.ScrollState
@@ -25,8 +25,8 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
-import com.t8rin.imagetoolbox.core.settings.domain.model.FlingType
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.settings.domain.model.FlingType
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
 import io.iamjosephmj.flinger.adaptive.AdaptiveMode
 import io.iamjosephmj.flinger.behaviours.FlingPresets
 

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,15 +15,15 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.filters.data.utils
+package com.t8rin.ikittool.feature.filters.data.utils
 
 import com.awxkee.aire.EdgeMode
 import com.awxkee.aire.PaletteTransferColorspace
 import com.awxkee.aire.TransferFunction
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.BlurEdgeMode
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.PaletteTransferSpace
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.PopArtBlendingMode
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.TransferFunc
+import com.t8rin.ikittool.core.filters.domain.model.enums.BlurEdgeMode
+import com.t8rin.ikittool.core.filters.domain.model.enums.PaletteTransferSpace
+import com.t8rin.ikittool.core.filters.domain.model.enums.PopArtBlendingMode
+import com.t8rin.ikittool.core.filters.domain.model.enums.TransferFunc
 import com.t8rin.trickle.PopArtBlendMode
 
 fun BlurEdgeMode.toEdgeMode(): EdgeMode = when (this) {

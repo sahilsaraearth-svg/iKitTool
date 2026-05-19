@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.draw.presentation.components.utils
+package com.t8rin.ikittool.feature.draw.presentation.components.utils
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -58,23 +58,23 @@ import androidx.core.graphics.createBitmap
 import coil3.imageLoader
 import coil3.request.ImageRequest
 import coil3.toBitmap
-import com.t8rin.imagetoolbox.core.data.image.utils.drawBitmap
-import com.t8rin.imagetoolbox.core.data.utils.safeConfig
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.model.Pt
-import com.t8rin.imagetoolbox.core.domain.model.max
-import com.t8rin.imagetoolbox.core.filters.domain.model.Filter
-import com.t8rin.imagetoolbox.core.filters.presentation.model.UiNativeStackBlurFilter
-import com.t8rin.imagetoolbox.core.filters.presentation.model.UiPixelationFilter
-import com.t8rin.imagetoolbox.core.filters.presentation.model.toUiFilter
-import com.t8rin.imagetoolbox.core.resources.shapes.MaterialStarShape
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.density
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.Line
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.core.utils.toTypeface
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawLineStyle
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawMode
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode
+import com.t8rin.ikittool.core.data.image.utils.drawBitmap
+import com.t8rin.ikittool.core.data.utils.safeConfig
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.model.Pt
+import com.t8rin.ikittool.core.domain.model.max
+import com.t8rin.ikittool.core.filters.domain.model.Filter
+import com.t8rin.ikittool.core.filters.presentation.model.UiNativeStackBlurFilter
+import com.t8rin.ikittool.core.filters.presentation.model.UiPixelationFilter
+import com.t8rin.ikittool.core.filters.presentation.model.toUiFilter
+import com.t8rin.ikittool.core.resources.shapes.MaterialStarShape
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.density
+import com.t8rin.ikittool.core.ui.widget.modifier.Line
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.core.utils.toTypeface
+import com.t8rin.ikittool.feature.draw.domain.DrawLineStyle
+import com.t8rin.ikittool.feature.draw.domain.DrawMode
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode
 import kotlin.math.roundToInt
 import kotlin.math.sqrt
 import android.graphics.Canvas as NativeCanvas

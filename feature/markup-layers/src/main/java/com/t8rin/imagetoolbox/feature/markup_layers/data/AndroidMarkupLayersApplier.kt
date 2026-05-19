@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,29 +15,29 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.data
+package com.t8rin.ikittool.feature.markup_layers.data
 
 import android.content.Context
 import android.graphics.Bitmap
 import androidx.core.net.toUri
-import com.t8rin.imagetoolbox.core.data.utils.outputStream
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.json.JsonParser
-import com.t8rin.imagetoolbox.core.domain.saving.io.Writeable
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.utils.createZip
-import com.t8rin.imagetoolbox.core.utils.putEntry
-import com.t8rin.imagetoolbox.feature.markup_layers.data.project.AssetRegistry
-import com.t8rin.imagetoolbox.feature.markup_layers.data.project.MarkupMapper
-import com.t8rin.imagetoolbox.feature.markup_layers.data.project.MarkupProjectFile
-import com.t8rin.imagetoolbox.feature.markup_layers.data.project.MarkupProjectJsonEntry
-import com.t8rin.imagetoolbox.feature.markup_layers.data.project.ProjectArchive
-import com.t8rin.imagetoolbox.feature.markup_layers.data.project.ProjectFileLoadResult
-import com.t8rin.imagetoolbox.feature.markup_layers.data.utils.LayersRenderer
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupLayer
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupLayersApplier
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupProject
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupProjectResult
+import com.t8rin.ikittool.core.data.utils.outputStream
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.json.JsonParser
+import com.t8rin.ikittool.core.domain.saving.io.Writeable
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.utils.createZip
+import com.t8rin.ikittool.core.utils.putEntry
+import com.t8rin.ikittool.feature.markup_layers.data.project.AssetRegistry
+import com.t8rin.ikittool.feature.markup_layers.data.project.MarkupMapper
+import com.t8rin.ikittool.feature.markup_layers.data.project.MarkupProjectFile
+import com.t8rin.ikittool.feature.markup_layers.data.project.MarkupProjectJsonEntry
+import com.t8rin.ikittool.feature.markup_layers.data.project.ProjectArchive
+import com.t8rin.ikittool.feature.markup_layers.data.project.ProjectFileLoadResult
+import com.t8rin.ikittool.feature.markup_layers.data.utils.LayersRenderer
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupLayer
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupLayersApplier
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupProject
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupProjectResult
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.withContext
 import java.io.File

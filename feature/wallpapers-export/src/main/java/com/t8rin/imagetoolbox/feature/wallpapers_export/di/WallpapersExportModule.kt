@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,10 +15,10 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.wallpapers_export.di
+package com.t8rin.ikittool.feature.wallpapers_export.di
 
-import com.t8rin.imagetoolbox.feature.wallpapers_export.data.AndroidWallpapersProvider
-import com.t8rin.imagetoolbox.feature.wallpapers_export.domain.WallpapersProvider
+import com.t8rin.ikittool.feature.wallpapers_export.data.AndroidWallpapersProvider
+import com.t8rin.ikittool.feature.wallpapers_export.domain.WallpapersProvider
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

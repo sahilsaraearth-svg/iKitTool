@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.color_tools.presentation
+package com.t8rin.ikittool.color_tools.presentation
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -24,7 +24,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -39,27 +39,27 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.gigamole.composefadingedges.FadingEdgesGravity
 import com.t8rin.dynamic.theme.LocalDynamicThemeState
-import com.t8rin.imagetoolbox.color_tools.presentation.components.ColorHarmonies
-import com.t8rin.imagetoolbox.color_tools.presentation.components.ColorHistogram
-import com.t8rin.imagetoolbox.color_tools.presentation.components.ColorInfo
-import com.t8rin.imagetoolbox.color_tools.presentation.components.ColorMixing
-import com.t8rin.imagetoolbox.color_tools.presentation.components.ColorShading
-import com.t8rin.imagetoolbox.color_tools.presentation.screenLogic.ColorToolsComponent
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Palette
-import com.t8rin.imagetoolbox.core.resources.icons.PushPin
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.rememberAppColorTuple
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.widget.AdaptiveLayoutScreen
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ColorRowSelector
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.fadingEdges
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.negativePadding
-import com.t8rin.imagetoolbox.core.ui.widget.other.TopAppBarEmoji
-import com.t8rin.imagetoolbox.core.ui.widget.text.marquee
+import com.t8rin.ikittool.color_tools.presentation.components.ColorHarmonies
+import com.t8rin.ikittool.color_tools.presentation.components.ColorHistogram
+import com.t8rin.ikittool.color_tools.presentation.components.ColorInfo
+import com.t8rin.ikittool.color_tools.presentation.components.ColorMixing
+import com.t8rin.ikittool.color_tools.presentation.components.ColorShading
+import com.t8rin.ikittool.color_tools.presentation.screenLogic.ColorToolsComponent
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Palette
+import com.t8rin.ikittool.core.resources.icons.PushPin
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.settings.presentation.provider.rememberAppColorTuple
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.widget.AdaptiveLayoutScreen
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ColorRowSelector
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.fadingEdges
+import com.t8rin.ikittool.core.ui.widget.modifier.negativePadding
+import com.t8rin.ikittool.core.ui.widget.other.TopAppBarEmoji
+import com.t8rin.ikittool.core.ui.widget.text.marquee
 
 @Composable
 fun ColorToolsContent(

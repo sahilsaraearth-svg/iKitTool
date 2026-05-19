@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.gif_tools.presentation.components
+package com.t8rin.ikittool.feature.gif_tools.presentation.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.Column
@@ -23,29 +23,29 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageInfo
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Counter
-import com.t8rin.imagetoolbox.core.resources.icons.FilterFrames
-import com.t8rin.imagetoolbox.core.resources.icons.Opacity
-import com.t8rin.imagetoolbox.core.resources.icons.PhotoSizeSelectLarge
-import com.t8rin.imagetoolbox.core.resources.icons.RepeatOne
-import com.t8rin.imagetoolbox.core.resources.icons.Stacks
-import com.t8rin.imagetoolbox.core.ui.widget.controls.ResizeImageField
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.QualitySelector
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedSliderItem
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceRowSwitch
-import com.t8rin.imagetoolbox.feature.gif_tools.domain.GifParams
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.ImageInfo
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Counter
+import com.t8rin.ikittool.core.resources.icons.FilterFrames
+import com.t8rin.ikittool.core.resources.icons.Opacity
+import com.t8rin.ikittool.core.resources.icons.PhotoSizeSelectLarge
+import com.t8rin.ikittool.core.resources.icons.RepeatOne
+import com.t8rin.ikittool.core.resources.icons.Stacks
+import com.t8rin.ikittool.core.ui.widget.controls.ResizeImageField
+import com.t8rin.ikittool.core.ui.widget.controls.selection.QualitySelector
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedSliderItem
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceRowSwitch
+import com.t8rin.ikittool.feature.gif_tools.domain.GifParams
 import kotlinx.collections.immutable.persistentMapOf
 import kotlin.math.roundToInt
 

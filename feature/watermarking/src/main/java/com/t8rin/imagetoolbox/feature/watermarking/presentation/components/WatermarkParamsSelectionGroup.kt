@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,12 +15,12 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.watermarking.presentation.components
+package com.t8rin.ikittool.feature.watermarking.presentation.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -29,17 +29,17 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Tune
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.other.ExpandableItem
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
-import com.t8rin.imagetoolbox.feature.watermarking.domain.WatermarkParams
-import com.t8rin.imagetoolbox.feature.watermarking.presentation.components.selectors.CommonParamsContent
-import com.t8rin.imagetoolbox.feature.watermarking.presentation.components.selectors.DigitalParamsContent
-import com.t8rin.imagetoolbox.feature.watermarking.presentation.components.selectors.ImageParamsContent
-import com.t8rin.imagetoolbox.feature.watermarking.presentation.components.selectors.StampParamsContent
-import com.t8rin.imagetoolbox.feature.watermarking.presentation.components.selectors.TextParamsContent
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Tune
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.other.ExpandableItem
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.feature.watermarking.domain.WatermarkParams
+import com.t8rin.ikittool.feature.watermarking.presentation.components.selectors.CommonParamsContent
+import com.t8rin.ikittool.feature.watermarking.presentation.components.selectors.DigitalParamsContent
+import com.t8rin.ikittool.feature.watermarking.presentation.components.selectors.ImageParamsContent
+import com.t8rin.ikittool.feature.watermarking.presentation.components.selectors.StampParamsContent
+import com.t8rin.ikittool.feature.watermarking.presentation.components.selectors.TextParamsContent
 
 @Composable
 fun WatermarkParamsSelectionGroup(

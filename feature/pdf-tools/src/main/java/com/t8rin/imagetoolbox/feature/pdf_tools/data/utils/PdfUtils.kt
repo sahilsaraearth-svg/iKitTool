@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,21 +15,21 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.pdf_tools.data.utils
+package com.t8rin.ikittool.feature.pdf_tools.data.utils
 
 import android.graphics.Bitmap
 import androidx.compose.ui.graphics.Color
 import androidx.core.net.toUri
-import com.t8rin.imagetoolbox.core.data.saving.io.UriReadable
-import com.t8rin.imagetoolbox.core.data.utils.outputStream
-import com.t8rin.imagetoolbox.core.domain.model.RectModel
-import com.t8rin.imagetoolbox.core.domain.saving.io.Writeable
-import com.t8rin.imagetoolbox.core.domain.utils.applyUse
-import com.t8rin.imagetoolbox.core.domain.utils.safeCast
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.core.utils.makeLog
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfMetadata
+import com.t8rin.ikittool.core.data.saving.io.UriReadable
+import com.t8rin.ikittool.core.data.utils.outputStream
+import com.t8rin.ikittool.core.domain.model.RectModel
+import com.t8rin.ikittool.core.domain.saving.io.Writeable
+import com.t8rin.ikittool.core.domain.utils.applyUse
+import com.t8rin.ikittool.core.domain.utils.safeCast
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.core.utils.makeLog
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfMetadata
 import com.tom_roush.harmony.awt.AWTColor
 import com.tom_roush.pdfbox.io.MemoryUsageSetting
 import com.tom_roush.pdfbox.pdmodel.PDDocument

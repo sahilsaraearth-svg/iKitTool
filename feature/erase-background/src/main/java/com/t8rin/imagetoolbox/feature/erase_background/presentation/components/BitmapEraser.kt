@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("COMPOSE_APPLIER_CALL_MISMATCH")
 
-package com.t8rin.imagetoolbox.feature.erase_background.presentation.components
+package com.t8rin.ikittool.feature.erase_background.presentation.components
 
 import android.annotation.SuppressLint
 import android.graphics.Bitmap
@@ -60,22 +60,22 @@ import androidx.compose.ui.graphics.nativePaint
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.unit.IntSize
 import androidx.core.graphics.createBitmap
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.model.Pt
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.createScaledBitmap
-import com.t8rin.imagetoolbox.core.ui.utils.helper.scaleToFitCanvas
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.HelperGridParams
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawMode
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.UiPathPaint
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.BitmapDrawerPreview
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.MotionEvent
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.copy
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.floodFill
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.handle
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.pointerDrawObserver
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.rememberPathHelper
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.model.Pt
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.createScaledBitmap
+import com.t8rin.ikittool.core.ui.utils.helper.scaleToFitCanvas
+import com.t8rin.ikittool.core.ui.widget.modifier.HelperGridParams
+import com.t8rin.ikittool.feature.draw.domain.DrawMode
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode
+import com.t8rin.ikittool.feature.draw.presentation.components.UiPathPaint
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.BitmapDrawerPreview
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.MotionEvent
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.copy
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.floodFill
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.handle
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.pointerDrawObserver
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.rememberPathHelper
 import kotlinx.coroutines.launch
 import net.engawapg.lib.zoomable.rememberZoomState
 

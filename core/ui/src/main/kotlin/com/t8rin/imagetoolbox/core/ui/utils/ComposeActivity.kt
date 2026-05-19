@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.utils
+package com.t8rin.ikittool.core.ui.utils
 
 import android.content.Context
 import android.content.Intent
@@ -36,30 +36,30 @@ import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.color.DynamicColors
 import com.google.android.material.color.DynamicColorsOptions
-import com.t8rin.imagetoolbox.core.di.entryPoint
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.model.SystemBarsVisibility
-import com.t8rin.imagetoolbox.core.domain.remote.AnalyticsManager
-import com.t8rin.imagetoolbox.core.domain.resource.ResourceManager
-import com.t8rin.imagetoolbox.core.domain.saving.FileController
-import com.t8rin.imagetoolbox.core.domain.saving.FileController.Companion.toMetadataProvider
-import com.t8rin.imagetoolbox.core.domain.saving.KeepAliveService
-import com.t8rin.imagetoolbox.core.domain.utils.smartJob
-import com.t8rin.imagetoolbox.core.settings.di.SettingsStateEntryPoint
-import com.t8rin.imagetoolbox.core.settings.domain.SettingsManager
-import com.t8rin.imagetoolbox.core.settings.domain.model.SettingsState
-import com.t8rin.imagetoolbox.core.settings.domain.toSimpleSettingsInteractor
-import com.t8rin.imagetoolbox.core.settings.presentation.model.asColorTuple
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSimpleSettingsInteractor
-import com.t8rin.imagetoolbox.core.ui.utils.ComposeApplication.Companion.wrap
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.adjustFontSize
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ReviewHandler
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalKeepAliveService
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalMetadataProvider
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalResourceManager
-import com.t8rin.imagetoolbox.core.ui.utils.provider.setContentWithWindowSizeClass
-import com.t8rin.imagetoolbox.core.ui.utils.state.update
-import com.t8rin.imagetoolbox.core.utils.makeLog
+import com.t8rin.ikittool.core.di.entryPoint
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.model.SystemBarsVisibility
+import com.t8rin.ikittool.core.domain.remote.AnalyticsManager
+import com.t8rin.ikittool.core.domain.resource.ResourceManager
+import com.t8rin.ikittool.core.domain.saving.FileController
+import com.t8rin.ikittool.core.domain.saving.FileController.Companion.toMetadataProvider
+import com.t8rin.ikittool.core.domain.saving.KeepAliveService
+import com.t8rin.ikittool.core.domain.utils.smartJob
+import com.t8rin.ikittool.core.settings.di.SettingsStateEntryPoint
+import com.t8rin.ikittool.core.settings.domain.SettingsManager
+import com.t8rin.ikittool.core.settings.domain.model.SettingsState
+import com.t8rin.ikittool.core.settings.domain.toSimpleSettingsInteractor
+import com.t8rin.ikittool.core.settings.presentation.model.asColorTuple
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSimpleSettingsInteractor
+import com.t8rin.ikittool.core.ui.utils.ComposeApplication.Companion.wrap
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.adjustFontSize
+import com.t8rin.ikittool.core.ui.utils.helper.ReviewHandler
+import com.t8rin.ikittool.core.ui.utils.provider.LocalKeepAliveService
+import com.t8rin.ikittool.core.ui.utils.provider.LocalMetadataProvider
+import com.t8rin.ikittool.core.ui.utils.provider.LocalResourceManager
+import com.t8rin.ikittool.core.ui.utils.provider.setContentWithWindowSizeClass
+import com.t8rin.ikittool.core.ui.utils.state.update
+import com.t8rin.ikittool.core.utils.makeLog
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job

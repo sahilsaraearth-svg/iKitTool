@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.media_picker.presentation.components
+package com.t8rin.ikittool.feature.media_picker.presentation.components
 
 import android.net.Uri
 import androidx.compose.animation.AnimatedVisibility
@@ -54,7 +54,7 @@ import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -82,30 +82,30 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.net.toUri
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.ArrowBack
-import com.t8rin.imagetoolbox.core.resources.icons.BrokenImageAlt
-import com.t8rin.imagetoolbox.core.resources.icons.CheckCircle
-import com.t8rin.imagetoolbox.core.resources.icons.Error
-import com.t8rin.imagetoolbox.core.ui.theme.White
-import com.t8rin.imagetoolbox.core.ui.theme.onPrimaryContainerFixed
-import com.t8rin.imagetoolbox.core.ui.theme.primaryContainerFixed
-import com.t8rin.imagetoolbox.core.ui.theme.takeColorFromScheme
-import com.t8rin.imagetoolbox.core.ui.utils.helper.PredictiveBackObserver
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalScreenSize
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.MediaCheckBox
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedTopAppBar
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedTopAppBarDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedTopAppBarType
-import com.t8rin.imagetoolbox.core.ui.widget.image.HistogramChart
-import com.t8rin.imagetoolbox.core.ui.widget.image.MetadataPreviewButton
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.animateContentSizeNoClip
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.toShape
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.withLayoutCorners
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.Media
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.ArrowBack
+import com.t8rin.ikittool.core.resources.icons.BrokenImageAlt
+import com.t8rin.ikittool.core.resources.icons.CheckCircle
+import com.t8rin.ikittool.core.resources.icons.Error
+import com.t8rin.ikittool.core.ui.theme.White
+import com.t8rin.ikittool.core.ui.theme.onPrimaryContainerFixed
+import com.t8rin.ikittool.core.ui.theme.primaryContainerFixed
+import com.t8rin.ikittool.core.ui.theme.takeColorFromScheme
+import com.t8rin.ikittool.core.ui.utils.helper.PredictiveBackObserver
+import com.t8rin.ikittool.core.ui.utils.provider.LocalScreenSize
+import com.t8rin.ikittool.core.ui.widget.buttons.MediaCheckBox
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedTopAppBar
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedTopAppBarDefaults
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedTopAppBarType
+import com.t8rin.ikittool.core.ui.widget.image.HistogramChart
+import com.t8rin.ikittool.core.ui.widget.image.MetadataPreviewButton
+import com.t8rin.ikittool.core.ui.widget.image.Picture
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.animateContentSizeNoClip
+import com.t8rin.ikittool.core.ui.widget.modifier.toShape
+import com.t8rin.ikittool.core.ui.widget.modifier.withLayoutCorners
+import com.t8rin.ikittool.feature.media_picker.domain.model.Media
 import com.t8rin.modalsheet.FullscreenPopup
 import kotlinx.coroutines.delay
 import net.engawapg.lib.zoomable.rememberZoomState

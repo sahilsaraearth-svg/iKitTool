@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,9 +17,9 @@
 
 @file:Suppress("unused", "MemberVisibilityCanBePrivate")
 
-package com.t8rin.imagetoolbox.core.domain.model
+package com.t8rin.ikittool.core.domain.model
 
-import com.t8rin.imagetoolbox.core.domain.model.MimeType.Multiple
+import com.t8rin.ikittool.core.domain.model.MimeType.Multiple
 
 sealed class MimeType(
     val entries: Set<String>
@@ -68,7 +68,7 @@ sealed class MimeType(
         val Qoi = Single("image/qoi")
         val Ico = Single("image/x-icon")
         val Svg = Single("image/svg+xml")
-        val MarkupProject = Single("application/x-imagetoolbox-project")
+        val MarkupProject = Single("application/x-ikittool-project")
         val MarkupProjectList = Multiple(
             setOf(
                 MarkupProject.entry,

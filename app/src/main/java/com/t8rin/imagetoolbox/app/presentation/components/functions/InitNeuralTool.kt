@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,13 +15,13 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.app.presentation.components.functions
+package com.t8rin.ikittool.app.presentation.components.functions
 
-import com.t8rin.imagetoolbox.app.presentation.components.ImageToolboxApplication
-import com.t8rin.imagetoolbox.core.domain.HF_BASE_URL
+import com.t8rin.ikittool.app.presentation.components.iKitToolApplication
+import com.t8rin.ikittool.core.domain.HF_BASE_URL
 import com.t8rin.neural_tools.NeuralTool
 
-internal fun ImageToolboxApplication.initNeuralTool() = NeuralTool.init(
+internal fun iKitToolApplication.initNeuralTool() = NeuralTool.init(
     context = this,
     httpClient = httpClient,
     baseUrl = HF_BASE_URL

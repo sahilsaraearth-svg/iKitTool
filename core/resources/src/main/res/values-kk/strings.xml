@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1079,7 +1079,7 @@
     <string name="antialias">Антиалиас</string>
     <string name="antialias_sub">Өткір жиектерді болдырмау үшін антиалиазингті қосады</string>
     <string name="open_edit_instead_of_preview">Алдын ала қараудың орнына Өңдеуді ашыңыз</string>
-    <string name="open_edit_instead_of_preview_sub">ImageToolbox қолданбасында ашу (алдын ала қарау) үшін кескінді таңдаған кезде, таңдау парағы алдын ала қараудың орнына ашылады.</string>
+    <string name="open_edit_instead_of_preview_sub">iKitTool қолданбасында ашу (алдын ала қарау) үшін кескінді таңдаған кезде, таңдау парағы алдын ала қараудың орнына ашылады.</string>
     <string name="document_scanner">Құжат сканері</string>
     <string name="document_scanner_sub">Құжаттарды сканерлеңіз және олардан PDF немесе бөлек кескіндер жасаңыз</string>
     <string name="click_to_start_scanning">Сканерлеуді бастау үшін басыңыз</string>
@@ -1354,7 +1354,7 @@
     <string name="webp_type_to_webp">Суреттер WEBP</string>
     <string name="select_webp_image_to_start">Бастау үшін WEBP кескінін таңдаңыз</string>
     <string name="manage_storage_extra_types">Файлдарға толық рұқсат жоқ</string>
-    <string name="manage_storage_extra_types_sub">JXL, QOI және Android жүйесінде кескін ретінде танылмаған басқа кескіндерді көру үшін барлық файлдарға рұқсат беріңіз. Рұқсатсыз Image Toolbox бұл кескіндерді көрсете алмайды</string>
+    <string name="manage_storage_extra_types_sub">JXL, QOI және Android жүйесінде кескін ретінде танылмаған басқа кескіндерді көру үшін барлық файлдарға рұқсат беріңіз. Рұқсатсыз iKit Tool бұл кескіндерді көрсете алмайды</string>
     <string name="default_draw_color">Әдепкі сызу түсі</string>
     <string name="default_draw_path_mode">Әдепкі сызу жолы режимі</string>
     <string name="add_timestamp">Уақыт белгісін қосыңыз</string>
@@ -1367,8 +1367,8 @@
     <string name="recently_used">Жақында пайдаланылған</string>
     <string name="ci_channel">CI арнасы</string>
     <string name="group">Топ</string>
-    <string name="image_toolbox_in_telegram">Telegram-дағы кескін құралдар жинағы 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">Біздің чатқа қосылыңыз, онда сіз қалаған нәрсені талқылай аласыз, сонымен қатар мен бета нұсқалары мен хабарландыруларды жариялайтын CI арнасын қараңыз.</string>
+    <string name="ikit_tool_in_telegram">Telegram-дағы кескін құралдар жинағы 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">Біздің чатқа қосылыңыз, онда сіз қалаған нәрсені талқылай аласыз, сонымен қатар мен бета нұсқалары мен хабарландыруларды жариялайтын CI арнасын қараңыз.</string>
     <string name="ci_channel_sub">Қолданбаның жаңа нұсқалары туралы хабарландыру алыңыз және хабарландыруларды оқыңыз</string>
     <string name="fit_description">Кескінді берілген өлшемдерге сәйкестендіру және фонға бұлыңғырлау немесе түс қолдану</string>
     <string name="tools_arrangement">Құралдарды реттеу</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">Жасалған палитраны әртүрлі пішімдерге экспорттау</string>
     <string name="add_color_palette_sub">Ағымдағы палитраға жаңа түс қосады</string>
     <string name="palette_name_not_supported">%1$s пішімі палитра атауын беруді қолдамайды</string>
-    <string name="wallpapers_export_not_avaialbe">Play Store саясаттарына байланысты бұл мүмкіндікті ағымдағы құрастыруға қосу мүмкін емес. Бұл функцияға қол жеткізу үшін ImageToolbox қолданбасын балама көзден жүктеп алыңыз. Төменде GitHub сайтында қолжетімді құрылымдарды таба аласыз.</string>
+    <string name="wallpapers_export_not_avaialbe">Play Store саясаттарына байланысты бұл мүмкіндікті ағымдағы құрастыруға қосу мүмкін емес. Бұл функцияға қол жеткізу үшін iKitTool қолданбасын балама көзден жүктеп алыңыз. Төменде GitHub сайтында қолжетімді құрылымдарды таба аласыз.</string>
     <string name="open_github_page">Github бетін ашыңыз</string>
     <string name="overwrite_files_sub_short">Түпнұсқа файл таңдалған қалтада сақтаудың орнына жаңасымен ауыстырылады</string>
     <string name="hidden_watermark_text_detected">Жасырын су таңбасының мәтіні анықталды</string>
@@ -2141,7 +2141,7 @@
     <string name="grayscale_pdf_sub">Барлық ендірілген құжат кескіндерін сұр реңкке түрлендіріңіз</string>
     <string name="compress_pdf">PDF файлын қысыңыз</string>
     <string name="compress_pdf_sub">Бөлісуді жеңілдету үшін құжат файлының өлшемін оңтайландырыңыз</string>
-    <string name="repair_info">ImageToolbox ішкі айқас сілтеме кестесін қайта құрады және файл құрылымын нөлден бастап қайта жасайды. Бұл \\"ашу мүмкін емес\\" көптеген файлдарға кіру рұқсатын қалпына келтіре алады.</string>
+    <string name="repair_info">iKitTool ішкі айқас сілтеме кестесін қайта құрады және файл құрылымын нөлден бастап қайта жасайды. Бұл \\"ашу мүмкін емес\\" көптеген файлдарға кіру рұқсатын қалпына келтіре алады.</string>
     <string name="grayscale_info">Бұл құрал барлық құжат кескіндерін сұр реңкке түрлендіреді. Басып шығару және файл өлшемін азайту үшін ең жақсы</string>
     <string name="metadata">Метадеректер</string>
     <string name="metadata_pdf_sub">Құпиялықты жақсарту үшін құжат сипаттарын өңдеңіз</string>
@@ -2193,11 +2193,11 @@
     <string name="background_color_for_alpha_formats">Альфа пішімдері үшін фон түсі</string>
     <string name="background_color_for_alpha_formats_sub">Альфа қолдауы бар әрбір кескін пішімі үшін фон түсін орнату мүмкіндігін қосады, өшірілген кезде бұл тек альфа еместер үшін қолжетімді.</string>
     <string name="open_markup_project">Ашық жоба</string>
-    <string name="open_markup_project_sub">Бұрын сақталған Image Toolbox жобасын өңдеуді жалғастырыңыз</string>
-    <string name="markup_project_open_failed">Image Toolbox жобасын ашу мүмкін емес</string>
-    <string name="markup_project_missing_data">Image Toolbox жобасында жоба деректері жоқ</string>
-    <string name="markup_project_corrupted">Image Toolbox жобасы бүлінген</string>
-    <string name="unsupported_markup_project_version">Қолдау көрсетілмейтін Image Toolbox жобасының нұсқасы: %1$d</string>
+    <string name="open_markup_project_sub">Бұрын сақталған iKit Tool жобасын өңдеуді жалғастырыңыз</string>
+    <string name="markup_project_open_failed">iKit Tool жобасын ашу мүмкін емес</string>
+    <string name="markup_project_missing_data">iKit Tool жобасында жоба деректері жоқ</string>
+    <string name="markup_project_corrupted">iKit Tool жобасы бүлінген</string>
+    <string name="unsupported_markup_project_version">Қолдау көрсетілмейтін iKit Tool жобасының нұсқасы: %1$d</string>
     <string name="save_markup_project">Жобаны сақтау</string>
     <string name="save_markup_project_sub">Қабаттарды, фондық және өңдеу журналын өңделетін жоба файлында сақтаңыз</string>
     <string name="failed_to_open">Ашылмады</string>

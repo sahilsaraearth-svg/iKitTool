@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *  
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("COMPOSE_APPLIER_CALL_MISMATCH")
 
-package com.t8rin.imagetoolbox.core.ui.widget.enhanced
+package com.t8rin.ikittool.core.ui.widget.enhanced
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.animateFloatAsState
@@ -62,9 +62,9 @@ import androidx.compose.ui.unit.constrainHeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.fastFirst
 import androidx.compose.ui.util.fastFirstOrNull
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.AutoCornersShape
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.shapeByInteraction
+import com.t8rin.ikittool.core.ui.widget.modifier.AutoCornersShape
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.shapeByInteraction
 import kotlin.math.roundToInt
 
 @Composable

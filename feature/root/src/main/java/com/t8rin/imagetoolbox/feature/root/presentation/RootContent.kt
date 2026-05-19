@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,16 +15,16 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.root.presentation
+package com.t8rin.ikittool.feature.root.presentation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import com.arkivanov.decompose.extensions.compose.subscribeAsState
-import com.t8rin.imagetoolbox.core.ui.utils.provider.ImageToolboxCompositionLocals
-import com.t8rin.imagetoolbox.feature.root.presentation.components.RootDialogs
-import com.t8rin.imagetoolbox.feature.root.presentation.components.ScreenSelector
-import com.t8rin.imagetoolbox.feature.root.presentation.components.utils.uiSettingsState
-import com.t8rin.imagetoolbox.feature.root.presentation.screenLogic.RootComponent
+import com.t8rin.ikittool.core.ui.utils.provider.iKitToolCompositionLocals
+import com.t8rin.ikittool.feature.root.presentation.components.RootDialogs
+import com.t8rin.ikittool.feature.root.presentation.components.ScreenSelector
+import com.t8rin.ikittool.feature.root.presentation.components.utils.uiSettingsState
+import com.t8rin.ikittool.feature.root.presentation.screenLogic.RootComponent
 
 @Composable
 fun RootContent(
@@ -32,7 +32,7 @@ fun RootContent(
 ) {
     val stack by component.childStack.subscribeAsState()
 
-    ImageToolboxCompositionLocals(
+    iKitToolCompositionLocals(
         settingsState = component.uiSettingsState(),
         filterPreviewModel = component.filterPreviewModel,
         canSetDynamicFilterPreview = component.canSetDynamicFilterPreview,

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.crop.presentation.components
+package com.t8rin.ikittool.feature.crop.presentation.components
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -62,14 +62,14 @@ import com.t8rin.cropper.ImageCropper
 import com.t8rin.cropper.model.AspectRatio
 import com.t8rin.cropper.settings.CropDefaults
 import com.t8rin.cropper.settings.CropProperties
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Flip
-import com.t8rin.imagetoolbox.core.resources.icons.Rotate90Ccw
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.transparencyChecker
-import com.t8rin.imagetoolbox.core.ui.widget.other.BoxAnimatedVisibility
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Flip
+import com.t8rin.ikittool.core.resources.icons.Rotate90Ccw
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.transparencyChecker
+import com.t8rin.ikittool.core.ui.widget.other.BoxAnimatedVisibility
 import com.t8rin.opencv_tools.free_corners_crop.compose.FreeCornersCropper
 import kotlinx.coroutines.launch
 import kotlin.math.roundToInt

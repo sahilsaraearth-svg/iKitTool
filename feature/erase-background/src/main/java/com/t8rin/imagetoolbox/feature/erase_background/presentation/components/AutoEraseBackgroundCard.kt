@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("KotlinConstantConditions")
 
-package com.t8rin.imagetoolbox.feature.erase_background.presentation.components
+package com.t8rin.ikittool.feature.erase_background.presentation.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.Column
@@ -31,7 +31,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -50,26 +50,26 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.t8rin.imagetoolbox.core.domain.saving.track
-import com.t8rin.imagetoolbox.core.domain.saving.updateProgress
-import com.t8rin.imagetoolbox.core.domain.utils.Flavor
-import com.t8rin.imagetoolbox.core.domain.utils.ListUtils.toggle
-import com.t8rin.imagetoolbox.core.domain.utils.throttleLatest
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.AutoFixHigh
-import com.t8rin.imagetoolbox.core.resources.icons.DownloadForOffline
-import com.t8rin.imagetoolbox.core.resources.icons.SettingsBackupRestore
-import com.t8rin.imagetoolbox.core.ui.theme.mixedContainer
-import com.t8rin.imagetoolbox.core.ui.theme.onMixedContainer
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalKeepAliveService
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButtonGroup
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedCancellableCircularProgressIndicator
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.hapticsClickable
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.feature.erase_background.domain.model.BgModelType
+import com.t8rin.ikittool.core.domain.saving.track
+import com.t8rin.ikittool.core.domain.saving.updateProgress
+import com.t8rin.ikittool.core.domain.utils.Flavor
+import com.t8rin.ikittool.core.domain.utils.ListUtils.toggle
+import com.t8rin.ikittool.core.domain.utils.throttleLatest
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.AutoFixHigh
+import com.t8rin.ikittool.core.resources.icons.DownloadForOffline
+import com.t8rin.ikittool.core.resources.icons.SettingsBackupRestore
+import com.t8rin.ikittool.core.ui.theme.mixedContainer
+import com.t8rin.ikittool.core.ui.theme.onMixedContainer
+import com.t8rin.ikittool.core.ui.utils.provider.LocalKeepAliveService
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButtonGroup
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedCancellableCircularProgressIndicator
+import com.t8rin.ikittool.core.ui.widget.enhanced.hapticsClickable
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.feature.erase_background.domain.model.BgModelType
 import com.t8rin.neural_tools.DownloadProgress
 import com.t8rin.neural_tools.bgremover.BgRemover
 import kotlinx.coroutines.CoroutineScope

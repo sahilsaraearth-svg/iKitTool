@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("UnusedReceiverParameter")
 
-package com.t8rin.imagetoolbox.feature.markup_layers.presentation.components
+package com.t8rin.ikittool.feature.markup_layers.presentation.components
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.foundation.layout.Arrangement
@@ -31,7 +31,7 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -49,34 +49,34 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.t8rin.imagetoolbox.core.domain.utils.roundTo
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.ArrowDropDown
-import com.t8rin.imagetoolbox.core.resources.icons.ArrowDropUp
-import com.t8rin.imagetoolbox.core.resources.icons.ArrowLeft
-import com.t8rin.imagetoolbox.core.resources.icons.ArrowRight
-import com.t8rin.imagetoolbox.core.resources.icons.CenterFocusStrong
-import com.t8rin.imagetoolbox.core.resources.icons.ContentCopy
-import com.t8rin.imagetoolbox.core.resources.icons.Delete
-import com.t8rin.imagetoolbox.core.resources.icons.Deselect
-import com.t8rin.imagetoolbox.core.resources.icons.FitScreen
-import com.t8rin.imagetoolbox.core.resources.icons.Flip
-import com.t8rin.imagetoolbox.core.resources.icons.FlipVertical
-import com.t8rin.imagetoolbox.core.resources.icons.Lock
-import com.t8rin.imagetoolbox.core.resources.icons.LockOpen
-import com.t8rin.imagetoolbox.core.resources.icons.MiniEdit
-import com.t8rin.imagetoolbox.core.resources.icons.ScreenRotationAlt
-import com.t8rin.imagetoolbox.core.ui.theme.blend
-import com.t8rin.imagetoolbox.core.ui.theme.takeColorFromScheme
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.SupportingButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedDropdownMenu
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedSlider
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.hapticsClickable
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.text.AutoSizeText
-import com.t8rin.imagetoolbox.core.ui.widget.value.ValueDialog
-import com.t8rin.imagetoolbox.core.ui.widget.value.ValueText
+import com.t8rin.ikittool.core.domain.utils.roundTo
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.ArrowDropDown
+import com.t8rin.ikittool.core.resources.icons.ArrowDropUp
+import com.t8rin.ikittool.core.resources.icons.ArrowLeft
+import com.t8rin.ikittool.core.resources.icons.ArrowRight
+import com.t8rin.ikittool.core.resources.icons.CenterFocusStrong
+import com.t8rin.ikittool.core.resources.icons.ContentCopy
+import com.t8rin.ikittool.core.resources.icons.Delete
+import com.t8rin.ikittool.core.resources.icons.Deselect
+import com.t8rin.ikittool.core.resources.icons.FitScreen
+import com.t8rin.ikittool.core.resources.icons.Flip
+import com.t8rin.ikittool.core.resources.icons.FlipVertical
+import com.t8rin.ikittool.core.resources.icons.Lock
+import com.t8rin.ikittool.core.resources.icons.LockOpen
+import com.t8rin.ikittool.core.resources.icons.MiniEdit
+import com.t8rin.ikittool.core.resources.icons.ScreenRotationAlt
+import com.t8rin.ikittool.core.ui.theme.blend
+import com.t8rin.ikittool.core.ui.theme.takeColorFromScheme
+import com.t8rin.ikittool.core.ui.widget.buttons.SupportingButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedDropdownMenu
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedSlider
+import com.t8rin.ikittool.core.ui.widget.enhanced.hapticsClickable
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.text.AutoSizeText
+import com.t8rin.ikittool.core.ui.widget.value.ValueDialog
+import com.t8rin.ikittool.core.ui.widget.value.ValueText
 
 @Composable
 internal fun BoxScope.MarkupLayersContextActions(

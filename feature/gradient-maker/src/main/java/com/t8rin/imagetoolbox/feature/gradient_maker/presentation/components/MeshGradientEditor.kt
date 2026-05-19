@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,13 +15,13 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.gradient_maker.presentation.components
+package com.t8rin.ikittool.feature.gradient_maker.presentation.components
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.gestures.detectDragGestures
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.Saver
@@ -40,14 +40,14 @@ import androidx.compose.ui.graphics.nativePaint
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import androidx.compose.ui.input.pointer.pointerInput
-import com.t8rin.imagetoolbox.core.resources.icons.MiniEditLarge
-import com.t8rin.imagetoolbox.core.ui.theme.inverseByLuma
-import com.t8rin.imagetoolbox.core.ui.widget.color_picker.ColorPickerSheet
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.meshGradient
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.tappable
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.transparencyChecker
-import com.t8rin.imagetoolbox.core.ui.widget.saver.OffsetSaver
+import com.t8rin.ikittool.core.resources.icons.MiniEditLarge
+import com.t8rin.ikittool.core.ui.theme.inverseByLuma
+import com.t8rin.ikittool.core.ui.widget.color_picker.ColorPickerSheet
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.meshGradient
+import com.t8rin.ikittool.core.ui.widget.modifier.tappable
+import com.t8rin.ikittool.core.ui.widget.modifier.transparencyChecker
+import com.t8rin.ikittool.core.ui.widget.saver.OffsetSaver
 import kotlin.math.pow
 import kotlin.math.sqrt
 

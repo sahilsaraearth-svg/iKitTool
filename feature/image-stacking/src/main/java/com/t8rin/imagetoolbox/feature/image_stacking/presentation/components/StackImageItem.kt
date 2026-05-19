@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.image_stacking.presentation.components
+package com.t8rin.ikittool.feature.image_stacking.presentation.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
@@ -28,7 +28,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -48,20 +48,20 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.KeyboardArrowDown
-import com.t8rin.imagetoolbox.core.resources.icons.PhotoSizeSelectLarge
-import com.t8rin.imagetoolbox.core.resources.icons.RemoveCircle
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.AlphaSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.BlendingModeSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.DataSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.PositionSelector
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.animateContentSizeNoClip
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.feature.image_stacking.domain.StackImage
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.KeyboardArrowDown
+import com.t8rin.ikittool.core.resources.icons.PhotoSizeSelectLarge
+import com.t8rin.ikittool.core.resources.icons.RemoveCircle
+import com.t8rin.ikittool.core.ui.widget.controls.selection.AlphaSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.BlendingModeSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.DataSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.PositionSelector
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.image.Picture
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.animateContentSizeNoClip
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.feature.image_stacking.domain.StackImage
 
 @Composable
 fun StackImageItem(

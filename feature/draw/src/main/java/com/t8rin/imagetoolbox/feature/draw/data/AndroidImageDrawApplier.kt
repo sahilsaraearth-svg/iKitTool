@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.draw.data
+package com.t8rin.ikittool.feature.draw.data
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -47,31 +47,31 @@ import androidx.core.graphics.applyCanvas
 import androidx.core.graphics.createBitmap
 import androidx.core.graphics.drawable.toBitmap
 import androidx.core.graphics.drawable.toDrawable
-import com.t8rin.imagetoolbox.core.data.image.utils.drawBitmap
-import com.t8rin.imagetoolbox.core.data.utils.density
-import com.t8rin.imagetoolbox.core.data.utils.safeConfig
-import com.t8rin.imagetoolbox.core.data.utils.toSoftware
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.ImageTransformer
-import com.t8rin.imagetoolbox.core.domain.model.ImageModel
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.model.max
-import com.t8rin.imagetoolbox.core.domain.transformation.Transformation
-import com.t8rin.imagetoolbox.core.filters.domain.FilterProvider
-import com.t8rin.imagetoolbox.core.filters.domain.model.Filter
-import com.t8rin.imagetoolbox.core.filters.domain.model.createFilter
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.SpotHealMode
-import com.t8rin.imagetoolbox.core.resources.shapes.MaterialStarShape
-import com.t8rin.imagetoolbox.core.utils.toImageModel
-import com.t8rin.imagetoolbox.core.utils.toTypeface
-import com.t8rin.imagetoolbox.feature.draw.data.utils.drawRepeatedBitmapOnPath
-import com.t8rin.imagetoolbox.feature.draw.data.utils.drawRepeatedTextOnPath
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawBehavior
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawLineStyle
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawMode
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode
-import com.t8rin.imagetoolbox.feature.draw.domain.ImageDrawApplier
-import com.t8rin.imagetoolbox.feature.draw.domain.PathPaint
+import com.t8rin.ikittool.core.data.image.utils.drawBitmap
+import com.t8rin.ikittool.core.data.utils.density
+import com.t8rin.ikittool.core.data.utils.safeConfig
+import com.t8rin.ikittool.core.data.utils.toSoftware
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.ImageTransformer
+import com.t8rin.ikittool.core.domain.model.ImageModel
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.model.max
+import com.t8rin.ikittool.core.domain.transformation.Transformation
+import com.t8rin.ikittool.core.filters.domain.FilterProvider
+import com.t8rin.ikittool.core.filters.domain.model.Filter
+import com.t8rin.ikittool.core.filters.domain.model.createFilter
+import com.t8rin.ikittool.core.filters.domain.model.enums.SpotHealMode
+import com.t8rin.ikittool.core.resources.shapes.MaterialStarShape
+import com.t8rin.ikittool.core.utils.toImageModel
+import com.t8rin.ikittool.core.utils.toTypeface
+import com.t8rin.ikittool.feature.draw.data.utils.drawRepeatedBitmapOnPath
+import com.t8rin.ikittool.feature.draw.data.utils.drawRepeatedTextOnPath
+import com.t8rin.ikittool.feature.draw.domain.DrawBehavior
+import com.t8rin.ikittool.feature.draw.domain.DrawLineStyle
+import com.t8rin.ikittool.feature.draw.domain.DrawMode
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode
+import com.t8rin.ikittool.feature.draw.domain.ImageDrawApplier
+import com.t8rin.ikittool.feature.draw.domain.PathPaint
 import com.t8rin.trickle.WarpBrush
 import com.t8rin.trickle.WarpEngine
 import com.t8rin.trickle.WarpMode

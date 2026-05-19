@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.ai_tools.presentation.components
+package com.t8rin.ikittool.feature.ai_tools.presentation.components
 
 import android.net.Uri
 import androidx.compose.animation.AnimatedContent
@@ -40,7 +40,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -59,40 +59,40 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.t8rin.imagetoolbox.core.domain.remote.DownloadProgress
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Delete
-import com.t8rin.imagetoolbox.core.resources.icons.Download
-import com.t8rin.imagetoolbox.core.resources.icons.DownloadDone
-import com.t8rin.imagetoolbox.core.resources.icons.DownloadForOffline
-import com.t8rin.imagetoolbox.core.resources.icons.File
-import com.t8rin.imagetoolbox.core.resources.icons.FileImport
-import com.t8rin.imagetoolbox.core.resources.icons.Link
-import com.t8rin.imagetoolbox.core.resources.icons.ModelTraining
-import com.t8rin.imagetoolbox.core.resources.icons.RadioButtonChecked
-import com.t8rin.imagetoolbox.core.resources.icons.RadioButtonUnchecked
-import com.t8rin.imagetoolbox.core.resources.icons.SearchOff
-import com.t8rin.imagetoolbox.core.ui.theme.mixedContainer
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberFilePicker
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.rememberHumanFileSize
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedBadge
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedBottomSheetDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedCancellableCircularProgressIndicator
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.hapticsClickable
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.other.RevealDirection
-import com.t8rin.imagetoolbox.core.ui.widget.other.RevealValue
-import com.t8rin.imagetoolbox.core.ui.widget.other.SwipeToReveal
-import com.t8rin.imagetoolbox.core.ui.widget.other.rememberRevealState
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItem
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItemOverload
-import com.t8rin.imagetoolbox.core.ui.widget.saver.OneTimeEffect
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
-import com.t8rin.imagetoolbox.core.utils.filename
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.model.NeuralModel
+import com.t8rin.ikittool.core.domain.remote.DownloadProgress
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Delete
+import com.t8rin.ikittool.core.resources.icons.Download
+import com.t8rin.ikittool.core.resources.icons.DownloadDone
+import com.t8rin.ikittool.core.resources.icons.DownloadForOffline
+import com.t8rin.ikittool.core.resources.icons.File
+import com.t8rin.ikittool.core.resources.icons.FileImport
+import com.t8rin.ikittool.core.resources.icons.Link
+import com.t8rin.ikittool.core.resources.icons.ModelTraining
+import com.t8rin.ikittool.core.resources.icons.RadioButtonChecked
+import com.t8rin.ikittool.core.resources.icons.RadioButtonUnchecked
+import com.t8rin.ikittool.core.resources.icons.SearchOff
+import com.t8rin.ikittool.core.ui.theme.mixedContainer
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberFilePicker
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.rememberHumanFileSize
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedBadge
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedBottomSheetDefaults
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedCancellableCircularProgressIndicator
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedFlingBehavior
+import com.t8rin.ikittool.core.ui.widget.enhanced.hapticsClickable
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.other.RevealDirection
+import com.t8rin.ikittool.core.ui.widget.other.RevealValue
+import com.t8rin.ikittool.core.ui.widget.other.SwipeToReveal
+import com.t8rin.ikittool.core.ui.widget.other.rememberRevealState
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItem
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItemOverload
+import com.t8rin.ikittool.core.ui.widget.saver.OneTimeEffect
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.core.utils.filename
+import com.t8rin.ikittool.feature.ai_tools.domain.model.NeuralModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

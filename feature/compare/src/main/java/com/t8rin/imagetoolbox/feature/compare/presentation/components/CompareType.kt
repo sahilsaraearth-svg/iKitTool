@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,17 +15,17 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.compare.presentation.components
+package com.t8rin.ikittool.feature.compare.presentation.components
 
 import androidx.annotation.StringRes
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Compare
-import com.t8rin.imagetoolbox.core.resources.icons.Cube
-import com.t8rin.imagetoolbox.core.resources.icons.Tonality
-import com.t8rin.imagetoolbox.core.resources.icons.TouchApp
-import com.t8rin.imagetoolbox.core.resources.icons.ZoomIn
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Compare
+import com.t8rin.ikittool.core.resources.icons.Cube
+import com.t8rin.ikittool.core.resources.icons.Tonality
+import com.t8rin.ikittool.core.resources.icons.TouchApp
+import com.t8rin.ikittool.core.resources.icons.ZoomIn
 
 sealed class CompareType(
     val icon: ImageVector,

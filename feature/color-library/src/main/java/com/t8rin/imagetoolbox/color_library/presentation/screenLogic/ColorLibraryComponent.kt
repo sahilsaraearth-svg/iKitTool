@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.color_library.presentation.screenLogic
+package com.t8rin.ikittool.color_library.presentation.screenLogic
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.getValue
@@ -24,14 +24,14 @@ import androidx.compose.runtime.snapshotFlow
 import com.arkivanov.decompose.ComponentContext
 import com.t8rin.colors.parser.ColorNameParser
 import com.t8rin.colors.parser.ColorWithName
-import com.t8rin.imagetoolbox.color_library.presentation.components.FavoriteColors
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.saving.FileController
-import com.t8rin.imagetoolbox.core.domain.utils.ListUtils.toggle
-import com.t8rin.imagetoolbox.core.domain.utils.update
-import com.t8rin.imagetoolbox.core.ui.utils.BaseComponent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.toHex
-import com.t8rin.imagetoolbox.core.ui.utils.state.savable
+import com.t8rin.ikittool.color_library.presentation.components.FavoriteColors
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.saving.FileController
+import com.t8rin.ikittool.core.domain.utils.ListUtils.toggle
+import com.t8rin.ikittool.core.domain.utils.update
+import com.t8rin.ikittool.core.ui.utils.BaseComponent
+import com.t8rin.ikittool.core.ui.utils.helper.toHex
+import com.t8rin.ikittool.core.ui.utils.state.savable
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject

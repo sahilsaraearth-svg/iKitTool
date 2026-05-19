@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,29 +14,29 @@
  * You should have received a copy of the Apache License
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
-package com.t8rin.imagetoolbox.feature.media_picker.presentation.screenLogic
+package com.t8rin.ikittool.feature.media_picker.presentation.screenLogic
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import com.arkivanov.decompose.ComponentContext
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.utils.smartJob
-import com.t8rin.imagetoolbox.core.settings.domain.SettingsManager
-import com.t8rin.imagetoolbox.core.settings.domain.model.SettingsState
-import com.t8rin.imagetoolbox.core.ui.utils.BaseComponent
-import com.t8rin.imagetoolbox.feature.media_picker.data.utils.DateExt
-import com.t8rin.imagetoolbox.feature.media_picker.data.utils.getDate
-import com.t8rin.imagetoolbox.feature.media_picker.data.utils.getDateExt
-import com.t8rin.imagetoolbox.feature.media_picker.data.utils.getDateHeader
-import com.t8rin.imagetoolbox.feature.media_picker.data.utils.getMonth
-import com.t8rin.imagetoolbox.feature.media_picker.domain.MediaRetriever
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.Album
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.AlbumState
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.AllowedMedia
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.Media
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.MediaItem
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.MediaState
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.utils.smartJob
+import com.t8rin.ikittool.core.settings.domain.SettingsManager
+import com.t8rin.ikittool.core.settings.domain.model.SettingsState
+import com.t8rin.ikittool.core.ui.utils.BaseComponent
+import com.t8rin.ikittool.feature.media_picker.data.utils.DateExt
+import com.t8rin.ikittool.feature.media_picker.data.utils.getDate
+import com.t8rin.ikittool.feature.media_picker.data.utils.getDateExt
+import com.t8rin.ikittool.feature.media_picker.data.utils.getDateHeader
+import com.t8rin.ikittool.feature.media_picker.data.utils.getMonth
+import com.t8rin.ikittool.feature.media_picker.domain.MediaRetriever
+import com.t8rin.ikittool.feature.media_picker.domain.model.Album
+import com.t8rin.ikittool.feature.media_picker.domain.model.AlbumState
+import com.t8rin.ikittool.feature.media_picker.domain.model.AllowedMedia
+import com.t8rin.ikittool.feature.media_picker.domain.model.Media
+import com.t8rin.ikittool.feature.media_picker.domain.model.MediaItem
+import com.t8rin.ikittool.feature.media_picker.domain.model.MediaState
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject

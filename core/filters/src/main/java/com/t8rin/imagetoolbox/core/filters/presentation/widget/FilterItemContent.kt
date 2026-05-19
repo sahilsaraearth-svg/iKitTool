@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,72 +15,72 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.filters.presentation.widget
+package com.t8rin.ikittool.core.filters.presentation.widget
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.utils.Quad
-import com.t8rin.imagetoolbox.core.domain.utils.cast
-import com.t8rin.imagetoolbox.core.filters.domain.model.FilterValueWrapper
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.PolarCoordinatesType
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.ArcParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.AsciiParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.BilaterialBlurParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.BloomParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.ChannelMixParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.ClaheParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.CropOrPerspectiveParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.EnhancedZoomBlurParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.GlitchParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.KaleidoscopeParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.LinearGaussianParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.LinearTiltShiftParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.PinchParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.RadialTiltShiftParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.RubberStampParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.SeamCarvingParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.SideFadeParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.SmearParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.SparkleParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.ToneCurvesParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.VoronoiCrystallizeParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.WaterParams
-import com.t8rin.imagetoolbox.core.filters.presentation.model.UiFilter
-import com.t8rin.imagetoolbox.core.filters.presentation.utils.translatedName
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.ArcParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.AsciiParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.BilaterialBlurParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.BloomParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.BooleanItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.ChannelMixParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.ClaheParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.CropOrPerspectiveParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.EnhancedZoomBlurParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.FilterValueWrapperItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.FloatArrayItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.FloatItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.GlitchParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.IntegerSizeParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.KaleidoscopeParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.LinearGaussianParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.LinearTiltShiftParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.PairItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.PinchParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.QuadItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.RadialTiltShiftParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.RubberStampParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.SeamCarvingParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.SideFadeRelativeItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.SmearParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.SparkleParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.ToneCurvesParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.TripleItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.VoronoiCrystallizeParamsItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.WaterParamsItem
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButtonGroup
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.utils.Quad
+import com.t8rin.ikittool.core.domain.utils.cast
+import com.t8rin.ikittool.core.filters.domain.model.FilterValueWrapper
+import com.t8rin.ikittool.core.filters.domain.model.enums.PolarCoordinatesType
+import com.t8rin.ikittool.core.filters.domain.model.params.ArcParams
+import com.t8rin.ikittool.core.filters.domain.model.params.AsciiParams
+import com.t8rin.ikittool.core.filters.domain.model.params.BilaterialBlurParams
+import com.t8rin.ikittool.core.filters.domain.model.params.BloomParams
+import com.t8rin.ikittool.core.filters.domain.model.params.ChannelMixParams
+import com.t8rin.ikittool.core.filters.domain.model.params.ClaheParams
+import com.t8rin.ikittool.core.filters.domain.model.params.CropOrPerspectiveParams
+import com.t8rin.ikittool.core.filters.domain.model.params.EnhancedZoomBlurParams
+import com.t8rin.ikittool.core.filters.domain.model.params.GlitchParams
+import com.t8rin.ikittool.core.filters.domain.model.params.KaleidoscopeParams
+import com.t8rin.ikittool.core.filters.domain.model.params.LinearGaussianParams
+import com.t8rin.ikittool.core.filters.domain.model.params.LinearTiltShiftParams
+import com.t8rin.ikittool.core.filters.domain.model.params.PinchParams
+import com.t8rin.ikittool.core.filters.domain.model.params.RadialTiltShiftParams
+import com.t8rin.ikittool.core.filters.domain.model.params.RubberStampParams
+import com.t8rin.ikittool.core.filters.domain.model.params.SeamCarvingParams
+import com.t8rin.ikittool.core.filters.domain.model.params.SideFadeParams
+import com.t8rin.ikittool.core.filters.domain.model.params.SmearParams
+import com.t8rin.ikittool.core.filters.domain.model.params.SparkleParams
+import com.t8rin.ikittool.core.filters.domain.model.params.ToneCurvesParams
+import com.t8rin.ikittool.core.filters.domain.model.params.VoronoiCrystallizeParams
+import com.t8rin.ikittool.core.filters.domain.model.params.WaterParams
+import com.t8rin.ikittool.core.filters.presentation.model.UiFilter
+import com.t8rin.ikittool.core.filters.presentation.utils.translatedName
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.ArcParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.AsciiParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.BilaterialBlurParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.BloomParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.BooleanItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.ChannelMixParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.ClaheParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.CropOrPerspectiveParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.EnhancedZoomBlurParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.FilterValueWrapperItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.FloatArrayItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.FloatItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.GlitchParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.IntegerSizeParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.KaleidoscopeParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.LinearGaussianParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.LinearTiltShiftParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.PairItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.PinchParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.QuadItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.RadialTiltShiftParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.RubberStampParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.SeamCarvingParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.SideFadeRelativeItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.SmearParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.SparkleParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.ToneCurvesParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.TripleItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.VoronoiCrystallizeParamsItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.WaterParamsItem
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButtonGroup
 
 @Composable
 internal fun <T : Any> FilterItemContent(

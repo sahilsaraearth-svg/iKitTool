@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,27 +17,27 @@
 
 @file:Suppress("PLUGIN_IS_NOT_ENABLED")
 
-package com.t8rin.imagetoolbox.core.ui.utils.navigation
+package com.t8rin.ikittool.core.ui.utils.navigation
 
 import androidx.annotation.StringRes
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.Stable
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Animation
-import com.t8rin.imagetoolbox.core.resources.icons.Apng
-import com.t8rin.imagetoolbox.core.resources.icons.ArtTrack
-import com.t8rin.imagetoolbox.core.resources.icons.AutoFixHigh
-import com.t8rin.imagetoolbox.core.resources.icons.Exif
-import com.t8rin.imagetoolbox.core.resources.icons.FilePresent
-import com.t8rin.imagetoolbox.core.resources.icons.Gif
-import com.t8rin.imagetoolbox.core.resources.icons.Jpg
-import com.t8rin.imagetoolbox.core.resources.icons.Jxl
-import com.t8rin.imagetoolbox.core.resources.icons.Pdf
-import com.t8rin.imagetoolbox.core.resources.icons.TextSearch
-import com.t8rin.imagetoolbox.core.resources.icons.Texture
-import com.t8rin.imagetoolbox.core.resources.icons.Webp
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Animation
+import com.t8rin.ikittool.core.resources.icons.Apng
+import com.t8rin.ikittool.core.resources.icons.ArtTrack
+import com.t8rin.ikittool.core.resources.icons.AutoFixHigh
+import com.t8rin.ikittool.core.resources.icons.Exif
+import com.t8rin.ikittool.core.resources.icons.FilePresent
+import com.t8rin.ikittool.core.resources.icons.Gif
+import com.t8rin.ikittool.core.resources.icons.Jpg
+import com.t8rin.ikittool.core.resources.icons.Jxl
+import com.t8rin.ikittool.core.resources.icons.Pdf
+import com.t8rin.ikittool.core.resources.icons.TextSearch
+import com.t8rin.ikittool.core.resources.icons.Texture
+import com.t8rin.ikittool.core.resources.icons.Webp
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

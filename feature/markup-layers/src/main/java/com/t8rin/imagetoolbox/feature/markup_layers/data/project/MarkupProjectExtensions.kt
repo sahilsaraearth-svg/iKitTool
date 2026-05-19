@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,11 +15,11 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.data.project
+package com.t8rin.ikittool.feature.markup_layers.data.project
 
 import android.net.Uri
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.core.utils.filename
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.core.utils.filename
 
 fun Uri.isMarkupProject(): Boolean {
     val name = filename(appContext).orEmpty()

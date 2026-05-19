@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -46,9 +46,9 @@ import com.t8rin.cropper.model.CropOutline
 import com.t8rin.cropper.model.CropPath
 import com.t8rin.cropper.model.CropShape
 import com.t8rin.cropper.settings.Paths
-import com.t8rin.imagetoolbox.core.resources.icons.Favorite
-import com.t8rin.imagetoolbox.core.resources.icons.Image
-import com.t8rin.imagetoolbox.core.resources.icons.Star
+import com.t8rin.ikittool.core.resources.icons.Favorite
+import com.t8rin.ikittool.core.resources.icons.Image
+import com.t8rin.ikittool.core.resources.icons.Star
 
 @Composable
 fun CropFrameDisplayCard(

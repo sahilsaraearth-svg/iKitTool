@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,15 +15,15 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.ai_tools.data.model
+package com.t8rin.ikittool.feature.ai_tools.data.model
 
 import ai.onnxruntime.NodeInfo
 import ai.onnxruntime.OrtSession
-import com.t8rin.imagetoolbox.core.utils.makeLog
-import com.t8rin.imagetoolbox.feature.ai_tools.data.model.ImageTensor.Companion.firstImageTensor
-import com.t8rin.imagetoolbox.feature.ai_tools.data.utils.AiExtensions.MODEL_ALIGNMENT
-import com.t8rin.imagetoolbox.feature.ai_tools.data.utils.roundedUpTo
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.model.NeuralModel
+import com.t8rin.ikittool.core.utils.makeLog
+import com.t8rin.ikittool.feature.ai_tools.data.model.ImageTensor.Companion.firstImageTensor
+import com.t8rin.ikittool.feature.ai_tools.data.utils.AiExtensions.MODEL_ALIGNMENT
+import com.t8rin.ikittool.feature.ai_tools.data.utils.roundedUpTo
+import com.t8rin.ikittool.feature.ai_tools.domain.model.NeuralModel
 
 internal class ModelInfo(
     val strength: Float,

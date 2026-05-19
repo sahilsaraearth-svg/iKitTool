@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,23 +15,23 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.recognize.text.presentation.components
+package com.t8rin.ikittool.feature.recognize.text.presentation.components
 
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import com.t8rin.imagetoolbox.core.domain.utils.humanFileSize
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.WifiTetheringError
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.widget.other.ToastDuration
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.RecognitionType
-import com.t8rin.imagetoolbox.feature.recognize.text.presentation.screenLogic.RecognizeTextComponent
+import com.t8rin.ikittool.core.domain.utils.humanFileSize
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.WifiTetheringError
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.widget.other.ToastDuration
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.feature.recognize.text.domain.RecognitionType
+import com.t8rin.ikittool.feature.recognize.text.presentation.screenLogic.RecognizeTextComponent
 
 @Composable
 internal fun RecognizeTextDownloadDataDialog(component: RecognizeTextComponent) {

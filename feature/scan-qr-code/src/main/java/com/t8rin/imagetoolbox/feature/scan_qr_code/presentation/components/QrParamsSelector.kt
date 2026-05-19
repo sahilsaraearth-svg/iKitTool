@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.scan_qr_code.presentation.components
+package com.t8rin.ikittool.feature.scan_qr_code.presentation.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.LocalIndication
@@ -35,7 +35,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
@@ -52,40 +52,40 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.t8rin.colors.util.roundToTwoDigits
-import com.t8rin.imagetoolbox.core.domain.utils.ListUtils.toggle
-import com.t8rin.imagetoolbox.core.domain.utils.safeCast
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Circle
-import com.t8rin.imagetoolbox.core.resources.icons.Code
-import com.t8rin.imagetoolbox.core.resources.icons.DarkMode
-import com.t8rin.imagetoolbox.core.resources.icons.Delete
-import com.t8rin.imagetoolbox.core.resources.icons.LightMode
-import com.t8rin.imagetoolbox.core.resources.icons.Padding
-import com.t8rin.imagetoolbox.core.resources.icons.PhotoSizeSelectLarge
-import com.t8rin.imagetoolbox.core.resources.icons.RoundedCorner
-import com.t8rin.imagetoolbox.core.resources.icons.Shuffle
-import com.t8rin.imagetoolbox.core.resources.icons.Square
-import com.t8rin.imagetoolbox.core.resources.icons.TableRows
-import com.t8rin.imagetoolbox.core.resources.icons.TopLeft
-import com.t8rin.imagetoolbox.core.resources.icons.ViewColumn
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ColorRowSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ImageSelector
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButtonGroup
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedSliderItem
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.hapticsClickable
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.shapeByInteraction
-import com.t8rin.imagetoolbox.core.ui.widget.other.BoxAnimatedVisibility
-import com.t8rin.imagetoolbox.core.ui.widget.other.QrCodeParams
-import com.t8rin.imagetoolbox.core.ui.widget.other.QrCodeParams.BallShape
-import com.t8rin.imagetoolbox.core.ui.widget.other.QrCodeParams.ErrorCorrectionLevel
-import com.t8rin.imagetoolbox.core.ui.widget.other.QrCodeParams.FrameShape
-import com.t8rin.imagetoolbox.core.ui.widget.other.QrCodeParams.FrameShape.Corners.CornerSide
-import com.t8rin.imagetoolbox.core.ui.widget.other.QrCodeParams.MaskPattern
-import com.t8rin.imagetoolbox.core.ui.widget.other.QrCodeParams.PixelShape
-import com.t8rin.imagetoolbox.core.ui.widget.other.defaultQrColors
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.core.domain.utils.ListUtils.toggle
+import com.t8rin.ikittool.core.domain.utils.safeCast
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Circle
+import com.t8rin.ikittool.core.resources.icons.Code
+import com.t8rin.ikittool.core.resources.icons.DarkMode
+import com.t8rin.ikittool.core.resources.icons.Delete
+import com.t8rin.ikittool.core.resources.icons.LightMode
+import com.t8rin.ikittool.core.resources.icons.Padding
+import com.t8rin.ikittool.core.resources.icons.PhotoSizeSelectLarge
+import com.t8rin.ikittool.core.resources.icons.RoundedCorner
+import com.t8rin.ikittool.core.resources.icons.Shuffle
+import com.t8rin.ikittool.core.resources.icons.Square
+import com.t8rin.ikittool.core.resources.icons.TableRows
+import com.t8rin.ikittool.core.resources.icons.TopLeft
+import com.t8rin.ikittool.core.resources.icons.ViewColumn
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ColorRowSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ImageSelector
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButtonGroup
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedSliderItem
+import com.t8rin.ikittool.core.ui.widget.enhanced.hapticsClickable
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.shapeByInteraction
+import com.t8rin.ikittool.core.ui.widget.other.BoxAnimatedVisibility
+import com.t8rin.ikittool.core.ui.widget.other.QrCodeParams
+import com.t8rin.ikittool.core.ui.widget.other.QrCodeParams.BallShape
+import com.t8rin.ikittool.core.ui.widget.other.QrCodeParams.ErrorCorrectionLevel
+import com.t8rin.ikittool.core.ui.widget.other.QrCodeParams.FrameShape
+import com.t8rin.ikittool.core.ui.widget.other.QrCodeParams.FrameShape.Corners.CornerSide
+import com.t8rin.ikittool.core.ui.widget.other.QrCodeParams.MaskPattern
+import com.t8rin.ikittool.core.ui.widget.other.QrCodeParams.PixelShape
+import com.t8rin.ikittool.core.ui.widget.other.defaultQrColors
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
 import kotlin.math.roundToInt
 
 @Composable

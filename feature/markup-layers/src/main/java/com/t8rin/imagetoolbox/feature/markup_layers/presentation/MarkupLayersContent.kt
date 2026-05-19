@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("COMPOSE_APPLIER_CALL_MISMATCH")
 
-package com.t8rin.imagetoolbox.feature.markup_layers.presentation
+package com.t8rin.ikittool.feature.markup_layers.presentation
 
 import android.net.Uri
 import androidx.compose.foundation.background
@@ -62,48 +62,48 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.fastAny
 import androidx.compose.ui.zIndex
 import com.t8rin.dynamic.theme.LocalDynamicThemeState
-import com.t8rin.imagetoolbox.core.domain.model.MimeType
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Archive
-import com.t8rin.imagetoolbox.core.resources.icons.BackgroundColor
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.rememberAppColorTuple
-import com.t8rin.imagetoolbox.core.ui.theme.outlineVariant
-import com.t8rin.imagetoolbox.core.ui.theme.toColor
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.Picker
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberFileCreator
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberFilePicker
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberImagePicker
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalScreenSize
-import com.t8rin.imagetoolbox.core.ui.widget.AdaptiveBottomScaffoldLayoutScreen
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.BottomButtonsBlock
-import com.t8rin.imagetoolbox.core.ui.widget.controls.SaveExifWidget
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ColorRowSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ImageFormatSelector
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.ExitWithoutSavingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.LoadingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.OneTimeImagePickingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.OneTimeSaveLocationSelectionDialog
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.clearFocusOnTap
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.tappable
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.transparencyChecker
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItem
-import com.t8rin.imagetoolbox.core.ui.widget.text.TopAppBarTitle
-import com.t8rin.imagetoolbox.core.ui.widget.utils.AutoContentBasedColors
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.BackgroundCanvasSizeControls
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.Layer
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.MarkupLayersActions
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.MarkupLayersNoDataControls
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.MarkupLayersSideMenu
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.MarkupLayersTopAppBarActions
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.MarkupLayersUndoRedo
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.activeLayerGestures
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.BackgroundBehavior
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.screenLogic.MarkupLayersComponent
+import com.t8rin.ikittool.core.domain.model.MimeType
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Archive
+import com.t8rin.ikittool.core.resources.icons.BackgroundColor
+import com.t8rin.ikittool.core.settings.presentation.provider.rememberAppColorTuple
+import com.t8rin.ikittool.core.ui.theme.outlineVariant
+import com.t8rin.ikittool.core.ui.theme.toColor
+import com.t8rin.ikittool.core.ui.utils.content_pickers.Picker
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberFileCreator
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberFilePicker
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberImagePicker
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.utils.provider.LocalScreenSize
+import com.t8rin.ikittool.core.ui.widget.AdaptiveBottomScaffoldLayoutScreen
+import com.t8rin.ikittool.core.ui.widget.buttons.BottomButtonsBlock
+import com.t8rin.ikittool.core.ui.widget.controls.SaveExifWidget
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ColorRowSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ImageFormatSelector
+import com.t8rin.ikittool.core.ui.widget.dialogs.ExitWithoutSavingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.LoadingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.OneTimeImagePickingDialog
+import com.t8rin.ikittool.core.ui.widget.dialogs.OneTimeSaveLocationSelectionDialog
+import com.t8rin.ikittool.core.ui.widget.image.Picture
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.clearFocusOnTap
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.tappable
+import com.t8rin.ikittool.core.ui.widget.modifier.transparencyChecker
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItem
+import com.t8rin.ikittool.core.ui.widget.text.TopAppBarTitle
+import com.t8rin.ikittool.core.ui.widget.utils.AutoContentBasedColors
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.BackgroundCanvasSizeControls
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.Layer
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.MarkupLayersActions
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.MarkupLayersNoDataControls
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.MarkupLayersSideMenu
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.MarkupLayersTopAppBarActions
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.MarkupLayersUndoRedo
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.activeLayerGestures
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.BackgroundBehavior
+import com.t8rin.ikittool.feature.markup_layers.presentation.screenLogic.MarkupLayersComponent
 import net.engawapg.lib.zoomable.rememberZoomState
 import net.engawapg.lib.zoomable.zoomable
 

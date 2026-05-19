@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,23 +15,23 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.utils.helper
+package com.t8rin.ikittool.core.ui.utils.helper
 
 import android.content.Intent
 import android.net.Uri
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.domain.BACKUP_FILE_EXT
-import com.t8rin.imagetoolbox.core.domain.TEMPLATE_EXT
-import com.t8rin.imagetoolbox.core.domain.model.ExtraDataType
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Error
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.getScreenExtra
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.getScreenOpeningShortcut
-import com.t8rin.imagetoolbox.core.ui.utils.helper.IntentUtils.parcelable
-import com.t8rin.imagetoolbox.core.ui.utils.helper.IntentUtils.parcelableArrayList
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.core.utils.filename
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.domain.BACKUP_FILE_EXT
+import com.t8rin.ikittool.core.domain.TEMPLATE_EXT
+import com.t8rin.ikittool.core.domain.model.ExtraDataType
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Error
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.getScreenExtra
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.getScreenOpeningShortcut
+import com.t8rin.ikittool.core.ui.utils.helper.IntentUtils.parcelable
+import com.t8rin.ikittool.core.ui.utils.helper.IntentUtils.parcelableArrayList
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.core.utils.filename
 
 fun Intent?.handleDeeplinks(
     onStart: () -> Unit,

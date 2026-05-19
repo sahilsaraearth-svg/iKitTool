@@ -1,6 +1,6 @@
-package com.t8rin.imagetoolbox.core.resources.icons
+package com.t8rin.ikittool.core.resources.icons
 
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.vector.ImageVector

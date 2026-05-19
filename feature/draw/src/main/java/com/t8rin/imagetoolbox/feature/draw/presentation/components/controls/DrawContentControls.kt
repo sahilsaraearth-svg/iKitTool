@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.draw.presentation.components.controls
+package com.t8rin.ikittool.feature.draw.presentation.components.controls
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.expandVertically
@@ -28,7 +28,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
@@ -41,33 +41,33 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.model.Pt
-import com.t8rin.imagetoolbox.core.domain.model.pt
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.BackgroundColor
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.widget.controls.SaveExifWidget
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.AlphaSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ColorRowSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.HelperGridParamsSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ImageFormatSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.MagnifierEnabledSelector
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.saver.ColorSaver
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawBehavior
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawLineStyle
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawMode
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.BrushSoftnessSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.DrawColorSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.DrawLineStyleSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.DrawModeSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.DrawPathModeSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.LineWidthSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.OpenColorPickerCard
-import com.t8rin.imagetoolbox.feature.draw.presentation.screenLogic.DrawComponent
-import com.t8rin.imagetoolbox.feature.pick_color.presentation.components.PickColorFromImageSheet
+import com.t8rin.ikittool.core.domain.model.Pt
+import com.t8rin.ikittool.core.domain.model.pt
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.BackgroundColor
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.widget.controls.SaveExifWidget
+import com.t8rin.ikittool.core.ui.widget.controls.selection.AlphaSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ColorRowSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.HelperGridParamsSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ImageFormatSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.MagnifierEnabledSelector
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.saver.ColorSaver
+import com.t8rin.ikittool.feature.draw.domain.DrawBehavior
+import com.t8rin.ikittool.feature.draw.domain.DrawLineStyle
+import com.t8rin.ikittool.feature.draw.domain.DrawMode
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode
+import com.t8rin.ikittool.feature.draw.presentation.components.BrushSoftnessSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.DrawColorSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.DrawLineStyleSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.DrawModeSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.DrawPathModeSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.LineWidthSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.OpenColorPickerCard
+import com.t8rin.ikittool.feature.draw.presentation.screenLogic.DrawComponent
+import com.t8rin.ikittool.feature.pick_color.presentation.components.PickColorFromImageSheet
 
 @Composable
 internal fun DrawContentControls(

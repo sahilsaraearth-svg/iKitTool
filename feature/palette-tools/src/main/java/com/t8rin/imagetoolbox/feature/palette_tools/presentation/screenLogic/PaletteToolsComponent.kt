@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.palette_tools.presentation.screenLogic
+package com.t8rin.ikittool.feature.palette_tools.presentation.screenLogic
 
 import android.graphics.Bitmap
 import android.net.Uri
@@ -23,22 +23,22 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import com.arkivanov.decompose.ComponentContext
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.ImageScaler
-import com.t8rin.imagetoolbox.core.domain.image.ShareProvider
-import com.t8rin.imagetoolbox.core.domain.saving.FileController
-import com.t8rin.imagetoolbox.core.domain.utils.smartJob
-import com.t8rin.imagetoolbox.core.domain.utils.timestamp
-import com.t8rin.imagetoolbox.core.ui.utils.BaseComponent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.state.update
-import com.t8rin.imagetoolbox.core.utils.filename
-import com.t8rin.imagetoolbox.feature.palette_tools.presentation.components.PaletteType
-import com.t8rin.imagetoolbox.feature.palette_tools.presentation.components.model.NamedPalette
-import com.t8rin.imagetoolbox.feature.palette_tools.presentation.components.model.PaletteFormatHelper
-import com.t8rin.imagetoolbox.feature.palette_tools.presentation.components.model.toNamed
-import com.t8rin.imagetoolbox.feature.palette_tools.presentation.components.model.toPalette
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.ImageScaler
+import com.t8rin.ikittool.core.domain.image.ShareProvider
+import com.t8rin.ikittool.core.domain.saving.FileController
+import com.t8rin.ikittool.core.domain.utils.smartJob
+import com.t8rin.ikittool.core.domain.utils.timestamp
+import com.t8rin.ikittool.core.ui.utils.BaseComponent
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.state.update
+import com.t8rin.ikittool.core.utils.filename
+import com.t8rin.ikittool.feature.palette_tools.presentation.components.PaletteType
+import com.t8rin.ikittool.feature.palette_tools.presentation.components.model.NamedPalette
+import com.t8rin.ikittool.feature.palette_tools.presentation.components.model.PaletteFormatHelper
+import com.t8rin.ikittool.feature.palette_tools.presentation.components.model.toNamed
+import com.t8rin.ikittool.feature.palette_tools.presentation.components.model.toPalette
 import com.t8rin.palette.PaletteFormat
 import com.t8rin.palette.decode
 import com.t8rin.palette.encode

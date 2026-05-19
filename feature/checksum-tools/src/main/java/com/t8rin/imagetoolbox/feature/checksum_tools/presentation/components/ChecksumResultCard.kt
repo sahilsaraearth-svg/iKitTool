@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,29 +15,29 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.checksum_tools.presentation.components
+package com.t8rin.ikittool.feature.checksum_tools.presentation.components
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.layout.fillMaxWidth
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.CheckCircle
-import com.t8rin.imagetoolbox.core.resources.icons.WarningAmber
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.theme.Green
-import com.t8rin.imagetoolbox.core.ui.theme.ImageToolboxThemeForPreview
-import com.t8rin.imagetoolbox.core.ui.theme.Red
-import com.t8rin.imagetoolbox.core.ui.theme.blend
-import com.t8rin.imagetoolbox.core.ui.theme.inverse
-import com.t8rin.imagetoolbox.core.ui.widget.icon_shape.LocalIconShapeContainerColor
-import com.t8rin.imagetoolbox.core.ui.widget.icon_shape.LocalIconShapeContentColor
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItem
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.CheckCircle
+import com.t8rin.ikittool.core.resources.icons.WarningAmber
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.theme.Green
+import com.t8rin.ikittool.core.ui.theme.iKitToolThemeForPreview
+import com.t8rin.ikittool.core.ui.theme.Red
+import com.t8rin.ikittool.core.ui.theme.blend
+import com.t8rin.ikittool.core.ui.theme.inverse
+import com.t8rin.ikittool.core.ui.widget.icon_shape.LocalIconShapeContainerColor
+import com.t8rin.ikittool.core.ui.widget.icon_shape.LocalIconShapeContentColor
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItem
 
 @Composable
 internal fun ChecksumResultCard(
@@ -92,7 +92,7 @@ internal fun ChecksumResultCard(
 
 @Composable
 @Preview
-private fun Preview() = ImageToolboxThemeForPreview(false) {
+private fun Preview() = iKitToolThemeForPreview(false) {
     CompositionLocalProvider(
         LocalSettingsState provides LocalSettingsState.current.copy(
             drawContainerShadows = false

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.media_picker.data.utils
+package com.t8rin.ikittool.feature.media_picker.data.utils
 
 import android.content.ContentResolver
 import android.content.ContentUris
@@ -26,10 +26,10 @@ import android.database.MergeCursor
 import android.net.Uri
 import android.os.Build
 import android.provider.MediaStore
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.FULL_DATE_FORMAT
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.Media
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.MediaOrder
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.OrderType
+import com.t8rin.ikittool.feature.media_picker.domain.model.FULL_DATE_FORMAT
+import com.t8rin.ikittool.feature.media_picker.domain.model.Media
+import com.t8rin.ikittool.feature.media_picker.domain.model.MediaOrder
+import com.t8rin.ikittool.feature.media_picker.domain.model.OrderType
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.coroutineScope

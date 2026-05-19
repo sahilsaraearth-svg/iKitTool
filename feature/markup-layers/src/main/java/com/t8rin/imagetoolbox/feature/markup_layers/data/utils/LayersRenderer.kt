@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.data.utils
+package com.t8rin.ikittool.feature.markup_layers.data.utils
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -48,15 +48,15 @@ import coil3.ImageLoader
 import coil3.request.ImageRequest
 import coil3.request.allowHardware
 import coil3.toBitmap
-import com.t8rin.imagetoolbox.core.data.image.utils.static
-import com.t8rin.imagetoolbox.core.data.image.utils.toPaint
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.settings.presentation.model.asUi
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.LayerType
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupLayer
+import com.t8rin.ikittool.core.data.image.utils.static
+import com.t8rin.ikittool.core.data.image.utils.toPaint
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.settings.presentation.model.asUi
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.feature.markup_layers.domain.LayerType
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupLayer
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
@@ -272,7 +272,7 @@ internal class LayersRenderer @Inject constructor(
 
     private fun resolvePictureRenderData(
         bitmap: Bitmap,
-        shadow: com.t8rin.imagetoolbox.feature.markup_layers.domain.DropShadow?,
+        shadow: com.t8rin.ikittool.feature.markup_layers.domain.DropShadow?,
         contentSize: IntegerSize,
         maxWidth: Float,
         maxHeight: Float

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("NOTHING_TO_INLINE")
 
-package com.t8rin.imagetoolbox.core.ui.theme
+package com.t8rin.ikittool.core.ui.theme
 
 import androidx.annotation.FloatRange
 import androidx.compose.animation.animateColorAsState
@@ -30,7 +30,7 @@ import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.core.graphics.ColorUtils
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
 
 fun ColorScheme.outlineVariant(
     luminance: Float = 0.3f,

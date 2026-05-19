@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.dialogs
+package com.t8rin.ikittool.core.ui.widget.dialogs
 
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -46,42 +46,42 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.utils.timestamp
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.CreateNewFolder
-import com.t8rin.imagetoolbox.core.resources.icons.Delete
-import com.t8rin.imagetoolbox.core.resources.icons.FileRename
-import com.t8rin.imagetoolbox.core.resources.icons.FileReplace
-import com.t8rin.imagetoolbox.core.resources.icons.Folder
-import com.t8rin.imagetoolbox.core.resources.icons.FolderOpen
-import com.t8rin.imagetoolbox.core.resources.icons.RadioButtonChecked
-import com.t8rin.imagetoolbox.core.resources.icons.RadioButtonUnchecked
-import com.t8rin.imagetoolbox.core.resources.icons.SaveAs
-import com.t8rin.imagetoolbox.core.settings.domain.model.FilenameBehavior
-import com.t8rin.imagetoolbox.core.settings.domain.model.OneTimeSaveLocation
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSimpleSettingsInteractor
-import com.t8rin.imagetoolbox.core.ui.theme.takeColorFromScheme
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberFileCreator
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberFolderPicker
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedAlertDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedVerticalScroll
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.hapticsClickable
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.fadingEdges
-import com.t8rin.imagetoolbox.core.ui.widget.other.RevealDirection
-import com.t8rin.imagetoolbox.core.ui.widget.other.RevealValue
-import com.t8rin.imagetoolbox.core.ui.widget.other.SwipeToReveal
-import com.t8rin.imagetoolbox.core.ui.widget.other.rememberRevealState
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItem
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItemDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceRowSwitch
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.core.utils.uiPath
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.utils.timestamp
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.CreateNewFolder
+import com.t8rin.ikittool.core.resources.icons.Delete
+import com.t8rin.ikittool.core.resources.icons.FileRename
+import com.t8rin.ikittool.core.resources.icons.FileReplace
+import com.t8rin.ikittool.core.resources.icons.Folder
+import com.t8rin.ikittool.core.resources.icons.FolderOpen
+import com.t8rin.ikittool.core.resources.icons.RadioButtonChecked
+import com.t8rin.ikittool.core.resources.icons.RadioButtonUnchecked
+import com.t8rin.ikittool.core.resources.icons.SaveAs
+import com.t8rin.ikittool.core.settings.domain.model.FilenameBehavior
+import com.t8rin.ikittool.core.settings.domain.model.OneTimeSaveLocation
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSimpleSettingsInteractor
+import com.t8rin.ikittool.core.ui.theme.takeColorFromScheme
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberFileCreator
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberFolderPicker
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedAlertDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedVerticalScroll
+import com.t8rin.ikittool.core.ui.widget.enhanced.hapticsClickable
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.fadingEdges
+import com.t8rin.ikittool.core.ui.widget.other.RevealDirection
+import com.t8rin.ikittool.core.ui.widget.other.RevealValue
+import com.t8rin.ikittool.core.ui.widget.other.SwipeToReveal
+import com.t8rin.ikittool.core.ui.widget.other.rememberRevealState
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItem
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItemDefaults
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceRowSwitch
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.core.utils.uiPath
 import kotlinx.coroutines.launch
 
 

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("UNCHECKED_CAST")
 
-package com.t8rin.imagetoolbox.feature.filters.data
+package com.t8rin.ikittool.feature.filters.data
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -27,23 +27,23 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
-import com.t8rin.imagetoolbox.core.domain.image.ImageCompressor
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.Quality
-import com.t8rin.imagetoolbox.core.domain.model.ImageModel
-import com.t8rin.imagetoolbox.core.domain.saving.FileController
-import com.t8rin.imagetoolbox.core.domain.utils.runSuspendCatching
-import com.t8rin.imagetoolbox.core.filters.domain.FilterParamsInteractor
-import com.t8rin.imagetoolbox.core.filters.domain.model.Filter
-import com.t8rin.imagetoolbox.core.filters.domain.model.TemplateFilter
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.utils.toImageModel
-import com.t8rin.imagetoolbox.feature.filters.data.utils.serialization.PACKAGE_ALIAS
-import com.t8rin.imagetoolbox.feature.filters.data.utils.serialization.REAL_PACKAGE
-import com.t8rin.imagetoolbox.feature.filters.data.utils.serialization.toDatastoreString
-import com.t8rin.imagetoolbox.feature.filters.data.utils.serialization.toFiltersList
-import com.t8rin.imagetoolbox.feature.filters.data.utils.serialization.toTemplateFiltersList
+import com.t8rin.ikittool.core.domain.image.ImageCompressor
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.Quality
+import com.t8rin.ikittool.core.domain.model.ImageModel
+import com.t8rin.ikittool.core.domain.saving.FileController
+import com.t8rin.ikittool.core.domain.utils.runSuspendCatching
+import com.t8rin.ikittool.core.filters.domain.FilterParamsInteractor
+import com.t8rin.ikittool.core.filters.domain.model.Filter
+import com.t8rin.ikittool.core.filters.domain.model.TemplateFilter
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.utils.toImageModel
+import com.t8rin.ikittool.feature.filters.data.utils.serialization.PACKAGE_ALIAS
+import com.t8rin.ikittool.feature.filters.data.utils.serialization.REAL_PACKAGE
+import com.t8rin.ikittool.feature.filters.data.utils.serialization.toDatastoreString
+import com.t8rin.ikittool.feature.filters.data.utils.serialization.toFiltersList
+import com.t8rin.ikittool.feature.filters.data.utils.serialization.toTemplateFiltersList
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
@@ -200,7 +200,7 @@ internal class AndroidFilterParamsInteractor @Inject constructor(
     }
 }
 
-private const val LINK_HEADER: String = "https://github.com/T8RIN/ImageToolbox?"
+private const val LINK_HEADER: String = "https://github.com/T8RIN/iKitTool?"
 
 private val FAVORITE_FILTERS = stringPreferencesKey("FAVORITE_FILTERS")
 private val TEMPLATE_FILTERS = stringPreferencesKey("TEMPLATE_FILTERS")

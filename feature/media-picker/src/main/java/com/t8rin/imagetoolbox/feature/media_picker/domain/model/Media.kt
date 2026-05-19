@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,11 +17,11 @@
 
 @file:Suppress("unused")
 
-package com.t8rin.imagetoolbox.feature.media_picker.domain.model
+package com.t8rin.ikittool.feature.media_picker.domain.model
 
 import androidx.core.net.toUri
-import com.t8rin.imagetoolbox.core.domain.utils.humanFileSize
-import com.t8rin.imagetoolbox.core.utils.fileSize
+import com.t8rin.ikittool.core.domain.utils.humanFileSize
+import com.t8rin.ikittool.core.utils.fileSize
 
 
 data class Media(

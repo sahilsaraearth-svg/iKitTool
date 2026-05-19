@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.utils.content_pickers
+package com.t8rin.ikittool.core.ui.utils.content_pickers
 
 import android.Manifest
 import android.content.Context
@@ -40,18 +40,18 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 import androidx.core.content.FileProvider
 import com.t8rin.dynamic.theme.LocalDynamicThemeState
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.CameraAlt
-import com.t8rin.imagetoolbox.core.settings.presentation.model.PicturePickerMode
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.helper.IntentUtils.parcelable
-import com.t8rin.imagetoolbox.core.ui.utils.helper.IntentUtils.parcelableArrayList
-import com.t8rin.imagetoolbox.core.ui.utils.helper.clipList
-import com.t8rin.imagetoolbox.core.ui.utils.helper.createMediaPickerIntent
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalComponentActivity
-import com.t8rin.imagetoolbox.core.utils.makeLog
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.CameraAlt
+import com.t8rin.ikittool.core.settings.presentation.model.PicturePickerMode
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.helper.IntentUtils.parcelable
+import com.t8rin.ikittool.core.ui.utils.helper.IntentUtils.parcelableArrayList
+import com.t8rin.ikittool.core.ui.utils.helper.clipList
+import com.t8rin.ikittool.core.ui.utils.helper.createMediaPickerIntent
+import com.t8rin.ikittool.core.ui.utils.provider.LocalComponentActivity
+import com.t8rin.ikittool.core.utils.makeLog
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import java.io.File

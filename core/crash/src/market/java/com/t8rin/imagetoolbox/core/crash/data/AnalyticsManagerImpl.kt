@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.crash.data
+package com.t8rin.ikittool.core.crash.data
 
 import com.google.firebase.Firebase
 import com.google.firebase.analytics.FirebaseAnalytics.Event
@@ -23,8 +23,8 @@ import com.google.firebase.analytics.FirebaseAnalytics.Param
 import com.google.firebase.analytics.analytics
 import com.google.firebase.analytics.logEvent
 import com.google.firebase.crashlytics.crashlytics
-import com.t8rin.imagetoolbox.core.domain.remote.AnalyticsManager
-import com.t8rin.imagetoolbox.core.ui.utils.helper.DeviceInfo.Companion.get
+import com.t8rin.ikittool.core.domain.remote.AnalyticsManager
+import com.t8rin.ikittool.core.ui.utils.helper.DeviceInfo.Companion.get
 
 internal object AnalyticsManagerImpl : AnalyticsManager {
 

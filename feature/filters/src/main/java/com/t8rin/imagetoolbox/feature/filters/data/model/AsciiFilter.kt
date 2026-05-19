@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,19 +15,19 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.filters.data.model
+package com.t8rin.ikittool.feature.filters.data.model
 
 import android.graphics.Bitmap
 import android.graphics.Typeface
 import com.t8rin.ascii.ASCIIConverter
 import com.t8rin.ascii.Gradient
 import com.t8rin.ascii.toMapper
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.transformation.Transformation
-import com.t8rin.imagetoolbox.core.filters.domain.model.Filter
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.AsciiParams
-import com.t8rin.imagetoolbox.core.ksp.annotations.FilterInject
-import com.t8rin.imagetoolbox.core.utils.toTypeface
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.transformation.Transformation
+import com.t8rin.ikittool.core.filters.domain.model.Filter
+import com.t8rin.ikittool.core.filters.domain.model.params.AsciiParams
+import com.t8rin.ikittool.core.ksp.annotations.FilterInject
+import com.t8rin.ikittool.core.utils.toTypeface
 
 @FilterInject
 internal class AsciiFilter(

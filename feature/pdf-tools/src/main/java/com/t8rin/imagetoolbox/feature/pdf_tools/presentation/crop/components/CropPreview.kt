@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.pdf_tools.presentation.crop.components
+package com.t8rin.ikittool.feature.pdf_tools.presentation.crop.components
 
 import android.net.Uri
 import androidx.compose.foundation.Canvas
@@ -46,20 +46,20 @@ import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
-import com.t8rin.imagetoolbox.core.data.coil.PdfImageRequest
-import com.t8rin.imagetoolbox.core.domain.model.RectModel
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.theme.Black
-import com.t8rin.imagetoolbox.core.ui.theme.ImageToolboxThemeForPreview
-import com.t8rin.imagetoolbox.core.ui.utils.helper.EnPreview
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.safeAspectRatio
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ProvidesValue
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.animateContentSizeNoClip
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.other.rememberAnimatedBorder
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfCropParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.presentation.common.PageSwitcher
+import com.t8rin.ikittool.core.data.coil.PdfImageRequest
+import com.t8rin.ikittool.core.domain.model.RectModel
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.theme.Black
+import com.t8rin.ikittool.core.ui.theme.iKitToolThemeForPreview
+import com.t8rin.ikittool.core.ui.utils.helper.EnPreview
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.safeAspectRatio
+import com.t8rin.ikittool.core.ui.utils.helper.ProvidesValue
+import com.t8rin.ikittool.core.ui.widget.image.Picture
+import com.t8rin.ikittool.core.ui.widget.modifier.animateContentSizeNoClip
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.other.rememberAnimatedBorder
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfCropParams
+import com.t8rin.ikittool.feature.pdf_tools.presentation.common.PageSwitcher
 
 @Composable
 internal fun CropPreview(
@@ -197,7 +197,7 @@ private fun CropFrameBorder(
 
 @EnPreview
 @Composable
-private fun Preview() = ImageToolboxThemeForPreview(false) {
+private fun Preview() = iKitToolThemeForPreview(false) {
     LocalLayoutDirection.ProvidesValue(LayoutDirection.Ltr) {
         CropPreview(
             uri = "111".toUri(),

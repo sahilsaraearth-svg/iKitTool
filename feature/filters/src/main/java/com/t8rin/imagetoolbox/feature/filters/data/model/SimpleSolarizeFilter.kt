@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,13 +15,13 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.filters.data.model
+package com.t8rin.ikittool.feature.filters.data.model
 
 import com.jhlabs.JhFilter
 import com.jhlabs.SolarizeFilter
-import com.t8rin.imagetoolbox.core.filters.domain.model.Filter
-import com.t8rin.imagetoolbox.core.ksp.annotations.FilterInject
-import com.t8rin.imagetoolbox.feature.filters.data.transformation.JhFilterTransformation
+import com.t8rin.ikittool.core.filters.domain.model.Filter
+import com.t8rin.ikittool.core.ksp.annotations.FilterInject
+import com.t8rin.ikittool.feature.filters.data.transformation.JhFilterTransformation
 
 @FilterInject
 internal class SimpleSolarizeFilter(

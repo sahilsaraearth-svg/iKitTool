@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.icon_shape
+package com.t8rin.ikittool.core.ui.widget.icon_shape
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.foundation.layout.Box
@@ -35,18 +35,18 @@ import androidx.compose.ui.graphics.compositeOver
 import androidx.compose.ui.graphics.isSpecified
 import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.resources.shapes.ArrowShape
-import com.t8rin.imagetoolbox.core.resources.shapes.BookmarkShape
-import com.t8rin.imagetoolbox.core.resources.shapes.PentagonShape
-import com.t8rin.imagetoolbox.core.resources.shapes.SimpleHeartShape
-import com.t8rin.imagetoolbox.core.settings.presentation.model.IconShape
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.theme.blend
-import com.t8rin.imagetoolbox.core.ui.theme.takeColorFromScheme
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalContainerColor
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalContainerShape
-import com.t8rin.imagetoolbox.core.ui.utils.provider.SafeLocalContainerColor
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.resources.shapes.ArrowShape
+import com.t8rin.ikittool.core.resources.shapes.BookmarkShape
+import com.t8rin.ikittool.core.resources.shapes.PentagonShape
+import com.t8rin.ikittool.core.resources.shapes.SimpleHeartShape
+import com.t8rin.ikittool.core.settings.presentation.model.IconShape
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.theme.blend
+import com.t8rin.ikittool.core.ui.theme.takeColorFromScheme
+import com.t8rin.ikittool.core.ui.utils.provider.LocalContainerColor
+import com.t8rin.ikittool.core.ui.utils.provider.LocalContainerShape
+import com.t8rin.ikittool.core.ui.utils.provider.SafeLocalContainerColor
+import com.t8rin.ikittool.core.ui.widget.modifier.container
 
 object IconShapeDefaults {
 

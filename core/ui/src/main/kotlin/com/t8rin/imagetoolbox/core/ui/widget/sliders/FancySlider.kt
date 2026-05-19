@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.sliders
+package com.t8rin.ikittool.core.ui.widget.sliders
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.animateDpAsState
@@ -42,20 +42,20 @@ import androidx.compose.ui.graphics.compositeOver
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.theme.outlineVariant
-import com.t8rin.imagetoolbox.core.ui.utils.animation.animateFloatingRangeAsState
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ProvidesValue
-import com.t8rin.imagetoolbox.core.ui.utils.helper.rememberRipple
-import com.t8rin.imagetoolbox.core.ui.utils.provider.SafeLocalContainerColor
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.materialShadow
-import com.t8rin.imagetoolbox.core.ui.widget.sliders.custom_slider.CustomRangeSlider
-import com.t8rin.imagetoolbox.core.ui.widget.sliders.custom_slider.CustomSlider
-import com.t8rin.imagetoolbox.core.ui.widget.sliders.custom_slider.CustomSliderColors
-import com.t8rin.imagetoolbox.core.ui.widget.sliders.custom_slider.CustomSliderDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.sliders.custom_slider.CustomSliderState
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.theme.outlineVariant
+import com.t8rin.ikittool.core.ui.utils.animation.animateFloatingRangeAsState
+import com.t8rin.ikittool.core.ui.utils.helper.ProvidesValue
+import com.t8rin.ikittool.core.ui.utils.helper.rememberRipple
+import com.t8rin.ikittool.core.ui.utils.provider.SafeLocalContainerColor
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.materialShadow
+import com.t8rin.ikittool.core.ui.widget.sliders.custom_slider.CustomRangeSlider
+import com.t8rin.ikittool.core.ui.widget.sliders.custom_slider.CustomSlider
+import com.t8rin.ikittool.core.ui.widget.sliders.custom_slider.CustomSliderColors
+import com.t8rin.ikittool.core.ui.widget.sliders.custom_slider.CustomSliderDefaults
+import com.t8rin.ikittool.core.ui.widget.sliders.custom_slider.CustomSliderState
 
 @Composable
 fun FancySlider(

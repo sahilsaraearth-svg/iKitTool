@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -860,7 +860,7 @@
     <string name="images_to_svg">Immagini in Svg</string>
     <string name="try_again">Riprova</string>
     <string name="lanczos_bessel_sub">Metodo di ricampionamento che mantiene un\'interpolazione di alta qualità applicando una funzione di Bessel (jinc) ai valori dei pixel</string>
-    <string name="embedded_picker_sub">Utilizza il selezionatore di immagini di Image Toolbox invece di quelli predefiniti dal sistema.</string>
+    <string name="embedded_picker_sub">Utilizza il selezionatore di immagini di iKit Tool invece di quelli predefiniti dal sistema.</string>
     <string name="show_settings_in_landscape">Mostra le impostazioni in orizzontale</string>
     <string name="fullscreen_settings">Impostazioni a schermo intero</string>
     <string name="fullscreen_settings_sub">Abilita e la pagina delle impostazioni verrà sempre aperta a schermo intero invece che lateralmente</string>
@@ -1025,7 +1025,7 @@
     <string name="draw_regular_star">Disegna Stella Regolare</string>
     <string name="draw_regular_star_sub">Disegna una stella regolare invece che in forma libera</string>
     <string name="open_edit_instead_of_preview">Apri Modifica Invece Di Anteprima</string>
-    <string name="open_edit_instead_of_preview_sub">Quando selezioni l\'immagine da aprire (anteprima) in ImageToolbox, verrà aperto la selezione di modifica invece di visualizzare in anteprima</string>
+    <string name="open_edit_instead_of_preview_sub">Quando selezioni l\'immagine da aprire (anteprima) in iKitTool, verrà aperto la selezione di modifica invece di visualizzare in anteprima</string>
     <string name="document_scanner">Scanner Documenti</string>
     <string name="document_scanner_sub">Scansiona documenti e crea PDF o immagini separate</string>
     <string name="click_to_start_scanning">Clicca per iniziare la scansione</string>
@@ -1364,7 +1364,7 @@
     <string name="webp_type_to_webp">Immagini su WEBP</string>
     <string name="select_webp_image_to_start">Scegli l\'immagine WEBP per iniziare</string>
     <string name="manage_storage_extra_types">Nessun accesso completo ai file</string>
-    <string name="manage_storage_extra_types_sub">Consenti l\'accesso a tutti i file per vedere JXL, QOI e altre immagini che non sono riconosciute come immagini su Android. Senza l\'autorizzazione Image Toolbox non è in grado di mostrare tali immagini</string>
+    <string name="manage_storage_extra_types_sub">Consenti l\'accesso a tutti i file per vedere JXL, QOI e altre immagini che non sono riconosciute come immagini su Android. Senza l\'autorizzazione iKit Tool non è in grado di mostrare tali immagini</string>
     <string name="default_draw_color">Colore di disegno predefinito</string>
     <string name="default_draw_path_mode">Modalità di tracciamento predefinita</string>
     <string name="add_timestamp">Aggiungi timestamp</string>
@@ -1377,8 +1377,8 @@
     <string name="recently_used">Usato di recente</string>
     <string name="ci_channel">CI channel</string>
     <string name="group">Gruppo</string>
-    <string name="image_toolbox_in_telegram">Casella degli strumenti per immagini in Telegram 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">Unisciti alla nostra chat dove puoi discutere di tutto ciò che desideri e guarda anche il canale CI dove pubblico beta e annunci</string>
+    <string name="ikit_tool_in_telegram">Casella degli strumenti per immagini in Telegram 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">Unisciti alla nostra chat dove puoi discutere di tutto ciò che desideri e guarda anche il canale CI dove pubblico beta e annunci</string>
     <string name="ci_channel_sub">Ricevi notifiche sulle nuove versioni dell\'app e leggi gli annunci</string>
     <string name="fit_description">Adatta un\'immagine alle dimensioni specificate e applica sfocatura o colore allo sfondo</string>
     <string name="tools_arrangement">Disposizione degli strumenti</string>
@@ -1841,7 +1841,7 @@
     <string name="export_palette_sub">Esporta la tavolozza generata in diversi formati</string>
     <string name="add_color_palette_sub">Aggiunge un nuovo colore alla tavolozza corrente</string>
     <string name="palette_name_not_supported">Il formato %1$s non supporta l\'indicazione del nome della tavolozza</string>
-    <string name="wallpapers_export_not_avaialbe">A causa delle politiche del Play Store, questa funzionalità non può essere inclusa nella build attuale. Per accedere a questa funzionalità, scarica ImageToolbox da una fonte alternativa. Di seguito puoi trovare le build disponibili su GitHub.</string>
+    <string name="wallpapers_export_not_avaialbe">A causa delle politiche del Play Store, questa funzionalità non può essere inclusa nella build attuale. Per accedere a questa funzionalità, scarica iKitTool da una fonte alternativa. Di seguito puoi trovare le build disponibili su GitHub.</string>
     <string name="open_github_page">Apri la pagina Github</string>
     <string name="overwrite_files_sub_short">Il file originale verrà sostituito con uno nuovo invece di essere salvato nella cartella selezionata</string>
     <string name="hidden_watermark_text_detected">Rilevato testo di filigrana nascosto</string>
@@ -2141,7 +2141,7 @@
     <string name="grayscale_pdf_sub">Converti tutte le immagini incorporate nel documento in scala di grigi</string>
     <string name="compress_pdf">Comprimi PDF</string>
     <string name="compress_pdf_sub">Ottimizza le dimensioni del file del tuo documento per una condivisione più semplice</string>
-    <string name="repair_info">ImageToolbox ricostruisce la tabella dei riferimenti incrociati interna e rigenera la struttura dei file da zero. Ciò può ripristinare l\'accesso a molti file che \\"non possono essere aperti\\"</string>
+    <string name="repair_info">iKitTool ricostruisce la tabella dei riferimenti incrociati interna e rigenera la struttura dei file da zero. Ciò può ripristinare l\'accesso a molti file che \\"non possono essere aperti\\"</string>
     <string name="grayscale_info">Questo strumento converte tutte le immagini del documento in scala di grigi. Ideale per stampare e ridurre le dimensioni del file</string>
     <string name="metadata">Metadati</string>
     <string name="metadata_pdf_sub">Modifica le proprietà del documento per una migliore privacy</string>
@@ -2193,11 +2193,11 @@
     <string name="background_color_for_alpha_formats">Colore di sfondo per i formati Alpha</string>
     <string name="background_color_for_alpha_formats_sub">Aggiunge la possibilità di impostare il colore di sfondo per ogni formato immagine con supporto alpha, quando disabilitato è disponibile solo per quelli non alpha</string>
     <string name="open_markup_project">Apri progetto</string>
-    <string name="open_markup_project_sub">Continua a modificare un progetto Image Toolbox salvato in precedenza</string>
-    <string name="markup_project_open_failed">Impossibile aprire il progetto Image Toolbox</string>
-    <string name="markup_project_missing_data">Nel progetto Image Toolbox mancano i dati del progetto</string>
-    <string name="markup_project_corrupted">Il progetto Image Toolbox è danneggiato</string>
-    <string name="unsupported_markup_project_version">Versione del progetto Image Toolbox non supportata: %1$d</string>
+    <string name="open_markup_project_sub">Continua a modificare un progetto iKit Tool salvato in precedenza</string>
+    <string name="markup_project_open_failed">Impossibile aprire il progetto iKit Tool</string>
+    <string name="markup_project_missing_data">Nel progetto iKit Tool mancano i dati del progetto</string>
+    <string name="markup_project_corrupted">Il progetto iKit Tool è danneggiato</string>
+    <string name="unsupported_markup_project_version">Versione del progetto iKit Tool non supportata: %1$d</string>
     <string name="save_markup_project">Salva progetto</string>
     <string name="save_markup_project_sub">Memorizza livelli, sfondo e cronologia delle modifiche in un file di progetto modificabile</string>
     <string name="failed_to_open">Impossibile aprire</string>

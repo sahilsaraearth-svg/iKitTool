@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -845,7 +845,7 @@
     <string name="header_today">今天</string>
     <string name="header_yesterday">昨天</string>
     <string name="embedded_picker">嵌入式選擇器</string>
-    <string name="embedded_picker_sub">Image Toolbox 的圖片選取器</string>
+    <string name="embedded_picker_sub">iKit Tool 的圖片選取器</string>
     <string name="no_permissions">無權限</string>
     <string name="request">請求</string>
     <string name="lanczos_bessel">Lanczos Bessel</string>
@@ -1308,7 +1308,7 @@
     <string name="export_fonts">匯出字型</string>
     <string name="copy_not_a_valid_base_64">無法複製空或無效的 Base64 字串</string>
     <string name="draw_regular_star_sub">繪製等邊星形，而不是自由形式的形狀</string>
-    <string name="open_edit_instead_of_preview_sub">當您在 ImageToolbox 中選擇圖片要開啟（預覽）時，將開啟編輯選單而不是預覽</string>
+    <string name="open_edit_instead_of_preview_sub">當您在 iKitTool 中選擇圖片要開啟（預覽）時，將開啟編輯選單而不是預覽</string>
     <string name="scan_qr_code_to_replace_content">掃描 QR Code 以取代欄位中的內容，或輸入內容以產生新的 QR 代碼</string>
     <string name="show_system_bars_by_swipe_sub">啟用滑動以顯示系統列（如果它們被隱藏）</string>
     <string name="tool_exit_confirmation">工具退出確認</string>
@@ -1563,7 +1563,7 @@
     <string name="target_cube_lut_file">目標 3D LUT 檔案 (.cube / .CUBE)</string>
     <string name="film_stock_50">50 號底片</string>
     <string name="ci_channel">CI 頻道</string>
-    <string name="image_toolbox_in_telegram_sub">加 入我們的聊天頻道，您可以討論任何想要的議題，還可以查看我發布 Beta 和公告的 CI 頻道。</string>
+    <string name="ikit_tool_in_telegram_sub">加 入我們的聊天頻道，您可以討論任何想要的議題，還可以查看我發布 Beta 和公告的 CI 頻道。</string>
     <string name="octaves">八分音符</string>
     <string name="spot_heal_sub">在繪製路徑下進行內容感知填滿</string>
     <string name="spot_heal">點狀癒合</string>
@@ -1580,7 +1580,7 @@
     <string name="edgy_amber">銳利琥珀</string>
     <string name="greenish">淡綠</string>
     <string name="ico_size_warning">ICO 檔案的最大儲存尺寸僅為 256*256</string>
-    <string name="image_toolbox_in_telegram">Telegram 中的 Image Toolbox 🎉</string>
+    <string name="ikit_tool_in_telegram">Telegram 中的 iKit Tool 🎉</string>
     <string name="lacunarity">Lacunarity</string>
     <string name="gain">增益</string>
     <string name="use_circle_kernel">使用圓形內核</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">將生成的調色盤匯出為不同的格式</string>
     <string name="add_color_palette_sub">向當前調色盤添加新顏色</string>
     <string name="palette_name_not_supported">%1$s 格式不支持提供調色盤名稱</string>
-    <string name="wallpapers_export_not_avaialbe">由於 Play 商店政策，此功能無法包含在當前版本中。要存取此功能，請從其他來源下載 ImageToolbox。您可以在下面的 GitHub 上找到可用的版本。</string>
+    <string name="wallpapers_export_not_avaialbe">由於 Play 商店政策，此功能無法包含在當前版本中。要存取此功能，請從其他來源下載 iKitTool。您可以在下面的 GitHub 上找到可用的版本。</string>
     <string name="open_github_page">開啟Github頁面</string>
     <string name="overwrite_files_sub_short">原始檔案將被新檔案替換，而不是保存在所選檔案夾中</string>
     <string name="hidden_watermark_text_detected">檢測到隱藏水印文字</string>
@@ -2140,7 +2140,7 @@
     <string name="grayscale_pdf_sub">將所有文件嵌入圖像轉換為灰度</string>
     <string name="compress_pdf">壓縮PDF</string>
     <string name="compress_pdf_sub">最佳化文件檔案大小以方便共享</string>
-    <string name="repair_info">ImageToolbox 重建內部交叉引用表並從頭開始重新生成檔案結構。這可以恢復對許多「無法開啟」檔案的存取</string>
+    <string name="repair_info">iKitTool 重建內部交叉引用表並從頭開始重新生成檔案結構。這可以恢復對許多「無法開啟」檔案的存取</string>
     <string name="grayscale_info">該工具將所有文件圖像轉換為灰度。最適合列印和減小檔案大小</string>
     <string name="metadata">詮釋資料</string>
     <string name="metadata_pdf_sub">編輯文件屬性以獲得更好的隱私</string>
@@ -2192,11 +2192,11 @@
     <string name="background_color_for_alpha_formats">Alpha 格式的背景颜色</string>
     <string name="background_color_for_alpha_formats_sub">增加了为每种具有 Alpha 支持的图像格式设置背景颜色的功能，禁用后，此功能仅适用于非 Alpha 格式</string>
     <string name="open_markup_project">打开项目</string>
-    <string name="open_markup_project_sub">继续编辑之前保存的 Image Toolbox 项目</string>
+    <string name="open_markup_project_sub">继续编辑之前保存的 iKit Tool 项目</string>
     <string name="markup_project_open_failed">无法打开图像工具箱项目</string>
-    <string name="markup_project_missing_data">Image Toolbox 项目缺少项目数据</string>
+    <string name="markup_project_missing_data">iKit Tool 项目缺少项目数据</string>
     <string name="markup_project_corrupted">图像工具箱项目已损坏</string>
-    <string name="unsupported_markup_project_version">不受支持的 Image Toolbox 项目版本：%1$d</string>
+    <string name="unsupported_markup_project_version">不受支持的 iKit Tool 项目版本：%1$d</string>
     <string name="save_markup_project">保存项目</string>
     <string name="save_markup_project_sub">将图层、背景和编辑历史记录存储在可编辑的项目文件中</string>
     <string name="failed_to_open">打开失败</string>

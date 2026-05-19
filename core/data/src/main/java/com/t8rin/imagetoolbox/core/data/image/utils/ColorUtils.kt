@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,11 +17,11 @@
 
 @file:Suppress("NOTHING_TO_INLINE")
 
-package com.t8rin.imagetoolbox.core.data.image.utils
+package com.t8rin.ikittool.core.data.image.utils
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
-import com.t8rin.imagetoolbox.core.domain.model.ColorModel
+import com.t8rin.ikittool.core.domain.model.ColorModel
 
 object ColorUtils {
 

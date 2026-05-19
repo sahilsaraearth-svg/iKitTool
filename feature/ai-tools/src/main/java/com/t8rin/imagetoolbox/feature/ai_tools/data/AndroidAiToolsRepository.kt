@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.ai_tools.data
+package com.t8rin.ikittool.feature.ai_tools.data
 
 import ai.onnxruntime.OrtEnvironment
 import ai.onnxruntime.OrtException
@@ -27,31 +27,31 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
-import com.t8rin.imagetoolbox.core.data.image.utils.healAlpha
-import com.t8rin.imagetoolbox.core.data.saving.io.FileReadable
-import com.t8rin.imagetoolbox.core.data.saving.io.FileWriteable
-import com.t8rin.imagetoolbox.core.data.saving.io.UriReadable
-import com.t8rin.imagetoolbox.core.data.utils.computeFromReadable
-import com.t8rin.imagetoolbox.core.data.utils.observeHasChanges
-import com.t8rin.imagetoolbox.core.domain.coroutines.AppScope
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.model.HashingType
-import com.t8rin.imagetoolbox.core.domain.remote.DownloadManager
-import com.t8rin.imagetoolbox.core.domain.remote.DownloadProgress
-import com.t8rin.imagetoolbox.core.domain.resource.ResourceManager
-import com.t8rin.imagetoolbox.core.domain.saving.FileController
-import com.t8rin.imagetoolbox.core.domain.saving.KeepAliveService
-import com.t8rin.imagetoolbox.core.domain.saving.model.SaveResult
-import com.t8rin.imagetoolbox.core.domain.saving.track
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.utils.extractMessage
-import com.t8rin.imagetoolbox.core.utils.filename
-import com.t8rin.imagetoolbox.core.utils.makeLog
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.AiProgressListener
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.AiToolsRepository
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.model.NeuralConstants
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.model.NeuralModel
-import com.t8rin.imagetoolbox.feature.ai_tools.domain.model.NeuralParams
+import com.t8rin.ikittool.core.data.image.utils.healAlpha
+import com.t8rin.ikittool.core.data.saving.io.FileReadable
+import com.t8rin.ikittool.core.data.saving.io.FileWriteable
+import com.t8rin.ikittool.core.data.saving.io.UriReadable
+import com.t8rin.ikittool.core.data.utils.computeFromReadable
+import com.t8rin.ikittool.core.data.utils.observeHasChanges
+import com.t8rin.ikittool.core.domain.coroutines.AppScope
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.model.HashingType
+import com.t8rin.ikittool.core.domain.remote.DownloadManager
+import com.t8rin.ikittool.core.domain.remote.DownloadProgress
+import com.t8rin.ikittool.core.domain.resource.ResourceManager
+import com.t8rin.ikittool.core.domain.saving.FileController
+import com.t8rin.ikittool.core.domain.saving.KeepAliveService
+import com.t8rin.ikittool.core.domain.saving.model.SaveResult
+import com.t8rin.ikittool.core.domain.saving.track
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.utils.extractMessage
+import com.t8rin.ikittool.core.utils.filename
+import com.t8rin.ikittool.core.utils.makeLog
+import com.t8rin.ikittool.feature.ai_tools.domain.AiProgressListener
+import com.t8rin.ikittool.feature.ai_tools.domain.AiToolsRepository
+import com.t8rin.ikittool.feature.ai_tools.domain.model.NeuralConstants
+import com.t8rin.ikittool.feature.ai_tools.domain.model.NeuralModel
+import com.t8rin.ikittool.feature.ai_tools.domain.model.NeuralParams
 import com.t8rin.neural_tools.bgremover.BgRemover
 import com.t8rin.neural_tools.bgremover.GenericBackgroundRemover
 import dagger.hilt.android.qualifiers.ApplicationContext

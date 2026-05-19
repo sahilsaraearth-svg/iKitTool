@@ -6,7 +6,7 @@
 
 <div align="center">
 
-# Image Toolbox
+# iKit Tool
 
 </div>
 
@@ -87,7 +87,7 @@
 
 # 🗺️ Project Overview
 
-ImageToolbox is a versatile image editing tool designed for efficient photo manipulation. It allows
+iKitTool is a versatile image editing tool designed for efficient photo manipulation. It allows
 users to crop, apply filters, edit EXIF data, erase backgrounds, and even enhance images with AI.
 Ideal for both photographers and developers, the tool offers a simple interface with powerful
 capabilities.
@@ -108,7 +108,7 @@ capabilities.
 <div align="center">
 
 # 📔 Wiki
-Check out Image Toolbox [Wiki](https://github.com/T8RIN/ImageToolbox/wiki) for FAQ and useful info
+Check out iKit Tool [Wiki](https://github.com/T8RIN/iKitTool/wiki) for FAQ and useful info
 </br>
 </br>
 
@@ -116,8 +116,8 @@ Check out Image Toolbox [Wiki](https://github.com/T8RIN/ImageToolbox/wiki) for F
 
 </br>
 
-  [![ImageToolbox Chat](https://img.shields.io/endpoint?&style=for-the-badge&colorA=246732&colorB=A2FFB0&logo=telegram&logoColor=A2FFB0&label=ImageToolbox%20Chat&url=https://tg.sumanjay.workers.dev/t8rin_imagetoolbox)](https://t.me/t8rin_imagetoolbox)
-[![CI Telegram](https://img.shields.io/endpoint?&style=for-the-badge&colorA=29626B&colorB=B5DFE8&logo=telegram&logoColor=B5DFE8&url=https://tg.sumanjay.workers.dev/t8rin_imagetoolbox_ci)](https://t.me/t8rin_imagetoolbox_ci)
+  [![iKitTool Chat](https://img.shields.io/endpoint?&style=for-the-badge&colorA=246732&colorB=A2FFB0&logo=telegram&logoColor=A2FFB0&label=iKitTool%20Chat&url=https://tg.sumanjay.workers.dev/t8rin_ikittool)](https://t.me/t8rin_ikittool)
+[![CI Telegram](https://img.shields.io/endpoint?&style=for-the-badge&colorA=29626B&colorB=B5DFE8&logo=telegram&logoColor=B5DFE8&url=https://tg.sumanjay.workers.dev/t8rin_ikittool_ci)](https://t.me/t8rin_ikittool_ci)
 
 
   </br>
@@ -145,8 +145,8 @@ or click one of the badges below.
     <a href="https://play.google.com/store/apps/details?id=ru.tech.imageresizershrinker"><img alt="Google Play" src="./fastlane/metadata/android/en-US/images/buttons/gplay.svg" height="60"></a>
     <a href="https://f-droid.org/packages/ru.tech.imageresizershrinker"><img alt="F-Droid" src="./fastlane/metadata/android/en-US/images/buttons/fdroid.svg" height="60"/></a>
     <a href="https://github.com/t8rin/imageresizer/releases/latest"><img alt="GitHub" src="./fastlane/metadata/android/en-US/images/buttons/github.svg" height="60"/></a>
-    <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22ru.tech.imageresizershrinker%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FT8RIN%2FImageToolbox%22%2C%22author%22%3A%22T8RIN%22%2C%22name%22%3A%22Image%20Toolbox%22%2C%22preferredApkIndex%22%3A1%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Afalse%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%2C%5C%22filterReleaseTitlesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22filterReleaseNotesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22verifyLatestTag%5C%22%3Afalse%2C%5C%22dontSortReleasesList%5C%22%3Afalse%2C%5C%22useLatestAssetDateAsReleaseDate%5C%22%3Afalse%2C%5C%22trackOnly%5C%22%3Afalse%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%22%5C%22%2C%5C%22versionDetection%5C%22%3Atrue%2C%5C%22releaseDateAsVersion%5C%22%3Afalse%2C%5C%22useVersionCodeAsOSVersion%5C%22%3Afalse%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22invertAPKFilter%5C%22%3Afalse%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22appName%5C%22%3A%5C%22Image%20Toolbox%5C%22%2C%5C%22shizukuPretendToBeGooglePlay%5C%22%3Afalse%2C%5C%22exemptFromBackgroundUpdates%5C%22%3Afalse%2C%5C%22skipUpdateNotifications%5C%22%3Afalse%2C%5C%22about%5C%22%3A%5C%22Image%20Toolbox%20is%20an%20powerful%20picture%20editor%2C%20which%20can%20crop%2C%20apply%20filters%2C%20add%20some%20drawing%2C%20erase%20background%2C%20edit%20EXIF%20or%20even%20create%20PDF%20file.%5C%22%2C%5C%22appAuthor%5C%22%3A%5C%22T8RIN%5C%22%7D%22%7D"><img alt="Obtainium" src="./fastlane/metadata/android/en-US/images/buttons/obtainium.svg" height="60"/></a>
-    <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22ru.tech.imageresizershrinker%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FT8RIN%2FImageToolbox%22%2C%22author%22%3A%22T8RIN%22%2C%22name%22%3A%22Image%20Toolbox%22%2C%22preferredApkIndex%22%3A1%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%2C%5C%22filterReleaseTitlesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22filterReleaseNotesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22verifyLatestTag%5C%22%3Afalse%2C%5C%22dontSortReleasesList%5C%22%3Afalse%2C%5C%22useLatestAssetDateAsReleaseDate%5C%22%3Afalse%2C%5C%22trackOnly%5C%22%3Afalse%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%22%5C%22%2C%5C%22versionDetection%5C%22%3Atrue%2C%5C%22releaseDateAsVersion%5C%22%3Afalse%2C%5C%22useVersionCodeAsOSVersion%5C%22%3Afalse%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22invertAPKFilter%5C%22%3Afalse%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22appName%5C%22%3A%5C%22Image%20Toolbox%5C%22%2C%5C%22shizukuPretendToBeGooglePlay%5C%22%3Afalse%2C%5C%22exemptFromBackgroundUpdates%5C%22%3Afalse%2C%5C%22skipUpdateNotifications%5C%22%3Afalse%2C%5C%22about%5C%22%3A%5C%22Image%20Toolbox%20is%20an%20powerful%20picture%20editor%2C%20which%20can%20crop%2C%20apply%20filters%2C%20add%20some%20drawing%2C%20erase%20background%2C%20edit%20EXIF%20or%20even%20create%20PDF%20file.%5C%22%2C%5C%22appAuthor%5C%22%3A%5C%22T8RIN%5C%22%7D%22%7D"><img alt="Obtainium (Pre-release)" src="./fastlane/metadata/android/en-US/images/buttons/obtainium-pre-release.svg" height="60"/></a>
+    <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22ru.tech.imageresizershrinker%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FT8RIN%2FiKitTool%22%2C%22author%22%3A%22T8RIN%22%2C%22name%22%3A%22Image%20Toolbox%22%2C%22preferredApkIndex%22%3A1%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Afalse%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%2C%5C%22filterReleaseTitlesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22filterReleaseNotesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22verifyLatestTag%5C%22%3Afalse%2C%5C%22dontSortReleasesList%5C%22%3Afalse%2C%5C%22useLatestAssetDateAsReleaseDate%5C%22%3Afalse%2C%5C%22trackOnly%5C%22%3Afalse%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%22%5C%22%2C%5C%22versionDetection%5C%22%3Atrue%2C%5C%22releaseDateAsVersion%5C%22%3Afalse%2C%5C%22useVersionCodeAsOSVersion%5C%22%3Afalse%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22invertAPKFilter%5C%22%3Afalse%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22appName%5C%22%3A%5C%22Image%20Toolbox%5C%22%2C%5C%22shizukuPretendToBeGooglePlay%5C%22%3Afalse%2C%5C%22exemptFromBackgroundUpdates%5C%22%3Afalse%2C%5C%22skipUpdateNotifications%5C%22%3Afalse%2C%5C%22about%5C%22%3A%5C%22Image%20Toolbox%20is%20an%20powerful%20picture%20editor%2C%20which%20can%20crop%2C%20apply%20filters%2C%20add%20some%20drawing%2C%20erase%20background%2C%20edit%20EXIF%20or%20even%20create%20PDF%20file.%5C%22%2C%5C%22appAuthor%5C%22%3A%5C%22T8RIN%5C%22%7D%22%7D"><img alt="Obtainium" src="./fastlane/metadata/android/en-US/images/buttons/obtainium.svg" height="60"/></a>
+    <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22ru.tech.imageresizershrinker%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FT8RIN%2FiKitTool%22%2C%22author%22%3A%22T8RIN%22%2C%22name%22%3A%22Image%20Toolbox%22%2C%22preferredApkIndex%22%3A1%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%2C%5C%22filterReleaseTitlesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22filterReleaseNotesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22verifyLatestTag%5C%22%3Afalse%2C%5C%22dontSortReleasesList%5C%22%3Afalse%2C%5C%22useLatestAssetDateAsReleaseDate%5C%22%3Afalse%2C%5C%22trackOnly%5C%22%3Afalse%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%22%5C%22%2C%5C%22versionDetection%5C%22%3Atrue%2C%5C%22releaseDateAsVersion%5C%22%3Afalse%2C%5C%22useVersionCodeAsOSVersion%5C%22%3Afalse%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22invertAPKFilter%5C%22%3Afalse%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22appName%5C%22%3A%5C%22Image%20Toolbox%5C%22%2C%5C%22shizukuPretendToBeGooglePlay%5C%22%3Afalse%2C%5C%22exemptFromBackgroundUpdates%5C%22%3Afalse%2C%5C%22skipUpdateNotifications%5C%22%3Afalse%2C%5C%22about%5C%22%3A%5C%22Image%20Toolbox%20is%20an%20powerful%20picture%20editor%2C%20which%20can%20crop%2C%20apply%20filters%2C%20add%20some%20drawing%2C%20erase%20background%2C%20edit%20EXIF%20or%20even%20create%20PDF%20file.%5C%22%2C%5C%22appAuthor%5C%22%3A%5C%22T8RIN%5C%22%7D%22%7D"><img alt="Obtainium (Pre-release)" src="./fastlane/metadata/android/en-US/images/buttons/obtainium-pre-release.svg" height="60"/></a>
 
 </p>
 </div>
@@ -155,7 +155,7 @@ or click one of the badges below.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ImageToolbox.git
+   git clone https://github.com/yourusername/iKitTool.git
    ```
 2. Install dependencies using your preferred package manager (e.g., Gradle).
 3. Build the project:
@@ -976,7 +976,7 @@ or click one of the badges below.
     - Rain
     - Side
     - Corners
-    - ImageToolbox
+    - iKitTool
 - Switch Type selection:
     - Material You
     - Compose
@@ -1005,8 +1005,8 @@ or click one of the badges below.
 
 - [Kotlin](https://kotlinlang.org/) based
 
-- [Image Toolbox Libs](https://github.com/T8RIN/ImageToolboxLibs) - set of essential libraries for
-  Image Toolbox.
+- [iKit Tool Libs](https://github.com/T8RIN/iKitToolLibs) - set of essential libraries for
+  iKit Tool.
 
 - [Dynamic Theme](https://github.com/T8RIN/DynamicTheme) - library, which allows you to easily
   implement custom color theming.
@@ -1055,7 +1055,7 @@ or click one of the badges below.
 
 # 📐 App Architecture
 
-See Modules Graph at [ARCHITECTURE.md](https://github.com/T8RIN/ImageToolbox/blob/master/ARCHITECTURE.md)
+See Modules Graph at [ARCHITECTURE.md](https://github.com/T8RIN/iKitTool/blob/master/ARCHITECTURE.md)
 
 <div align="center">
 
@@ -1065,7 +1065,7 @@ See Modules Graph at [ARCHITECTURE.md](https://github.com/T8RIN/ImageToolbox/blo
 
 # 🌐 Translation
 
-You can help translate Image Toolbox into your language
+You can help translate iKit Tool into your language
 on [Hosted Weblate](https://hosted.weblate.org/engage/image-resizer/)
 
 [![Состояние перевода](https://hosted.weblate.org/widgets/image-resizer/-/horizontal-auto.svg)](https://hosted.weblate.org/engage/image-resizer/)
@@ -1074,17 +1074,17 @@ on [Hosted Weblate](https://hosted.weblate.org/engage/image-resizer/)
 
 # ❤️ Find this repository useful?
 
-Support it by joining **[stargazers](https://github.com/t8rin/ImageToolbox/stargazers)** for this
+Support it by joining **[stargazers](https://github.com/t8rin/iKitTool/stargazers)** for this
 repository. :star: <br>
 And **[follow](https://github.com/t8rin)** me for my next creations! 🤩
 
 # ⭐ Star History
 
-<a href="https://star-history.com/#T8RIN/ImageToolbox&Date">
+<a href="https://star-history.com/#T8RIN/iKitTool&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=T8RIN/ImageToolbox&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=T8RIN/ImageToolbox&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=T8RIN/ImageToolbox&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=T8RIN/iKitTool&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=T8RIN/iKitTool&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=T8RIN/iKitTool&type=Date" />
  </picture>
 </a>
 
@@ -1104,7 +1104,7 @@ SHA-1: `d69eacb30eeae804e8b72d2384c3c616b1906785`
 
 MD5: `db6f6b76c503d31099e4754e676353cf`
 
-For more info, see [wiki](https://github.com/T8RIN/ImageToolbox/wiki/FAQ#how-can-i-verify-my-download-of-imagetoolbox-is-legitimate)
+For more info, see [wiki](https://github.com/T8RIN/iKitTool/wiki/FAQ#how-can-i-verify-my-download-of-ikittool-is-legitimate)
 
 # ⚖️ License
 

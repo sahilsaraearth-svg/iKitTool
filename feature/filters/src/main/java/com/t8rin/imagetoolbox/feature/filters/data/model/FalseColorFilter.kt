@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,17 +15,17 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.filters.data.model
+package com.t8rin.ikittool.feature.filters.data.model
 
 import androidx.compose.ui.graphics.Color
-import com.t8rin.imagetoolbox.core.data.image.utils.ColorUtils.blue
-import com.t8rin.imagetoolbox.core.data.image.utils.ColorUtils.green
-import com.t8rin.imagetoolbox.core.data.image.utils.ColorUtils.red
-import com.t8rin.imagetoolbox.core.data.image.utils.ColorUtils.toModel
-import com.t8rin.imagetoolbox.core.domain.model.ColorModel
-import com.t8rin.imagetoolbox.core.filters.domain.model.Filter
-import com.t8rin.imagetoolbox.core.ksp.annotations.FilterInject
-import com.t8rin.imagetoolbox.feature.filters.data.transformation.GPUFilterTransformation
+import com.t8rin.ikittool.core.data.image.utils.ColorUtils.blue
+import com.t8rin.ikittool.core.data.image.utils.ColorUtils.green
+import com.t8rin.ikittool.core.data.image.utils.ColorUtils.red
+import com.t8rin.ikittool.core.data.image.utils.ColorUtils.toModel
+import com.t8rin.ikittool.core.domain.model.ColorModel
+import com.t8rin.ikittool.core.filters.domain.model.Filter
+import com.t8rin.ikittool.core.ksp.annotations.FilterInject
+import com.t8rin.ikittool.feature.filters.data.transformation.GPUFilterTransformation
 import jp.co.cyberagent.android.gpuimage.filter.GPUImageFalseColorFilter
 import jp.co.cyberagent.android.gpuimage.filter.GPUImageFilter
 

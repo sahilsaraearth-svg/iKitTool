@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("SpellCheckingInspection")
 
-package com.t8rin.imagetoolbox.core.settings.domain.model
+package com.t8rin.ikittool.core.settings.domain.model
 
 sealed class DomainFontFamily(val ordinal: Int) {
     data object Montserrat : DomainFontFamily(1)

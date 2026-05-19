@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.modifier
+package com.t8rin.ikittool.core.ui.widget.modifier
 
 import android.os.Build
 import androidx.compose.animation.core.animateDpAsState
@@ -35,7 +35,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import com.gigamole.composeshadowsplus.rsblur.rsBlurShadow
-import com.t8rin.imagetoolbox.core.settings.domain.model.ShapeType
+import com.t8rin.ikittool.core.settings.domain.model.ShapeType
 import com.zedalpha.shadowgadgets.compose.clippedShadow
 
 fun Modifier.materialShadow(

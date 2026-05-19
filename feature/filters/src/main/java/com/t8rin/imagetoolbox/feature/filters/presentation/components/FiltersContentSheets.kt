@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,19 +15,19 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.filters.presentation.components
+package com.t8rin.ikittool.feature.filters.presentation.components
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.FilterReorderSheet
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.addFilters.AddFiltersSheet
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.widget.sheets.PickImageFromUrisSheet
-import com.t8rin.imagetoolbox.feature.filters.presentation.components.addEditMaskSheet.AddEditMaskSheet
-import com.t8rin.imagetoolbox.feature.filters.presentation.screenLogic.FiltersComponent
+import com.t8rin.ikittool.core.filters.presentation.widget.FilterReorderSheet
+import com.t8rin.ikittool.core.filters.presentation.widget.addFilters.AddFiltersSheet
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.widget.sheets.PickImageFromUrisSheet
+import com.t8rin.ikittool.feature.filters.presentation.components.addEditMaskSheet.AddEditMaskSheet
+import com.t8rin.ikittool.feature.filters.presentation.screenLogic.FiltersComponent
 
 @Composable
 internal fun FiltersContentSheets(

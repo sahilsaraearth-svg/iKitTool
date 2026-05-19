@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,18 +17,18 @@
 
 @file:SuppressLint("StringFormatMatches")
 
-package com.t8rin.imagetoolbox.core.ui.utils.helper
+package com.t8rin.ikittool.core.ui.utils.helper
 
 import android.annotation.SuppressLint
-import com.t8rin.imagetoolbox.core.domain.saving.model.SaveResult
-import com.t8rin.imagetoolbox.core.domain.utils.ListUtils.firstOfType
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Info
-import com.t8rin.imagetoolbox.core.resources.icons.Save
-import com.t8rin.imagetoolbox.core.ui.widget.other.ToastDuration
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.core.utils.makeLog
+import com.t8rin.ikittool.core.domain.saving.model.SaveResult
+import com.t8rin.ikittool.core.domain.utils.ListUtils.firstOfType
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Info
+import com.t8rin.ikittool.core.resources.icons.Save
+import com.t8rin.ikittool.core.ui.widget.other.ToastDuration
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.core.utils.makeLog
 
 interface SaveResultHandler {
     fun parseSaveResult(saveResult: SaveResult)

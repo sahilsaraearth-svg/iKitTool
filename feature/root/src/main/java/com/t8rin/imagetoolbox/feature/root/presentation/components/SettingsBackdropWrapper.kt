@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.root.presentation.components
+package com.t8rin.ikittool.feature.root.presentation.components
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -46,14 +46,14 @@ import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.unit.dp
 import com.t8rin.gesture.detectPointerTransformGestures
-import com.t8rin.imagetoolbox.core.settings.domain.model.FastSettingsSide
-import com.t8rin.imagetoolbox.core.ui.utils.animation.FancyTransitionEasing
-import com.t8rin.imagetoolbox.core.ui.utils.helper.PredictiveBackObserver
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalScreenSize
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedModalSheetDragHandle
-import com.t8rin.imagetoolbox.feature.settings.presentation.SettingsContent
-import com.t8rin.imagetoolbox.feature.settings.presentation.screenLogic.SettingsComponent
+import com.t8rin.ikittool.core.settings.domain.model.FastSettingsSide
+import com.t8rin.ikittool.core.ui.utils.animation.FancyTransitionEasing
+import com.t8rin.ikittool.core.ui.utils.helper.PredictiveBackObserver
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.utils.provider.LocalScreenSize
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedModalSheetDragHandle
+import com.t8rin.ikittool.feature.settings.presentation.SettingsContent
+import com.t8rin.ikittool.feature.settings.presentation.screenLogic.SettingsComponent
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.debounce

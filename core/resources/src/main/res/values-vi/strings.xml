@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1079,7 +1079,7 @@
     <string name="antialias">Khử răng cưa</string>
     <string name="antialias_sub">Cho phép khử răng cưa để tránh các cạnh sắc nét</string>
     <string name="open_edit_instead_of_preview">Mở Chỉnh sửa thay vì Xem trước</string>
-    <string name="open_edit_instead_of_preview_sub">Khi bạn chọn hình ảnh để mở (xem trước) trong ImageToolbox, bảng lựa chọn chỉnh sửa sẽ được mở thay vì xem trước</string>
+    <string name="open_edit_instead_of_preview_sub">Khi bạn chọn hình ảnh để mở (xem trước) trong iKitTool, bảng lựa chọn chỉnh sửa sẽ được mở thay vì xem trước</string>
     <string name="document_scanner">Máy quét tài liệu</string>
     <string name="document_scanner_sub">Quét tài liệu và tạo PDF hoặc tách hình ảnh khỏi chúng</string>
     <string name="click_to_start_scanning">Nhấp để bắt đầu quét</string>
@@ -1367,8 +1367,8 @@
     <string name="recently_used">Được sử dụng gần đây</string>
     <string name="ci_channel">kênh CI</string>
     <string name="group">Nhóm</string>
-    <string name="image_toolbox_in_telegram">Hộp công cụ hình ảnh trong Telegram 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">Tham gia cuộc trò chuyện của chúng tôi, nơi bạn có thể thảo luận bất cứ điều gì bạn muốn và cũng có thể xem kênh CI nơi tôi đăng bản beta và thông báo</string>
+    <string name="ikit_tool_in_telegram">Hộp công cụ hình ảnh trong Telegram 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">Tham gia cuộc trò chuyện của chúng tôi, nơi bạn có thể thảo luận bất cứ điều gì bạn muốn và cũng có thể xem kênh CI nơi tôi đăng bản beta và thông báo</string>
     <string name="ci_channel_sub">Nhận thông báo về các phiên bản mới của ứng dụng và đọc thông báo</string>
     <string name="fit_description">Điều chỉnh hình ảnh theo kích thước nhất định và áp dụng độ mờ hoặc màu cho nền</string>
     <string name="tools_arrangement">Sắp xếp công cụ</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">Xuất bảng màu được tạo sang các định dạng khác nhau</string>
     <string name="add_color_palette_sub">Thêm màu mới vào bảng màu hiện tại</string>
     <string name="palette_name_not_supported">Định dạng %1$s không hỗ trợ cung cấp tên bảng màu</string>
-    <string name="wallpapers_export_not_avaialbe">Do chính sách của Cửa hàng Play, tính năng này không thể được đưa vào bản dựng hiện tại. Để truy cập chức năng này, vui lòng tải xuống ImageToolbox từ một nguồn thay thế. Bạn có thể tìm thấy các bản dựng có sẵn trên GitHub bên dưới.</string>
+    <string name="wallpapers_export_not_avaialbe">Do chính sách của Cửa hàng Play, tính năng này không thể được đưa vào bản dựng hiện tại. Để truy cập chức năng này, vui lòng tải xuống iKitTool từ một nguồn thay thế. Bạn có thể tìm thấy các bản dựng có sẵn trên GitHub bên dưới.</string>
     <string name="open_github_page">Mở trang Github</string>
     <string name="overwrite_files_sub_short">Tệp gốc sẽ được thay thế bằng tệp mới thay vì lưu vào thư mục đã chọn</string>
     <string name="hidden_watermark_text_detected">Đã phát hiện văn bản hình mờ ẩn</string>
@@ -2140,7 +2140,7 @@
     <string name="grayscale_pdf_sub">Chuyển đổi tất cả các hình ảnh được nhúng trong tài liệu sang thang độ xám</string>
     <string name="compress_pdf">Nén PDF</string>
     <string name="compress_pdf_sub">Tối ưu hóa kích thước tệp tài liệu của bạn để chia sẻ dễ dàng hơn</string>
-    <string name="repair_info">ImageToolbox xây dựng lại bảng tham chiếu chéo nội bộ và tạo lại cấu trúc tệp từ đầu. Điều này có thể khôi phục quyền truy cập vào nhiều tệp \\"không thể mở được\\"</string>
+    <string name="repair_info">iKitTool xây dựng lại bảng tham chiếu chéo nội bộ và tạo lại cấu trúc tệp từ đầu. Điều này có thể khôi phục quyền truy cập vào nhiều tệp \\"không thể mở được\\"</string>
     <string name="grayscale_info">Công cụ này chuyển đổi tất cả hình ảnh tài liệu sang thang độ xám. Tốt nhất để in và giảm kích thước tập tin</string>
     <string name="metadata">Siêu dữ liệu</string>
     <string name="metadata_pdf_sub">Chỉnh sửa thuộc tính tài liệu để bảo mật tốt hơn</string>

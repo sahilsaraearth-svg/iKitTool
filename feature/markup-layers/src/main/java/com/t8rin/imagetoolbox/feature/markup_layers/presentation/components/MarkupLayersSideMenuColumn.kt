@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("COMPOSE_APPLIER_CALL_MISMATCH")
 
-package com.t8rin.imagetoolbox.feature.markup_layers.presentation.components
+package com.t8rin.ikittool.feature.markup_layers.presentation.components
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.background
@@ -37,7 +37,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -54,27 +54,27 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.resources.icons.DragHandle
-import com.t8rin.imagetoolbox.core.resources.icons.EmojiSticky
-import com.t8rin.imagetoolbox.core.resources.icons.ImageSticky
-import com.t8rin.imagetoolbox.core.resources.icons.Lock
-import com.t8rin.imagetoolbox.core.resources.icons.StackSticky
-import com.t8rin.imagetoolbox.core.resources.icons.StarSticky
-import com.t8rin.imagetoolbox.core.resources.icons.TextSticky
-import com.t8rin.imagetoolbox.core.resources.icons.Visibility
-import com.t8rin.imagetoolbox.core.resources.icons.VisibilityOff
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.hapticsClickable
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.hapticsCombinedClickable
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.longPress
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.press
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.transparencyChecker
-import com.t8rin.imagetoolbox.core.ui.widget.other.AnimatedBorder
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.LayerType
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.UiMarkupLayer
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.toPreviewGroupData
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.uiCornerRadiusPercent
+import com.t8rin.ikittool.core.resources.icons.DragHandle
+import com.t8rin.ikittool.core.resources.icons.EmojiSticky
+import com.t8rin.ikittool.core.resources.icons.ImageSticky
+import com.t8rin.ikittool.core.resources.icons.Lock
+import com.t8rin.ikittool.core.resources.icons.StackSticky
+import com.t8rin.ikittool.core.resources.icons.StarSticky
+import com.t8rin.ikittool.core.resources.icons.TextSticky
+import com.t8rin.ikittool.core.resources.icons.Visibility
+import com.t8rin.ikittool.core.resources.icons.VisibilityOff
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedFlingBehavior
+import com.t8rin.ikittool.core.ui.widget.enhanced.hapticsClickable
+import com.t8rin.ikittool.core.ui.widget.enhanced.hapticsCombinedClickable
+import com.t8rin.ikittool.core.ui.widget.enhanced.longPress
+import com.t8rin.ikittool.core.ui.widget.enhanced.press
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.transparencyChecker
+import com.t8rin.ikittool.core.ui.widget.other.AnimatedBorder
+import com.t8rin.ikittool.feature.markup_layers.domain.LayerType
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.UiMarkupLayer
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.toPreviewGroupData
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.uiCornerRadiusPercent
 import sh.calvin.reorderable.ReorderableItem
 import sh.calvin.reorderable.rememberReorderableLazyListState
 import kotlin.math.abs

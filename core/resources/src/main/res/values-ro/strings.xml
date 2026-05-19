@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -843,7 +843,7 @@
     <string name="layers_on_background">Straturi pe fundal</string>
     <string name="layers_on_background_sub">La fel ca prima opțiune, dar cu culoare în loc de imagine</string>
     <string name="embedded_picker">Selector încorporat</string>
-    <string name="embedded_picker_sub">Folosește propriul selector de imagini Image Toolbox în locul celor predefinite de sistem</string>
+    <string name="embedded_picker_sub">Folosește propriul selector de imagini iKit Tool în locul celor predefinite de sistem</string>
     <string name="skip_file_picking">Săriți peste selectarea fișierelor</string>
     <string name="skip_file_picking_sub">Selectorul de fișiere va fi afișat imediat dacă acest lucru este posibil pe ecranul ales</string>
     <string name="select_webp_image_to_start">Alegeți imaginea WEBP pentru a începe</string>
@@ -952,7 +952,7 @@
     <string name="webp_tools_sub">Convertiți imaginile în imagini animate WEBP sau extrageți cadre din animațiile WEBP date</string>
     <string name="settings_group_visibility_visible">Grupul de setări \"%1$s\" va fi extins în mod implicit</string>
     <string name="group">Grup</string>
-    <string name="image_toolbox_in_telegram_sub">Alăturați-vă chat-ului nostru unde puteți discuta orice doriți și, de asemenea, uitați-vă la canalul CI unde postez versiuni beta și anunțuri</string>
+    <string name="ikit_tool_in_telegram_sub">Alăturați-vă chat-ului nostru unde puteți discuta orice doriți și, de asemenea, uitați-vă la canalul CI unde postez versiuni beta și anunțuri</string>
     <string name="settings_group_visibility_hidden">Grupul de setări \"%1$s\" va fi colapsat în mod implicit</string>
     <string name="reset_properties">Resetați proprietățile</string>
     <string name="group_tools_by_type">Instrumente de grup în funcție de tip</string>
@@ -1010,7 +1010,7 @@
     <string name="fast_settings_side_sub">Adăugați o bandă plutitoare în partea aleasă în timpul editării imaginilor, care va deschide setările rapide dacă faceți clic pe ea</string>
     <string name="checksum_as_filename">Suma de control ca nume de fișier</string>
     <string name="auto_paste">Lipire automată</string>
-    <string name="open_edit_instead_of_preview_sub">Atunci când selectați imaginea pentru a o deschide (previzualizare) în ImageToolbox, în loc de previzualizare se va deschide foaia de selecție de editare</string>
+    <string name="open_edit_instead_of_preview_sub">Atunci când selectați imaginea pentru a o deschide (previzualizare) în iKitTool, în loc de previzualizare se va deschide foaia de selecție de editare</string>
     <string name="allow_enter_by_text_field">Permiteți introducerea pe câmpul de text</string>
     <string name="allow_enter_by_text_field_sub">Activează câmpul de text din spatele selecției presetărilor, pentru a le introduce din mers</string>
     <string name="add_timestamp_sub">Activează adăugarea marcajului temporal la numele fișierului de ieșire</string>
@@ -1437,7 +1437,7 @@
     <string name="manage_storage_extra_types">Fără acces complet la fișiere</string>
     <string name="enable_timestamps_to_format_them">Activați marcajele de timp pentru a le selecta formatul</string>
     <string name="recently_used">Folosit recent</string>
-    <string name="image_toolbox_in_telegram">Caseta de instrumente pentru imagini în Telegram 🎉</string>
+    <string name="ikit_tool_in_telegram">Caseta de instrumente pentru imagini în Telegram 🎉</string>
     <string name="fit_description">Potriviți o imagine la dimensiunile date și aplicați estompare sau culoare fundalului</string>
     <string name="system_bars_visibility">Vizibilitatea barelor de sistem</string>
     <string name="show_system_bars_by_swipe">Afișați barele de sistem prin glisare</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">Exportați paleta generată în diferite formate</string>
     <string name="add_color_palette_sub">Adaugă o nouă culoare paletei curente</string>
     <string name="palette_name_not_supported">Formatul %1$s nu acceptă furnizarea numelui paletei</string>
-    <string name="wallpapers_export_not_avaialbe">Din cauza politicilor Magazinului Play, această funcție nu poate fi inclusă în versiunea actuală. Pentru a accesa această funcționalitate, vă rugăm să descărcați ImageToolbox dintr-o sursă alternativă. Puteți găsi versiunile disponibile pe GitHub mai jos.</string>
+    <string name="wallpapers_export_not_avaialbe">Din cauza politicilor Magazinului Play, această funcție nu poate fi inclusă în versiunea actuală. Pentru a accesa această funcționalitate, vă rugăm să descărcați iKitTool dintr-o sursă alternativă. Puteți găsi versiunile disponibile pe GitHub mai jos.</string>
     <string name="open_github_page">Deschideți pagina Github</string>
     <string name="overwrite_files_sub_short">Fișierul original va fi înlocuit cu unul nou în loc să fie salvat în folderul selectat</string>
     <string name="hidden_watermark_text_detected">S-a detectat text filigran ascuns</string>
@@ -2142,7 +2142,7 @@
     <string name="grayscale_pdf_sub">Convertiți toate imaginile încorporate în document în tonuri de gri</string>
     <string name="compress_pdf">Comprimați PDF</string>
     <string name="compress_pdf_sub">Optimizați dimensiunea fișierului documentului pentru o partajare mai ușoară</string>
-    <string name="repair_info">ImageToolbox reconstruiește tabelul intern de referințe încrucișate și regenerează structura fișierului de la zero. Acest lucru poate restabili accesul la multe fișiere care „nu pot fi deschise”</string>
+    <string name="repair_info">iKitTool reconstruiește tabelul intern de referințe încrucișate și regenerează structura fișierului de la zero. Acest lucru poate restabili accesul la multe fișiere care „nu pot fi deschise”</string>
     <string name="grayscale_info">Acest instrument convertește toate imaginile documentului în tonuri de gri. Cel mai bun pentru tipărirea și reducerea dimensiunii fișierului</string>
     <string name="metadata">Metadate</string>
     <string name="metadata_pdf_sub">Editați proprietățile documentului pentru o confidențialitate mai bună</string>
@@ -2194,11 +2194,11 @@
     <string name="background_color_for_alpha_formats">Culoare de fundal pentru formatele Alpha</string>
     <string name="background_color_for_alpha_formats_sub">Adaugă capacitatea de a seta culoarea de fundal pentru fiecare format de imagine cu suport alfa, când este dezactivat, acesta este disponibil numai pentru cele non alfa</string>
     <string name="open_markup_project">Proiect deschis</string>
-    <string name="open_markup_project_sub">Continuați editarea unui proiect Image Toolbox salvat anterior</string>
-    <string name="markup_project_open_failed">Imposibil de deschis proiectul Image Toolbox</string>
-    <string name="markup_project_missing_data">Din proiectul Image Toolbox lipsesc date de proiect</string>
-    <string name="markup_project_corrupted">Proiectul Image Toolbox este corupt</string>
-    <string name="unsupported_markup_project_version">Versiunea proiectului Image Toolbox neacceptată: %1$d</string>
+    <string name="open_markup_project_sub">Continuați editarea unui proiect iKit Tool salvat anterior</string>
+    <string name="markup_project_open_failed">Imposibil de deschis proiectul iKit Tool</string>
+    <string name="markup_project_missing_data">Din proiectul iKit Tool lipsesc date de proiect</string>
+    <string name="markup_project_corrupted">Proiectul iKit Tool este corupt</string>
+    <string name="unsupported_markup_project_version">Versiunea proiectului iKit Tool neacceptată: %1$d</string>
     <string name="save_markup_project">Salvați proiectul</string>
     <string name="save_markup_project_sub">Stocați straturi, fundal și editează istoricul într-un fișier de proiect editabil</string>
     <string name="failed_to_open">Deschiderea eșuată</string>

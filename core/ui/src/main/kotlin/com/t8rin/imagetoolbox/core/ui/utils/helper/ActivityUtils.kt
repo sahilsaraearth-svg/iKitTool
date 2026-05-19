@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,25 +15,25 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.utils.helper
+package com.t8rin.ikittool.core.ui.utils.helper
 
 import android.content.Context
 import android.content.Intent
 import android.provider.MediaStore
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
-import com.t8rin.imagetoolbox.core.domain.utils.Flavor
-import com.t8rin.imagetoolbox.core.resources.BuildConfig
+import com.t8rin.ikittool.core.domain.utils.Flavor
+import com.t8rin.ikittool.core.resources.BuildConfig
 
 val AppActivityClass: Class<*> by lazy {
     Class.forName(
-        "com.t8rin.imagetoolbox.app.presentation.AppActivity"
+        "com.t8rin.ikittool.app.presentation.AppActivity"
     )
 }
 
 val MediaPickerActivityClass: Class<*> by lazy {
     Class.forName(
-        "com.t8rin.imagetoolbox.feature.media_picker.presentation.MediaPickerActivity"
+        "com.t8rin.ikittool.feature.media_picker.presentation.MediaPickerActivity"
     )
 }
 

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,17 +15,17 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.settings.presentation.model
+package com.t8rin.ikittool.core.settings.presentation.model
 
 import android.os.Build
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.FolderImage
-import com.t8rin.imagetoolbox.core.resources.icons.ImageEmbedded
-import com.t8rin.imagetoolbox.core.resources.icons.ImagesMode
-import com.t8rin.imagetoolbox.core.resources.icons.PhotoCameraBack
-import com.t8rin.imagetoolbox.core.resources.icons.PhotoPickerMobile
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.FolderImage
+import com.t8rin.ikittool.core.resources.icons.ImageEmbedded
+import com.t8rin.ikittool.core.resources.icons.ImagesMode
+import com.t8rin.ikittool.core.resources.icons.PhotoCameraBack
+import com.t8rin.ikittool.core.resources.icons.PhotoPickerMobile
 
 sealed class PicturePickerMode(
     val ordinal: Int,

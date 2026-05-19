@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.presentation.screenLogic
+package com.t8rin.ikittool.feature.markup_layers.presentation.screenLogic
 
 import android.graphics.Bitmap
 import android.net.Uri
@@ -31,53 +31,53 @@ import androidx.core.graphics.drawable.toBitmap
 import androidx.core.graphics.drawable.toDrawable
 import androidx.core.net.toUri
 import com.arkivanov.decompose.ComponentContext
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageCompressor
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.ImageScaler
-import com.t8rin.imagetoolbox.core.domain.image.ImageShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageInfo
-import com.t8rin.imagetoolbox.core.domain.saving.FileController
-import com.t8rin.imagetoolbox.core.domain.saving.model.ImageSaveTarget
-import com.t8rin.imagetoolbox.core.domain.utils.smartJob
-import com.t8rin.imagetoolbox.core.domain.utils.timestamp
-import com.t8rin.imagetoolbox.core.domain.utils.update
-import com.t8rin.imagetoolbox.core.ui.utils.BaseComponent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.utils.state.savable
-import com.t8rin.imagetoolbox.core.ui.utils.state.update
-import com.t8rin.imagetoolbox.core.utils.filename
-import com.t8rin.imagetoolbox.core.utils.makeLog
-import com.t8rin.imagetoolbox.feature.markup_layers.data.project.MarkupProjectExtension
-import com.t8rin.imagetoolbox.feature.markup_layers.data.project.isMarkupProject
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupLayer
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupLayersApplier
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupProject
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupProjectHistorySnapshot
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupProjectResult
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.ProjectBackground
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.EditBoxState
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.BackgroundBehavior
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.UiMarkupLayer
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.UiMarkupLayerSnapshot
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.applyGroupGlobalChanges
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.asDomain
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.asUi
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.coerceGroupToBounds
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.combinedBounds
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.composeToParentSpace
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.deepDuplicate
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.defaultGroupPlaceholderType
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.effectiveCoerceToBounds
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.flattenToDomain
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.groupChildAt
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.setGroupScalePrecisely
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.toSnapshot
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.toUi
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.uiCornerRadiusPercent
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.withCoerceToBoundsRecursively
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageCompressor
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.ImageScaler
+import com.t8rin.ikittool.core.domain.image.ImageShareProvider
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.ImageInfo
+import com.t8rin.ikittool.core.domain.saving.FileController
+import com.t8rin.ikittool.core.domain.saving.model.ImageSaveTarget
+import com.t8rin.ikittool.core.domain.utils.smartJob
+import com.t8rin.ikittool.core.domain.utils.timestamp
+import com.t8rin.ikittool.core.domain.utils.update
+import com.t8rin.ikittool.core.ui.utils.BaseComponent
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.utils.state.savable
+import com.t8rin.ikittool.core.ui.utils.state.update
+import com.t8rin.ikittool.core.utils.filename
+import com.t8rin.ikittool.core.utils.makeLog
+import com.t8rin.ikittool.feature.markup_layers.data.project.MarkupProjectExtension
+import com.t8rin.ikittool.feature.markup_layers.data.project.isMarkupProject
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupLayer
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupLayersApplier
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupProject
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupProjectHistorySnapshot
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupProjectResult
+import com.t8rin.ikittool.feature.markup_layers.domain.ProjectBackground
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.EditBoxState
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.BackgroundBehavior
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.UiMarkupLayer
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.UiMarkupLayerSnapshot
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.applyGroupGlobalChanges
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.asDomain
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.asUi
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.coerceGroupToBounds
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.combinedBounds
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.composeToParentSpace
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.deepDuplicate
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.defaultGroupPlaceholderType
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.effectiveCoerceToBounds
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.flattenToDomain
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.groupChildAt
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.setGroupScalePrecisely
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.toSnapshot
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.toUi
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.uiCornerRadiusPercent
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.withCoerceToBoundsRecursively
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject

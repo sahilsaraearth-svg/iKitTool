@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.crop.presentation.components
+package com.t8rin.ikittool.feature.crop.presentation.components
 
 import androidx.compose.material3.MaterialShapes
 import androidx.compose.ui.graphics.ImageBitmap
@@ -30,25 +30,25 @@ import com.t8rin.cropper.model.RectCropShape
 import com.t8rin.cropper.model.RoundedCornerCropShape
 import com.t8rin.cropper.settings.CropOutlineProperty
 import com.t8rin.cropper.settings.Paths
-import com.t8rin.imagetoolbox.core.resources.shapes.ArrowShape
-import com.t8rin.imagetoolbox.core.resources.shapes.BookmarkShape
-import com.t8rin.imagetoolbox.core.resources.shapes.BurgerShape
-import com.t8rin.imagetoolbox.core.resources.shapes.CloverShape
-import com.t8rin.imagetoolbox.core.resources.shapes.DropletShape
-import com.t8rin.imagetoolbox.core.resources.shapes.EggShape
-import com.t8rin.imagetoolbox.core.resources.shapes.ExplosionShape
-import com.t8rin.imagetoolbox.core.resources.shapes.KotlinShape
-import com.t8rin.imagetoolbox.core.resources.shapes.MapShape
-import com.t8rin.imagetoolbox.core.resources.shapes.MaterialStarShape
-import com.t8rin.imagetoolbox.core.resources.shapes.OctagonShape
-import com.t8rin.imagetoolbox.core.resources.shapes.OvalShape
-import com.t8rin.imagetoolbox.core.resources.shapes.PentagonShape
-import com.t8rin.imagetoolbox.core.resources.shapes.PillShape
-import com.t8rin.imagetoolbox.core.resources.shapes.ShieldShape
-import com.t8rin.imagetoolbox.core.resources.shapes.ShurikenShape
-import com.t8rin.imagetoolbox.core.resources.shapes.SmallMaterialStarShape
-import com.t8rin.imagetoolbox.core.resources.shapes.SquircleShape
-import com.t8rin.imagetoolbox.core.settings.presentation.utils.toShape
+import com.t8rin.ikittool.core.resources.shapes.ArrowShape
+import com.t8rin.ikittool.core.resources.shapes.BookmarkShape
+import com.t8rin.ikittool.core.resources.shapes.BurgerShape
+import com.t8rin.ikittool.core.resources.shapes.CloverShape
+import com.t8rin.ikittool.core.resources.shapes.DropletShape
+import com.t8rin.ikittool.core.resources.shapes.EggShape
+import com.t8rin.ikittool.core.resources.shapes.ExplosionShape
+import com.t8rin.ikittool.core.resources.shapes.KotlinShape
+import com.t8rin.ikittool.core.resources.shapes.MapShape
+import com.t8rin.ikittool.core.resources.shapes.MaterialStarShape
+import com.t8rin.ikittool.core.resources.shapes.OctagonShape
+import com.t8rin.ikittool.core.resources.shapes.OvalShape
+import com.t8rin.ikittool.core.resources.shapes.PentagonShape
+import com.t8rin.ikittool.core.resources.shapes.PillShape
+import com.t8rin.ikittool.core.resources.shapes.ShieldShape
+import com.t8rin.ikittool.core.resources.shapes.ShurikenShape
+import com.t8rin.ikittool.core.resources.shapes.SmallMaterialStarShape
+import com.t8rin.ikittool.core.resources.shapes.SquircleShape
+import com.t8rin.ikittool.core.settings.presentation.utils.toShape
 
 val DefaultOutlineProperties = listOf(
     CropOutlineProperty(

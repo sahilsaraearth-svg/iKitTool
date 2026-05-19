@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.wallpapers_export.presentation
+package com.t8rin.ikittool.feature.wallpapers_export.presentation
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -23,25 +23,25 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.ui.utils.helper.Clipboard
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.isInstalledFromPlayStore
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.utils.provider.rememberCurrentLifecycleEvent
-import com.t8rin.imagetoolbox.core.ui.widget.AdaptiveLayoutScreen
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.ShareButton
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.LoadingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.other.FeatureNotAvailableContent
-import com.t8rin.imagetoolbox.core.ui.widget.other.TopAppBarEmoji
-import com.t8rin.imagetoolbox.core.ui.widget.text.TopAppBarTitle
-import com.t8rin.imagetoolbox.core.ui.widget.text.marquee
-import com.t8rin.imagetoolbox.core.ui.widget.utils.AutoContentBasedColors
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.feature.wallpapers_export.domain.model.WallpapersResult
-import com.t8rin.imagetoolbox.feature.wallpapers_export.presentation.components.WallpapersActionButtons
-import com.t8rin.imagetoolbox.feature.wallpapers_export.presentation.components.WallpapersControls
-import com.t8rin.imagetoolbox.feature.wallpapers_export.presentation.components.WallpapersPreview
-import com.t8rin.imagetoolbox.feature.wallpapers_export.presentation.screenLogic.WallpapersExportComponent
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.ui.utils.helper.Clipboard
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.isInstalledFromPlayStore
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.utils.provider.rememberCurrentLifecycleEvent
+import com.t8rin.ikittool.core.ui.widget.AdaptiveLayoutScreen
+import com.t8rin.ikittool.core.ui.widget.buttons.ShareButton
+import com.t8rin.ikittool.core.ui.widget.dialogs.LoadingDialog
+import com.t8rin.ikittool.core.ui.widget.other.FeatureNotAvailableContent
+import com.t8rin.ikittool.core.ui.widget.other.TopAppBarEmoji
+import com.t8rin.ikittool.core.ui.widget.text.TopAppBarTitle
+import com.t8rin.ikittool.core.ui.widget.text.marquee
+import com.t8rin.ikittool.core.ui.widget.utils.AutoContentBasedColors
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.feature.wallpapers_export.domain.model.WallpapersResult
+import com.t8rin.ikittool.feature.wallpapers_export.presentation.components.WallpapersActionButtons
+import com.t8rin.ikittool.feature.wallpapers_export.presentation.components.WallpapersControls
+import com.t8rin.ikittool.feature.wallpapers_export.presentation.components.WallpapersPreview
+import com.t8rin.ikittool.feature.wallpapers_export.presentation.screenLogic.WallpapersExportComponent
 
 @Composable
 fun WallpapersExportContent(

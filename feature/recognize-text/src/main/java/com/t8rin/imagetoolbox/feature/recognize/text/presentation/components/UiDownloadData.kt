@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,11 +15,11 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.recognize.text.presentation.components
+package com.t8rin.ikittool.feature.recognize.text.presentation.components
 
 import android.os.Parcelable
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.DownloadData
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.RecognitionType
+import com.t8rin.ikittool.feature.recognize.text.domain.DownloadData
+import com.t8rin.ikittool.feature.recognize.text.domain.RecognitionType
 import kotlinx.parcelize.Parcelize
 
 @Parcelize

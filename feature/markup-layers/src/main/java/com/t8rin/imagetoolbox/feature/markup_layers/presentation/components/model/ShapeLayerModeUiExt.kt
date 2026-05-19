@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,23 +15,23 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model
+package com.t8rin.ikittool.feature.markup_layers.presentation.components.model
 
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.CheckBoxOutlineBlank
-import com.t8rin.imagetoolbox.core.resources.icons.Circle
-import com.t8rin.imagetoolbox.core.resources.icons.FreeArrow
-import com.t8rin.imagetoolbox.core.resources.icons.FreeDoubleArrow
-import com.t8rin.imagetoolbox.core.resources.icons.Line
-import com.t8rin.imagetoolbox.core.resources.icons.LineArrow
-import com.t8rin.imagetoolbox.core.resources.icons.LineDoubleArrow
-import com.t8rin.imagetoolbox.core.resources.icons.Polygon
-import com.t8rin.imagetoolbox.core.resources.icons.Square
-import com.t8rin.imagetoolbox.core.resources.icons.Star
-import com.t8rin.imagetoolbox.core.resources.icons.Triangle
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.ShapeMode
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.CheckBoxOutlineBlank
+import com.t8rin.ikittool.core.resources.icons.Circle
+import com.t8rin.ikittool.core.resources.icons.FreeArrow
+import com.t8rin.ikittool.core.resources.icons.FreeDoubleArrow
+import com.t8rin.ikittool.core.resources.icons.Line
+import com.t8rin.ikittool.core.resources.icons.LineArrow
+import com.t8rin.ikittool.core.resources.icons.LineDoubleArrow
+import com.t8rin.ikittool.core.resources.icons.Polygon
+import com.t8rin.ikittool.core.resources.icons.Square
+import com.t8rin.ikittool.core.resources.icons.Star
+import com.t8rin.ikittool.core.resources.icons.Triangle
+import com.t8rin.ikittool.feature.markup_layers.domain.ShapeMode
 
 internal val ShapeMode.Kind.titleRes: Int
     get() = when (this) {

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,27 +15,27 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.pdf_tools.presentation.images_to_pdf
+package com.t8rin.ikittool.feature.pdf_tools.presentation.images_to_pdf
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.Preset
-import com.t8rin.imagetoolbox.core.domain.image.model.Quality
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.AddPhotoAlt
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberImagePicker
-import com.t8rin.imagetoolbox.core.ui.widget.controls.ImageReorderCarousel
-import com.t8rin.imagetoolbox.core.ui.widget.controls.ScaleSmallImagesToLargeToggle
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.PresetSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.QualitySelector
-import com.t8rin.imagetoolbox.feature.pdf_tools.presentation.common.BasePdfToolContent
-import com.t8rin.imagetoolbox.feature.pdf_tools.presentation.images_to_pdf.screenLogic.ImagesToPdfToolComponent
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.Preset
+import com.t8rin.ikittool.core.domain.image.model.Quality
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.AddPhotoAlt
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberImagePicker
+import com.t8rin.ikittool.core.ui.widget.controls.ImageReorderCarousel
+import com.t8rin.ikittool.core.ui.widget.controls.ScaleSmallImagesToLargeToggle
+import com.t8rin.ikittool.core.ui.widget.controls.selection.PresetSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.QualitySelector
+import com.t8rin.ikittool.feature.pdf_tools.presentation.common.BasePdfToolContent
+import com.t8rin.ikittool.feature.pdf_tools.presentation.images_to_pdf.screenLogic.ImagesToPdfToolComponent
 
 @Composable
 fun ImagesToPdfToolContent(

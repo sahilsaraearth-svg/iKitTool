@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.utils.provider
+package com.t8rin.ikittool.core.ui.utils.provider
 
 import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.runtime.Composable
@@ -33,24 +33,24 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.platform.LocalUriHandler
-import com.t8rin.imagetoolbox.core.domain.model.ImageModel
-import com.t8rin.imagetoolbox.core.settings.presentation.model.UiSettingsState
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalEditPresetsController
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.rememberEditPresetsController
-import com.t8rin.imagetoolbox.core.ui.theme.ImageToolboxThemeSurface
-import com.t8rin.imagetoolbox.core.ui.utils.confetti.ConfettiHost
-import com.t8rin.imagetoolbox.core.ui.utils.helper.LocalFilterPreviewModelProvider
-import com.t8rin.imagetoolbox.core.ui.utils.helper.rememberFilterPreviewProvider
-import com.t8rin.imagetoolbox.core.ui.utils.helper.rememberSafeUriHandler
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.rememberEnhancedHapticFeedback
-import com.t8rin.imagetoolbox.core.ui.widget.other.ToastHost
-import com.t8rin.imagetoolbox.core.ui.widget.sheets.SkippedImagesSheetHost
+import com.t8rin.ikittool.core.domain.model.ImageModel
+import com.t8rin.ikittool.core.settings.presentation.model.UiSettingsState
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalEditPresetsController
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.settings.presentation.provider.rememberEditPresetsController
+import com.t8rin.ikittool.core.ui.theme.iKitToolThemeSurface
+import com.t8rin.ikittool.core.ui.utils.confetti.ConfettiHost
+import com.t8rin.ikittool.core.ui.utils.helper.LocalFilterPreviewModelProvider
+import com.t8rin.ikittool.core.ui.utils.helper.rememberFilterPreviewProvider
+import com.t8rin.ikittool.core.ui.utils.helper.rememberSafeUriHandler
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.widget.enhanced.rememberEnhancedHapticFeedback
+import com.t8rin.ikittool.core.ui.widget.other.ToastHost
+import com.t8rin.ikittool.core.ui.widget.sheets.SkippedImagesSheetHost
 import kotlinx.coroutines.delay
 
 @Composable
-fun ImageToolboxCompositionLocals(
+fun iKitToolCompositionLocals(
     settingsState: UiSettingsState,
     filterPreviewModel: ImageModel? = null,
     canSetDynamicFilterPreview: Boolean = false,
@@ -94,7 +94,7 @@ fun ImageToolboxCompositionLocals(
     CompositionLocalProvider(
         *values.value,
         content = {
-            ImageToolboxThemeSurface {
+            iKitToolThemeSurface {
                 content()
 
                 SkippedImagesSheetHost(

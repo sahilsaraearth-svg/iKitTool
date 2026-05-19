@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.draw.presentation.components
+package com.t8rin.ikittool.feature.draw.presentation.components
 
 import android.annotation.SuppressLint
 import android.graphics.Bitmap
@@ -51,24 +51,24 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.core.graphics.applyCanvas
 import androidx.core.graphics.createBitmap
-import com.t8rin.imagetoolbox.core.domain.model.ImageModel
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.filters.domain.model.Filter
-import com.t8rin.imagetoolbox.core.filters.domain.model.createFilter
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.SpotHealMode
-import com.t8rin.imagetoolbox.core.ui.utils.helper.scaleToFitCanvas
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.LoadingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.text.AutoSizeText
-import com.t8rin.imagetoolbox.core.utils.toImageModel
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawMode
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.clipBitmap
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.drawRepeatedImageOnPath
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.drawRepeatedTextOnPath
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.overlay
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.pathEffectPaint
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.rememberPaint
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.transformationsForMode
+import com.t8rin.ikittool.core.domain.model.ImageModel
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.filters.domain.model.Filter
+import com.t8rin.ikittool.core.filters.domain.model.createFilter
+import com.t8rin.ikittool.core.filters.domain.model.enums.SpotHealMode
+import com.t8rin.ikittool.core.ui.utils.helper.scaleToFitCanvas
+import com.t8rin.ikittool.core.ui.widget.dialogs.LoadingDialog
+import com.t8rin.ikittool.core.ui.widget.text.AutoSizeText
+import com.t8rin.ikittool.core.utils.toImageModel
+import com.t8rin.ikittool.feature.draw.domain.DrawMode
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.clipBitmap
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.drawRepeatedImageOnPath
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.drawRepeatedTextOnPath
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.overlay
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.pathEffectPaint
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.rememberPaint
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.transformationsForMode
 import com.t8rin.trickle.WarpBrush
 import com.t8rin.trickle.WarpEngine
 import com.t8rin.trickle.WarpMode

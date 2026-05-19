@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.utils.helper.image_vector
+package com.t8rin.ikittool.core.ui.utils.helper.image_vector
 
 import android.content.Context
 import android.graphics.PorterDuff
@@ -40,7 +40,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.LayoutDirection
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.density
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.density
 
 @Composable
 fun imageVectorPainter(imageVector: ImageVector): Painter {

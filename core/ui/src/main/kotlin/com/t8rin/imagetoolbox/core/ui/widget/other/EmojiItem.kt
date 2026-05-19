@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.other
+package com.t8rin.ikittool.core.ui.widget.other
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.fadeIn
@@ -49,9 +49,9 @@ import coil3.compose.rememberAsyncImagePainter
 import coil3.imageLoader
 import coil3.request.ImageRequest
 import coil3.request.crossfade
-import com.t8rin.imagetoolbox.core.resources.shapes.CloverShape
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.shimmer
-import com.t8rin.imagetoolbox.core.utils.appContext
+import com.t8rin.ikittool.core.resources.shapes.CloverShape
+import com.t8rin.ikittool.core.ui.widget.modifier.shimmer
+import com.t8rin.ikittool.core.utils.appContext
 
 @Composable
 fun EmojiItem(

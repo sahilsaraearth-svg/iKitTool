@@ -12,7 +12,7 @@ Below you will find the process and workflow used to review and merge your chang
 
 ## 🌟 : Fork the repository
 
-- Fork this repository "ImageToolbox" by clicking on the "Fork" button. This will create a local copy of this respository on your GitHub profile.
+- Fork this repository "iKitTool" by clicking on the "Fork" button. This will create a local copy of this respository on your GitHub profile.
 
 ## 🌟 : Clone the forked repository
 
@@ -21,14 +21,14 @@ Below you will find the process and workflow used to review and merge your chang
 
 
 ```bash
-git clone https://github.com/<your-username>/<ImageToolbox>  
+git clone https://github.com/<your-username>/<iKitTool>  
 ```
 
 - Keep a reference to the original project in `upstream` remote.
 
 ```bash  
 cd <repo-name>  
-git remote add upstream https://github.com/<upstream-owner>/<ImageToolbox>
+git remote add upstream https://github.com/<upstream-owner>/<iKitTool>
 git remote -v # To the check the remotes for this repository 
 ```  
 

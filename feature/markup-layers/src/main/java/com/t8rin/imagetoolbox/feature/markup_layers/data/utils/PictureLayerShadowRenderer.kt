@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.data.utils
+package com.t8rin.ikittool.feature.markup_layers.data.utils
 
 import android.graphics.Bitmap
 import android.graphics.BlurMaskFilter
@@ -26,7 +26,7 @@ import android.graphics.RectF
 import androidx.core.graphics.applyCanvas
 import androidx.core.graphics.createBitmap
 import androidx.core.graphics.withSave
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.DropShadow
+import com.t8rin.ikittool.feature.markup_layers.domain.DropShadow
 import kotlin.math.absoluteValue
 import kotlin.math.min
 import kotlin.math.roundToInt

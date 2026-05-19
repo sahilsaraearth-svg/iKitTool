@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.utils.capturable.impl
+package com.t8rin.ikittool.core.ui.utils.capturable.impl
 
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
@@ -25,7 +25,7 @@ import androidx.compose.ui.graphics.layer.drawLayer
 import androidx.compose.ui.node.DrawModifierNode
 import androidx.compose.ui.node.ModifierNodeElement
 import androidx.compose.ui.platform.InspectorInfo
-import com.t8rin.imagetoolbox.core.ui.utils.capturable.CaptureController
+import com.t8rin.ikittool.core.ui.utils.capturable.CaptureController
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.flatMapLatest
@@ -59,7 +59,7 @@ import kotlinx.coroutines.launch
  *  }) { ... }
  * ```
  *
- * @param controller A [com.t8rin.imagetoolbox.core.ui.utils.capturable.CaptureController] which gives control to capture the Composable content.
+ * @param controller A [com.t8rin.ikittool.core.ui.utils.capturable.CaptureController] which gives control to capture the Composable content.
  */
 @ExperimentalComposeUiApi
 fun Modifier.capturableNew(controller: CaptureController): Modifier {

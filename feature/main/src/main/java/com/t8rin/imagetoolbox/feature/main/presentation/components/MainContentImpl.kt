@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.main.presentation.components
+package com.t8rin.ikittool.feature.main.presentation.components
 
 import android.net.Uri
 import androidx.compose.animation.AnimatedContent
@@ -49,13 +49,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.unit.LayoutDirection
-import com.t8rin.imagetoolbox.core.settings.domain.model.SnowfallMode
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ProvidesValue
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.utils.provider.rememberCurrentLifecycleEvent
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedTopAppBarType
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.realisticSnowfall
+import com.t8rin.ikittool.core.settings.domain.model.SnowfallMode
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.utils.helper.ProvidesValue
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.utils.provider.rememberCurrentLifecycleEvent
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedTopAppBarType
+import com.t8rin.ikittool.core.ui.widget.modifier.realisticSnowfall
 import kotlinx.coroutines.delay
 import java.time.LocalDate
 

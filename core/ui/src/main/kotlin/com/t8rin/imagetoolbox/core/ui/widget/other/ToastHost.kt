@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.other
+package com.t8rin.ikittool.core.ui.widget.other
 
 import androidx.activity.compose.LocalActivity
 import androidx.compose.animation.AnimatedContent
@@ -76,24 +76,24 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.fastCoerceIn
 import androidx.compose.ui.util.lerp
 import androidx.compose.ui.zIndex
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.icons.Error
-import com.t8rin.imagetoolbox.core.resources.icons.Folder
-import com.t8rin.imagetoolbox.core.resources.icons.Memory
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.theme.ImageToolboxThemeForPreview
-import com.t8rin.imagetoolbox.core.ui.theme.blend
-import com.t8rin.imagetoolbox.core.ui.theme.harmonizeWithPrimary
-import com.t8rin.imagetoolbox.core.ui.theme.outlineVariant
-import com.t8rin.imagetoolbox.core.ui.utils.animation.lessSpringySpec
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.requestStoragePermission
-import com.t8rin.imagetoolbox.core.ui.utils.helper.EnPreview
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalScreenSize
-import com.t8rin.imagetoolbox.core.ui.widget.icon_shape.IconShapeContainer
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.AutoCornersShape
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.autoElevatedBorder
-import com.t8rin.imagetoolbox.core.utils.extractMessage
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.icons.Error
+import com.t8rin.ikittool.core.resources.icons.Folder
+import com.t8rin.ikittool.core.resources.icons.Memory
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.theme.iKitToolThemeForPreview
+import com.t8rin.ikittool.core.ui.theme.blend
+import com.t8rin.ikittool.core.ui.theme.harmonizeWithPrimary
+import com.t8rin.ikittool.core.ui.theme.outlineVariant
+import com.t8rin.ikittool.core.ui.utils.animation.lessSpringySpec
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.requestStoragePermission
+import com.t8rin.ikittool.core.ui.utils.helper.EnPreview
+import com.t8rin.ikittool.core.ui.utils.provider.LocalScreenSize
+import com.t8rin.ikittool.core.ui.widget.icon_shape.IconShapeContainer
+import com.t8rin.ikittool.core.ui.widget.modifier.AutoCornersShape
+import com.t8rin.ikittool.core.ui.widget.modifier.autoElevatedBorder
+import com.t8rin.ikittool.core.utils.extractMessage
 import com.t8rin.modalsheet.FullscreenPopup
 import kotlinx.coroutines.CancellableContinuation
 import kotlinx.coroutines.CoroutineScope
@@ -300,7 +300,7 @@ fun Toast(
 
 @EnPreview
 @Composable
-private fun Preview() = ImageToolboxThemeForPreview(
+private fun Preview() = iKitToolThemeForPreview(
     isDarkTheme = false,
     keyColor = Color.Yellow,
     mapSettings = {
@@ -312,7 +312,7 @@ private fun Preview() = ImageToolboxThemeForPreview(
             override val visuals: ToastVisuals
                 get() = object : ToastVisuals {
                     override val message: String
-                        get() = "File successfully saved to Documents/ImageToolbox"
+                        get() = "File successfully saved to Documents/iKitTool"
                     override val icon: ImageVector
                         get() = Icons.Rounded.Folder
                     override val duration: ToastDuration

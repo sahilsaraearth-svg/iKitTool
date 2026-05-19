@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("UnnecessaryVariable")
 
-package com.t8rin.imagetoolbox.feature.watermarking.data
+package com.t8rin.ikittool.feature.watermarking.data
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -28,27 +28,27 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.core.graphics.applyCanvas
 import coil3.transform.RoundedCornersTransformation
-import com.t8rin.imagetoolbox.core.data.image.utils.drawBitmap
-import com.t8rin.imagetoolbox.core.data.image.utils.toAndroidBlendMode
-import com.t8rin.imagetoolbox.core.data.image.utils.toPorterDuffMode
-import com.t8rin.imagetoolbox.core.data.utils.asDomain
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.ImageScaler
-import com.t8rin.imagetoolbox.core.domain.image.ImageTransformer
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode
-import com.t8rin.imagetoolbox.core.domain.image.model.ResizeType
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.model.Position
-import com.t8rin.imagetoolbox.core.domain.utils.runSuspendCatching
-import com.t8rin.imagetoolbox.core.domain.utils.timestamp
-import com.t8rin.imagetoolbox.core.utils.toTypeface
-import com.t8rin.imagetoolbox.feature.watermarking.domain.DigitalParams
-import com.t8rin.imagetoolbox.feature.watermarking.domain.HiddenWatermark
-import com.t8rin.imagetoolbox.feature.watermarking.domain.TextParams
-import com.t8rin.imagetoolbox.feature.watermarking.domain.WatermarkApplier
-import com.t8rin.imagetoolbox.feature.watermarking.domain.WatermarkParams
-import com.t8rin.imagetoolbox.feature.watermarking.domain.WatermarkingType
+import com.t8rin.ikittool.core.data.image.utils.drawBitmap
+import com.t8rin.ikittool.core.data.image.utils.toAndroidBlendMode
+import com.t8rin.ikittool.core.data.image.utils.toPorterDuffMode
+import com.t8rin.ikittool.core.data.utils.asDomain
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.ImageScaler
+import com.t8rin.ikittool.core.domain.image.ImageTransformer
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode
+import com.t8rin.ikittool.core.domain.image.model.ResizeType
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.model.Position
+import com.t8rin.ikittool.core.domain.utils.runSuspendCatching
+import com.t8rin.ikittool.core.domain.utils.timestamp
+import com.t8rin.ikittool.core.utils.toTypeface
+import com.t8rin.ikittool.feature.watermarking.domain.DigitalParams
+import com.t8rin.ikittool.feature.watermarking.domain.HiddenWatermark
+import com.t8rin.ikittool.feature.watermarking.domain.TextParams
+import com.t8rin.ikittool.feature.watermarking.domain.WatermarkApplier
+import com.t8rin.ikittool.feature.watermarking.domain.WatermarkParams
+import com.t8rin.ikittool.feature.watermarking.domain.WatermarkingType
 import com.watermark.androidwm.WatermarkBuilder
 import com.watermark.androidwm.WatermarkDetector
 import com.watermark.androidwm.bean.WatermarkImage

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1367,8 +1367,8 @@
     <string name="recently_used">ਹਾਲ ਹੀ ਵਿੱਚ ਵਰਤਿਆ ਗਿਆ</string>
     <string name="ci_channel">ਸੀਆਈ ਚੈਨਲ</string>
     <string name="group">ਸਮੂਹ</string>
-    <string name="image_toolbox_in_telegram">ਟੈਲੀਗ੍ਰਾਮ 🎉 ਵਿੱਚ ਚਿੱਤਰ ਟੂਲਬਾਕਸ</string>
-    <string name="image_toolbox_in_telegram_sub">ਸਾਡੀ ਚੈਟ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ ਜਿੱਥੇ ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਚੀਜ਼ \'ਤੇ ਚਰਚਾ ਕਰ ਸਕਦੇ ਹੋ ਜੋ ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ ਅਤੇ CI ਚੈਨਲ ਨੂੰ ਵੀ ਦੇਖ ਸਕਦੇ ਹੋ ਜਿੱਥੇ ਮੈਂ ਬੀਟਾ ਅਤੇ ਘੋਸ਼ਣਾਵਾਂ ਪੋਸਟ ਕਰਦਾ ਹਾਂ</string>
+    <string name="ikit_tool_in_telegram">ਟੈਲੀਗ੍ਰਾਮ 🎉 ਵਿੱਚ ਚਿੱਤਰ ਟੂਲਬਾਕਸ</string>
+    <string name="ikit_tool_in_telegram_sub">ਸਾਡੀ ਚੈਟ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ ਜਿੱਥੇ ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਚੀਜ਼ \'ਤੇ ਚਰਚਾ ਕਰ ਸਕਦੇ ਹੋ ਜੋ ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ ਅਤੇ CI ਚੈਨਲ ਨੂੰ ਵੀ ਦੇਖ ਸਕਦੇ ਹੋ ਜਿੱਥੇ ਮੈਂ ਬੀਟਾ ਅਤੇ ਘੋਸ਼ਣਾਵਾਂ ਪੋਸਟ ਕਰਦਾ ਹਾਂ</string>
     <string name="ci_channel_sub">ਐਪ ਦੇ ਨਵੇਂ ਸੰਸਕਰਣਾਂ ਬਾਰੇ ਸੂਚਨਾ ਪ੍ਰਾਪਤ ਕਰੋ, ਅਤੇ ਘੋਸ਼ਣਾਵਾਂ ਪੜ੍ਹੋ</string>
     <string name="fit_description">ਇੱਕ ਚਿੱਤਰ ਨੂੰ ਦਿੱਤੇ ਮਾਪਾਂ ਵਿੱਚ ਫਿੱਟ ਕਰੋ ਅਤੇ ਬੈਕਗ੍ਰਾਉਂਡ ਵਿੱਚ ਧੁੰਦਲਾ ਜਾਂ ਰੰਗ ਲਾਗੂ ਕਰੋ</string>
     <string name="tools_arrangement">ਸੰਦ ਪ੍ਰਬੰਧ</string>

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.settings.presentation.model
+package com.t8rin.ikittool.core.settings.presentation.model
 
 import android.net.Uri
 import androidx.compose.animation.core.animateDpAsState
@@ -42,29 +42,29 @@ import com.t8rin.dynamic.theme.ColorBlindType
 import com.t8rin.dynamic.theme.ColorTuple
 import com.t8rin.dynamic.theme.PaletteStyle
 import com.t8rin.dynamic.theme.extractPrimaryColor
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageScaleMode
-import com.t8rin.imagetoolbox.core.domain.image.model.Preset
-import com.t8rin.imagetoolbox.core.domain.image.model.Quality
-import com.t8rin.imagetoolbox.core.domain.image.model.ResizeType
-import com.t8rin.imagetoolbox.core.domain.model.DomainAspectRatio
-import com.t8rin.imagetoolbox.core.domain.model.SystemBarsVisibility
-import com.t8rin.imagetoolbox.core.resources.BuildConfig
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.emoji.Emoji
-import com.t8rin.imagetoolbox.core.resources.emoji.Emoji.initEmoji
-import com.t8rin.imagetoolbox.core.settings.domain.model.ColorHarmonizer
-import com.t8rin.imagetoolbox.core.settings.domain.model.CopyToClipboardMode
-import com.t8rin.imagetoolbox.core.settings.domain.model.FastSettingsSide
-import com.t8rin.imagetoolbox.core.settings.domain.model.FilenameBehavior
-import com.t8rin.imagetoolbox.core.settings.domain.model.FlingType
-import com.t8rin.imagetoolbox.core.settings.domain.model.NightMode
-import com.t8rin.imagetoolbox.core.settings.domain.model.OneTimeSaveLocation
-import com.t8rin.imagetoolbox.core.settings.domain.model.SettingsState
-import com.t8rin.imagetoolbox.core.settings.domain.model.ShapeType
-import com.t8rin.imagetoolbox.core.settings.domain.model.SliderType
-import com.t8rin.imagetoolbox.core.settings.domain.model.SnowfallMode
-import com.t8rin.imagetoolbox.core.settings.domain.model.SwitchType
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.ImageScaleMode
+import com.t8rin.ikittool.core.domain.image.model.Preset
+import com.t8rin.ikittool.core.domain.image.model.Quality
+import com.t8rin.ikittool.core.domain.image.model.ResizeType
+import com.t8rin.ikittool.core.domain.model.DomainAspectRatio
+import com.t8rin.ikittool.core.domain.model.SystemBarsVisibility
+import com.t8rin.ikittool.core.resources.BuildConfig
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.emoji.Emoji
+import com.t8rin.ikittool.core.resources.emoji.Emoji.initEmoji
+import com.t8rin.ikittool.core.settings.domain.model.ColorHarmonizer
+import com.t8rin.ikittool.core.settings.domain.model.CopyToClipboardMode
+import com.t8rin.ikittool.core.settings.domain.model.FastSettingsSide
+import com.t8rin.ikittool.core.settings.domain.model.FilenameBehavior
+import com.t8rin.ikittool.core.settings.domain.model.FlingType
+import com.t8rin.ikittool.core.settings.domain.model.NightMode
+import com.t8rin.ikittool.core.settings.domain.model.OneTimeSaveLocation
+import com.t8rin.ikittool.core.settings.domain.model.SettingsState
+import com.t8rin.ikittool.core.settings.domain.model.ShapeType
+import com.t8rin.ikittool.core.settings.domain.model.SliderType
+import com.t8rin.ikittool.core.settings.domain.model.SnowfallMode
+import com.t8rin.ikittool.core.settings.domain.model.SwitchType
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.coroutines.launch
 
@@ -482,6 +482,6 @@ private fun NightMode.isNightMode(): Boolean = when (this) {
 }
 
 val defaultColorTuple = ColorTuple(
-    if (BuildConfig.DEBUG) Color(0xFF3ADBD6)
-    else Color(0xFF8FDB3A)
+    if (BuildConfig.DEBUG) Color(0xFF7C4DFF)
+    else Color(0xFF7C4DFF)
 )

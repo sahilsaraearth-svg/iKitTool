@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,21 +15,21 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.media_picker.presentation.components
+package com.t8rin.ikittool.feature.media_picker.presentation.components
 
 import android.content.Intent
 import androidx.compose.runtime.Composable
-import com.t8rin.imagetoolbox.core.settings.presentation.model.toUiState
-import com.t8rin.imagetoolbox.core.ui.utils.provider.ImageToolboxCompositionLocals
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalComponentActivity
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.AllowedMedia
-import com.t8rin.imagetoolbox.feature.media_picker.presentation.screenLogic.MediaPickerComponent
+import com.t8rin.ikittool.core.settings.presentation.model.toUiState
+import com.t8rin.ikittool.core.ui.utils.provider.iKitToolCompositionLocals
+import com.t8rin.ikittool.core.ui.utils.provider.LocalComponentActivity
+import com.t8rin.ikittool.feature.media_picker.domain.model.AllowedMedia
+import com.t8rin.ikittool.feature.media_picker.presentation.screenLogic.MediaPickerComponent
 
 @Composable
 internal fun MediaPickerRootContent(component: MediaPickerComponent) {
     val context = LocalComponentActivity.current
 
-    ImageToolboxCompositionLocals(
+    iKitToolCompositionLocals(
         settingsState = component.settingsState.toUiState()
     ) {
         MediaPickerRootContentEmbeddable(

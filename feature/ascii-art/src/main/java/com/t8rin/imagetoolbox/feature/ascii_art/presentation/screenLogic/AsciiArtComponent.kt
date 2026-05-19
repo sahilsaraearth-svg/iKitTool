@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.ascii_art.presentation.screenLogic
+package com.t8rin.ikittool.feature.ascii_art.presentation.screenLogic
 
 import android.graphics.Bitmap
 import android.net.Uri
@@ -24,18 +24,18 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import coil3.transform.Transformation
 import com.arkivanov.decompose.ComponentContext
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.filters.domain.FilterProvider
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.AsciiParams
-import com.t8rin.imagetoolbox.core.filters.presentation.model.UiAsciiFilter
-import com.t8rin.imagetoolbox.core.filters.presentation.model.UiNegativeFilter
-import com.t8rin.imagetoolbox.core.settings.domain.SettingsProvider
-import com.t8rin.imagetoolbox.core.settings.presentation.model.asFontType
-import com.t8rin.imagetoolbox.core.ui.utils.BaseComponent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.toCoil
-import com.t8rin.imagetoolbox.core.ui.utils.state.update
-import com.t8rin.imagetoolbox.feature.ascii_art.domain.AsciiConverter
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.filters.domain.FilterProvider
+import com.t8rin.ikittool.core.filters.domain.model.params.AsciiParams
+import com.t8rin.ikittool.core.filters.presentation.model.UiAsciiFilter
+import com.t8rin.ikittool.core.filters.presentation.model.UiNegativeFilter
+import com.t8rin.ikittool.core.settings.domain.SettingsProvider
+import com.t8rin.ikittool.core.settings.presentation.model.asFontType
+import com.t8rin.ikittool.core.ui.utils.BaseComponent
+import com.t8rin.ikittool.core.ui.utils.helper.toCoil
+import com.t8rin.ikittool.core.ui.utils.state.update
+import com.t8rin.ikittool.feature.ascii_art.domain.AsciiConverter
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject

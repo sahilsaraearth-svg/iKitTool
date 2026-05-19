@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.filters.presentation.components
+package com.t8rin.ikittool.feature.filters.presentation.components
 
 import android.graphics.Bitmap
 import androidx.activity.compose.BackHandler
@@ -55,43 +55,43 @@ import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
-import com.t8rin.imagetoolbox.core.domain.model.Pt
-import com.t8rin.imagetoolbox.core.domain.model.pt
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.ArrowBack
-import com.t8rin.imagetoolbox.core.resources.icons.Redo
-import com.t8rin.imagetoolbox.core.resources.icons.Texture
-import com.t8rin.imagetoolbox.core.resources.icons.Undo
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.theme.outlineVariant
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.EraseModeButton
-import com.t8rin.imagetoolbox.core.ui.widget.buttons.PanModeButton
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.ExitWithoutSavingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedBottomSheetDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedLoadingIndicator
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedModalBottomSheet
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
-import com.t8rin.imagetoolbox.core.ui.widget.image.ImageHeaderState
-import com.t8rin.imagetoolbox.core.ui.widget.image.imageStickyHeader
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.CornerSides
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.drawHorizontalStroke
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.only
-import com.t8rin.imagetoolbox.core.ui.widget.saver.PtSaver
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
-import com.t8rin.imagetoolbox.core.ui.widget.utils.rememberAvailableHeight
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawMode
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.BitmapDrawer
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.BrushSoftnessSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.DrawPathModeSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.LineWidthSelector
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.UiPathPaint
+import com.t8rin.ikittool.core.domain.model.Pt
+import com.t8rin.ikittool.core.domain.model.pt
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.ArrowBack
+import com.t8rin.ikittool.core.resources.icons.Redo
+import com.t8rin.ikittool.core.resources.icons.Texture
+import com.t8rin.ikittool.core.resources.icons.Undo
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.theme.outlineVariant
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.widget.buttons.EraseModeButton
+import com.t8rin.ikittool.core.ui.widget.buttons.PanModeButton
+import com.t8rin.ikittool.core.ui.widget.dialogs.ExitWithoutSavingDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedBottomSheetDefaults
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedLoadingIndicator
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedModalBottomSheet
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedFlingBehavior
+import com.t8rin.ikittool.core.ui.widget.image.ImageHeaderState
+import com.t8rin.ikittool.core.ui.widget.image.imageStickyHeader
+import com.t8rin.ikittool.core.ui.widget.modifier.CornerSides
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.drawHorizontalStroke
+import com.t8rin.ikittool.core.ui.widget.modifier.only
+import com.t8rin.ikittool.core.ui.widget.saver.PtSaver
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.core.ui.widget.utils.rememberAvailableHeight
+import com.t8rin.ikittool.feature.draw.domain.DrawMode
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode
+import com.t8rin.ikittool.feature.draw.presentation.components.BitmapDrawer
+import com.t8rin.ikittool.feature.draw.presentation.components.BrushSoftnessSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.DrawPathModeSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.LineWidthSelector
+import com.t8rin.ikittool.feature.draw.presentation.components.UiPathPaint
 import net.engawapg.lib.zoomable.rememberZoomState
 
 @Composable

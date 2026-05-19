@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("unused")
 
-package com.t8rin.imagetoolbox.feature.compare.presentation.components.beforeafter
+package com.t8rin.ikittool.feature.compare.presentation.components.beforeafter
 
 /**
  * Enum class to determine in which order before and after content should be drawn

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.data.saving
+package com.t8rin.ikittool.core.data.saving
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -30,9 +30,9 @@ import android.os.Looper
 import androidx.core.app.NotificationCompat
 import androidx.core.app.ServiceCompat
 import androidx.core.content.getSystemService
-import com.t8rin.imagetoolbox.core.domain.saving.KeepAliveService
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.utils.makeLog
+import com.t8rin.ikittool.core.domain.saving.KeepAliveService
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.utils.makeLog
 import kotlin.math.roundToInt
 
 internal class KeepAliveForegroundService : Service() {
@@ -165,7 +165,7 @@ internal class KeepAliveForegroundService : Service() {
     private fun buildNotification(): Notification {
         val launchIntent = Intent(
             this, Class.forName(
-                "com.t8rin.imagetoolbox.app.presentation.AppActivity"
+                "com.t8rin.ikittool.app.presentation.AppActivity"
             )
         ).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP

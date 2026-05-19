@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,20 +15,20 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.data.saving
+package com.t8rin.ikittool.core.data.saving
 
 import android.content.Context
 import android.content.Intent
 import androidx.core.content.ContextCompat
-import com.t8rin.imagetoolbox.core.data.saving.KeepAliveForegroundService.Companion.ACTION_STOP
-import com.t8rin.imagetoolbox.core.data.saving.KeepAliveForegroundService.Companion.ACTION_UPDATE
-import com.t8rin.imagetoolbox.core.data.saving.KeepAliveForegroundService.Companion.EXTRA_DESC
-import com.t8rin.imagetoolbox.core.data.saving.KeepAliveForegroundService.Companion.EXTRA_PROGRESS
-import com.t8rin.imagetoolbox.core.data.saving.KeepAliveForegroundService.Companion.EXTRA_REMOVE_NOTIFICATION
-import com.t8rin.imagetoolbox.core.data.saving.KeepAliveForegroundService.Companion.EXTRA_TITLE
-import com.t8rin.imagetoolbox.core.domain.saving.FailureNotifier
-import com.t8rin.imagetoolbox.core.domain.saving.KeepAliveService
-import com.t8rin.imagetoolbox.core.domain.utils.tryAll
+import com.t8rin.ikittool.core.data.saving.KeepAliveForegroundService.Companion.ACTION_STOP
+import com.t8rin.ikittool.core.data.saving.KeepAliveForegroundService.Companion.ACTION_UPDATE
+import com.t8rin.ikittool.core.data.saving.KeepAliveForegroundService.Companion.EXTRA_DESC
+import com.t8rin.ikittool.core.data.saving.KeepAliveForegroundService.Companion.EXTRA_PROGRESS
+import com.t8rin.ikittool.core.data.saving.KeepAliveForegroundService.Companion.EXTRA_REMOVE_NOTIFICATION
+import com.t8rin.ikittool.core.data.saving.KeepAliveForegroundService.Companion.EXTRA_TITLE
+import com.t8rin.ikittool.core.domain.saving.FailureNotifier
+import com.t8rin.ikittool.core.domain.saving.KeepAliveService
+import com.t8rin.ikittool.core.domain.utils.tryAll
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("MemberVisibilityCanBePrivate")
 
-package com.t8rin.imagetoolbox.core.settings.presentation.model
+package com.t8rin.ikittool.core.settings.presentation.model
 
 import android.os.Build
 import androidx.compose.runtime.Composable
@@ -28,10 +28,10 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontVariation
 import androidx.compose.ui.text.font.FontWeight
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.settings.domain.model.DomainFontFamily
-import com.t8rin.imagetoolbox.core.settings.domain.model.FontType
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.settings.domain.model.DomainFontFamily
+import com.t8rin.ikittool.core.settings.domain.model.FontType
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
 import java.io.File
 
 sealed class UiFontFamily(

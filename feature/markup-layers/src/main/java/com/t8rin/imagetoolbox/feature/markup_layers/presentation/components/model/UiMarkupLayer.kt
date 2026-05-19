@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,24 +15,24 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model
+package com.t8rin.ikittool.feature.markup_layers.presentation.components.model
 
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.icons.FormatBold
-import com.t8rin.imagetoolbox.core.resources.icons.FormatItalic
-import com.t8rin.imagetoolbox.core.resources.icons.FormatStrikethrough
-import com.t8rin.imagetoolbox.core.resources.icons.FormatUnderlined
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.icons.FormatBold
+import com.t8rin.ikittool.core.resources.icons.FormatItalic
+import com.t8rin.ikittool.core.resources.icons.FormatStrikethrough
+import com.t8rin.ikittool.core.resources.icons.FormatUnderlined
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.IntSize
-import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.DomainTextDecoration
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.LayerPosition
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.LayerType
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.MarkupLayer
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.layerCornerRadiusPercent
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.EditBoxState
+import com.t8rin.ikittool.core.domain.image.model.BlendingMode
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.feature.markup_layers.domain.DomainTextDecoration
+import com.t8rin.ikittool.feature.markup_layers.domain.LayerPosition
+import com.t8rin.ikittool.feature.markup_layers.domain.LayerType
+import com.t8rin.ikittool.feature.markup_layers.domain.MarkupLayer
+import com.t8rin.ikittool.feature.markup_layers.domain.layerCornerRadiusPercent
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.EditBoxState
 import java.util.concurrent.atomic.AtomicLong
 
 data class UiMarkupLayer(

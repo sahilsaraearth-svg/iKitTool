@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,21 +16,21 @@
  */
 
 import com.android.build.api.dsl.ApplicationExtension
-import com.t8rin.imagetoolbox.configureCompose
-import com.t8rin.imagetoolbox.configureDetekt
-import com.t8rin.imagetoolbox.configureKotlinAndroid
-import com.t8rin.imagetoolbox.core
-import com.t8rin.imagetoolbox.crash
-import com.t8rin.imagetoolbox.data
-import com.t8rin.imagetoolbox.di
-import com.t8rin.imagetoolbox.domain
-import com.t8rin.imagetoolbox.implementation
-import com.t8rin.imagetoolbox.libs
-import com.t8rin.imagetoolbox.projects
-import com.t8rin.imagetoolbox.resources
-import com.t8rin.imagetoolbox.settings
-import com.t8rin.imagetoolbox.ui
-import com.t8rin.imagetoolbox.utils
+import com.t8rin.ikittool.configureCompose
+import com.t8rin.ikittool.configureDetekt
+import com.t8rin.ikittool.configureKotlinAndroid
+import com.t8rin.ikittool.core
+import com.t8rin.ikittool.crash
+import com.t8rin.ikittool.data
+import com.t8rin.ikittool.di
+import com.t8rin.ikittool.domain
+import com.t8rin.ikittool.implementation
+import com.t8rin.ikittool.libs
+import com.t8rin.ikittool.projects
+import com.t8rin.ikittool.resources
+import com.t8rin.ikittool.settings
+import com.t8rin.ikittool.ui
+import com.t8rin.ikittool.utils
 import io.gitlab.arturbosch.detekt.extensions.DetektExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -40,7 +40,7 @@ import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.getByType
 
 @Suppress("UNUSED")
-class ImageToolboxApplicationPlugin : Plugin<Project> {
+class iKitToolApplicationPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             apply(plugin = "com.android.application")

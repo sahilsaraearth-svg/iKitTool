@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,19 +15,19 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.pdf_tools.domain
+package com.t8rin.ikittool.feature.pdf_tools.domain
 
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.ExtractPagesAction
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfCreationParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfCropParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfExtractPagesParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfMetadata
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfPageNumbersParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfRemoveAnnotationParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfSignatureParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfWatermarkParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PrintPdfParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.SearchablePdfPage
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.ExtractPagesAction
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfCreationParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfCropParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfExtractPagesParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfMetadata
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfPageNumbersParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfRemoveAnnotationParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfSignatureParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfWatermarkParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PrintPdfParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.SearchablePdfPage
 import kotlinx.coroutines.flow.Flow
 
 interface PdfManager : PdfHelper {

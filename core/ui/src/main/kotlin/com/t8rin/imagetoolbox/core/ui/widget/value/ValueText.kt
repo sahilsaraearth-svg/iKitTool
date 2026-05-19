@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.value
+package com.t8rin.ikittool.core.ui.widget.value
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.core.tween
@@ -37,14 +37,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.t8rin.imagetoolbox.core.domain.utils.trimTrailingZero
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalContainerColor
-import com.t8rin.imagetoolbox.core.ui.utils.provider.ProvideContainerDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.hapticsClickable
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.AutoCircleShape
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.shapeByInteraction
-import com.t8rin.imagetoolbox.core.ui.widget.text.AutoSizeText
+import com.t8rin.ikittool.core.domain.utils.trimTrailingZero
+import com.t8rin.ikittool.core.ui.utils.provider.LocalContainerColor
+import com.t8rin.ikittool.core.ui.utils.provider.ProvideContainerDefaults
+import com.t8rin.ikittool.core.ui.widget.enhanced.hapticsClickable
+import com.t8rin.ikittool.core.ui.widget.modifier.AutoCircleShape
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.shapeByInteraction
+import com.t8rin.ikittool.core.ui.widget.text.AutoSizeText
 
 @Composable
 fun ValueText(

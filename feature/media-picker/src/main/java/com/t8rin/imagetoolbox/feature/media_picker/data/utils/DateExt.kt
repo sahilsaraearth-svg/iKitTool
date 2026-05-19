@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,12 +15,12 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.media_picker.data.utils
+package com.t8rin.ikittool.feature.media_picker.data.utils
 
 import android.text.format.DateFormat
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.DEFAULT_DATE_FORMAT
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.EXTENDED_DATE_FORMAT
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.WEEKLY_DATE_FORMAT
+import com.t8rin.ikittool.feature.media_picker.domain.model.DEFAULT_DATE_FORMAT
+import com.t8rin.ikittool.feature.media_picker.domain.model.EXTENDED_DATE_FORMAT
+import com.t8rin.ikittool.feature.media_picker.domain.model.WEEKLY_DATE_FORMAT
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.Calendar

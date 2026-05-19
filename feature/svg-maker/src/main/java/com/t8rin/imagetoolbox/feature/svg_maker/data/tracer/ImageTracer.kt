@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@
 @file:Suppress("unused")
 
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,11 +34,11 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.svg_maker.data.tracer
+package com.t8rin.ikittool.feature.svg_maker.data.tracer
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppVersion
+import com.t8rin.ikittool.core.ui.utils.helper.AppVersion
 import java.io.File
 import java.nio.IntBuffer
 import java.util.TreeMap
@@ -50,7 +50,7 @@ import kotlin.random.Random
 
 internal data object ImageTracer {
 
-    private val SIGNATURE = "desc=\"Created with ImageToolbox version $AppVersion\" "
+    private val SIGNATURE = "desc=\"Created with iKitTool version $AppVersion\" "
 
     data class Options(
         val lineThreshold: Float = 1f,

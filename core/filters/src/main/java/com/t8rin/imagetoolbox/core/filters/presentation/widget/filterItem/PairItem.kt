@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,26 +15,26 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem
+package com.t8rin.ikittool.core.filters.presentation.widget.filterItem
 
 import androidx.compose.runtime.Composable
-import com.t8rin.imagetoolbox.core.domain.model.ColorModel
-import com.t8rin.imagetoolbox.core.domain.model.FileModel
-import com.t8rin.imagetoolbox.core.domain.model.ImageModel
-import com.t8rin.imagetoolbox.core.domain.utils.cast
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.BlurEdgeMode
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.MirrorSide
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.TransferFunc
-import com.t8rin.imagetoolbox.core.filters.presentation.model.UiFilter
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.pair_components.ColorModelPairItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.pair_components.FloatColorModelPairItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.pair_components.FloatFileModelPairItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.pair_components.FloatImageModelPairItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.pair_components.NumberBlurEdgeModePairItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.pair_components.NumberBooleanPairItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.pair_components.NumberMirrorSidePairItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.pair_components.NumberPairItem
-import com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.pair_components.NumberTransferFuncPairItem
+import com.t8rin.ikittool.core.domain.model.ColorModel
+import com.t8rin.ikittool.core.domain.model.FileModel
+import com.t8rin.ikittool.core.domain.model.ImageModel
+import com.t8rin.ikittool.core.domain.utils.cast
+import com.t8rin.ikittool.core.filters.domain.model.enums.BlurEdgeMode
+import com.t8rin.ikittool.core.filters.domain.model.enums.MirrorSide
+import com.t8rin.ikittool.core.filters.domain.model.enums.TransferFunc
+import com.t8rin.ikittool.core.filters.presentation.model.UiFilter
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.pair_components.ColorModelPairItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.pair_components.FloatColorModelPairItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.pair_components.FloatFileModelPairItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.pair_components.FloatImageModelPairItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.pair_components.NumberBlurEdgeModePairItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.pair_components.NumberBooleanPairItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.pair_components.NumberMirrorSidePairItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.pair_components.NumberPairItem
+import com.t8rin.ikittool.core.filters.presentation.widget.filterItem.pair_components.NumberTransferFuncPairItem
 
 @Composable
 internal fun PairItem(

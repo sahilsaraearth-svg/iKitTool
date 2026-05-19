@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("SameParameterValue")
 
-package com.t8rin.imagetoolbox.core.ui.widget.sliders.custom_slider
+package com.t8rin.ikittool.core.ui.widget.sliders.custom_slider
 
 import androidx.annotation.IntRange
 import androidx.compose.foundation.MutatePriority

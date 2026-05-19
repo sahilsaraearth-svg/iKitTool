@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -865,7 +865,7 @@
     <string name="header_today">Avui</string>
     <string name="header_yesterday">Ahir</string>
     <string name="embedded_picker">Selector incrustat</string>
-    <string name="embedded_picker_sub">Selector d\'imatges de Image Toolbox</string>
+    <string name="embedded_picker_sub">Selector d\'imatges de iKit Tool</string>
     <string name="no_permissions">Sense permisos</string>
     <string name="request">Sol·licitud</string>
     <string name="pick_multiple_media">Trieu diversos mitjans</string>
@@ -1079,7 +1079,7 @@
     <string name="antialias">Antiàlies</string>
     <string name="antialias_sub">Habilita l\'antialiasing per evitar vores afilades</string>
     <string name="open_edit_instead_of_preview">Obriu Edita en lloc de previsualitzar</string>
-    <string name="open_edit_instead_of_preview_sub">Quan seleccioneu la imatge per obrir (visualització prèvia) a ImageToolbox, s\'obrirà el full de selecció d\'edició en lloc de previsualitzar</string>
+    <string name="open_edit_instead_of_preview_sub">Quan seleccioneu la imatge per obrir (visualització prèvia) a iKitTool, s\'obrirà el full de selecció d\'edició en lloc de previsualitzar</string>
     <string name="document_scanner">Escàner de documents</string>
     <string name="document_scanner_sub">Escaneja documents i crea PDF o separa imatges d\'ells</string>
     <string name="click_to_start_scanning">Feu clic per començar a escanejar</string>
@@ -1354,7 +1354,7 @@
     <string name="webp_type_to_webp">Imatges al WEBP</string>
     <string name="select_webp_image_to_start">Trieu la imatge WEBP per començar</string>
     <string name="manage_storage_extra_types">No hi ha accés complet als fitxers</string>
-    <string name="manage_storage_extra_types_sub">Permet l\'accés a tots els fitxers per veure JXL, QOI i altres imatges que no es reconeixen com a imatges a Android. Sense el permís Image Toolbox no pot mostrar aquestes imatges</string>
+    <string name="manage_storage_extra_types_sub">Permet l\'accés a tots els fitxers per veure JXL, QOI i altres imatges que no es reconeixen com a imatges a Android. Sense el permís iKit Tool no pot mostrar aquestes imatges</string>
     <string name="default_draw_color">Color de dibuix per defecte</string>
     <string name="default_draw_path_mode">Mode de camí de dibuix predeterminat</string>
     <string name="add_timestamp">Afegeix marca de temps</string>
@@ -1367,8 +1367,8 @@
     <string name="recently_used">Usat recentment</string>
     <string name="ci_channel">Canal CI</string>
     <string name="group">Grup</string>
-    <string name="image_toolbox_in_telegram">Caixa d\'eines d\'imatge a Telegram 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">Uneix-te al nostre xat on podràs parlar del que vulguis i també mirar al canal CI on publico betas i anuncis</string>
+    <string name="ikit_tool_in_telegram">Caixa d\'eines d\'imatge a Telegram 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">Uneix-te al nostre xat on podràs parlar del que vulguis i també mirar al canal CI on publico betas i anuncis</string>
     <string name="ci_channel_sub">Rebeu notificacions sobre les noves versions de l\'aplicació i llegiu els anuncis</string>
     <string name="fit_description">Ajusteu una imatge a les dimensions donades i apliqueu el desenfocament o el color al fons</string>
     <string name="tools_arrangement">Disposició d\'eines</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">Exporta la paleta generada a diferents formats</string>
     <string name="add_color_palette_sub">Afegeix un color nou a la paleta actual</string>
     <string name="palette_name_not_supported">El format %1$s no admet proporcionar el nom de la paleta</string>
-    <string name="wallpapers_export_not_avaialbe">A causa de les polítiques de Play Store, aquesta funció no es pot incloure a la versió actual. Per accedir a aquesta funcionalitat, descarregueu ImageToolbox des d\'una font alternativa. Podeu trobar les versions disponibles a GitHub a continuació.</string>
+    <string name="wallpapers_export_not_avaialbe">A causa de les polítiques de Play Store, aquesta funció no es pot incloure a la versió actual. Per accedir a aquesta funcionalitat, descarregueu iKitTool des d\'una font alternativa. Podeu trobar les versions disponibles a GitHub a continuació.</string>
     <string name="open_github_page">Obriu la pàgina de Github</string>
     <string name="overwrite_files_sub_short">El fitxer original es substituirà per un de nou en lloc de desar-lo a la carpeta seleccionada</string>
     <string name="hidden_watermark_text_detected">S\'ha detectat un text de marca d\'aigua amagat</string>
@@ -2141,7 +2141,7 @@
     <string name="grayscale_pdf_sub">Converteix totes les imatges incrustades del document a escala de grisos</string>
     <string name="compress_pdf">Comprimir PDF</string>
     <string name="compress_pdf_sub">Optimitzeu la mida del fitxer del document per compartir-lo més fàcilment</string>
-    <string name="repair_info">ImageToolbox reconstrueix la taula interna de referències creuades i regenera l\'estructura de fitxers des de zero. Això pot restaurar l\'accés a molts fitxers que \\"no es poden obrir\\"</string>
+    <string name="repair_info">iKitTool reconstrueix la taula interna de referències creuades i regenera l\'estructura de fitxers des de zero. Això pot restaurar l\'accés a molts fitxers que \\"no es poden obrir\\"</string>
     <string name="grayscale_info">Aquesta eina converteix totes les imatges del document a escala de grisos. El millor per imprimir i reduir la mida del fitxer</string>
     <string name="metadata">Metadades</string>
     <string name="metadata_pdf_sub">Editeu les propietats del document per a una millor privadesa</string>
@@ -2193,11 +2193,11 @@
     <string name="background_color_for_alpha_formats">Color de fons per a formats alfa</string>
     <string name="background_color_for_alpha_formats_sub">Afegeix la possibilitat d\'establir el color de fons per a cada format d\'imatge amb suport alfa, quan està desactivat, només està disponible per als que no són alfa</string>
     <string name="open_markup_project">Projecte obert</string>
-    <string name="open_markup_project_sub">Continueu editant un projecte de Image Toolbox desat anteriorment</string>
-    <string name="markup_project_open_failed">No es pot obrir el projecte Image Toolbox</string>
-    <string name="markup_project_missing_data">Falten dades del projecte al projecte Image Toolbox</string>
-    <string name="markup_project_corrupted">El projecte Image Toolbox està malmès</string>
-    <string name="unsupported_markup_project_version">Versió del projecte Image Toolbox no compatible: %1$d</string>
+    <string name="open_markup_project_sub">Continueu editant un projecte de iKit Tool desat anteriorment</string>
+    <string name="markup_project_open_failed">No es pot obrir el projecte iKit Tool</string>
+    <string name="markup_project_missing_data">Falten dades del projecte al projecte iKit Tool</string>
+    <string name="markup_project_corrupted">El projecte iKit Tool està malmès</string>
+    <string name="unsupported_markup_project_version">Versió del projecte iKit Tool no compatible: %1$d</string>
     <string name="save_markup_project">Guarda el projecte</string>
     <string name="save_markup_project_sub">Emmagatzema capes, fons i historial d\'edició en un fitxer de projecte editable</string>
     <string name="failed_to_open">No s\'ha pogut obrir</string>

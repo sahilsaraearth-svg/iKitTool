@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -830,7 +830,7 @@
     <string name="material_you_switch_sub">Používa prepínač Material You založený na View, tento vyzerá lepšie ako ostatné a má pekné animácie.</string>
     <string name="fast_gaussian_blur_3d">Rýchle Gaussovo rozostrenie 3D</string>
     <string name="cupertino_switch">Cupertino</string>
-    <string name="embedded_picker_sub">Používa vlastný nástroj Image Toolbox na výber obrázkov namiesto preddefinovaných v systéme</string>
+    <string name="embedded_picker_sub">Používa vlastný nástroj iKit Tool na výber obrázkov namiesto preddefinovaných v systéme</string>
     <string name="no_permissions">Žiadne povolenia</string>
     <string name="request">Žiadosť</string>
     <string name="auto_paste_sub">Umožňuje aplikácii automaticky prilepiť údaje zo schránky, takže sa zobrazia na hlavnej obrazovke a budete ich môcť spracovať</string>
@@ -1079,7 +1079,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">Umožňuje antialiasing, aby sa zabránilo ostrým hranám</string>
     <string name="open_edit_instead_of_preview">Namiesto ukážky otvorte Upraviť</string>
-    <string name="open_edit_instead_of_preview_sub">Keď v ImageToolbox vyberiete obrázok na otvorenie (ukážka), namiesto náhľadu sa otvorí hárok s výberom úprav</string>
+    <string name="open_edit_instead_of_preview_sub">Keď v iKitTool vyberiete obrázok na otvorenie (ukážka), namiesto náhľadu sa otvorí hárok s výberom úprav</string>
     <string name="document_scanner">Skener dokumentov</string>
     <string name="document_scanner_sub">Naskenujte dokumenty a vytvorte PDF alebo z nich oddeľte obrázky</string>
     <string name="click_to_start_scanning">Kliknutím spustíte skenovanie</string>
@@ -1354,7 +1354,7 @@
     <string name="webp_type_to_webp">Obrázky na WEBP</string>
     <string name="select_webp_image_to_start">Začnite výberom obrázka WEBP</string>
     <string name="manage_storage_extra_types">Žiadny úplný prístup k súborom</string>
-    <string name="manage_storage_extra_types_sub">Povoľte prístup k všetkým súborom, aby ste mohli vidieť obrázky JXL, QOI a ďalšie obrázky, ktoré nie sú v systéme Android rozpoznané ako obrázky. Bez povolenia Image Toolbox nemôže zobraziť tieto obrázky</string>
+    <string name="manage_storage_extra_types_sub">Povoľte prístup k všetkým súborom, aby ste mohli vidieť obrázky JXL, QOI a ďalšie obrázky, ktoré nie sú v systéme Android rozpoznané ako obrázky. Bez povolenia iKit Tool nemôže zobraziť tieto obrázky</string>
     <string name="default_draw_color">Predvolená farba kreslenia</string>
     <string name="default_draw_path_mode">Predvolený režim cesty kreslenia</string>
     <string name="add_timestamp">Pridať časovú pečiatku</string>
@@ -1367,8 +1367,8 @@
     <string name="recently_used">Nedávno použité</string>
     <string name="ci_channel">CI kanál</string>
     <string name="group">Skupina</string>
-    <string name="image_toolbox_in_telegram">Súbor nástrojov obrázkov v telegrame 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">Pripojte sa k nášmu chatu, kde môžete diskutovať o čomkoľvek, čo chcete, a tiež sa pozrieť na kanál CI, kde uverejňujem beta verzie a oznámenia</string>
+    <string name="ikit_tool_in_telegram">Súbor nástrojov obrázkov v telegrame 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">Pripojte sa k nášmu chatu, kde môžete diskutovať o čomkoľvek, čo chcete, a tiež sa pozrieť na kanál CI, kde uverejňujem beta verzie a oznámenia</string>
     <string name="ci_channel_sub">Získajte upozornenia na nové verzie aplikácie a prečítajte si oznámenia</string>
     <string name="fit_description">Prispôsobte obrázok daným rozmerom a použite rozmazanie alebo farbu na pozadie</string>
     <string name="tools_arrangement">Usporiadanie nástrojov</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">Exportujte vygenerovanú paletu do rôznych formátov</string>
     <string name="add_color_palette_sub">Pridá novú farbu do aktuálnej palety</string>
     <string name="palette_name_not_supported">Formát %1$s nepodporuje poskytnutie názvu palety</string>
-    <string name="wallpapers_export_not_avaialbe">Vzhľadom na pravidlá Obchodu Play túto funkciu nemožno zahrnúť do aktuálnej zostavy. Ak chcete získať prístup k tejto funkcii, stiahnite si ImageToolbox z alternatívneho zdroja. Dostupné zostavy na GitHub nájdete nižšie.</string>
+    <string name="wallpapers_export_not_avaialbe">Vzhľadom na pravidlá Obchodu Play túto funkciu nemožno zahrnúť do aktuálnej zostavy. Ak chcete získať prístup k tejto funkcii, stiahnite si iKitTool z alternatívneho zdroja. Dostupné zostavy na GitHub nájdete nižšie.</string>
     <string name="open_github_page">Otvorte stránku Github</string>
     <string name="overwrite_files_sub_short">Pôvodný súbor bude nahradený novým súborom namiesto uloženia do zvoleného priečinka</string>
     <string name="hidden_watermark_text_detected">Zistil sa skrytý text vodoznaku</string>
@@ -2143,7 +2143,7 @@
     <string name="grayscale_pdf_sub">Previesť všetky obrázky vložené do dokumentu na odtiene sivej</string>
     <string name="compress_pdf">Komprimovať PDF</string>
     <string name="compress_pdf_sub">Optimalizujte veľkosť súboru dokumentu pre jednoduchšie zdieľanie</string>
-    <string name="repair_info">ImageToolbox prestavuje internú tabuľku krížových odkazov a regeneruje štruktúru súborov od začiatku. To môže obnoviť prístup k mnohým súborom, ktoré \\"nemožno otvoriť\\"</string>
+    <string name="repair_info">iKitTool prestavuje internú tabuľku krížových odkazov a regeneruje štruktúru súborov od začiatku. To môže obnoviť prístup k mnohým súborom, ktoré \\"nemožno otvoriť\\"</string>
     <string name="grayscale_info">Tento nástroj skonvertuje všetky obrázky dokumentov do odtieňov sivej. Najlepšie na tlač a zmenšenie veľkosti súboru</string>
     <string name="metadata">Metadáta</string>
     <string name="metadata_pdf_sub">Upravte vlastnosti dokumentu pre lepšie súkromie</string>
@@ -2195,11 +2195,11 @@
     <string name="background_color_for_alpha_formats">Farba pozadia pre formáty alfa</string>
     <string name="background_color_for_alpha_formats_sub">Pridáva možnosť nastaviť farbu pozadia pre každý formát obrázka s podporou alfa kanálov, keď je táto možnosť zakázaná, je k dispozícii iba pre iné než alfa verzie</string>
     <string name="open_markup_project">Otvorte projekt</string>
-    <string name="open_markup_project_sub">Pokračujte v úpravách predtým uloženého projektu Image Toolbox</string>
-    <string name="markup_project_open_failed">Nie je možné otvoriť projekt Image Toolbox</string>
-    <string name="markup_project_missing_data">Projektu Image Toolbox chýbajú projektové údaje</string>
-    <string name="markup_project_corrupted">Projekt Image Toolbox je poškodený</string>
-    <string name="unsupported_markup_project_version">Nepodporovaná verzia projektu Image Toolbox: %1$d</string>
+    <string name="open_markup_project_sub">Pokračujte v úpravách predtým uloženého projektu iKit Tool</string>
+    <string name="markup_project_open_failed">Nie je možné otvoriť projekt iKit Tool</string>
+    <string name="markup_project_missing_data">Projektu iKit Tool chýbajú projektové údaje</string>
+    <string name="markup_project_corrupted">Projekt iKit Tool je poškodený</string>
+    <string name="unsupported_markup_project_version">Nepodporovaná verzia projektu iKit Tool: %1$d</string>
     <string name="save_markup_project">Uložiť projekt</string>
     <string name="save_markup_project_sub">Uložte vrstvy, pozadie a históriu úprav do upraviteľného súboru projektu</string>
     <string name="failed_to_open">Nepodarilo sa otvoriť</string>

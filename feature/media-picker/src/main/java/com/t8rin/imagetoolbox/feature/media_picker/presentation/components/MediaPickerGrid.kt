@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +14,7 @@
  * You should have received a copy of the Apache License
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
-package com.t8rin.imagetoolbox.feature.media_picker.presentation.components
+package com.t8rin.ikittool.feature.media_picker.presentation.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -47,16 +47,16 @@ import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.utils.safeCast
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.settings.domain.model.FlingType
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.longPress
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.dragHandler
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.Media
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.MediaItem
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.MediaState
-import com.t8rin.imagetoolbox.feature.media_picker.domain.model.isHeaderKey
+import com.t8rin.ikittool.core.domain.utils.safeCast
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.settings.domain.model.FlingType
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedFlingBehavior
+import com.t8rin.ikittool.core.ui.widget.enhanced.longPress
+import com.t8rin.ikittool.core.ui.widget.modifier.dragHandler
+import com.t8rin.ikittool.feature.media_picker.domain.model.Media
+import com.t8rin.ikittool.feature.media_picker.domain.model.MediaItem
+import com.t8rin.ikittool.feature.media_picker.domain.model.MediaState
+import com.t8rin.ikittool.feature.media_picker.domain.model.isHeaderKey
 import kotlinx.coroutines.launch
 
 @Composable

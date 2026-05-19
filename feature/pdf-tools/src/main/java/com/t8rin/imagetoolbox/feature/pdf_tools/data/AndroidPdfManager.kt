@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.pdf_tools.data
+package com.t8rin.ikittool.feature.pdf_tools.data
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -23,58 +23,58 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.core.net.toUri
 import com.awxkee.aire.Aire
-import com.t8rin.imagetoolbox.core.data.saving.io.ByteArrayReadable
-import com.t8rin.imagetoolbox.core.data.saving.io.StreamWriteable
-import com.t8rin.imagetoolbox.core.data.saving.io.UriReadable
-import com.t8rin.imagetoolbox.core.data.saving.io.shielded
-import com.t8rin.imagetoolbox.core.data.utils.computeFromReadable
-import com.t8rin.imagetoolbox.core.data.utils.outputStream
-import com.t8rin.imagetoolbox.core.domain.PDF
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.ImageShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageInfo
-import com.t8rin.imagetoolbox.core.domain.model.HashingType
-import com.t8rin.imagetoolbox.core.domain.model.Position
-import com.t8rin.imagetoolbox.core.domain.utils.timestamp
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.utils.createZip
-import com.t8rin.imagetoolbox.core.utils.filename
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.core.utils.makeLog
-import com.t8rin.imagetoolbox.core.utils.putEntry
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.HocrWord
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.PdfRenderer
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.asXObject
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.createPage
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.createPdf
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.crop
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.defaultFont
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.getAllImages
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.getPageSafe
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.metadata
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.orAll
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.pageIndices
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.save
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.setAlpha
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.setColor
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.transformImages
-import com.t8rin.imagetoolbox.feature.pdf_tools.data.utils.writePage
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.PdfHelper
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.PdfManager
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.ExtractPagesAction
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfAnnotationType
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfCreationParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfCropParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfExtractPagesParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfMetadata
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfPageNumbersParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfRemoveAnnotationParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfSignatureParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfWatermarkParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PrintPdfParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.SearchablePdfPage
+import com.t8rin.ikittool.core.data.saving.io.ByteArrayReadable
+import com.t8rin.ikittool.core.data.saving.io.StreamWriteable
+import com.t8rin.ikittool.core.data.saving.io.UriReadable
+import com.t8rin.ikittool.core.data.saving.io.shielded
+import com.t8rin.ikittool.core.data.utils.computeFromReadable
+import com.t8rin.ikittool.core.data.utils.outputStream
+import com.t8rin.ikittool.core.domain.PDF
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.ImageShareProvider
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.ImageInfo
+import com.t8rin.ikittool.core.domain.model.HashingType
+import com.t8rin.ikittool.core.domain.model.Position
+import com.t8rin.ikittool.core.domain.utils.timestamp
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.utils.createZip
+import com.t8rin.ikittool.core.utils.filename
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.core.utils.makeLog
+import com.t8rin.ikittool.core.utils.putEntry
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.HocrWord
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.PdfRenderer
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.asXObject
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.createPage
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.createPdf
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.crop
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.defaultFont
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.getAllImages
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.getPageSafe
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.metadata
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.orAll
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.pageIndices
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.save
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.setAlpha
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.setColor
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.transformImages
+import com.t8rin.ikittool.feature.pdf_tools.data.utils.writePage
+import com.t8rin.ikittool.feature.pdf_tools.domain.PdfHelper
+import com.t8rin.ikittool.feature.pdf_tools.domain.PdfManager
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.ExtractPagesAction
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfAnnotationType
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfCreationParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfCropParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfExtractPagesParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfMetadata
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfPageNumbersParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfRemoveAnnotationParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfSignatureParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfWatermarkParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PrintPdfParams
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.SearchablePdfPage
 import com.t8rin.trickle.Trickle
 import com.tom_roush.pdfbox.io.MemoryUsageSetting
 import com.tom_roush.pdfbox.multipdf.PDFMergerUtility

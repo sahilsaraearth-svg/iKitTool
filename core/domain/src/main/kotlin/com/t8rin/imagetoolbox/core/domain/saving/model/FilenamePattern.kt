@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("ConstPropertyName")
 
-package com.t8rin.imagetoolbox.core.domain.saving.model
+package com.t8rin.ikittool.core.domain.saving.model
 
 @JvmInline
 value class FilenamePattern(

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.filters.presentation.widget.filterItem.pair_components
+package com.t8rin.ikittool.core.filters.presentation.widget.filterItem.pair_components
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -30,13 +30,13 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.model.ColorModel
-import com.t8rin.imagetoolbox.core.filters.presentation.model.UiFilter
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.ui.utils.helper.toColor
-import com.t8rin.imagetoolbox.core.ui.utils.helper.toModel
-import com.t8rin.imagetoolbox.core.ui.widget.color_picker.ColorSelectionRowDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ColorRowSelector
+import com.t8rin.ikittool.core.domain.model.ColorModel
+import com.t8rin.ikittool.core.filters.presentation.model.UiFilter
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.ui.utils.helper.toColor
+import com.t8rin.ikittool.core.ui.utils.helper.toModel
+import com.t8rin.ikittool.core.ui.widget.color_picker.ColorSelectionRowDefaults
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ColorRowSelector
 
 @Composable
 internal fun ColorModelPairItem(

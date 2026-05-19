@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1079,7 +1079,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">ئۆتكۈر قىرلارنىڭ ئالدىنى ئېلىش ئۈچۈن ئوكسىدلىنىشقا قارشى تۇرۇشنى قوزغىتىدۇ</string>
     <string name="open_edit_instead_of_preview">ئالدىن كۆرۈشنىڭ ئورنىغا تەھرىرلەشنى ئېچىڭ</string>
-    <string name="open_edit_instead_of_preview_sub">ImageToolbox دا ئېچىش (ئالدىن كۆرۈش) ئۈچۈن رەسىم تاللىغاندا ، تەھرىرلەش تاللاش جەدۋىلى ئالدىن كۆرۈشنىڭ ئورنىغا ئېچىلىدۇ</string>
+    <string name="open_edit_instead_of_preview_sub">iKitTool دا ئېچىش (ئالدىن كۆرۈش) ئۈچۈن رەسىم تاللىغاندا ، تەھرىرلەش تاللاش جەدۋىلى ئالدىن كۆرۈشنىڭ ئورنىغا ئېچىلىدۇ</string>
     <string name="document_scanner">ھۆججەت سايىلىغۇچ</string>
     <string name="document_scanner_sub">ھۆججەتلەرنى سايىلەپ ، PDF ياكى ئۇلاردىن ئايرىم رەسىم ھاسىل قىلىڭ</string>
     <string name="click_to_start_scanning">سىكانىرلاشنى باشلاڭ</string>
@@ -1367,8 +1367,8 @@
     <string name="recently_used">يېقىندا ئىشلىتىلدى</string>
     <string name="ci_channel">CI قانىلى</string>
     <string name="group">گۇرۇپپا</string>
-    <string name="image_toolbox_in_telegram">تېلېگراممىدىكى رەسىم قورال ساندۇقى 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">ئۆزىڭىز خالىغان نەرسىنى مۇزاكىرە قىلالايدىغان پاراڭلىرىمىزغا قوشۇلۇڭ ، شۇنداقلا مەن beta ۋە ئېلانلارنى يوللايدىغان CI قانىلىغا قاراڭ</string>
+    <string name="ikit_tool_in_telegram">تېلېگراممىدىكى رەسىم قورال ساندۇقى 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">ئۆزىڭىز خالىغان نەرسىنى مۇزاكىرە قىلالايدىغان پاراڭلىرىمىزغا قوشۇلۇڭ ، شۇنداقلا مەن beta ۋە ئېلانلارنى يوللايدىغان CI قانىلىغا قاراڭ</string>
     <string name="ci_channel_sub">ئەپنىڭ يېڭى نەشرى ھەققىدە خەۋەردار بولۇڭ ۋە ئېلانلارنى ئوقۇڭ</string>
     <string name="fit_description">رەسىمنى بېرىلگەن ئۆلچەمگە ماسلاشتۇرۇڭ ھەمدە تەگلىككە سۇس ياكى رەڭ ئىشلىتىڭ</string>
     <string name="tools_arrangement">قوراللارنى ئورۇنلاشتۇرۇش</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">ھاسىل قىلىنغان پالتىنى ئوخشىمىغان فورماتلارغا چىقىرىش</string>
     <string name="add_color_palette_sub">ھازىرقى پالتىغا يېڭى رەڭ قوشىدۇ</string>
     <string name="palette_name_not_supported">%1$s فورماتى palette نامىنى تەمىنلەشنى قوللىمايدۇ</string>
-    <string name="wallpapers_export_not_avaialbe">Play Store سىياسىتى سەۋەبىدىن ، بۇ ئىقتىدارنى ھازىرقى قۇرۇلۇشقا كىرگۈزگىلى بولمايدۇ. بۇ ئىقتىدارنى زىيارەت قىلىش ئۈچۈن ImageToolbox نى باشقا مەنبەدىن چۈشۈرۈڭ. تۆۋەندىكى GitHub دا بار بولغان قۇرۇلۇشلارنى تاپالايسىز.</string>
+    <string name="wallpapers_export_not_avaialbe">Play Store سىياسىتى سەۋەبىدىن ، بۇ ئىقتىدارنى ھازىرقى قۇرۇلۇشقا كىرگۈزگىلى بولمايدۇ. بۇ ئىقتىدارنى زىيارەت قىلىش ئۈچۈن iKitTool نى باشقا مەنبەدىن چۈشۈرۈڭ. تۆۋەندىكى GitHub دا بار بولغان قۇرۇلۇشلارنى تاپالايسىز.</string>
     <string name="open_github_page">Github بېتىنى ئېچىڭ</string>
     <string name="overwrite_files_sub_short">ئەسلى ھۆججەت تاللانغان ھۆججەت قىسقۇچتا ساقلاشنىڭ ئورنىغا يېڭى ھۆججەتكە ئالماشتۇرۇلىدۇ</string>
     <string name="hidden_watermark_text_detected">يوشۇرۇن سۇ بەلگىسى تېكىستى بايقالدى</string>
@@ -2141,7 +2141,7 @@
     <string name="grayscale_pdf_sub">بارلىق ھۆججەت قىستۇرۇلغان رەسىملەرنى كۈلرەڭگە ئۆزگەرتىڭ</string>
     <string name="compress_pdf">PDF نى بېسىڭ</string>
     <string name="compress_pdf_sub">ئورتاقلىشىش ئۈچۈن ھۆججەت ھۆججىتىنىڭ چوڭ-كىچىكلىكىنى ئەلالاشتۇرۇڭ</string>
-    <string name="repair_info">ImageToolbox ئىچكى ھالقىما پايدىلىنىش جەدۋىلىنى قايتا قۇرۇپ ، ھۆججەت قۇرۇلمىسىنى باشتىن-ئاخىر ئەسلىگە كەلتۈرىدۇ. بۇ \ \"ئاچقىلى بولمايدىغان \\" نۇرغۇن ھۆججەتلەرنى زىيارەت قىلىشنى ئەسلىگە كەلتۈرەلەيدۇ.</string>
+    <string name="repair_info">iKitTool ئىچكى ھالقىما پايدىلىنىش جەدۋىلىنى قايتا قۇرۇپ ، ھۆججەت قۇرۇلمىسىنى باشتىن-ئاخىر ئەسلىگە كەلتۈرىدۇ. بۇ \ \"ئاچقىلى بولمايدىغان \\" نۇرغۇن ھۆججەتلەرنى زىيارەت قىلىشنى ئەسلىگە كەلتۈرەلەيدۇ.</string>
     <string name="grayscale_info">بۇ قورال بارلىق ھۆججەت رەسىملىرىنى كۈلرەڭگە ئايلاندۇرىدۇ. ھۆججەتنىڭ چوڭ-كىچىكلىكىنى بېسىپ چىقىرىش ۋە ئازايتىشتا ئەڭ ياخشى</string>
     <string name="metadata">Metadata</string>
     <string name="metadata_pdf_sub">تېخىمۇ ياخشى مەخپىيەتلىك ئۈچۈن ھۆججەت خاسلىقىنى تەھرىرلەڭ</string>

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,48 +15,48 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.filters.data.utils.serialization
+package com.t8rin.ikittool.feature.filters.data.utils.serialization
 
-import com.t8rin.imagetoolbox.core.domain.model.ColorModel
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.model.toColorModel
-import com.t8rin.imagetoolbox.core.domain.utils.ListUtils.component6
-import com.t8rin.imagetoolbox.core.domain.utils.ListUtils.component7
-import com.t8rin.imagetoolbox.core.domain.utils.ListUtils.component8
-import com.t8rin.imagetoolbox.core.domain.utils.ListUtils.component9
-import com.t8rin.imagetoolbox.core.domain.utils.Quad
-import com.t8rin.imagetoolbox.core.domain.utils.simpleName
-import com.t8rin.imagetoolbox.core.filters.domain.model.FilterValueWrapper
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.BlurEdgeMode
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.FadeSide
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.MirrorSide
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.PolarCoordinatesType
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.PopArtBlendingMode
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.TransferFunc
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.ArcParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.AsciiParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.BilaterialBlurParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.BloomParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.ChannelMixParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.ClaheParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.CropOrPerspectiveParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.EnhancedZoomBlurParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.GlitchParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.KaleidoscopeParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.LinearGaussianParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.LinearTiltShiftParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.PinchParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.RadialTiltShiftParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.RubberStampParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.SideFadeParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.SmearParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.SparkleParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.ToneCurvesParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.VoronoiCrystallizeParams
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.WaterParams
-import com.t8rin.imagetoolbox.core.settings.domain.model.DomainFontFamily
-import com.t8rin.imagetoolbox.core.settings.presentation.model.asDomain
-import com.t8rin.imagetoolbox.core.settings.presentation.model.asFontType
+import com.t8rin.ikittool.core.domain.model.ColorModel
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.model.toColorModel
+import com.t8rin.ikittool.core.domain.utils.ListUtils.component6
+import com.t8rin.ikittool.core.domain.utils.ListUtils.component7
+import com.t8rin.ikittool.core.domain.utils.ListUtils.component8
+import com.t8rin.ikittool.core.domain.utils.ListUtils.component9
+import com.t8rin.ikittool.core.domain.utils.Quad
+import com.t8rin.ikittool.core.domain.utils.simpleName
+import com.t8rin.ikittool.core.filters.domain.model.FilterValueWrapper
+import com.t8rin.ikittool.core.filters.domain.model.enums.BlurEdgeMode
+import com.t8rin.ikittool.core.filters.domain.model.enums.FadeSide
+import com.t8rin.ikittool.core.filters.domain.model.enums.MirrorSide
+import com.t8rin.ikittool.core.filters.domain.model.enums.PolarCoordinatesType
+import com.t8rin.ikittool.core.filters.domain.model.enums.PopArtBlendingMode
+import com.t8rin.ikittool.core.filters.domain.model.enums.TransferFunc
+import com.t8rin.ikittool.core.filters.domain.model.params.ArcParams
+import com.t8rin.ikittool.core.filters.domain.model.params.AsciiParams
+import com.t8rin.ikittool.core.filters.domain.model.params.BilaterialBlurParams
+import com.t8rin.ikittool.core.filters.domain.model.params.BloomParams
+import com.t8rin.ikittool.core.filters.domain.model.params.ChannelMixParams
+import com.t8rin.ikittool.core.filters.domain.model.params.ClaheParams
+import com.t8rin.ikittool.core.filters.domain.model.params.CropOrPerspectiveParams
+import com.t8rin.ikittool.core.filters.domain.model.params.EnhancedZoomBlurParams
+import com.t8rin.ikittool.core.filters.domain.model.params.GlitchParams
+import com.t8rin.ikittool.core.filters.domain.model.params.KaleidoscopeParams
+import com.t8rin.ikittool.core.filters.domain.model.params.LinearGaussianParams
+import com.t8rin.ikittool.core.filters.domain.model.params.LinearTiltShiftParams
+import com.t8rin.ikittool.core.filters.domain.model.params.PinchParams
+import com.t8rin.ikittool.core.filters.domain.model.params.RadialTiltShiftParams
+import com.t8rin.ikittool.core.filters.domain.model.params.RubberStampParams
+import com.t8rin.ikittool.core.filters.domain.model.params.SideFadeParams
+import com.t8rin.ikittool.core.filters.domain.model.params.SmearParams
+import com.t8rin.ikittool.core.filters.domain.model.params.SparkleParams
+import com.t8rin.ikittool.core.filters.domain.model.params.ToneCurvesParams
+import com.t8rin.ikittool.core.filters.domain.model.params.VoronoiCrystallizeParams
+import com.t8rin.ikittool.core.filters.domain.model.params.WaterParams
+import com.t8rin.ikittool.core.settings.domain.model.DomainFontFamily
+import com.t8rin.ikittool.core.settings.presentation.model.asDomain
+import com.t8rin.ikittool.core.settings.presentation.model.asFontType
 import kotlin.io.encoding.Base64
 
 internal fun Any.toPair(): Pair<String, String>? {

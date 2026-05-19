@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,11 +15,11 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.erase_background.data.backend
+package com.t8rin.ikittool.feature.erase_background.data.backend
 
 import android.graphics.Bitmap
-import com.t8rin.imagetoolbox.feature.erase_background.domain.AutoBackgroundRemoverBackend
-import com.t8rin.imagetoolbox.feature.erase_background.domain.model.BgModelType
+import com.t8rin.ikittool.feature.erase_background.domain.AutoBackgroundRemoverBackend
+import com.t8rin.ikittool.feature.erase_background.domain.model.BgModelType
 
 internal object MlKitBackgroundRemoverBackend :
     AutoBackgroundRemoverBackend<Bitmap> by GenericBackgroundRemoverBackend(modelType = BgModelType.U2NetP)

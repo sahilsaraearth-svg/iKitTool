@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -857,7 +857,7 @@
     <string name="resize_anchor">Ubah Ukuran Jangkar</string>
     <string name="header_today">Hari ini</string>
     <string name="embedded_picker">Pemilih Tersemat</string>
-    <string name="embedded_picker_sub">Menggunakan pemilih gambar bawaan Image Toolbox, bukan pemilih gambar yang telah ditentukan sistem</string>
+    <string name="embedded_picker_sub">Menggunakan pemilih gambar bawaan iKit Tool, bukan pemilih gambar yang telah ditentukan sistem</string>
     <string name="no_permissions">Tidak Ada Izin</string>
     <string name="request">Permintaan</string>
     <string name="auto_paste">Tempel Otomatis</string>
@@ -1079,7 +1079,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">Mengaktifkan antialiasing untuk mencegah tepi tajam</string>
     <string name="open_edit_instead_of_preview">Buka Edit, Bukan Pratinjau</string>
-    <string name="open_edit_instead_of_preview_sub">Saat Anda memilih gambar untuk dibuka (pratinjau) di ImageToolbox, lembar pilihan edit akan dibuka alih-alih dipratinjau</string>
+    <string name="open_edit_instead_of_preview_sub">Saat Anda memilih gambar untuk dibuka (pratinjau) di iKitTool, lembar pilihan edit akan dibuka alih-alih dipratinjau</string>
     <string name="document_scanner">Pemindai Dokumen</string>
     <string name="document_scanner_sub">Pindai dokumen dan buat PDF atau pisahkan gambar darinya</string>
     <string name="click_to_start_scanning">Klik untuk mulai memindai</string>
@@ -1354,7 +1354,7 @@
     <string name="webp_type_to_webp">Gambar ke WEBP</string>
     <string name="select_webp_image_to_start">Pilih gambar WEBP untuk memulai</string>
     <string name="manage_storage_extra_types">Tidak ada akses penuh ke file</string>
-    <string name="manage_storage_extra_types_sub">Izinkan semua akses file untuk melihat JXL, QOI dan gambar lain yang tidak dikenali sebagai gambar di Android. Tanpa izin, Image Toolbox tidak dapat menampilkan gambar-gambar itu</string>
+    <string name="manage_storage_extra_types_sub">Izinkan semua akses file untuk melihat JXL, QOI dan gambar lain yang tidak dikenali sebagai gambar di Android. Tanpa izin, iKit Tool tidak dapat menampilkan gambar-gambar itu</string>
     <string name="default_draw_color">Warna Gambar Default</string>
     <string name="default_draw_path_mode">Mode Jalur Gambar Default</string>
     <string name="add_timestamp">Tambahkan Stempel Waktu</string>
@@ -1367,8 +1367,8 @@
     <string name="recently_used">Baru-baru ini Digunakan</string>
     <string name="ci_channel">saluran CI</string>
     <string name="group">Kelompok</string>
-    <string name="image_toolbox_in_telegram">Kotak Alat Gambar di Telegram 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">Bergabunglah dengan obrolan kami di mana Anda dapat mendiskusikan apa pun yang Anda inginkan dan juga melihat saluran CI tempat saya memposting beta dan pengumuman</string>
+    <string name="ikit_tool_in_telegram">Kotak Alat Gambar di Telegram 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">Bergabunglah dengan obrolan kami di mana Anda dapat mendiskusikan apa pun yang Anda inginkan dan juga melihat saluran CI tempat saya memposting beta dan pengumuman</string>
     <string name="ci_channel_sub">Dapatkan pemberitahuan tentang versi aplikasi baru, dan baca pengumuman</string>
     <string name="fit_description">Sesuaikan gambar dengan dimensi tertentu dan terapkan buram atau warna pada latar belakang</string>
     <string name="tools_arrangement">Penataan Alat</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">Ekspor palet yang dihasilkan ke format berbeda</string>
     <string name="add_color_palette_sub">Menambahkan warna baru ke palet saat ini</string>
     <string name="palette_name_not_supported">Format %1$s tidak mendukung pemberian nama palet</string>
-    <string name="wallpapers_export_not_avaialbe">Karena kebijakan Play Store, fitur ini tidak dapat disertakan dalam versi saat ini. Untuk mengakses fungsi ini, silakan unduh ImageToolbox dari sumber alternatif. Anda dapat menemukan build yang tersedia di GitHub di bawah.</string>
+    <string name="wallpapers_export_not_avaialbe">Karena kebijakan Play Store, fitur ini tidak dapat disertakan dalam versi saat ini. Untuk mengakses fungsi ini, silakan unduh iKitTool dari sumber alternatif. Anda dapat menemukan build yang tersedia di GitHub di bawah.</string>
     <string name="open_github_page">Buka halaman Github</string>
     <string name="overwrite_files_sub_short">File asli akan diganti dengan yang baru alih-alih disimpan di folder yang dipilih</string>
     <string name="hidden_watermark_text_detected">Teks tanda air tersembunyi terdeteksi</string>
@@ -2140,7 +2140,7 @@
     <string name="grayscale_pdf_sub">Ubah semua gambar yang disematkan pada dokumen menjadi skala abu-abu</string>
     <string name="compress_pdf">Kompres PDF</string>
     <string name="compress_pdf_sub">Optimalkan ukuran file dokumen Anda agar lebih mudah dibagikan</string>
-    <string name="repair_info">ImageToolbox membangun kembali tabel referensi silang internal dan membuat ulang struktur file dari awal. Ini dapat memulihkan akses ke banyak file yang \\"tidak dapat dibuka\\"</string>
+    <string name="repair_info">iKitTool membangun kembali tabel referensi silang internal dan membuat ulang struktur file dari awal. Ini dapat memulihkan akses ke banyak file yang \\"tidak dapat dibuka\\"</string>
     <string name="grayscale_info">Alat ini mengubah semua gambar dokumen menjadi skala abu-abu. Terbaik untuk mencetak dan mengurangi ukuran file</string>
     <string name="metadata">Metadata</string>
     <string name="metadata_pdf_sub">Edit properti dokumen untuk privasi yang lebih baik</string>
@@ -2192,11 +2192,11 @@
     <string name="background_color_for_alpha_formats">Warna Latar Belakang Untuk Format Alfa</string>
     <string name="background_color_for_alpha_formats_sub">Menambahkan kemampuan untuk mengatur warna latar belakang untuk setiap format gambar dengan dukungan alfa, jika dinonaktifkan, ini hanya tersedia untuk format non alfa</string>
     <string name="open_markup_project">Buka proyek</string>
-    <string name="open_markup_project_sub">Lanjutkan mengedit proyek Image Toolbox yang disimpan sebelumnya</string>
-    <string name="markup_project_open_failed">Tidak dapat membuka proyek Image Toolbox</string>
-    <string name="markup_project_missing_data">Proyek Image Toolbox tidak memiliki data proyek</string>
-    <string name="markup_project_corrupted">Proyek Image Toolbox rusak</string>
-    <string name="unsupported_markup_project_version">Versi proyek Image Toolbox yang tidak didukung: %1$d</string>
+    <string name="open_markup_project_sub">Lanjutkan mengedit proyek iKit Tool yang disimpan sebelumnya</string>
+    <string name="markup_project_open_failed">Tidak dapat membuka proyek iKit Tool</string>
+    <string name="markup_project_missing_data">Proyek iKit Tool tidak memiliki data proyek</string>
+    <string name="markup_project_corrupted">Proyek iKit Tool rusak</string>
+    <string name="unsupported_markup_project_version">Versi proyek iKit Tool yang tidak didukung: %1$d</string>
     <string name="save_markup_project">Simpan proyek</string>
     <string name="save_markup_project_sub">Simpan lapisan, latar belakang, dan riwayat edit dalam file proyek yang dapat diedit</string>
     <string name="failed_to_open">Gagal dibuka</string>

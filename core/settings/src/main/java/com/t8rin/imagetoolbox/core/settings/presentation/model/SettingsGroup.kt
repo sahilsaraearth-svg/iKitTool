@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,37 +17,37 @@
 
 @file:Suppress("KotlinConstantConditions")
 
-package com.t8rin.imagetoolbox.core.settings.presentation.model
+package com.t8rin.ikittool.core.settings.presentation.model
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.t8rin.imagetoolbox.core.domain.utils.Flavor
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Celebration
-import com.t8rin.imagetoolbox.core.resources.icons.ClipboardFile
-import com.t8rin.imagetoolbox.core.resources.icons.Cool
-import com.t8rin.imagetoolbox.core.resources.icons.Database
-import com.t8rin.imagetoolbox.core.resources.icons.Description
-import com.t8rin.imagetoolbox.core.resources.icons.DesignServices
-import com.t8rin.imagetoolbox.core.resources.icons.Draw
-import com.t8rin.imagetoolbox.core.resources.icons.Exif
-import com.t8rin.imagetoolbox.core.resources.icons.Firebase
-import com.t8rin.imagetoolbox.core.resources.icons.FolderOpen
-import com.t8rin.imagetoolbox.core.resources.icons.Glyphs
-import com.t8rin.imagetoolbox.core.resources.icons.HardDrive
-import com.t8rin.imagetoolbox.core.resources.icons.ImageSearch
-import com.t8rin.imagetoolbox.core.resources.icons.Info
-import com.t8rin.imagetoolbox.core.resources.icons.LabelPercent
-import com.t8rin.imagetoolbox.core.resources.icons.Mobile
-import com.t8rin.imagetoolbox.core.resources.icons.MobileArrowDown
-import com.t8rin.imagetoolbox.core.resources.icons.MobileCast
-import com.t8rin.imagetoolbox.core.resources.icons.MobileLayout
-import com.t8rin.imagetoolbox.core.resources.icons.MobileVibrate
-import com.t8rin.imagetoolbox.core.resources.icons.Psychology
-import com.t8rin.imagetoolbox.core.resources.icons.ResponsiveLayout
-import com.t8rin.imagetoolbox.core.resources.icons.Routine
-import com.t8rin.imagetoolbox.core.resources.icons.Shadow
-import com.t8rin.imagetoolbox.core.resources.icons.SquareFoot
+import com.t8rin.ikittool.core.domain.utils.Flavor
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Celebration
+import com.t8rin.ikittool.core.resources.icons.ClipboardFile
+import com.t8rin.ikittool.core.resources.icons.Cool
+import com.t8rin.ikittool.core.resources.icons.Database
+import com.t8rin.ikittool.core.resources.icons.Description
+import com.t8rin.ikittool.core.resources.icons.DesignServices
+import com.t8rin.ikittool.core.resources.icons.Draw
+import com.t8rin.ikittool.core.resources.icons.Exif
+import com.t8rin.ikittool.core.resources.icons.Firebase
+import com.t8rin.ikittool.core.resources.icons.FolderOpen
+import com.t8rin.ikittool.core.resources.icons.Glyphs
+import com.t8rin.ikittool.core.resources.icons.HardDrive
+import com.t8rin.ikittool.core.resources.icons.ImageSearch
+import com.t8rin.ikittool.core.resources.icons.Info
+import com.t8rin.ikittool.core.resources.icons.LabelPercent
+import com.t8rin.ikittool.core.resources.icons.Mobile
+import com.t8rin.ikittool.core.resources.icons.MobileArrowDown
+import com.t8rin.ikittool.core.resources.icons.MobileCast
+import com.t8rin.ikittool.core.resources.icons.MobileLayout
+import com.t8rin.ikittool.core.resources.icons.MobileVibrate
+import com.t8rin.ikittool.core.resources.icons.Psychology
+import com.t8rin.ikittool.core.resources.icons.ResponsiveLayout
+import com.t8rin.ikittool.core.resources.icons.Routine
+import com.t8rin.ikittool.core.resources.icons.Shadow
+import com.t8rin.ikittool.core.resources.icons.SquareFoot
 
 sealed class SettingsGroup(
     val id: Int,

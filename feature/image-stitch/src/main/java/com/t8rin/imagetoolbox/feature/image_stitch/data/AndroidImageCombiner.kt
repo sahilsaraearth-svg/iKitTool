@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.image_stitch.data
+package com.t8rin.ikittool.feature.image_stitch.data
 
 import android.graphics.Bitmap
 import android.graphics.Paint
@@ -24,33 +24,33 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.core.graphics.applyCanvas
 import androidx.core.graphics.createBitmap
-import com.t8rin.imagetoolbox.core.data.image.utils.drawBitmap
-import com.t8rin.imagetoolbox.core.data.image.utils.toPaint
-import com.t8rin.imagetoolbox.core.data.utils.aspectRatio
-import com.t8rin.imagetoolbox.core.data.utils.getSuitableConfig
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.ImagePreviewCreator
-import com.t8rin.imagetoolbox.core.domain.image.ImageScaler
-import com.t8rin.imagetoolbox.core.domain.image.ImageShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.ImageTransformer
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageInfo
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageWithSize
-import com.t8rin.imagetoolbox.core.domain.image.model.Quality
-import com.t8rin.imagetoolbox.core.domain.image.model.withSize
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.filters.domain.FilterProvider
-import com.t8rin.imagetoolbox.core.filters.domain.model.Filter
-import com.t8rin.imagetoolbox.core.filters.domain.model.createFilter
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.FadeSide
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.SideFadeParams
-import com.t8rin.imagetoolbox.core.settings.domain.SettingsProvider
-import com.t8rin.imagetoolbox.feature.image_stitch.domain.CombiningParams
-import com.t8rin.imagetoolbox.feature.image_stitch.domain.ImageCombiner
-import com.t8rin.imagetoolbox.feature.image_stitch.domain.StitchAlignment
-import com.t8rin.imagetoolbox.feature.image_stitch.domain.StitchFadeSide
-import com.t8rin.imagetoolbox.feature.image_stitch.domain.StitchMode
+import com.t8rin.ikittool.core.data.image.utils.drawBitmap
+import com.t8rin.ikittool.core.data.image.utils.toPaint
+import com.t8rin.ikittool.core.data.utils.aspectRatio
+import com.t8rin.ikittool.core.data.utils.getSuitableConfig
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.ImagePreviewCreator
+import com.t8rin.ikittool.core.domain.image.ImageScaler
+import com.t8rin.ikittool.core.domain.image.ImageShareProvider
+import com.t8rin.ikittool.core.domain.image.ImageTransformer
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.ImageInfo
+import com.t8rin.ikittool.core.domain.image.model.ImageWithSize
+import com.t8rin.ikittool.core.domain.image.model.Quality
+import com.t8rin.ikittool.core.domain.image.model.withSize
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.filters.domain.FilterProvider
+import com.t8rin.ikittool.core.filters.domain.model.Filter
+import com.t8rin.ikittool.core.filters.domain.model.createFilter
+import com.t8rin.ikittool.core.filters.domain.model.enums.FadeSide
+import com.t8rin.ikittool.core.filters.domain.model.params.SideFadeParams
+import com.t8rin.ikittool.core.settings.domain.SettingsProvider
+import com.t8rin.ikittool.feature.image_stitch.domain.CombiningParams
+import com.t8rin.ikittool.feature.image_stitch.domain.ImageCombiner
+import com.t8rin.ikittool.feature.image_stitch.domain.StitchAlignment
+import com.t8rin.ikittool.feature.image_stitch.domain.StitchFadeSide
+import com.t8rin.ikittool.feature.image_stitch.domain.StitchMode
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 import kotlin.math.absoluteValue

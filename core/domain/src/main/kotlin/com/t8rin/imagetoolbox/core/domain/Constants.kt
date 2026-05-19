@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,31 +15,31 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.domain
+package com.t8rin.ikittool.core.domain
 
-const val AUTHOR_NICK = "T8RIN"
+const val AUTHOR_NICK = "iKitTool"
 
 const val AUTHOR_TELEGRAM = "http://t.me/$AUTHOR_NICK"
-const val TELEGRAM_GROUP_LINK = "https://t.me/t8rin_imagetoolbox"
-const val TELEGRAM_CHANNEL_LINK = "https://t.me/t8rin_imagetoolbox_ci"
+const val TELEGRAM_GROUP_LINK = "https://t.me/t8rin_ikittool"
+const val TELEGRAM_CHANNEL_LINK = "https://t.me/t8rin_ikittool_ci"
 
 
 const val AUTHOR_GITHUB = "https://github.com/$AUTHOR_NICK"
-const val APP_GITHUB_LINK = "$AUTHOR_GITHUB/ImageToolbox"
+const val APP_GITHUB_LINK = "$AUTHOR_GITHUB/iKitTool"
 const val ISSUE_TRACKER = "$APP_GITHUB_LINK/issues"
 const val APP_RELEASES = "$APP_GITHUB_LINK/releases"
 const val APP_CHANGELOG = "$APP_RELEASES.atom"
 
 
-const val RES_HOST = "$AUTHOR_GITHUB/ImageToolboxRemoteResources"
+const val RES_HOST = "$AUTHOR_GITHUB/iKitToolRemoteResources"
 const val LENS_PROFILES_LINK = "$RES_HOST/tree/main/lens_profile"
 const val RES_BASE_URL = "$RES_HOST/raw/refs/heads/main/*"
-const val HF_BASE_URL = "https://huggingface.co/T8RIN/imagetoolbox-models/resolve/main/*"
+const val HF_BASE_URL = "https://huggingface.co/T8RIN/ikittool-models/resolve/main/*"
 
 
-const val GLOBAL_STORAGE_NAME = "image_resizer"
-const val BACKUP_FILE_EXT = "imtbx_backup"
-const val TEMPLATE_EXT = "imtbx_template"
+const val GLOBAL_STORAGE_NAME = "ikit_tool"
+const val BACKUP_FILE_EXT = "ikit_backup"
+const val TEMPLATE_EXT = "ikit_template"
 const val PDF = "pdf/"
 
 

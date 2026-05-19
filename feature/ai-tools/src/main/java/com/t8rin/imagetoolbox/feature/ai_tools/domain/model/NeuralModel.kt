@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,10 +17,10 @@
 
 @file:Suppress("FunctionName")
 
-package com.t8rin.imagetoolbox.feature.ai_tools.domain.model
+package com.t8rin.ikittool.feature.ai_tools.domain.model
 
-import com.t8rin.imagetoolbox.core.domain.HF_BASE_URL
-import com.t8rin.imagetoolbox.core.resources.R
+import com.t8rin.ikittool.core.domain.HF_BASE_URL
+import com.t8rin.ikittool.core.resources.R
 
 data class NeuralModel(
     val downloadLink: String,

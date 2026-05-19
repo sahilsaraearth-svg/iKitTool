@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.presentation.components
+package com.t8rin.ikittool.feature.markup_layers.presentation.components
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.AnimatedVisibility
@@ -23,7 +23,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -35,38 +35,38 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.t8rin.colors.util.roundToTwoDigits
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.FormatColorFill
-import com.t8rin.imagetoolbox.core.resources.icons.SquareFoot
-import com.t8rin.imagetoolbox.core.ui.theme.toColor
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ColorRowSelector
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButtonGroup
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedSliderItem
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceRowSwitch
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.LayerType
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.ShapeMode
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.arrowAngle
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.arrowSizeScale
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.cornerRadius
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.innerRadiusRatio
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.isOutlinedShapeMode
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.isRegular
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.ordinal
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.outlinedFillColorInt
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.rotationDegrees
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.updateArrow
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.updatePolygon
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.updateRect
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.updateStar
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.usesStrokeWidth
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.vertices
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.withOutlinedFillColor
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.withPreferredGeometryFor
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.withSavedStateFrom
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.UiMarkupLayer
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.icon
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.FormatColorFill
+import com.t8rin.ikittool.core.resources.icons.SquareFoot
+import com.t8rin.ikittool.core.ui.theme.toColor
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ColorRowSelector
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButtonGroup
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedSliderItem
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceRowSwitch
+import com.t8rin.ikittool.feature.markup_layers.domain.LayerType
+import com.t8rin.ikittool.feature.markup_layers.domain.ShapeMode
+import com.t8rin.ikittool.feature.markup_layers.domain.arrowAngle
+import com.t8rin.ikittool.feature.markup_layers.domain.arrowSizeScale
+import com.t8rin.ikittool.feature.markup_layers.domain.cornerRadius
+import com.t8rin.ikittool.feature.markup_layers.domain.innerRadiusRatio
+import com.t8rin.ikittool.feature.markup_layers.domain.isOutlinedShapeMode
+import com.t8rin.ikittool.feature.markup_layers.domain.isRegular
+import com.t8rin.ikittool.feature.markup_layers.domain.ordinal
+import com.t8rin.ikittool.feature.markup_layers.domain.outlinedFillColorInt
+import com.t8rin.ikittool.feature.markup_layers.domain.rotationDegrees
+import com.t8rin.ikittool.feature.markup_layers.domain.updateArrow
+import com.t8rin.ikittool.feature.markup_layers.domain.updatePolygon
+import com.t8rin.ikittool.feature.markup_layers.domain.updateRect
+import com.t8rin.ikittool.feature.markup_layers.domain.updateStar
+import com.t8rin.ikittool.feature.markup_layers.domain.usesStrokeWidth
+import com.t8rin.ikittool.feature.markup_layers.domain.vertices
+import com.t8rin.ikittool.feature.markup_layers.domain.withOutlinedFillColor
+import com.t8rin.ikittool.feature.markup_layers.domain.withPreferredGeometryFor
+import com.t8rin.ikittool.feature.markup_layers.domain.withSavedStateFrom
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.UiMarkupLayer
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.icon
 import kotlin.math.roundToInt
 
 @Composable

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -865,7 +865,7 @@
     <string name="header_today">오늘</string>
     <string name="header_yesterday">어제</string>
     <string name="embedded_picker">내장 선택기</string>
-    <string name="embedded_picker_sub">Image Toolbox의 이미지 선택기</string>
+    <string name="embedded_picker_sub">iKit Tool의 이미지 선택기</string>
     <string name="no_permissions">권한이 없습니다</string>
     <string name="request">요청</string>
     <string name="pick_multiple_media">여러 미디어 선택</string>
@@ -1079,7 +1079,7 @@
     <string name="antialias">앤티앨리어스</string>
     <string name="antialias_sub">날카로운 모서리를 방지하기 위해 앤티앨리어싱을 활성화합니다.</string>
     <string name="open_edit_instead_of_preview">미리보기 대신 편집 열기</string>
-    <string name="open_edit_instead_of_preview_sub">ImageToolbox에서 열려는(미리보기) 이미지를 선택하면 미리보기 대신 편집 선택 시트가 열립니다.</string>
+    <string name="open_edit_instead_of_preview_sub">iKitTool에서 열려는(미리보기) 이미지를 선택하면 미리보기 대신 편집 선택 시트가 열립니다.</string>
     <string name="document_scanner">문서 스캐너</string>
     <string name="document_scanner_sub">문서를 스캔하고 PDF를 생성하거나 문서에서 이미지를 분리하세요</string>
     <string name="click_to_start_scanning">스캔을 시작하려면 클릭하세요</string>
@@ -1354,7 +1354,7 @@
     <string name="webp_type_to_webp">WEBP에 대한 이미지</string>
     <string name="select_webp_image_to_start">시작하려면 WEBP 이미지를 선택하세요.</string>
     <string name="manage_storage_extra_types">파일에 대한 전체 액세스 권한이 없습니다.</string>
-    <string name="manage_storage_extra_types_sub">안드로이드에서 이미지로 인식되지 않는 JXL, QOI 등의 이미지를 보려면 모든 파일 접근을 허용하세요. 권한이 없으면 Image Toolbox가 해당 이미지를 표시할 수 없습니다.</string>
+    <string name="manage_storage_extra_types_sub">안드로이드에서 이미지로 인식되지 않는 JXL, QOI 등의 이미지를 보려면 모든 파일 접근을 허용하세요. 권한이 없으면 iKit Tool가 해당 이미지를 표시할 수 없습니다.</string>
     <string name="default_draw_color">기본 그리기 색상</string>
     <string name="default_draw_path_mode">기본 그리기 경로 모드</string>
     <string name="add_timestamp">타임스탬프 추가</string>
@@ -1367,8 +1367,8 @@
     <string name="recently_used">최근 사용됨</string>
     <string name="ci_channel">CI 채널</string>
     <string name="group">그룹</string>
-    <string name="image_toolbox_in_telegram">텔레그램의 이미지 도구 상자 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">원하는 무엇이든 토론할 수 있는 채팅에 참여하고 베타 및 공지사항을 게시하는 CI 채널도 살펴보세요.</string>
+    <string name="ikit_tool_in_telegram">텔레그램의 이미지 도구 상자 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">원하는 무엇이든 토론할 수 있는 채팅에 참여하고 베타 및 공지사항을 게시하는 CI 채널도 살펴보세요.</string>
     <string name="ci_channel_sub">앱의 새 버전에 대한 알림을 받고 공지사항을 읽어보세요.</string>
     <string name="fit_description">주어진 크기에 이미지를 맞추고 배경에 흐림이나 색상을 적용합니다.</string>
     <string name="tools_arrangement">도구 배열</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">생성된 팔레트를 다른 형식으로 내보내기</string>
     <string name="add_color_palette_sub">현재 팔레트에 새로운 색상을 추가합니다.</string>
     <string name="palette_name_not_supported">%1$s 형식은 팔레트 이름 제공을 지원하지 않습니다.</string>
-    <string name="wallpapers_export_not_avaialbe">Play 스토어 정책으로 인해 이 기능은 현재 빌드에 포함될 수 없습니다. 이 기능에 액세스하려면 대체 소스에서 ImageToolbox를 다운로드하십시오. 아래 GitHub에서 사용 가능한 빌드를 찾을 수 있습니다.</string>
+    <string name="wallpapers_export_not_avaialbe">Play 스토어 정책으로 인해 이 기능은 현재 빌드에 포함될 수 없습니다. 이 기능에 액세스하려면 대체 소스에서 iKitTool를 다운로드하십시오. 아래 GitHub에서 사용 가능한 빌드를 찾을 수 있습니다.</string>
     <string name="open_github_page">Github 페이지 열기</string>
     <string name="overwrite_files_sub_short">선택한 폴더에 저장하는 대신 원본 파일이 새 파일로 대체됩니다.</string>
     <string name="hidden_watermark_text_detected">숨겨진 워터마크 텍스트가 감지되었습니다.</string>
@@ -2140,7 +2140,7 @@
     <string name="grayscale_pdf_sub">문서에 포함된 모든 이미지를 회색조로 변환</string>
     <string name="compress_pdf">PDF 압축</string>
     <string name="compress_pdf_sub">더 쉽게 공유할 수 있도록 문서 파일 크기를 최적화하세요.</string>
-    <string name="repair_info">ImageToolbox는 내부 상호 참조 테이블을 다시 작성하고 파일 구조를 처음부터 다시 생성합니다. 이렇게 하면 \\"열 수 없는\\" 많은 파일에 대한 액세스를 복원할 수 있습니다.</string>
+    <string name="repair_info">iKitTool는 내부 상호 참조 테이블을 다시 작성하고 파일 구조를 처음부터 다시 생성합니다. 이렇게 하면 \\"열 수 없는\\" 많은 파일에 대한 액세스를 복원할 수 있습니다.</string>
     <string name="grayscale_info">이 도구는 모든 문서 이미지를 회색조로 변환합니다. 인쇄 및 파일 크기 축소에 가장 적합</string>
     <string name="metadata">메타데이터</string>
     <string name="metadata_pdf_sub">더 나은 개인 정보 보호를 위해 문서 속성 편집</string>
@@ -2192,11 +2192,11 @@
     <string name="keep_date_time">날짜 시간 유지</string>
     <string name="keep_date_time_sub">날짜 및 시간과 관련된 EXIF ​​태그를 항상 유지하며, EXIF ​​유지 옵션과 독립적으로 작동합니다.</string>
     <string name="open_markup_project">프로젝트 열기</string>
-    <string name="open_markup_project_sub">이전에 저장한 Image Toolbox 프로젝트 계속 편집</string>
+    <string name="open_markup_project_sub">이전에 저장한 iKit Tool 프로젝트 계속 편집</string>
     <string name="markup_project_open_failed">이미지 도구 상자 프로젝트를 열 수 없습니다</string>
-    <string name="markup_project_missing_data">Image Toolbox 프로젝트에 프로젝트 데이터가 없습니다.</string>
+    <string name="markup_project_missing_data">iKit Tool 프로젝트에 프로젝트 데이터가 없습니다.</string>
     <string name="markup_project_corrupted">이미지 도구 상자 프로젝트가 손상되었습니다</string>
-    <string name="unsupported_markup_project_version">지원되지 않는 Image Toolbox 프로젝트 버전: %1$d</string>
+    <string name="unsupported_markup_project_version">지원되지 않는 iKit Tool 프로젝트 버전: %1$d</string>
     <string name="save_markup_project">프로젝트 저장</string>
     <string name="save_markup_project_sub">편집 가능한 프로젝트 파일에 레이어, 배경 및 편집 기록 저장</string>
     <string name="failed_to_open">열지 못했습니다.</string>

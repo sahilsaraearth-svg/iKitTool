@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.presentation.components
+package com.t8rin.ikittool.feature.markup_layers.presentation.components
 
 import android.graphics.Bitmap
 import androidx.compose.foundation.Canvas
@@ -53,28 +53,28 @@ import androidx.core.graphics.withSave
 import coil3.request.ImageRequest
 import coil3.request.allowHardware
 import coil3.toBitmap
-import com.t8rin.imagetoolbox.core.data.image.utils.drawBitmap
-import com.t8rin.imagetoolbox.core.data.image.utils.static
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.settings.presentation.model.toUiFont
-import com.t8rin.imagetoolbox.core.ui.theme.toColor
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.AutoCornersShape
-import com.t8rin.imagetoolbox.core.ui.widget.text.OutlineParams
-import com.t8rin.imagetoolbox.core.ui.widget.text.OutlinedText
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.feature.markup_layers.data.utils.buildPictureShadowRenderData
-import com.t8rin.imagetoolbox.feature.markup_layers.data.utils.buildShapeShadowRenderData
-import com.t8rin.imagetoolbox.feature.markup_layers.data.utils.buildTextShadowRenderData
-import com.t8rin.imagetoolbox.feature.markup_layers.data.utils.calculateShadowPadding
-import com.t8rin.imagetoolbox.feature.markup_layers.data.utils.calculateTextLayerMetrics
-import com.t8rin.imagetoolbox.feature.markup_layers.data.utils.drawShapeLayer
-import com.t8rin.imagetoolbox.feature.markup_layers.data.utils.resolveLayerShadowRasterScale
-import com.t8rin.imagetoolbox.feature.markup_layers.data.utils.resolveShapeLayerRenderData
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.DomainTextDecoration
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.LayerType
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.UiMarkupLayer
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.renderCopy
+import com.t8rin.ikittool.core.data.image.utils.drawBitmap
+import com.t8rin.ikittool.core.data.image.utils.static
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.settings.presentation.model.toUiFont
+import com.t8rin.ikittool.core.ui.theme.toColor
+import com.t8rin.ikittool.core.ui.widget.image.Picture
+import com.t8rin.ikittool.core.ui.widget.modifier.AutoCornersShape
+import com.t8rin.ikittool.core.ui.widget.text.OutlineParams
+import com.t8rin.ikittool.core.ui.widget.text.OutlinedText
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.feature.markup_layers.data.utils.buildPictureShadowRenderData
+import com.t8rin.ikittool.feature.markup_layers.data.utils.buildShapeShadowRenderData
+import com.t8rin.ikittool.feature.markup_layers.data.utils.buildTextShadowRenderData
+import com.t8rin.ikittool.feature.markup_layers.data.utils.calculateShadowPadding
+import com.t8rin.ikittool.feature.markup_layers.data.utils.calculateTextLayerMetrics
+import com.t8rin.ikittool.feature.markup_layers.data.utils.drawShapeLayer
+import com.t8rin.ikittool.feature.markup_layers.data.utils.resolveLayerShadowRasterScale
+import com.t8rin.ikittool.feature.markup_layers.data.utils.resolveShapeLayerRenderData
+import com.t8rin.ikittool.feature.markup_layers.domain.DomainTextDecoration
+import com.t8rin.ikittool.feature.markup_layers.domain.LayerType
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.UiMarkupLayer
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.renderCopy
 import androidx.compose.ui.text.style.TextGeometricTransform as ComposeTextGeometricTransform
 
 @Composable

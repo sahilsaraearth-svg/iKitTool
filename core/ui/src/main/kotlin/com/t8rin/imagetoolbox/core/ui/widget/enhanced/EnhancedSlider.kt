@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.enhanced
+package com.t8rin.ikittool.core.ui.widget.enhanced
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -33,19 +33,19 @@ import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalHapticFeedback
-import com.t8rin.imagetoolbox.core.resources.shapes.MaterialStarShape
-import com.t8rin.imagetoolbox.core.settings.domain.model.ShapeType
-import com.t8rin.imagetoolbox.core.settings.domain.model.SliderType
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.AutoCircleShape
-import com.t8rin.imagetoolbox.core.ui.widget.sliders.FancyRangeSlider
-import com.t8rin.imagetoolbox.core.ui.widget.sliders.FancySlider
-import com.t8rin.imagetoolbox.core.ui.widget.sliders.HyperOSRangeSlider
-import com.t8rin.imagetoolbox.core.ui.widget.sliders.HyperOSSlider
-import com.t8rin.imagetoolbox.core.ui.widget.sliders.M2RangeSlider
-import com.t8rin.imagetoolbox.core.ui.widget.sliders.M2Slider
-import com.t8rin.imagetoolbox.core.ui.widget.sliders.M3RangeSlider
-import com.t8rin.imagetoolbox.core.ui.widget.sliders.M3Slider
+import com.t8rin.ikittool.core.resources.shapes.MaterialStarShape
+import com.t8rin.ikittool.core.settings.domain.model.ShapeType
+import com.t8rin.ikittool.core.settings.domain.model.SliderType
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.widget.modifier.AutoCircleShape
+import com.t8rin.ikittool.core.ui.widget.sliders.FancyRangeSlider
+import com.t8rin.ikittool.core.ui.widget.sliders.FancySlider
+import com.t8rin.ikittool.core.ui.widget.sliders.HyperOSRangeSlider
+import com.t8rin.ikittool.core.ui.widget.sliders.HyperOSSlider
+import com.t8rin.ikittool.core.ui.widget.sliders.M2RangeSlider
+import com.t8rin.ikittool.core.ui.widget.sliders.M2Slider
+import com.t8rin.ikittool.core.ui.widget.sliders.M3RangeSlider
+import com.t8rin.ikittool.core.ui.widget.sliders.M3Slider
 
 @Composable
 fun EnhancedSlider(

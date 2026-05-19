@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,10 +15,10 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.color_tools.presentation.components
+package com.t8rin.ikittool.color_tools.presentation.components
 
 import androidx.compose.ui.graphics.Color
-import com.t8rin.imagetoolbox.core.ui.theme.blend
+import com.t8rin.ikittool.core.ui.theme.blend
 
 fun Color.mixWith(
     color: Color,

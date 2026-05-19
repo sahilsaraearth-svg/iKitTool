@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.theme
+package com.t8rin.ikittool.core.ui.theme
 
 import android.annotation.SuppressLint
 import android.os.Build
@@ -38,15 +38,15 @@ import androidx.compose.ui.platform.LocalContext
 import com.t8rin.dynamic.theme.ColorTuple
 import com.t8rin.dynamic.theme.DynamicTheme
 import com.t8rin.dynamic.theme.rememberDynamicThemeState
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.rememberAppColorTuple
-import com.t8rin.imagetoolbox.core.ui.utils.animation.FancyTransitionEasing
-import com.t8rin.imagetoolbox.core.ui.utils.helper.DeviceInfo
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.AutoCornersShape
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.settings.presentation.provider.rememberAppColorTuple
+import com.t8rin.ikittool.core.ui.utils.animation.FancyTransitionEasing
+import com.t8rin.ikittool.core.ui.utils.helper.DeviceInfo
+import com.t8rin.ikittool.core.ui.widget.modifier.AutoCornersShape
 
 @SuppressLint("NewApi")
 @Composable
-fun ImageToolboxTheme(
+fun iKitToolTheme(
     content: @Composable () -> Unit
 ) {
     val settingsState = LocalSettingsState.current
@@ -95,10 +95,10 @@ fun ImageToolboxTheme(
 }
 
 @Composable
-fun ImageToolboxThemeSurface(
+fun iKitToolThemeSurface(
     content: @Composable BoxScope.() -> Unit
 ) {
-    ImageToolboxTheme {
+    iKitToolTheme {
         Surface(
             modifier = Modifier.fillMaxSize(),
             content = {

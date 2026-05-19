@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -865,7 +865,7 @@
     <string name="header_today">Bugün</string>
     <string name="header_yesterday">Dün</string>
     <string name="embedded_picker">Gömülü Seçici</string>
-    <string name="embedded_picker_sub">Image Toolbox\'ın resim seçicisi</string>
+    <string name="embedded_picker_sub">iKit Tool\'ın resim seçicisi</string>
     <string name="no_permissions">İzin yok</string>
     <string name="request">Talep et</string>
     <string name="pick_multiple_media">Çoklu Medya Seç</string>
@@ -1079,7 +1079,7 @@
     <string name="antialias">Kenar Yumuşatma</string>
     <string name="antialias_sub">Keskin kenarları önlemek için kenar yumuşatmayı etkinleştirir</string>
     <string name="open_edit_instead_of_preview">Önizleme Yerine Düzenlemeyi Aç</string>
-    <string name="open_edit_instead_of_preview_sub">ImageToolbox\'ta açmak (önizlemek) için bir resim seçtiğinizde, önizleme yerine düzenleme seçim sayfası açılacaktır</string>
+    <string name="open_edit_instead_of_preview_sub">iKitTool\'ta açmak (önizlemek) için bir resim seçtiğinizde, önizleme yerine düzenleme seçim sayfası açılacaktır</string>
     <string name="document_scanner">Belge Tarayıcı</string>
     <string name="document_scanner_sub">Belgeleri tarayın ve bunlardan PDF veya ayrı resimler oluşturun</string>
     <string name="click_to_start_scanning">Taramayı başlatmak için tıklayın</string>
@@ -1354,7 +1354,7 @@
     <string name="webp_type_to_webp">Resimlerden WEBP\'ye</string>
     <string name="select_webp_image_to_start">Başlamak için WEBP resmi seçin</string>
     <string name="manage_storage_extra_types">Dosyalara tam erişim yok</string>
-    <string name="manage_storage_extra_types_sub">Android\'de resim olarak tanınmayan JXL, QOI ve diğer resimleri görmek için tüm dosyalara erişime izin verin. İzin olmadan Image Toolbox bu resimleri gösteremez</string>
+    <string name="manage_storage_extra_types_sub">Android\'de resim olarak tanınmayan JXL, QOI ve diğer resimleri görmek için tüm dosyalara erişime izin verin. İzin olmadan iKit Tool bu resimleri gösteremez</string>
     <string name="default_draw_color">Varsayılan Çizim Rengi</string>
     <string name="default_draw_path_mode">Varsayılan Çizim Yolu Modu</string>
     <string name="add_timestamp">Zaman Damgası Ekle</string>
@@ -1367,8 +1367,8 @@
     <string name="recently_used">Son Kullanılanlar</string>
     <string name="ci_channel">CI kanalı</string>
     <string name="group">Grup</string>
-    <string name="image_toolbox_in_telegram">Telegram\'da Image Toolbox 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">İstediğiniz her şeyi tartışabileceğiniz sohbetimize katılın ve ayrıca betaları ve duyuruları yayınladığım CI kanalına göz atın</string>
+    <string name="ikit_tool_in_telegram">Telegram\'da iKit Tool 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">İstediğiniz her şeyi tartışabileceğiniz sohbetimize katılın ve ayrıca betaları ve duyuruları yayınladığım CI kanalına göz atın</string>
     <string name="ci_channel_sub">Uygulamanın yeni sürümleri hakkında bildirim alın ve duyuruları okuyun</string>
     <string name="fit_description">Bir resmi verilen boyutlara sığdırın ve arka plana bulanıklık veya renk uygulayın</string>
     <string name="tools_arrangement">Araçların Düzenlenmesi</string>
@@ -1844,7 +1844,7 @@
     <string name="export_palette_sub">Oluşturulan paleti farklı formatlara aktarın</string>
     <string name="add_color_palette_sub">Mevcut palete yeni renk ekler</string>
     <string name="palette_name_not_supported">%1$s formatı palet adı sağlamayı desteklemiyor</string>
-    <string name="wallpapers_export_not_avaialbe">Play Store politikaları nedeniyle, bu özellik mevcut sürümde bulunmamaktadır. Bu özelliğe erişmek için lütfen ImageToolbox\'ı alternatif bir kaynaktan indirin. Mevcut sürümleri aşağıdaki GitHub adresinde bulabilirsiniz.</string>
+    <string name="wallpapers_export_not_avaialbe">Play Store politikaları nedeniyle, bu özellik mevcut sürümde bulunmamaktadır. Bu özelliğe erişmek için lütfen iKitTool\'ı alternatif bir kaynaktan indirin. Mevcut sürümleri aşağıdaki GitHub adresinde bulabilirsiniz.</string>
     <string name="open_github_page">GitHub sayfasını aç</string>
     <string name="overwrite_files_sub_short">Orijinal dosya, seçilen klasöre kaydedilmek yerine yenisiyle değiştirilecektir.</string>
     <string name="hidden_watermark_text_detected">Gizli filigran metni algılandı</string>
@@ -2141,7 +2141,7 @@
     <string name="grayscale_pdf_sub">Tüm belgeye gömülü görüntüleri gri tonlamaya dönüştürün</string>
     <string name="compress_pdf">PDF\'yi sıkıştır</string>
     <string name="compress_pdf_sub">Daha kolay paylaşım için belgenizin dosya boyutunu optimize edin</string>
-    <string name="repair_info">ImageToolbox dahili çapraz referans tablosunu yeniden oluşturur ve dosya yapısını sıfırdan yeniden oluşturur. Bu, \\"açılamayan\\" birçok dosyaya erişimi geri yükleyebilir</string>
+    <string name="repair_info">iKitTool dahili çapraz referans tablosunu yeniden oluşturur ve dosya yapısını sıfırdan yeniden oluşturur. Bu, \\"açılamayan\\" birçok dosyaya erişimi geri yükleyebilir</string>
     <string name="grayscale_info">Bu araç, tüm belge resimlerini gri tonlamaya dönüştürür. Dosya boyutunu yazdırmak ve küçültmek için en iyisi</string>
     <string name="metadata">Meta veriler</string>
     <string name="metadata_pdf_sub">Daha iyi gizlilik için belge özelliklerini düzenleyin</string>
@@ -2193,11 +2193,11 @@
     <string name="background_color_for_alpha_formats">Alfa Formatları İçin Arka Plan Rengi</string>
     <string name="background_color_for_alpha_formats_sub">Alfa desteğiyle her görüntü formatı için arka plan rengini ayarlama olanağı ekler; devre dışı bırakıldığında bu yalnızca alfa olmayanlar için geçerlidir</string>
     <string name="open_markup_project">Projeyi aç</string>
-    <string name="open_markup_project_sub">Önceden kaydedilmiş bir Image Toolbox projesini düzenlemeye devam edin</string>
-    <string name="markup_project_open_failed">Image Toolbox projesi açılamıyor</string>
-    <string name="markup_project_missing_data">Image Toolbox projesinde proje verileri eksik</string>
-    <string name="markup_project_corrupted">Image Toolbox projesi bozuk</string>
-    <string name="unsupported_markup_project_version">Desteklenmeyen Image Toolbox proje sürümü: %1$d</string>
+    <string name="open_markup_project_sub">Önceden kaydedilmiş bir iKit Tool projesini düzenlemeye devam edin</string>
+    <string name="markup_project_open_failed">iKit Tool projesi açılamıyor</string>
+    <string name="markup_project_missing_data">iKit Tool projesinde proje verileri eksik</string>
+    <string name="markup_project_corrupted">iKit Tool projesi bozuk</string>
+    <string name="unsupported_markup_project_version">Desteklenmeyen iKit Tool proje sürümü: %1$d</string>
     <string name="save_markup_project">Projeyi kaydet</string>
     <string name="save_markup_project_sub">Katmanları, arka planı ve düzenleme geçmişini düzenlenebilir bir proje dosyasında saklayın</string>
     <string name="failed_to_open">Açılamadı</string>

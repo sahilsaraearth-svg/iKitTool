@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,12 +15,12 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.data.saving.io
+package com.t8rin.ikittool.core.data.saving.io
 
 import android.content.Context
 import android.net.Uri
-import com.t8rin.imagetoolbox.core.data.utils.openWriteableStream
-import com.t8rin.imagetoolbox.core.utils.makeLog
+import com.t8rin.ikittool.core.data.utils.openWriteableStream
+import com.t8rin.ikittool.core.utils.makeLog
 import io.ktor.utils.io.charsets.Charset
 import java.io.ByteArrayOutputStream
 

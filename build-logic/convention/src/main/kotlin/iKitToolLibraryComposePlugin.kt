@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,14 +16,14 @@
  */
 
 import com.android.build.api.dsl.LibraryExtension
-import com.t8rin.imagetoolbox.configureCompose
+import com.t8rin.ikittool.configureCompose
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.getByType
 
 @Suppress("UNUSED")
-class ImageToolboxLibraryComposePlugin : Plugin<Project> {
+class iKitToolLibraryComposePlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             apply(plugin = "com.android.library")

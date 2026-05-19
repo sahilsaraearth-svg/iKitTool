@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,22 +15,22 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.data.di
+package com.t8rin.ikittool.core.data.di
 
 import android.graphics.Bitmap
-import com.t8rin.imagetoolbox.core.data.image.AndroidImageCompressor
-import com.t8rin.imagetoolbox.core.data.image.AndroidImageGetter
-import com.t8rin.imagetoolbox.core.data.image.AndroidImagePreviewCreator
-import com.t8rin.imagetoolbox.core.data.image.AndroidImageScaler
-import com.t8rin.imagetoolbox.core.data.image.AndroidImageTransformer
-import com.t8rin.imagetoolbox.core.data.image.AndroidShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.ImageCompressor
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.ImagePreviewCreator
-import com.t8rin.imagetoolbox.core.domain.image.ImageScaler
-import com.t8rin.imagetoolbox.core.domain.image.ImageShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.ImageTransformer
-import com.t8rin.imagetoolbox.core.domain.image.ShareProvider
+import com.t8rin.ikittool.core.data.image.AndroidImageCompressor
+import com.t8rin.ikittool.core.data.image.AndroidImageGetter
+import com.t8rin.ikittool.core.data.image.AndroidImagePreviewCreator
+import com.t8rin.ikittool.core.data.image.AndroidImageScaler
+import com.t8rin.ikittool.core.data.image.AndroidImageTransformer
+import com.t8rin.ikittool.core.data.image.AndroidShareProvider
+import com.t8rin.ikittool.core.domain.image.ImageCompressor
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.ImagePreviewCreator
+import com.t8rin.ikittool.core.domain.image.ImageScaler
+import com.t8rin.ikittool.core.domain.image.ImageShareProvider
+import com.t8rin.ikittool.core.domain.image.ImageTransformer
+import com.t8rin.ikittool.core.domain.image.ShareProvider
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

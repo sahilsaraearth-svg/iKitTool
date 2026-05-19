@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("UnusedReceiverParameter")
 
-package com.t8rin.imagetoolbox.feature.scan_qr_code.presentation.components.editor
+package com.t8rin.ikittool.feature.scan_qr_code.presentation.components.editor
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Arrangement
@@ -29,7 +29,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.text.KeyboardOptions
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -40,32 +40,32 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.model.QrType
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Add
-import com.t8rin.imagetoolbox.core.resources.icons.AlternateEmail
-import com.t8rin.imagetoolbox.core.resources.icons.Badge
-import com.t8rin.imagetoolbox.core.resources.icons.Business
-import com.t8rin.imagetoolbox.core.resources.icons.Call
-import com.t8rin.imagetoolbox.core.resources.icons.Email
-import com.t8rin.imagetoolbox.core.resources.icons.HashTag
-import com.t8rin.imagetoolbox.core.resources.icons.Home
-import com.t8rin.imagetoolbox.core.resources.icons.Link
-import com.t8rin.imagetoolbox.core.resources.icons.Person
-import com.t8rin.imagetoolbox.core.resources.icons.Place
-import com.t8rin.imagetoolbox.core.resources.icons.Prefix
-import com.t8rin.imagetoolbox.core.resources.icons.Public
-import com.t8rin.imagetoolbox.core.resources.icons.RecordVoiceOver
-import com.t8rin.imagetoolbox.core.resources.icons.RemoveCircle
-import com.t8rin.imagetoolbox.core.resources.icons.Suffix
-import com.t8rin.imagetoolbox.core.resources.icons.SupervisedUserCircle
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.ContactPickerButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.text.RoundedTextField
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
-import com.t8rin.imagetoolbox.feature.scan_qr_code.presentation.components.toQrType
-import com.t8rin.imagetoolbox.feature.scan_qr_code.presentation.components.updateFormattedName
+import com.t8rin.ikittool.core.domain.model.QrType
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Add
+import com.t8rin.ikittool.core.resources.icons.AlternateEmail
+import com.t8rin.ikittool.core.resources.icons.Badge
+import com.t8rin.ikittool.core.resources.icons.Business
+import com.t8rin.ikittool.core.resources.icons.Call
+import com.t8rin.ikittool.core.resources.icons.Email
+import com.t8rin.ikittool.core.resources.icons.HashTag
+import com.t8rin.ikittool.core.resources.icons.Home
+import com.t8rin.ikittool.core.resources.icons.Link
+import com.t8rin.ikittool.core.resources.icons.Person
+import com.t8rin.ikittool.core.resources.icons.Place
+import com.t8rin.ikittool.core.resources.icons.Prefix
+import com.t8rin.ikittool.core.resources.icons.Public
+import com.t8rin.ikittool.core.resources.icons.RecordVoiceOver
+import com.t8rin.ikittool.core.resources.icons.RemoveCircle
+import com.t8rin.ikittool.core.resources.icons.Suffix
+import com.t8rin.ikittool.core.resources.icons.SupervisedUserCircle
+import com.t8rin.ikittool.core.ui.utils.content_pickers.ContactPickerButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.text.RoundedTextField
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.feature.scan_qr_code.presentation.components.toQrType
+import com.t8rin.ikittool.feature.scan_qr_code.presentation.components.updateFormattedName
 
 @Composable
 internal fun QrContactEditField(

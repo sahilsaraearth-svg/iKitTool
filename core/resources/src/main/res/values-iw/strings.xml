@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1079,7 +1079,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">מאפשר הדפסה נגדית כדי למנוע קצוות חדים</string>
     <string name="open_edit_instead_of_preview">פתח את עריכה במקום תצוגה מקדימה</string>
-    <string name="open_edit_instead_of_preview_sub">כאשר אתה בוחר תמונה לפתיחה (תצוגה מקדימה) ב-ImageToolbox, גיליון הבחירה של עריכה ייפתח במקום תצוגה מקדימה</string>
+    <string name="open_edit_instead_of_preview_sub">כאשר אתה בוחר תמונה לפתיחה (תצוגה מקדימה) ב-iKitTool, גיליון הבחירה של עריכה ייפתח במקום תצוגה מקדימה</string>
     <string name="document_scanner">סורק מסמכים</string>
     <string name="document_scanner_sub">סרוק מסמכים וצור PDF או הפרד מהם תמונות</string>
     <string name="click_to_start_scanning">לחץ כדי להתחיל בסריקה</string>
@@ -1354,7 +1354,7 @@
     <string name="webp_type_to_webp">תמונות ל-WEBP</string>
     <string name="select_webp_image_to_start">בחר תמונת WEBP כדי להתחיל</string>
     <string name="manage_storage_extra_types">אין גישה מלאה לקבצים</string>
-    <string name="manage_storage_extra_types_sub">אפשר לכל הקבצים גישה לראות JXL, QOI ותמונות אחרות שאינן מזוהות כתמונות באנדרואיד. ללא הרשאה Image Toolbox אינו יכול להציג את התמונות הללו</string>
+    <string name="manage_storage_extra_types_sub">אפשר לכל הקבצים גישה לראות JXL, QOI ותמונות אחרות שאינן מזוהות כתמונות באנדרואיד. ללא הרשאה iKit Tool אינו יכול להציג את התמונות הללו</string>
     <string name="default_draw_color">צבע ציור ברירת מחדל</string>
     <string name="default_draw_path_mode">מצב ציור ברירת מחדל</string>
     <string name="add_timestamp">הוסף חותמת זמן</string>
@@ -1367,8 +1367,8 @@
     <string name="recently_used">בשימוש לאחרונה</string>
     <string name="ci_channel">ערוץ CI</string>
     <string name="group">קְבוּצָה</string>
-    <string name="image_toolbox_in_telegram">ארגז כלים לתמונה בטלגרם 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">הצטרף לצ\'אט שלנו שבו אתה יכול לדון בכל מה שאתה רוצה וגם להסתכל בערוץ CI שבו אני מפרסם בטא והודעות</string>
+    <string name="ikit_tool_in_telegram">ארגז כלים לתמונה בטלגרם 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">הצטרף לצ\'אט שלנו שבו אתה יכול לדון בכל מה שאתה רוצה וגם להסתכל בערוץ CI שבו אני מפרסם בטא והודעות</string>
     <string name="ci_channel_sub">קבל הודעה על גרסאות חדשות של האפליקציה וקרא הודעות</string>
     <string name="fit_description">התאם תמונה למידות נתונות והחל טשטוש או צבע על הרקע</string>
     <string name="tools_arrangement">סידור כלים</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">ייצוא פלטה שנוצרה לפורמטים שונים</string>
     <string name="add_color_palette_sub">מוסיף צבע חדש ללוח הנוכחי</string>
     <string name="palette_name_not_supported">פורמט %1$s אינו תומך במתן שם לוח</string>
-    <string name="wallpapers_export_not_avaialbe">עקב מדיניות חנות Play, לא ניתן לכלול תכונה זו במבנה הנוכחי. כדי לגשת לפונקציונליות זו, אנא הורד את ImageToolbox ממקור חלופי. אתה יכול למצוא את ה-builds הזמינים ב-GitHub למטה.</string>
+    <string name="wallpapers_export_not_avaialbe">עקב מדיניות חנות Play, לא ניתן לכלול תכונה זו במבנה הנוכחי. כדי לגשת לפונקציונליות זו, אנא הורד את iKitTool ממקור חלופי. אתה יכול למצוא את ה-builds הזמינים ב-GitHub למטה.</string>
     <string name="open_github_page">פתח את דף Github</string>
     <string name="overwrite_files_sub_short">הקובץ המקורי יוחלף בקובץ חדש במקום לשמור בתיקייה שנבחרה</string>
     <string name="hidden_watermark_text_detected">זוהה טקסט של סימן מים מוסתר</string>
@@ -2143,7 +2143,7 @@
     <string name="grayscale_pdf_sub">המר את כל התמונות המוטבעות במסמכים לגווני אפור</string>
     <string name="compress_pdf">דחוס PDF</string>
     <string name="compress_pdf_sub">בצע אופטימיזציה של גודל קובץ המסמך שלך לשיתוף קל יותר</string>
-    <string name="repair_info">ImageToolbox בונה מחדש את טבלת ההפניות הפנימית ומחדשת את מבנה הקובץ מאפס. זה יכול לשחזר גישה לקבצים רבים ש\\"לא ניתן לפתוח\\"</string>
+    <string name="repair_info">iKitTool בונה מחדש את טבלת ההפניות הפנימית ומחדשת את מבנה הקובץ מאפס. זה יכול לשחזר גישה לקבצים רבים ש\\"לא ניתן לפתוח\\"</string>
     <string name="grayscale_info">כלי זה ממיר את כל תמונות המסמכים לגווני אפור. הטוב ביותר להדפסה ולהקטנת גודל הקובץ</string>
     <string name="metadata">מטא נתונים</string>
     <string name="metadata_pdf_sub">ערוך מאפייני מסמך לפרטיות טובה יותר</string>
@@ -2196,10 +2196,10 @@
     <string name="background_color_for_alpha_formats_sub">מוסיף יכולת להגדיר צבע רקע עבור כל פורמט תמונה עם תמיכה באלפא, כאשר מושבת זה זמין עבור לא אלפא בלבד</string>
     <string name="open_markup_project">פרויקט פתוח</string>
     <string name="open_markup_project_sub">המשך לערוך פרויקט תמונה כלים שנשמר בעבר</string>
-    <string name="markup_project_open_failed">לא ניתן לפתוח את פרויקט Image Toolbox</string>
-    <string name="markup_project_missing_data">בפרויקט Image Toolbox חסרים נתוני פרויקט</string>
-    <string name="markup_project_corrupted">פרויקט Image Toolbox פגום</string>
-    <string name="unsupported_markup_project_version">גרסת פרויקט Image Toolbox לא נתמכת: %1$d</string>
+    <string name="markup_project_open_failed">לא ניתן לפתוח את פרויקט iKit Tool</string>
+    <string name="markup_project_missing_data">בפרויקט iKit Tool חסרים נתוני פרויקט</string>
+    <string name="markup_project_corrupted">פרויקט iKit Tool פגום</string>
+    <string name="unsupported_markup_project_version">גרסת פרויקט iKit Tool לא נתמכת: %1$d</string>
     <string name="save_markup_project">שמור פרויקט</string>
     <string name="save_markup_project_sub">אחסן שכבות, רקע והיסטוריית עריכה בקובץ פרויקט הניתן לעריכה</string>
     <string name="failed_to_open">הפתיחה נכשלה</string>

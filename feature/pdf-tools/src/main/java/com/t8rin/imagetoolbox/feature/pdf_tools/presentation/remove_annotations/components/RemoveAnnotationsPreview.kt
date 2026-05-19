@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.pdf_tools.presentation.remove_annotations.components
+package com.t8rin.ikittool.feature.pdf_tools.presentation.remove_annotations.components
 
 import android.net.Uri
 import androidx.compose.foundation.layout.Box
@@ -34,13 +34,13 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.data.coil.PdfImageRequest
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.safeAspectRatio
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.animateContentSizeNoClip
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.feature.pdf_tools.domain.model.PdfRemoveAnnotationParams
-import com.t8rin.imagetoolbox.feature.pdf_tools.presentation.common.PageSwitcher
+import com.t8rin.ikittool.core.data.coil.PdfImageRequest
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.safeAspectRatio
+import com.t8rin.ikittool.core.ui.widget.image.Picture
+import com.t8rin.ikittool.core.ui.widget.modifier.animateContentSizeNoClip
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.feature.pdf_tools.domain.model.PdfRemoveAnnotationParams
+import com.t8rin.ikittool.feature.pdf_tools.presentation.common.PageSwitcher
 
 @Composable
 internal fun RemoveAnnotationsPreview(

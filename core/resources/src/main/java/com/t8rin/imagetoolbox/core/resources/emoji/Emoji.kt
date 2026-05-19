@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,22 +15,22 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.resources.emoji
+package com.t8rin.ikittool.core.resources.emoji
 
 import android.content.Context
 import android.net.Uri
 import androidx.annotation.StringRes
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.core.net.toUri
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.EmojiEmotions
-import com.t8rin.imagetoolbox.core.resources.icons.EmojiEvents
-import com.t8rin.imagetoolbox.core.resources.icons.EmojiFoodBeverage
-import com.t8rin.imagetoolbox.core.resources.icons.EmojiNature
-import com.t8rin.imagetoolbox.core.resources.icons.EmojiObjects
-import com.t8rin.imagetoolbox.core.resources.icons.EmojiSymbols
-import com.t8rin.imagetoolbox.core.resources.icons.EmojiTransportation
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.EmojiEmotions
+import com.t8rin.ikittool.core.resources.icons.EmojiEvents
+import com.t8rin.ikittool.core.resources.icons.EmojiFoodBeverage
+import com.t8rin.ikittool.core.resources.icons.EmojiNature
+import com.t8rin.ikittool.core.resources.icons.EmojiObjects
+import com.t8rin.ikittool.core.resources.icons.EmojiSymbols
+import com.t8rin.ikittool.core.resources.icons.EmojiTransportation
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toPersistentList

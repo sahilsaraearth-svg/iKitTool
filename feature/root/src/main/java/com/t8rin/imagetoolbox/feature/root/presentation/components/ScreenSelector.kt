@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.root.presentation.components
+package com.t8rin.ikittool.feature.root.presentation.components
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
@@ -24,11 +24,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import com.arkivanov.decompose.extensions.compose.stack.Children
 import com.arkivanov.decompose.extensions.compose.subscribeAsState
-import com.t8rin.imagetoolbox.core.ui.utils.animation.toolboxPredictiveBackAnimation
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalCurrentScreen
-import com.t8rin.imagetoolbox.feature.root.presentation.components.utils.ResetThemeOnGoBack
-import com.t8rin.imagetoolbox.feature.root.presentation.components.utils.ScreenBasedMaxBrightnessEnforcement
-import com.t8rin.imagetoolbox.feature.root.presentation.screenLogic.RootComponent
+import com.t8rin.ikittool.core.ui.utils.animation.toolboxPredictiveBackAnimation
+import com.t8rin.ikittool.core.ui.utils.provider.LocalCurrentScreen
+import com.t8rin.ikittool.feature.root.presentation.components.utils.ResetThemeOnGoBack
+import com.t8rin.ikittool.feature.root.presentation.components.utils.ScreenBasedMaxBrightnessEnforcement
+import com.t8rin.ikittool.feature.root.presentation.screenLogic.RootComponent
 
 @Composable
 internal fun ScreenSelector(

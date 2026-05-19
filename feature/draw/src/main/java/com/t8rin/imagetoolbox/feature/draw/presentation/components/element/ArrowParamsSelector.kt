@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.draw.presentation.components.element
+package com.t8rin.ikittool.feature.draw.presentation.components.element
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.expandVertically
@@ -32,15 +32,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.utils.roundTo
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedSliderItem
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.angle
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.isArrow
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.sizeScale
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.updateArrow
+import com.t8rin.ikittool.core.domain.utils.roundTo
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedSliderItem
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.angle
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.isArrow
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.sizeScale
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.updateArrow
 
 @Composable
 internal fun ArrowParamsSelector(

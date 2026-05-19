@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -888,7 +888,7 @@
     <string name="pick_multiple_media">複数メディアの選択</string>
     <string name="pick_single_media">単一メディアの選択</string>
     <string name="pick">選択</string>
-    <string name="embedded_picker_sub">システム定義のものの代わりにImage Toolbox独自の画像ピッカーを使用します</string>
+    <string name="embedded_picker_sub">システム定義のものの代わりにiKit Tool独自の画像ピッカーを使用します</string>
     <string name="no_permissions">権限なし</string>
     <string name="request">リクエスト</string>
     <string name="tag_gps_dest_latitude">GPS目的地緯度</string>
@@ -1175,7 +1175,7 @@
     <string name="draw_regular_star_sub">自由形式ではなく正星形を描画します</string>
     <string name="antialias_sub">鋭いエッジを防止するためにアンチエイリアスを有効にします</string>
     <string name="open_edit_instead_of_preview">プレビューの代わりに編集を開く</string>
-    <string name="open_edit_instead_of_preview_sub">ImageToolboxで画像を開く（プレビュー）を選択すると、プレビューの代わりに編集選択シートが開きます</string>
+    <string name="open_edit_instead_of_preview_sub">iKitToolで画像を開く（プレビュー）を選択すると、プレビューの代わりに編集選択シートが開きます</string>
     <string name="document_scanner">ドキュメントスキャナー</string>
     <string name="click_to_start_scanning">クリックしてスキャンを開始</string>
     <string name="start_scanning">スキャン開始</string>
@@ -1301,8 +1301,8 @@
     <string name="recently_used">最近使用した</string>
     <string name="ci_channel">CIチャンネル</string>
     <string name="group">グループ</string>
-    <string name="image_toolbox_in_telegram">ImageToolbox in Telegram 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">何でも議論できるチャットに参加してください。また、ベータ版や発表を投稿するCIチャンネルもチェックできます</string>
+    <string name="ikit_tool_in_telegram">iKitTool in Telegram 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">何でも議論できるチャットに参加してください。また、ベータ版や発表を投稿するCIチャンネルもチェックできます</string>
     <string name="fit_description">画像を指定した寸法に合わせ、背景にぼかしや色を適用します</string>
     <string name="group_tools_by_type">タイプ別にツールをグループ化</string>
     <string name="tools_arrangement">ツール配置</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">生成されたパレットをさまざまな形式でエクスポートする</string>
     <string name="add_color_palette_sub">現在のパレットに新しい色を追加します</string>
     <string name="palette_name_not_supported">%1$s 形式はパレット名の指定をサポートしていません</string>
-    <string name="wallpapers_export_not_avaialbe">Play ストアのポリシーにより、この機能は現在のビルドに含めることができません。この機能にアクセスするには、別のソースから ImageToolbox をダウンロードしてください。利用可能なビルドは以下の GitHub で見つけることができます。</string>
+    <string name="wallpapers_export_not_avaialbe">Play ストアのポリシーにより、この機能は現在のビルドに含めることができません。この機能にアクセスするには、別のソースから iKitTool をダウンロードしてください。利用可能なビルドは以下の GitHub で見つけることができます。</string>
     <string name="open_github_page">Githubページを開く</string>
     <string name="overwrite_files_sub_short">選択したフォルダーに保存されるのではなく、元のファイルが新しいファイルに置き換えられます</string>
     <string name="hidden_watermark_text_detected">検出された隠し透かしテキスト</string>
@@ -2140,7 +2140,7 @@
     <string name="grayscale_pdf_sub">すべてのドキュメントに埋め込まれた画像をグレースケールに変換します</string>
     <string name="compress_pdf">PDFを圧縮する</string>
     <string name="compress_pdf_sub">ドキュメントのファイル サイズを最適化して共有しやすくします</string>
-    <string name="repair_info">ImageToolbox は内部相互参照テーブルを再構築し、ファイル構造を最初から再生成します。これにより、「開けない」多くのファイルへのアクセスを復元できます。</string>
+    <string name="repair_info">iKitTool は内部相互参照テーブルを再構築し、ファイル構造を最初から再生成します。これにより、「開けない」多くのファイルへのアクセスを復元できます。</string>
     <string name="grayscale_info">このツールはすべての文書画像をグレースケールに変換します。印刷やファイルサイズの縮小に最適</string>
     <string name="metadata">メタデータ</string>
     <string name="metadata_pdf_sub">プライバシーを向上させるためにドキュメントのプロパティを編集する</string>
@@ -2192,11 +2192,11 @@
     <string name="background_color_for_alpha_formats">アルファ形式の背景色</string>
     <string name="background_color_for_alpha_formats_sub">アルファサポートを使用してすべての画像フォーマットの背景色を設定する機能を追加します。無効にすると、アルファ以外のフォーマットでのみ使用できます。</string>
     <string name="open_markup_project">プロジェクトを開く</string>
-    <string name="open_markup_project_sub">以前に保存した Image Toolbox プロジェクトの編集を続行する</string>
-    <string name="markup_project_open_failed">Image Toolbox プロジェクトを開けません</string>
-    <string name="markup_project_missing_data">Image Toolbox プロジェクトにプロジェクト データがありません</string>
-    <string name="markup_project_corrupted">Image Toolbox プロジェクトが破損しています</string>
-    <string name="unsupported_markup_project_version">サポートされていない Image Toolbox プロジェクト バージョン: %1$d</string>
+    <string name="open_markup_project_sub">以前に保存した iKit Tool プロジェクトの編集を続行する</string>
+    <string name="markup_project_open_failed">iKit Tool プロジェクトを開けません</string>
+    <string name="markup_project_missing_data">iKit Tool プロジェクトにプロジェクト データがありません</string>
+    <string name="markup_project_corrupted">iKit Tool プロジェクトが破損しています</string>
+    <string name="unsupported_markup_project_version">サポートされていない iKit Tool プロジェクト バージョン: %1$d</string>
     <string name="save_markup_project">プロジェクトの保存</string>
     <string name="save_markup_project_sub">レイヤー、背景、編集履歴を編集可能なプロジェクト ファイルに保存</string>
     <string name="failed_to_open">開けませんでした</string>

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,10 +15,10 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.cipher.data
+package com.t8rin.ikittool.feature.cipher.data
 
-import com.t8rin.imagetoolbox.core.domain.saving.RandomStringGenerator
-import com.t8rin.imagetoolbox.feature.cipher.domain.CryptographyManager
+import com.t8rin.ikittool.core.domain.saving.RandomStringGenerator
+import com.t8rin.ikittool.feature.cipher.domain.CryptographyManager
 import javax.inject.Inject
 
 internal class AndroidRandomStringGenerator @Inject constructor(

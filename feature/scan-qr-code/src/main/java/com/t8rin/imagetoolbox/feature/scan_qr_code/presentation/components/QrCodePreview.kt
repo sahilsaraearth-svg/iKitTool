@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("COMPOSE_APPLIER_CALL_MISMATCH")
 
-package com.t8rin.imagetoolbox.feature.scan_qr_code.presentation.components
+package com.t8rin.ikittool.feature.scan_qr_code.presentation.components
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.core.animateIntAsState
@@ -47,20 +47,20 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.min
 import coil3.request.ImageRequest
 import coil3.size.Precision
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.ui.theme.ProvideTypography
-import com.t8rin.imagetoolbox.core.ui.theme.takeColorFromScheme
-import com.t8rin.imagetoolbox.core.ui.theme.takeIf
-import com.t8rin.imagetoolbox.core.ui.utils.capturable.CaptureController
-import com.t8rin.imagetoolbox.core.ui.utils.capturable.capturable
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.helper.rememberPrevious
-import com.t8rin.imagetoolbox.core.ui.widget.image.ImageNotPickedWidget
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.other.BoxAnimatedVisibility
-import com.t8rin.imagetoolbox.core.ui.widget.other.QrCode
-import com.t8rin.imagetoolbox.core.utils.appContext
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.ui.theme.ProvideTypography
+import com.t8rin.ikittool.core.ui.theme.takeColorFromScheme
+import com.t8rin.ikittool.core.ui.theme.takeIf
+import com.t8rin.ikittool.core.ui.utils.capturable.CaptureController
+import com.t8rin.ikittool.core.ui.utils.capturable.capturable
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.helper.rememberPrevious
+import com.t8rin.ikittool.core.ui.widget.image.ImageNotPickedWidget
+import com.t8rin.ikittool.core.ui.widget.image.Picture
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.other.BoxAnimatedVisibility
+import com.t8rin.ikittool.core.ui.widget.other.QrCode
+import com.t8rin.ikittool.core.utils.appContext
 
 @Composable
 internal fun QrCodePreview(

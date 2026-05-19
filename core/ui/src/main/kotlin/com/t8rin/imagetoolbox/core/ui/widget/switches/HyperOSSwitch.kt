@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.switches
+package com.t8rin.ikittool.core.ui.widget.switches
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.Spring
@@ -60,8 +60,8 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.ui.utils.animation.PointToPointEasing
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.AutoCircleShape
+import com.t8rin.ikittool.core.ui.utils.animation.PointToPointEasing
+import com.t8rin.ikittool.core.ui.widget.modifier.AutoCircleShape
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlin.math.absoluteValue
@@ -81,7 +81,7 @@ fun HyperOSSwitch(
         MutableInteractionSource()
     }
 
-    val colors = com.t8rin.imagetoolbox.core.ui.widget.switches.SwitchDefaults.switchColors(colors)
+    val colors = com.t8rin.ikittool.core.ui.widget.switches.SwitchDefaults.switchColors(colors)
 
     val isPressed by interactionSource.collectIsPressedAsState()
     val isDragged by interactionSource.collectIsDraggedAsState()

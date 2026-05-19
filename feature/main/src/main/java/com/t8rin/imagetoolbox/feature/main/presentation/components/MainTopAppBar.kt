@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("KotlinConstantConditions")
 
-package com.t8rin.imagetoolbox.feature.main.presentation.components
+package com.t8rin.ikittool.feature.main.presentation.components
 
 import android.net.Uri
 import androidx.compose.animation.AnimatedContent
@@ -39,7 +39,7 @@ import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridCells
 import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridItemSpan
 import androidx.compose.foundation.lazy.staggeredgrid.items
 import androidx.compose.foundation.rememberScrollState
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.DrawerState
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LocalTextStyle
@@ -64,45 +64,44 @@ import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.resources.BuildConfig
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.BugReport
-import com.t8rin.imagetoolbox.core.resources.icons.MobileArrowUpRight
-import com.t8rin.imagetoolbox.core.resources.icons.PhotoPrints
-import com.t8rin.imagetoolbox.core.resources.icons.PushPin
-import com.t8rin.imagetoolbox.core.resources.icons.Settings
-import com.t8rin.imagetoolbox.core.settings.presentation.model.isFirstLaunch
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.Picker
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberImagePicker
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppVersionPreReleaseFlavored
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.canPinShortcuts
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.createScreenShortcut
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ProvidesValue
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.widget.color_picker.ColorSelection
-import com.t8rin.imagetoolbox.core.ui.widget.dialogs.OneTimeImagePickingDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedAlertDialog
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedBadge
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedModalBottomSheet
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedTopAppBar
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedTopAppBarType
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedVerticalScroll
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.fadingEdges
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.pulsate
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.rotateAnimation
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.scaleOnTap
-import com.t8rin.imagetoolbox.core.ui.widget.other.TopAppBarEmoji
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItem
-import com.t8rin.imagetoolbox.core.ui.widget.saver.ColorSaver
-import com.t8rin.imagetoolbox.core.ui.widget.sheets.ProcessImagesPreferenceSheet
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
-import com.t8rin.imagetoolbox.core.ui.widget.text.marquee
+import androidx.compose.ui.unit.sp
+import com.t8rin.ikittool.core.resources.BuildConfig
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.BugReport
+import com.t8rin.ikittool.core.resources.icons.MobileArrowUpRight
+import com.t8rin.ikittool.core.resources.icons.PhotoPrints
+import com.t8rin.ikittool.core.resources.icons.PushPin
+import com.t8rin.ikittool.core.resources.icons.Settings
+import com.t8rin.ikittool.core.settings.presentation.model.isFirstLaunch
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.utils.content_pickers.Picker
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberImagePicker
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.canPinShortcuts
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.createScreenShortcut
+import com.t8rin.ikittool.core.ui.utils.helper.ProvidesValue
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.widget.color_picker.ColorSelection
+import com.t8rin.ikittool.core.ui.widget.dialogs.OneTimeImagePickingDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedAlertDialog
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedBadge
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedIconButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedModalBottomSheet
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedTopAppBar
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedTopAppBarType
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedFlingBehavior
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedVerticalScroll
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.fadingEdges
+import com.t8rin.ikittool.core.ui.widget.modifier.pulsate
+import com.t8rin.ikittool.core.ui.widget.modifier.rotateAnimation
+import com.t8rin.ikittool.core.ui.widget.modifier.scaleOnTap
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItem
+import com.t8rin.ikittool.core.ui.widget.saver.ColorSaver
+import com.t8rin.ikittool.core.ui.widget.sheets.ProcessImagesPreferenceSheet
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.core.ui.widget.text.marquee
 import kotlinx.coroutines.launch
 import kotlin.time.ExperimentalTime
 
@@ -411,16 +410,19 @@ private fun MainTitle(
     val settingsState = LocalSettingsState.current
 
     LocalLayoutDirection.ProvidesValue(LayoutDirection.Ltr) {
-        val badgeText = remember {
-            "${Screen.FEATURES_COUNT} $AppVersionPreReleaseFlavored".trim()
-        }
-
         Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.marquee()
         ) {
             AnimatedContent(settingsState.mainScreenTitle) { title ->
-                Text(title)
+                Text(
+                    text = title,
+                    style = MaterialTheme.typography.headlineSmall.copy(
+                        fontWeight = androidx.compose.ui.text.font.FontWeight.Bold,
+                        letterSpacing = (-0.5).sp
+                    ),
+                    color = MaterialTheme.colorScheme.onSurface
+                )
             }
             if (BuildConfig.DEBUG) {
                 Icon(
@@ -435,22 +437,25 @@ private fun MainTitle(
                         )
                 )
             }
-
+            Spacer(Modifier.width(8.dp))
             EnhancedBadge(
                 content = {
-                    Text(badgeText)
+                    Text(
+                        text = "PRO",
+                        style = MaterialTheme.typography.labelSmall.copy(
+                            fontWeight = androidx.compose.ui.text.font.FontWeight.ExtraBold,
+                            letterSpacing = 1.sp
+                        )
+                    )
                 },
-                containerColor = MaterialTheme.colorScheme.tertiary,
-                contentColor = MaterialTheme.colorScheme.onTertiary,
+                containerColor = MaterialTheme.colorScheme.primary,
+                contentColor = MaterialTheme.colorScheme.onPrimary,
                 modifier = Modifier
-                    .padding(horizontal = 2.dp)
-                    .padding(bottom = 12.dp)
+                    .padding(bottom = 14.dp)
                     .scaleOnTap {
                         onShowSnowfall()
                     }
             )
-            Spacer(Modifier.width(12.dp))
-            TopAppBarEmoji()
         }
     }
 }

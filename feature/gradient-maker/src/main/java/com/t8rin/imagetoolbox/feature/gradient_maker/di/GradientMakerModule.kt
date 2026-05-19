@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.gradient_maker.di
+package com.t8rin.ikittool.feature.gradient_maker.di
 
 import android.graphics.Bitmap
 import androidx.compose.ui.geometry.Offset
@@ -23,8 +23,8 @@ import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ShaderBrush
 import androidx.compose.ui.graphics.TileMode
-import com.t8rin.imagetoolbox.feature.gradient_maker.data.AndroidGradientMaker
-import com.t8rin.imagetoolbox.feature.gradient_maker.domain.GradientMaker
+import com.t8rin.ikittool.feature.gradient_maker.data.AndroidGradientMaker
+import com.t8rin.ikittool.feature.gradient_maker.domain.GradientMaker
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

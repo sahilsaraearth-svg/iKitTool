@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,29 +15,29 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.scan_qr_code.presentation.components
+package com.t8rin.ikittool.feature.scan_qr_code.presentation.components
 
 import android.content.ContentValues
 import android.content.Intent
 import android.provider.CalendarContract
 import android.provider.ContactsContract
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.core.net.toUri
-import com.t8rin.imagetoolbox.core.domain.model.QrType
-import com.t8rin.imagetoolbox.core.domain.model.copy
-import com.t8rin.imagetoolbox.core.domain.model.ifNotEmpty
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.CalendarMonth
-import com.t8rin.imagetoolbox.core.resources.icons.Contacts
-import com.t8rin.imagetoolbox.core.resources.icons.Email
-import com.t8rin.imagetoolbox.core.resources.icons.Link
-import com.t8rin.imagetoolbox.core.resources.icons.LocationOn
-import com.t8rin.imagetoolbox.core.resources.icons.Phone
-import com.t8rin.imagetoolbox.core.resources.icons.Sms
-import com.t8rin.imagetoolbox.core.resources.icons.TextFields
-import com.t8rin.imagetoolbox.core.resources.icons.Wifi
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.Contact
+import com.t8rin.ikittool.core.domain.model.QrType
+import com.t8rin.ikittool.core.domain.model.copy
+import com.t8rin.ikittool.core.domain.model.ifNotEmpty
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.CalendarMonth
+import com.t8rin.ikittool.core.resources.icons.Contacts
+import com.t8rin.ikittool.core.resources.icons.Email
+import com.t8rin.ikittool.core.resources.icons.Link
+import com.t8rin.ikittool.core.resources.icons.LocationOn
+import com.t8rin.ikittool.core.resources.icons.Phone
+import com.t8rin.ikittool.core.resources.icons.Sms
+import com.t8rin.ikittool.core.resources.icons.TextFields
+import com.t8rin.ikittool.core.resources.icons.Wifi
+import com.t8rin.ikittool.core.ui.utils.content_pickers.Contact
 import ezvcard.Ezvcard
 import ezvcard.VCard
 import ezvcard.parameter.EmailType

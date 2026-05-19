@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,18 +15,18 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.checksum_tools.data
+package com.t8rin.ikittool.feature.checksum_tools.data
 
 import android.content.Context
 import androidx.core.net.toUri
-import com.t8rin.imagetoolbox.core.data.saving.io.StringReadable
-import com.t8rin.imagetoolbox.core.data.saving.io.UriReadable
-import com.t8rin.imagetoolbox.core.data.utils.computeFromReadable
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.model.HashingType
-import com.t8rin.imagetoolbox.core.domain.saving.io.Readable
-import com.t8rin.imagetoolbox.feature.checksum_tools.domain.ChecksumManager
-import com.t8rin.imagetoolbox.feature.checksum_tools.domain.ChecksumSource
+import com.t8rin.ikittool.core.data.saving.io.StringReadable
+import com.t8rin.ikittool.core.data.saving.io.UriReadable
+import com.t8rin.ikittool.core.data.utils.computeFromReadable
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.model.HashingType
+import com.t8rin.ikittool.core.domain.saving.io.Readable
+import com.t8rin.ikittool.feature.checksum_tools.domain.ChecksumManager
+import com.t8rin.ikittool.feature.checksum_tools.domain.ChecksumSource
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.withContext

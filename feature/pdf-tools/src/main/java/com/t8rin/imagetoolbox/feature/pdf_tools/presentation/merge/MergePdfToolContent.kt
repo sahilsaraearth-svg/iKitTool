@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,16 +15,16 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.pdf_tools.presentation.merge
+package com.t8rin.ikittool.feature.pdf_tools.presentation.merge
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
-import com.t8rin.imagetoolbox.core.domain.model.MimeType
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberFilePicker
-import com.t8rin.imagetoolbox.core.ui.widget.controls.FileReorderVerticalList
-import com.t8rin.imagetoolbox.feature.pdf_tools.presentation.common.BasePdfToolContent
-import com.t8rin.imagetoolbox.feature.pdf_tools.presentation.merge.screenLogic.MergePdfToolComponent
+import com.t8rin.ikittool.core.domain.model.MimeType
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.ui.utils.content_pickers.rememberFilePicker
+import com.t8rin.ikittool.core.ui.widget.controls.FileReorderVerticalList
+import com.t8rin.ikittool.feature.pdf_tools.presentation.common.BasePdfToolContent
+import com.t8rin.ikittool.feature.pdf_tools.presentation.merge.screenLogic.MergePdfToolComponent
 
 @Composable
 fun MergePdfToolContent(

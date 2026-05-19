@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.markup_layers.presentation.components
+package com.t8rin.ikittool.feature.markup_layers.presentation.components
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.foundation.layout.Box
@@ -30,15 +30,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.IntSize
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.feature.markup_layers.domain.LayerType
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.UiMarkupLayer
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.canvasLeafLayers
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.combinedBounds
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.groupContentSize
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.renderCopy
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.components.model.uiCornerRadiusPercent
-import com.t8rin.imagetoolbox.feature.markup_layers.presentation.screenLogic.MarkupLayersComponent
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.feature.markup_layers.domain.LayerType
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.UiMarkupLayer
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.canvasLeafLayers
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.combinedBounds
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.groupContentSize
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.renderCopy
+import com.t8rin.ikittool.feature.markup_layers.presentation.components.model.uiCornerRadiusPercent
+import com.t8rin.ikittool.feature.markup_layers.presentation.screenLogic.MarkupLayersComponent
 import kotlinx.coroutines.launch
 
 @Composable

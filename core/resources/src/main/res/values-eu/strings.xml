@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -865,7 +865,7 @@
     <string name="header_today">Gaur</string>
     <string name="header_yesterday">Atzo</string>
     <string name="embedded_picker">Kapsulatutako hautatzailea</string>
-    <string name="embedded_picker_sub">Image Toolbox-en irudi-hautatzailea</string>
+    <string name="embedded_picker_sub">iKit Tool-en irudi-hautatzailea</string>
     <string name="no_permissions">Ez dago baimenik</string>
     <string name="request">Eskaera</string>
     <string name="pick_multiple_media">Aukeratu hainbat euskarri</string>
@@ -1079,7 +1079,7 @@
     <string name="antialias">Antialiak</string>
     <string name="antialias_sub">Antialiasing gaitzen du ertz zorrotzak saihesteko</string>
     <string name="open_edit_instead_of_preview">Ireki Editatu Aurrebistaren ordez</string>
-    <string name="open_edit_instead_of_preview_sub">Irudia irekitzeko (aurrebista) hautatzen duzunean ImageToolbox-en, editatu hautapen orria irekiko da aurrebistaren ordez</string>
+    <string name="open_edit_instead_of_preview_sub">Irudia irekitzeko (aurrebista) hautatzen duzunean iKitTool-en, editatu hautapen orria irekiko da aurrebistaren ordez</string>
     <string name="document_scanner">Dokumentuen eskanerra</string>
     <string name="document_scanner_sub">Eskaneatu dokumentuak eta sortu PDF edo bereizi irudiak haietatik</string>
     <string name="click_to_start_scanning">Egin klik eskaneatzen hasteko</string>
@@ -1354,7 +1354,7 @@
     <string name="webp_type_to_webp">Irudiak WEBPra</string>
     <string name="select_webp_image_to_start">Hautatu WEBP irudia hasteko</string>
     <string name="manage_storage_extra_types">Ez dago fitxategietarako sarbide osorik</string>
-    <string name="manage_storage_extra_types_sub">Baimendu fitxategi guztiak sartzeko JXL, QOI eta Android-en irudi gisa ezagutzen ez diren beste irudi batzuk ikusteko. Baimenik gabe Image Toolbox ezin ditu irudi horiek erakutsi</string>
+    <string name="manage_storage_extra_types_sub">Baimendu fitxategi guztiak sartzeko JXL, QOI eta Android-en irudi gisa ezagutzen ez diren beste irudi batzuk ikusteko. Baimenik gabe iKit Tool ezin ditu irudi horiek erakutsi</string>
     <string name="default_draw_color">Marraztu kolore lehenetsia</string>
     <string name="default_draw_path_mode">Marrazte-bide modu lehenetsia</string>
     <string name="add_timestamp">Gehitu denbora-zigilua</string>
@@ -1367,8 +1367,8 @@
     <string name="recently_used">Duela gutxi erabilia</string>
     <string name="ci_channel">CI kanala</string>
     <string name="group">Taldea</string>
-    <string name="image_toolbox_in_telegram">Irudi-tresnak Telegram-en 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">Sartu gure txatean, nahi duzun guztia eztabaidatu ahal izateko eta beta eta iragarkiak argitaratzen ditudan CI kanalean ere begiratu</string>
+    <string name="ikit_tool_in_telegram">Irudi-tresnak Telegram-en 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">Sartu gure txatean, nahi duzun guztia eztabaidatu ahal izateko eta beta eta iragarkiak argitaratzen ditudan CI kanalean ere begiratu</string>
     <string name="ci_channel_sub">Jaso jakinarazpenak aplikazioaren bertsio berriei buruz eta irakurri iragarkiak</string>
     <string name="fit_description">Egokitu irudi bat emandako neurrietara eta aplikatu lausotasuna edo kolorea atzeko planoari</string>
     <string name="tools_arrangement">Tresnen Antolaketa</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">Esportatu sortutako paleta formatu desberdinetara</string>
     <string name="add_color_palette_sub">Kolore berria gehitzen dio uneko paletari</string>
     <string name="palette_name_not_supported">%1$s formatuak ez du onartzen paleta izena ematea</string>
-    <string name="wallpapers_export_not_avaialbe">Play Store-ren gidalerroak direla eta, eginbide hau ezin da uneko bertsioan sartu. Funtzionalitate honetara sartzeko, deskargatu ImageToolbox iturri alternatibo batetik. GitHub-en dauden eraikuntzak aurki ditzakezu behean.</string>
+    <string name="wallpapers_export_not_avaialbe">Play Store-ren gidalerroak direla eta, eginbide hau ezin da uneko bertsioan sartu. Funtzionalitate honetara sartzeko, deskargatu iKitTool iturri alternatibo batetik. GitHub-en dauden eraikuntzak aurki ditzakezu behean.</string>
     <string name="open_github_page">Ireki Github orria</string>
     <string name="overwrite_files_sub_short">Jatorrizko fitxategia beste batekin ordezkatuko da hautatutako karpetan gorde beharrean</string>
     <string name="hidden_watermark_text_detected">Ezkutuko ur-markaren testua detektatu da</string>
@@ -2141,7 +2141,7 @@
     <string name="grayscale_pdf_sub">Bihurtu dokumentu txertatutako irudi guztiak gris-eskalara</string>
     <string name="compress_pdf">Konprimitu PDFa</string>
     <string name="compress_pdf_sub">Optimizatu zure dokumentu-fitxategiaren tamaina errazago partekatzeko</string>
-    <string name="repair_info">ImageToolbox-ek barne-erreferentzia gurutzatuen taula berreraikitzen du eta fitxategi-egitura hutsetik birsortzen du. Honek \\"ireki ezin diren\\" fitxategi askotarako sarbidea berrezarri dezake</string>
+    <string name="repair_info">iKitTool-ek barne-erreferentzia gurutzatuen taula berreraikitzen du eta fitxategi-egitura hutsetik birsortzen du. Honek \\"ireki ezin diren\\" fitxategi askotarako sarbidea berrezarri dezake</string>
     <string name="grayscale_info">Tresna honek dokumentuen irudi guztiak gris-eskala bihurtzen ditu. Fitxategien tamaina murrizteko eta inprimatzeko onena</string>
     <string name="metadata">Metadatuak</string>
     <string name="metadata_pdf_sub">Editatu dokumentuaren propietateak pribatutasun hobea izateko</string>
@@ -2193,11 +2193,11 @@
     <string name="keep_date_time">Mantendu Data Ordua</string>
     <string name="keep_date_time_sub">Gorde beti data eta orduarekin lotutako exif etiketak, mantendu exif aukeratik independenteki funtzionatzen du</string>
     <string name="open_markup_project">Proiektu irekia</string>
-    <string name="open_markup_project_sub">Jarraitu aurrez gordetako Image Toolbox proiektu bat editatzen</string>
-    <string name="markup_project_open_failed">Ezin da Image Toolbox proiektua ireki</string>
-    <string name="markup_project_missing_data">Image Toolbox proiektuari proiektuaren datuak falta zaizkio</string>
-    <string name="markup_project_corrupted">Image Toolbox proiektua hondatuta dago</string>
-    <string name="unsupported_markup_project_version">Onartzen ez den Image Toolbox proiektuaren bertsioa: %1$d</string>
+    <string name="open_markup_project_sub">Jarraitu aurrez gordetako iKit Tool proiektu bat editatzen</string>
+    <string name="markup_project_open_failed">Ezin da iKit Tool proiektua ireki</string>
+    <string name="markup_project_missing_data">iKit Tool proiektuari proiektuaren datuak falta zaizkio</string>
+    <string name="markup_project_corrupted">iKit Tool proiektua hondatuta dago</string>
+    <string name="unsupported_markup_project_version">Onartzen ez den iKit Tool proiektuaren bertsioa: %1$d</string>
     <string name="save_markup_project">Gorde proiektua</string>
     <string name="save_markup_project_sub">Gorde geruzak, atzeko planoa eta editatu historia proiektu editagarri batean</string>
     <string name="failed_to_open">Ezin izan da ireki</string>

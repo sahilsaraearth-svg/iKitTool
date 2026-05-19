@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("COMPOSE_APPLIER_CALL_MISMATCH")
 
-package com.t8rin.imagetoolbox.feature.draw.presentation.components
+package com.t8rin.ikittool.feature.draw.presentation.components
 
 import android.annotation.SuppressLint
 import android.graphics.Bitmap
@@ -52,29 +52,29 @@ import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.graphics.toArgb
 import androidx.core.graphics.createBitmap
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.model.Pt
-import com.t8rin.imagetoolbox.core.domain.model.pt
-import com.t8rin.imagetoolbox.core.filters.domain.model.Filter
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.createScaledBitmap
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.HelperGridParams
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawLineStyle
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawMode
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawPathMode
-import com.t8rin.imagetoolbox.feature.draw.domain.WarpStroke
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.BitmapDrawerPreview
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.DrawPathEffectPreview
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.MotionEvent
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.copy
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.drawRepeatedImageOnPath
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.drawRepeatedTextOnPath
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.floodFill
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.handle
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.overlay
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.pointerDrawObserver
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.rememberPaint
-import com.t8rin.imagetoolbox.feature.draw.presentation.components.utils.rememberPathHelper
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.model.Pt
+import com.t8rin.ikittool.core.domain.model.pt
+import com.t8rin.ikittool.core.filters.domain.model.Filter
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.createScaledBitmap
+import com.t8rin.ikittool.core.ui.widget.modifier.HelperGridParams
+import com.t8rin.ikittool.feature.draw.domain.DrawLineStyle
+import com.t8rin.ikittool.feature.draw.domain.DrawMode
+import com.t8rin.ikittool.feature.draw.domain.DrawPathMode
+import com.t8rin.ikittool.feature.draw.domain.WarpStroke
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.BitmapDrawerPreview
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.DrawPathEffectPreview
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.MotionEvent
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.copy
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.drawRepeatedImageOnPath
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.drawRepeatedTextOnPath
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.floodFill
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.handle
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.overlay
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.pointerDrawObserver
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.rememberPaint
+import com.t8rin.ikittool.feature.draw.presentation.components.utils.rememberPathHelper
 import com.t8rin.trickle.WarpBrush
 import com.t8rin.trickle.WarpEngine
 import com.t8rin.trickle.WarpMode

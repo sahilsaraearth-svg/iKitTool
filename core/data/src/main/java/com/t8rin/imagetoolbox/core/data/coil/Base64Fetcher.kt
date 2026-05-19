@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.data.coil
+package com.t8rin.ikittool.core.data.coil
 
 import android.util.Base64
 import coil3.ImageLoader
@@ -26,8 +26,8 @@ import coil3.fetch.FetchResult
 import coil3.fetch.Fetcher
 import coil3.fetch.SourceFetchResult
 import coil3.request.Options
-import com.t8rin.imagetoolbox.core.domain.utils.isBase64
-import com.t8rin.imagetoolbox.core.domain.utils.trimToBase64
+import com.t8rin.ikittool.core.domain.utils.isBase64
+import com.t8rin.ikittool.core.domain.utils.trimToBase64
 import okio.Buffer
 
 internal class Base64Fetcher(

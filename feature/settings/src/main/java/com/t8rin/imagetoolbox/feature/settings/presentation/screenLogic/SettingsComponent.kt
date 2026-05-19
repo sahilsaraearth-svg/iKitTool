@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.settings.presentation.screenLogic
+package com.t8rin.ikittool.feature.settings.presentation.screenLogic
 
 import android.graphics.Bitmap
 import android.net.Uri
@@ -28,40 +28,40 @@ import com.arkivanov.decompose.ComponentContext
 import com.arkivanov.decompose.value.Value
 import com.t8rin.dynamic.theme.ColorTuple
 import com.t8rin.dynamic.theme.extractPrimaryColor
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.ShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageScaleMode
-import com.t8rin.imagetoolbox.core.domain.image.model.Quality
-import com.t8rin.imagetoolbox.core.domain.image.model.ResizeType
-import com.t8rin.imagetoolbox.core.domain.model.ColorModel
-import com.t8rin.imagetoolbox.core.domain.model.HashingType
-import com.t8rin.imagetoolbox.core.domain.model.SystemBarsVisibility
-import com.t8rin.imagetoolbox.core.domain.resource.ResourceManager
-import com.t8rin.imagetoolbox.core.domain.saving.FileController
-import com.t8rin.imagetoolbox.core.domain.saving.FilenameCreator
-import com.t8rin.imagetoolbox.core.domain.utils.ListUtils.toggle
-import com.t8rin.imagetoolbox.core.domain.utils.humanFileSize
-import com.t8rin.imagetoolbox.core.domain.utils.smartJob
-import com.t8rin.imagetoolbox.core.settings.domain.SettingsManager
-import com.t8rin.imagetoolbox.core.settings.domain.model.ColorHarmonizer
-import com.t8rin.imagetoolbox.core.settings.domain.model.CopyToClipboardMode
-import com.t8rin.imagetoolbox.core.settings.domain.model.DomainFontFamily
-import com.t8rin.imagetoolbox.core.settings.domain.model.FastSettingsSide
-import com.t8rin.imagetoolbox.core.settings.domain.model.FlingType
-import com.t8rin.imagetoolbox.core.settings.domain.model.NightMode
-import com.t8rin.imagetoolbox.core.settings.domain.model.SettingsState
-import com.t8rin.imagetoolbox.core.settings.domain.model.ShapeType
-import com.t8rin.imagetoolbox.core.settings.domain.model.SliderType
-import com.t8rin.imagetoolbox.core.settings.domain.model.SnowfallMode
-import com.t8rin.imagetoolbox.core.settings.domain.model.SwitchType
-import com.t8rin.imagetoolbox.core.settings.presentation.model.Setting
-import com.t8rin.imagetoolbox.core.settings.presentation.model.SettingsGroup
-import com.t8rin.imagetoolbox.core.settings.presentation.model.UiFontFamily
-import com.t8rin.imagetoolbox.core.ui.utils.BaseComponent
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.utils.state.update
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.ShareProvider
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.ImageScaleMode
+import com.t8rin.ikittool.core.domain.image.model.Quality
+import com.t8rin.ikittool.core.domain.image.model.ResizeType
+import com.t8rin.ikittool.core.domain.model.ColorModel
+import com.t8rin.ikittool.core.domain.model.HashingType
+import com.t8rin.ikittool.core.domain.model.SystemBarsVisibility
+import com.t8rin.ikittool.core.domain.resource.ResourceManager
+import com.t8rin.ikittool.core.domain.saving.FileController
+import com.t8rin.ikittool.core.domain.saving.FilenameCreator
+import com.t8rin.ikittool.core.domain.utils.ListUtils.toggle
+import com.t8rin.ikittool.core.domain.utils.humanFileSize
+import com.t8rin.ikittool.core.domain.utils.smartJob
+import com.t8rin.ikittool.core.settings.domain.SettingsManager
+import com.t8rin.ikittool.core.settings.domain.model.ColorHarmonizer
+import com.t8rin.ikittool.core.settings.domain.model.CopyToClipboardMode
+import com.t8rin.ikittool.core.settings.domain.model.DomainFontFamily
+import com.t8rin.ikittool.core.settings.domain.model.FastSettingsSide
+import com.t8rin.ikittool.core.settings.domain.model.FlingType
+import com.t8rin.ikittool.core.settings.domain.model.NightMode
+import com.t8rin.ikittool.core.settings.domain.model.SettingsState
+import com.t8rin.ikittool.core.settings.domain.model.ShapeType
+import com.t8rin.ikittool.core.settings.domain.model.SliderType
+import com.t8rin.ikittool.core.settings.domain.model.SnowfallMode
+import com.t8rin.ikittool.core.settings.domain.model.SwitchType
+import com.t8rin.ikittool.core.settings.presentation.model.Setting
+import com.t8rin.ikittool.core.settings.presentation.model.SettingsGroup
+import com.t8rin.ikittool.core.settings.presentation.model.UiFontFamily
+import com.t8rin.ikittool.core.ui.utils.BaseComponent
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.utils.state.update
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject

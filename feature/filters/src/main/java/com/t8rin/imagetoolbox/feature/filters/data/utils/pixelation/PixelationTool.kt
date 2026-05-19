@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("MemberVisibilityCanBePrivate")
 
-package com.t8rin.imagetoolbox.feature.filters.data.utils.pixelation
+package com.t8rin.ikittool.feature.filters.data.utils.pixelation
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -29,8 +29,8 @@ import androidx.core.graphics.createBitmap
 import androidx.core.graphics.get
 import androidx.core.graphics.withClip
 import androidx.core.graphics.withSave
-import com.t8rin.imagetoolbox.feature.filters.data.utils.pixelation.tool.PixelationCommands
-import com.t8rin.imagetoolbox.feature.filters.data.utils.pixelation.tool.PixelationLayer
+import com.t8rin.ikittool.feature.filters.data.utils.pixelation.tool.PixelationCommands
+import com.t8rin.ikittool.feature.filters.data.utils.pixelation.tool.PixelationLayer
 import kotlin.math.sqrt
 
 internal object PixelationTool {

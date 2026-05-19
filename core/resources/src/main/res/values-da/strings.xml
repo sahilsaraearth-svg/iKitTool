@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -867,7 +867,7 @@
     <string name="header_today">I dag</string>
     <string name="header_yesterday">I går</string>
     <string name="embedded_picker">Embedded Picker</string>
-    <string name="embedded_picker_sub">Image Toolbox\'s billedvælger</string>
+    <string name="embedded_picker_sub">iKit Tool\'s billedvælger</string>
     <string name="no_permissions">Ingen tilladelser</string>
     <string name="request">Anmodning</string>
     <string name="pick_multiple_media">Vælg flere medier</string>
@@ -1080,7 +1080,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">Aktiverer antialiasing for at forhindre skarpe kanter</string>
     <string name="open_edit_instead_of_preview">Åbn Rediger i stedet for forhåndsvisning</string>
-    <string name="open_edit_instead_of_preview_sub">Når du vælger billede, der skal åbnes (forhåndsvisning) i ImageToolbox, åbnes redigeringsarket i stedet for forhåndsvisning</string>
+    <string name="open_edit_instead_of_preview_sub">Når du vælger billede, der skal åbnes (forhåndsvisning) i iKitTool, åbnes redigeringsarket i stedet for forhåndsvisning</string>
     <string name="document_scanner">Dokument scanner</string>
     <string name="document_scanner_sub">Scan dokumenter og opret PDF eller adskil billeder fra dem</string>
     <string name="click_to_start_scanning">Klik for at starte scanningen</string>
@@ -1354,7 +1354,7 @@
     <string name="webp_type_to_webp">Billeder til WEBP</string>
     <string name="select_webp_image_to_start">Vælg WEBP-billede for at starte</string>
     <string name="manage_storage_extra_types">Ingen fuld adgang til filer</string>
-    <string name="manage_storage_extra_types_sub">Tillad alle filer adgang til at se JXL, QOI og andre billeder, der ikke genkendes som billeder på Android. Uden tilladelsen er Image Toolbox ikke i stand til at vise disse billeder</string>
+    <string name="manage_storage_extra_types_sub">Tillad alle filer adgang til at se JXL, QOI og andre billeder, der ikke genkendes som billeder på Android. Uden tilladelsen er iKit Tool ikke i stand til at vise disse billeder</string>
     <string name="default_draw_color">Standard tegnefarve</string>
     <string name="default_draw_path_mode">Standard tegnestitilstand</string>
     <string name="add_timestamp">Tilføj tidsstempel</string>
@@ -1367,8 +1367,8 @@
     <string name="recently_used">Nyligt brugt</string>
     <string name="ci_channel">CI kanal</string>
     <string name="group">Gruppe</string>
-    <string name="image_toolbox_in_telegram">Billedværktøjskasse i Telegram 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">Deltag i vores chat, hvor du kan diskutere alt, hvad du vil, og se også ind på CI-kanalen, hvor jeg poster betaer og annonceringer</string>
+    <string name="ikit_tool_in_telegram">Billedværktøjskasse i Telegram 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">Deltag i vores chat, hvor du kan diskutere alt, hvad du vil, og se også ind på CI-kanalen, hvor jeg poster betaer og annonceringer</string>
     <string name="ci_channel_sub">Få besked om nye versioner af appen, og læs meddelelser</string>
     <string name="fit_description">Tilpas et billede til givne dimensioner og anvend sløring eller farve på baggrunden</string>
     <string name="tools_arrangement">Værktøjsarrangement</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">Eksporter genereret palet til forskellige formater</string>
     <string name="add_color_palette_sub">Tilføjer ny farve til den nuværende palet</string>
     <string name="palette_name_not_supported">Formatet %1$s understøtter ikke at angive paletnavn</string>
-    <string name="wallpapers_export_not_avaialbe">På grund af Play Butiks politikker kan denne funktion ikke inkluderes i den aktuelle build. For at få adgang til denne funktionalitet skal du downloade ImageToolbox fra en alternativ kilde. Du kan finde de tilgængelige builds på GitHub nedenfor.</string>
+    <string name="wallpapers_export_not_avaialbe">På grund af Play Butiks politikker kan denne funktion ikke inkluderes i den aktuelle build. For at få adgang til denne funktionalitet skal du downloade iKitTool fra en alternativ kilde. Du kan finde de tilgængelige builds på GitHub nedenfor.</string>
     <string name="open_github_page">Åbn Github-siden</string>
     <string name="overwrite_files_sub_short">Den originale fil vil blive erstattet med en ny i stedet for at gemme den i den valgte mappe</string>
     <string name="hidden_watermark_text_detected">Registreret skjult vandmærketekst</string>
@@ -2141,7 +2141,7 @@
     <string name="grayscale_pdf_sub">Konverter alle dokumentindlejrede billeder til gråtoner</string>
     <string name="compress_pdf">Komprimer PDF</string>
     <string name="compress_pdf_sub">Optimer din dokumentfilstørrelse for nemmere deling</string>
-    <string name="repair_info">ImageToolbox genopbygger den interne krydsreferencetabel og regenererer filstrukturen fra bunden. Dette kan gendanne adgangen til mange filer, der \\"ikke kan åbnes\\"</string>
+    <string name="repair_info">iKitTool genopbygger den interne krydsreferencetabel og regenererer filstrukturen fra bunden. Dette kan gendanne adgangen til mange filer, der \\"ikke kan åbnes\\"</string>
     <string name="grayscale_info">Dette værktøj konverterer alle dokumentbilleder til gråtoner. Bedst til udskrivning og reduktion af filstørrelse</string>
     <string name="metadata">Metadata</string>
     <string name="metadata_pdf_sub">Rediger dokumentegenskaber for bedre privatliv</string>
@@ -2193,11 +2193,11 @@
     <string name="background_color_for_alpha_formats">Baggrundsfarve til alfaformater</string>
     <string name="background_color_for_alpha_formats_sub">Tilføjer mulighed for at indstille baggrundsfarve for hvert billedformat med alfa-understøttelse, når den er deaktiveret, er dette kun tilgængeligt for ikke-alfa-one</string>
     <string name="open_markup_project">Åbent projekt</string>
-    <string name="open_markup_project_sub">Fortsæt med at redigere et tidligere gemt Image Toolbox-projekt</string>
-    <string name="markup_project_open_failed">Kan ikke åbne Image Toolbox-projektet</string>
-    <string name="markup_project_missing_data">Image Toolbox-projektet mangler projektdata</string>
-    <string name="markup_project_corrupted">Image Toolbox-projektet er beskadiget</string>
-    <string name="unsupported_markup_project_version">Ikke-understøttet Image Toolbox-projektversion: %1$d</string>
+    <string name="open_markup_project_sub">Fortsæt med at redigere et tidligere gemt iKit Tool-projekt</string>
+    <string name="markup_project_open_failed">Kan ikke åbne iKit Tool-projektet</string>
+    <string name="markup_project_missing_data">iKit Tool-projektet mangler projektdata</string>
+    <string name="markup_project_corrupted">iKit Tool-projektet er beskadiget</string>
+    <string name="unsupported_markup_project_version">Ikke-understøttet iKit Tool-projektversion: %1$d</string>
     <string name="save_markup_project">Gem projekt</string>
     <string name="save_markup_project_sub">Gem lag, baggrund og redigeringshistorik i en redigerbar projektfil</string>
     <string name="failed_to_open">Kunne ikke åbne</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1080,7 +1080,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">තියුණු දාර වලක්වා ගැනීමට antialiasing සක්රීය කරයි</string>
     <string name="open_edit_instead_of_preview">පෙරදසුන වෙනුවට සංස්කරණය විවෘත කරන්න</string>
-    <string name="open_edit_instead_of_preview_sub">ImageToolbox තුළ ඔබ රූපය විවෘත කිරීමට (පෙරදසුන) තේරූ විට, පෙරදසුන් වෙනුවට සංස්කරණ තේරීම් පත්‍රය විවෘත වේ</string>
+    <string name="open_edit_instead_of_preview_sub">iKitTool තුළ ඔබ රූපය විවෘත කිරීමට (පෙරදසුන) තේරූ විට, පෙරදසුන් වෙනුවට සංස්කරණ තේරීම් පත්‍රය විවෘත වේ</string>
     <string name="document_scanner">ලේඛන ස්කෑනරය</string>
     <string name="document_scanner_sub">ලේඛන පරිලෝකනය කර PDF සාදන්න හෝ ඒවායින් වෙනම පින්තූර සාදන්න</string>
     <string name="click_to_start_scanning">ස්කෑන් කිරීම ආරම්භ කිරීමට ක්ලික් කරන්න</string>
@@ -1368,8 +1368,8 @@
     <string name="recently_used">මෑතකදී භාවිතා කරන ලදී</string>
     <string name="ci_channel">CI නාලිකාව</string>
     <string name="group">කණ්ඩායම</string>
-    <string name="image_toolbox_in_telegram">Telegram හි රූප මෙවලම් පෙට්ටිය 🎉</string>
-    <string name="image_toolbox_in_telegram_sub">ඔබට අවශ්‍ය ඕනෑම දෙයක් සාකච්ඡා කළ හැකි අපගේ කතාබහට සම්බන්ධ වන්න සහ මා බීටා සහ නිවේදන පළ කරන CI නාලිකාව දෙස බලන්න.</string>
+    <string name="ikit_tool_in_telegram">Telegram හි රූප මෙවලම් පෙට්ටිය 🎉</string>
+    <string name="ikit_tool_in_telegram_sub">ඔබට අවශ්‍ය ඕනෑම දෙයක් සාකච්ඡා කළ හැකි අපගේ කතාබහට සම්බන්ධ වන්න සහ මා බීටා සහ නිවේදන පළ කරන CI නාලිකාව දෙස බලන්න.</string>
     <string name="ci_channel_sub">යෙදුමේ නව අනුවාද ගැන දැනුම් දෙන්න, සහ නිවේදන කියවන්න</string>
     <string name="fit_description">ලබා දී ඇති මානයන්ට රූපයක් සවි කර පසුබිමට නොපැහැදිලි හෝ වර්ණය යොදන්න</string>
     <string name="tools_arrangement">මෙවලම් සකස් කිරීම</string>
@@ -1841,7 +1841,7 @@
     <string name="export_palette_sub">ජනනය කරන ලද තලය විවිධ ආකෘති වෙත අපනයනය කරන්න</string>
     <string name="add_color_palette_sub">වත්මන් තලයට නව වර්ණයක් එක් කරයි</string>
     <string name="palette_name_not_supported">%1$s ආකෘතිය පැලට් නම සැපයීමට සහාය නොදක්වයි</string>
-    <string name="wallpapers_export_not_avaialbe">Play Store ප්‍රතිපත්ති හේතුවෙන්, මෙම විශේෂාංගය වත්මන් ගොඩනැගීමට ඇතුළත් කළ නොහැක. මෙම ක්‍රියාකාරීත්වයට ප්‍රවේශ වීමට, කරුණාකර විකල්ප මූලාශ්‍රයකින් ImageToolbox බාගන්න. ඔබට පහතින් GitHub හි පවතින ගොඩනැගීම් සොයා ගත හැක.</string>
+    <string name="wallpapers_export_not_avaialbe">Play Store ප්‍රතිපත්ති හේතුවෙන්, මෙම විශේෂාංගය වත්මන් ගොඩනැගීමට ඇතුළත් කළ නොහැක. මෙම ක්‍රියාකාරීත්වයට ප්‍රවේශ වීමට, කරුණාකර විකල්ප මූලාශ්‍රයකින් iKitTool බාගන්න. ඔබට පහතින් GitHub හි පවතින ගොඩනැගීම් සොයා ගත හැක.</string>
     <string name="open_github_page">Github පිටුව විවෘත කරන්න</string>
     <string name="overwrite_files_sub_short">තෝරාගත් ෆෝල්ඩරයේ සුරැකීම වෙනුවට මුල් ගොනුව අලුත් එකක් සමඟ ප්‍රතිස්ථාපනය වේ</string>
     <string name="hidden_watermark_text_detected">සැඟවුණු දිය සලකුණු පෙළ අනාවරණය විය</string>
@@ -2142,7 +2142,7 @@
     <string name="grayscale_pdf_sub">සියලුම ලේඛන කාවැද්දූ පින්තූර අළු පරිමාණයට පරිවර්තනය කරන්න</string>
     <string name="compress_pdf">PDF සම්පීඩනය කරන්න</string>
     <string name="compress_pdf_sub">පහසු බෙදාගැනීම සඳහා ඔබේ ලේඛන ගොනු ප්‍රමාණය ප්‍රශස්ත කරන්න</string>
-    <string name="repair_info">ImageToolbox අභ්‍යන්තර හරස් යොමු වගුව නැවත ගොඩනඟන අතර මුල සිටම ගොනු ව්‍යුහය ප්‍රතිජනනය කරයි. මෙය \\"විවෘත කළ නොහැකි\\" බොහෝ ගොනු වෙත ප්‍රවේශය ප්‍රතිසාධනය කළ හැක.</string>
+    <string name="repair_info">iKitTool අභ්‍යන්තර හරස් යොමු වගුව නැවත ගොඩනඟන අතර මුල සිටම ගොනු ව්‍යුහය ප්‍රතිජනනය කරයි. මෙය \\"විවෘත කළ නොහැකි\\" බොහෝ ගොනු වෙත ප්‍රවේශය ප්‍රතිසාධනය කළ හැක.</string>
     <string name="grayscale_info">මෙම මෙවලම සියලුම ලේඛන රූප අළු පරිමාණයට පරිවර්තනය කරයි. ගොනු ප්රමාණය මුද්රණය කිරීම සහ අඩු කිරීම සඳහා හොඳම වේ</string>
     <string name="metadata">පාරදත්ත</string>
     <string name="metadata_pdf_sub">වඩා හොඳ පෞද්ගලිකත්වය සඳහා ලේඛන ගුණාංග සංස්කරණය කරන්න</string>

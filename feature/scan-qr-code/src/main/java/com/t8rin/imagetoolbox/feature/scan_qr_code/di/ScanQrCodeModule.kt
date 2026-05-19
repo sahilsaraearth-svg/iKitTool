@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,10 +15,10 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.scan_qr_code.di
+package com.t8rin.ikittool.feature.scan_qr_code.di
 
-import com.t8rin.imagetoolbox.feature.scan_qr_code.data.AndroidImageBarcodeReader
-import com.t8rin.imagetoolbox.feature.scan_qr_code.domain.ImageBarcodeReader
+import com.t8rin.ikittool.feature.scan_qr_code.data.AndroidImageBarcodeReader
+import com.t8rin.ikittool.feature.scan_qr_code.domain.ImageBarcodeReader
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

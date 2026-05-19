@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,13 +14,13 @@
  * You should have received a copy of the Apache License
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
-package com.t8rin.imagetoolbox.feature.media_picker.presentation
+package com.t8rin.ikittool.feature.media_picker.presentation
 
 import androidx.compose.runtime.Composable
 import com.arkivanov.decompose.retainedComponent
-import com.t8rin.imagetoolbox.core.ui.utils.ComposeActivity
-import com.t8rin.imagetoolbox.feature.media_picker.presentation.components.MediaPickerRootContent
-import com.t8rin.imagetoolbox.feature.media_picker.presentation.screenLogic.MediaPickerComponent
+import com.t8rin.ikittool.core.ui.utils.ComposeActivity
+import com.t8rin.ikittool.feature.media_picker.presentation.components.MediaPickerRootContent
+import com.t8rin.ikittool.feature.media_picker.presentation.screenLogic.MediaPickerComponent
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

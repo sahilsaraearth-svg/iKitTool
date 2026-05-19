@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.settings.presentation.components
+package com.t8rin.ikittool.feature.settings.presentation.components
 
 import androidx.activity.compose.LocalActivity
 import androidx.compose.material3.MaterialTheme
@@ -28,21 +28,21 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Save
-import com.t8rin.imagetoolbox.core.resources.icons.TextFields
-import com.t8rin.imagetoolbox.core.settings.presentation.model.Setting
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.isInstalledFromPlayStore
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalComponentActivity
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalContainerShape
-import com.t8rin.imagetoolbox.core.ui.utils.provider.ProvideContainerDefaults
-import com.t8rin.imagetoolbox.core.ui.utils.provider.rememberCurrentLifecycleEvent
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.feature.settings.presentation.screenLogic.SettingsComponent
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Save
+import com.t8rin.ikittool.core.resources.icons.TextFields
+import com.t8rin.ikittool.core.settings.presentation.model.Setting
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.isInstalledFromPlayStore
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.utils.provider.LocalComponentActivity
+import com.t8rin.ikittool.core.ui.utils.provider.LocalContainerShape
+import com.t8rin.ikittool.core.ui.utils.provider.ProvideContainerDefaults
+import com.t8rin.ikittool.core.ui.utils.provider.rememberCurrentLifecycleEvent
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.feature.settings.presentation.screenLogic.SettingsComponent
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

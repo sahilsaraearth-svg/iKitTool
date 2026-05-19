@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ iKitTool is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -869,7 +869,7 @@
     <string name="cupertino_switch_sub">از سوئیچ مانند iOS بر اساس سیستم طراحی کوپرتینو استفاده می کند</string>
     <string name="channels_configuration">پیکربندی کانال‌ها</string>
     <string name="embedded_picker">انتخاب‌گر تصویر جعبه‌ابزار تصویر</string>
-    <string name="embedded_picker_sub">انتخابگر تصویر در Image Toolbox</string>
+    <string name="embedded_picker_sub">انتخابگر تصویر در iKit Tool</string>
     <string name="auto_paste">جای‌گذاری خودکار</string>
     <string name="auto_paste_sub">به برنامه اجازه می‌دهد تا داده‌های کلیپ‌بورد را به‌طور خودکار جای‌گذاری کند، بنابراین در صفحه اصلی ظاهر می‌شود و می‌توانید آن‌ها را پردازش کنید.</string>
     <string name="harmonization_color">رنگ هماهنگ‌سازی</string>
@@ -967,7 +967,7 @@
     <string name="tag_shutter_speed_value">مقدار سرعت شاتر</string>
     <string name="tag_flash">فلش</string>
     <string name="tag_flash_energy">انرژی فلش</string>
-    <string name="image_toolbox_in_telegram">ImageToolbox در تلگرام 🎉</string>
+    <string name="ikit_tool_in_telegram">iKitTool در تلگرام 🎉</string>
     <string name="noise_generation">تولید نویز</string>
     <string name="noise_generation_sub">نویز های مختلفی مانند پرلین یا انواع دیگر تولید کنید</string>
     <string name="noise_type">نوع نویز</string>
@@ -1194,7 +1194,7 @@
     <string name="draw_regular_star_sub">ستاره ای را بکشید که به جای شکل آزاد، منظم خواهد بود</string>
     <string name="antialias_sub">برای جلوگیری از لبه‌های تیز، آنتی‌الیاسینگ را فعال می‌کند</string>
     <string name="open_edit_instead_of_preview">ویرایش را به جای پیش نمایش باز کنید</string>
-    <string name="open_edit_instead_of_preview_sub">هنگامی که تصویر را برای باز کردن (پیش نمایش) در ImageToolbox انتخاب می کنید، برگه انتخاب ویرایش به جای پیش نمایش باز می شود</string>
+    <string name="open_edit_instead_of_preview_sub">هنگامی که تصویر را برای باز کردن (پیش نمایش) در iKitTool انتخاب می کنید، برگه انتخاب ویرایش به جای پیش نمایش باز می شود</string>
     <string name="document_scanner_sub">اسناد را اسکن کنید و PDF یا تصاویر جدا از آنها ایجاد کنید</string>
     <string name="options_below_is_for_images">گزینه های زیر برای ذخیره تصاویر است نه PDF</string>
     <string name="equalize_histogram_hsv">هیستوگرام HSV را یکسان کنید</string>
@@ -1394,7 +1394,7 @@
     <string name="links">پیوندها</string>
     <string name="ico_size_warning">فایل‌های ICO را فقط می‌توان در حداکثر اندازه ۲۵۶×۲۵۶ ذخیره کرد</string>
     <string name="manage_storage_extra_types">عدم دسترسی کامل به فایل ها</string>
-    <string name="manage_storage_extra_types_sub">برای دیدن JXL، QOI و سایر تصاویری که در Android به‌عنوان تصویر شناخته نمی‌شوند، به همه فایل‌ها اجازه دسترسی دهید. بدون مجوز Image Toolbox قادر به نمایش آن تصاویر نیست</string>
+    <string name="manage_storage_extra_types_sub">برای دیدن JXL، QOI و سایر تصاویری که در Android به‌عنوان تصویر شناخته نمی‌شوند، به همه فایل‌ها اجازه دسترسی دهید. بدون مجوز iKit Tool قادر به نمایش آن تصاویر نیست</string>
     <string name="default_draw_color">رنگ ترسیم پیش فرض</string>
     <string name="default_draw_path_mode">حالت پیش‌فرض ترسیم مسیر</string>
     <string name="add_timestamp">اضافه کردن زمان</string>
@@ -1407,7 +1407,7 @@
     <string name="recently_used">اخیرا استفاده شده است</string>
     <string name="ci_channel">کانال CI</string>
     <string name="group">گروه</string>
-    <string name="image_toolbox_in_telegram_sub">به چت ما بپیوندید، جایی که می توانید در مورد هر چیزی که می خواهید بحث کنید و همچنین به کانال CI که در آن نسخه های بتا و اطلاعیه ها را پست می کنم نگاه کنید.</string>
+    <string name="ikit_tool_in_telegram_sub">به چت ما بپیوندید، جایی که می توانید در مورد هر چیزی که می خواهید بحث کنید و همچنین به کانال CI که در آن نسخه های بتا و اطلاعیه ها را پست می کنم نگاه کنید.</string>
     <string name="ci_channel_sub">در مورد نسخه های جدید برنامه مطلع شوید و اطلاعیه ها را بخوانید</string>
     <string name="fit_description">یک تصویر را در ابعاد داده شده قرار دهید و تاری یا رنگ را در پس زمینه اعمال کنید</string>
     <string name="tools_arrangement">چیدمان ابزار</string>
@@ -1840,7 +1840,7 @@
     <string name="export_palette_sub">پالت تولید شده را به فرمت های مختلف صادر کنید</string>
     <string name="add_color_palette_sub">رنگ جدیدی را به پالت فعلی اضافه می کند</string>
     <string name="palette_name_not_supported">قالب %1$s از ارائه نام پالت پشتیبانی نمی کند</string>
-    <string name="wallpapers_export_not_avaialbe">به دلیل خط‌مشی‌های فروشگاه Play، این ویژگی نمی‌تواند در ساخت فعلی گنجانده شود. برای دسترسی به این قابلیت، لطفا ImageToolbox را از یک منبع جایگزین دانلود کنید. می توانید بیلدهای موجود در GitHub را در زیر بیابید.</string>
+    <string name="wallpapers_export_not_avaialbe">به دلیل خط‌مشی‌های فروشگاه Play، این ویژگی نمی‌تواند در ساخت فعلی گنجانده شود. برای دسترسی به این قابلیت، لطفا iKitTool را از یک منبع جایگزین دانلود کنید. می توانید بیلدهای موجود در GitHub را در زیر بیابید.</string>
     <string name="open_github_page">صفحه Github را باز کنید</string>
     <string name="overwrite_files_sub_short">فایل اصلی به جای ذخیره در پوشه انتخابی با فایل جدید جایگزین می شود</string>
     <string name="hidden_watermark_text_detected">متن واترمارک پنهان شناسایی شد</string>
@@ -2141,7 +2141,7 @@
     <string name="grayscale_pdf_sub">همه تصاویر جاسازی شده سند را به مقیاس خاکستری تبدیل کنید</string>
     <string name="compress_pdf">فشرده سازی PDF</string>
     <string name="compress_pdf_sub">اندازه فایل سند خود را برای اشتراک گذاری آسان تر بهینه کنید</string>
-    <string name="repair_info">ImageToolbox جدول مرجع متقابل داخلی را بازسازی می کند و ساختار فایل را از ابتدا بازسازی می کند. این می‌تواند دسترسی به بسیاری از فایل‌هایی را که \\"باز نمی‌شوند\\" بازیابی کند.</string>
+    <string name="repair_info">iKitTool جدول مرجع متقابل داخلی را بازسازی می کند و ساختار فایل را از ابتدا بازسازی می کند. این می‌تواند دسترسی به بسیاری از فایل‌هایی را که \\"باز نمی‌شوند\\" بازیابی کند.</string>
     <string name="grayscale_info">این ابزار تمام تصاویر سند را به مقیاس خاکستری تبدیل می کند. بهترین برای چاپ و کاهش حجم فایل</string>
     <string name="metadata">فراداده</string>
     <string name="metadata_pdf_sub">ویژگی های سند را برای حفظ حریم خصوصی بهتر ویرایش کنید</string>

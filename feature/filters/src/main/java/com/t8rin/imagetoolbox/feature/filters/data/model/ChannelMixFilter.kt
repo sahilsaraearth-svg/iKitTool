@@ -1,11 +1,11 @@
-package com.t8rin.imagetoolbox.feature.filters.data.model
+package com.t8rin.ikittool.feature.filters.data.model
 
 import com.jhlabs.ChannelMixFilter
 import com.jhlabs.JhFilter
-import com.t8rin.imagetoolbox.core.filters.domain.model.Filter
-import com.t8rin.imagetoolbox.core.filters.domain.model.params.ChannelMixParams
-import com.t8rin.imagetoolbox.core.ksp.annotations.FilterInject
-import com.t8rin.imagetoolbox.feature.filters.data.transformation.JhFilterTransformation
+import com.t8rin.ikittool.core.filters.domain.model.Filter
+import com.t8rin.ikittool.core.filters.domain.model.params.ChannelMixParams
+import com.t8rin.ikittool.core.ksp.annotations.FilterInject
+import com.t8rin.ikittool.feature.filters.data.transformation.JhFilterTransformation
 
 @FilterInject
 internal class ChannelMixFilter(

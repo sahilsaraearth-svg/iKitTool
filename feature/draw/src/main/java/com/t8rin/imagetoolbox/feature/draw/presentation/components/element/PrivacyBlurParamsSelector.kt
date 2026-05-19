@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.draw.presentation.components.element
+package com.t8rin.ikittool.feature.draw.presentation.components.element
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.expandVertically
@@ -27,8 +27,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.ui.widget.controls.resize_group.components.BlurRadiusSelector
-import com.t8rin.imagetoolbox.feature.draw.domain.DrawMode
+import com.t8rin.ikittool.core.ui.widget.controls.resize_group.components.BlurRadiusSelector
+import com.t8rin.ikittool.feature.draw.domain.DrawMode
 
 @Composable
 internal fun PrivacyBlurParamsSelector(

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.checksum_tools.presentation.components.pages
+package com.t8rin.ikittool.feature.checksum_tools.presentation.components.pages
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.ColumnScope
@@ -28,12 +28,12 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.ui.utils.helper.Clipboard
-import com.t8rin.imagetoolbox.core.ui.widget.other.InfoContainer
-import com.t8rin.imagetoolbox.feature.checksum_tools.presentation.components.ChecksumEnterField
-import com.t8rin.imagetoolbox.feature.checksum_tools.presentation.components.ChecksumPreviewField
-import com.t8rin.imagetoolbox.feature.checksum_tools.presentation.screenLogic.ChecksumToolsComponent
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.ui.utils.helper.Clipboard
+import com.t8rin.ikittool.core.ui.widget.other.InfoContainer
+import com.t8rin.ikittool.feature.checksum_tools.presentation.components.ChecksumEnterField
+import com.t8rin.ikittool.feature.checksum_tools.presentation.components.ChecksumPreviewField
+import com.t8rin.ikittool.feature.checksum_tools.presentation.screenLogic.ChecksumToolsComponent
 
 @Composable
 internal fun ColumnScope.CalculateFromTextPage(

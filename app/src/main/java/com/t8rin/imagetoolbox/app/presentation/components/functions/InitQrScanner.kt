@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2025 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,10 +15,10 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.app.presentation.components.functions
+package com.t8rin.ikittool.app.presentation.components.functions
 
 import android.graphics.Bitmap
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.applyPadding
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.applyPadding
 import com.t8rin.opencv_tools.qr_prepare.QrPrepareHelper
 import io.github.g00fy2.quickie.extensions.QrProcessor
 

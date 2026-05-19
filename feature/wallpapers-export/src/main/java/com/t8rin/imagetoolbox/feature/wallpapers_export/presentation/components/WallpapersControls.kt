@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.wallpapers_export.presentation.components
+package com.t8rin.ikittool.feature.wallpapers_export.presentation.components
 
 import android.Manifest
 import android.os.Build
@@ -38,27 +38,27 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.utils.tryAll
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.ArrowCircleRight
-import com.t8rin.imagetoolbox.core.resources.icons.FolderOpen
-import com.t8rin.imagetoolbox.core.resources.icons.ImageSearch
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.appSettingsIntent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.manageAllFilesIntent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.manageAppAllFilesIntent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.requestPermissions
-import com.t8rin.imagetoolbox.core.ui.utils.helper.isPortraitOrientationAsState
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalComponentActivity
-import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalScreenSize
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.ImageFormatSelector
-import com.t8rin.imagetoolbox.core.ui.widget.controls.selection.QualitySelector
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedLoadingIndicator
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItem
-import com.t8rin.imagetoolbox.feature.wallpapers_export.domain.model.Permission
-import com.t8rin.imagetoolbox.feature.wallpapers_export.domain.model.WallpapersResult
-import com.t8rin.imagetoolbox.feature.wallpapers_export.presentation.screenLogic.WallpapersExportComponent
+import com.t8rin.ikittool.core.domain.utils.tryAll
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.ArrowCircleRight
+import com.t8rin.ikittool.core.resources.icons.FolderOpen
+import com.t8rin.ikittool.core.resources.icons.ImageSearch
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.appSettingsIntent
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.manageAllFilesIntent
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.manageAppAllFilesIntent
+import com.t8rin.ikittool.core.ui.utils.helper.ContextUtils.requestPermissions
+import com.t8rin.ikittool.core.ui.utils.helper.isPortraitOrientationAsState
+import com.t8rin.ikittool.core.ui.utils.provider.LocalComponentActivity
+import com.t8rin.ikittool.core.ui.utils.provider.LocalScreenSize
+import com.t8rin.ikittool.core.ui.widget.controls.selection.ImageFormatSelector
+import com.t8rin.ikittool.core.ui.widget.controls.selection.QualitySelector
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedLoadingIndicator
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItem
+import com.t8rin.ikittool.feature.wallpapers_export.domain.model.Permission
+import com.t8rin.ikittool.feature.wallpapers_export.domain.model.WallpapersResult
+import com.t8rin.ikittool.feature.wallpapers_export.presentation.screenLogic.WallpapersExportComponent
 
 @Composable
 fun WallpapersControls(component: WallpapersExportComponent) {

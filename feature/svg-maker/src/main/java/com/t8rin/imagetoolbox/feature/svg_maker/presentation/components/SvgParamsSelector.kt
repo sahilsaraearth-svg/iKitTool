@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.svg_maker.presentation.components
+package com.t8rin.ikittool.feature.svg_maker.presentation.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.Arrangement
@@ -42,30 +42,30 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.t8rin.colors.util.roundToTwoDigits
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.BlurCircular
-import com.t8rin.imagetoolbox.core.resources.icons.Calculate
-import com.t8rin.imagetoolbox.core.resources.icons.ChangeHistory
-import com.t8rin.imagetoolbox.core.resources.icons.Eyedropper
-import com.t8rin.imagetoolbox.core.resources.icons.FormatColorFill
-import com.t8rin.imagetoolbox.core.resources.icons.FreeDraw
-import com.t8rin.imagetoolbox.core.resources.icons.Line
-import com.t8rin.imagetoolbox.core.resources.icons.LinearScale
-import com.t8rin.imagetoolbox.core.resources.icons.Palette
-import com.t8rin.imagetoolbox.core.resources.icons.PhotoSizeSelectSmall
-import com.t8rin.imagetoolbox.core.resources.icons.RepeatOne
-import com.t8rin.imagetoolbox.core.resources.icons.SettingsEthernet
-import com.t8rin.imagetoolbox.core.resources.icons.Upcoming
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedChip
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedSliderItem
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.fadingEdges
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceRowSwitch
-import com.t8rin.imagetoolbox.core.ui.widget.text.AutoSizeText
-import com.t8rin.imagetoolbox.feature.svg_maker.domain.SvgParams
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.BlurCircular
+import com.t8rin.ikittool.core.resources.icons.Calculate
+import com.t8rin.ikittool.core.resources.icons.ChangeHistory
+import com.t8rin.ikittool.core.resources.icons.Eyedropper
+import com.t8rin.ikittool.core.resources.icons.FormatColorFill
+import com.t8rin.ikittool.core.resources.icons.FreeDraw
+import com.t8rin.ikittool.core.resources.icons.Line
+import com.t8rin.ikittool.core.resources.icons.LinearScale
+import com.t8rin.ikittool.core.resources.icons.Palette
+import com.t8rin.ikittool.core.resources.icons.PhotoSizeSelectSmall
+import com.t8rin.ikittool.core.resources.icons.RepeatOne
+import com.t8rin.ikittool.core.resources.icons.SettingsEthernet
+import com.t8rin.ikittool.core.resources.icons.Upcoming
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedChip
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedSliderItem
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedFlingBehavior
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.modifier.fadingEdges
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceRowSwitch
+import com.t8rin.ikittool.core.ui.widget.text.AutoSizeText
+import com.t8rin.ikittool.feature.svg_maker.domain.SvgParams
 import kotlin.math.pow
 import kotlin.math.roundToInt
 

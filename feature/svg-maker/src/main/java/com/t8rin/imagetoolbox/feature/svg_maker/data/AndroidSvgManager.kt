@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,20 +17,20 @@
 
 @file:Suppress("FunctionName")
 
-package com.t8rin.imagetoolbox.feature.svg_maker.data
+package com.t8rin.ikittool.feature.svg_maker.data
 
 import android.content.Context
 import android.graphics.Bitmap
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.saving.RandomStringGenerator
-import com.t8rin.imagetoolbox.core.domain.utils.runSuspendCatching
-import com.t8rin.imagetoolbox.feature.svg_maker.data.tracer.ImageTracer
-import com.t8rin.imagetoolbox.feature.svg_maker.data.tracer.ImageTracer.Options
-import com.t8rin.imagetoolbox.feature.svg_maker.data.tracer.ImageTracer.SvgListener
-import com.t8rin.imagetoolbox.feature.svg_maker.domain.SvgManager
-import com.t8rin.imagetoolbox.feature.svg_maker.domain.SvgParams
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.saving.RandomStringGenerator
+import com.t8rin.ikittool.core.domain.utils.runSuspendCatching
+import com.t8rin.ikittool.feature.svg_maker.data.tracer.ImageTracer
+import com.t8rin.ikittool.feature.svg_maker.data.tracer.ImageTracer.Options
+import com.t8rin.ikittool.feature.svg_maker.data.tracer.ImageTracer.SvgListener
+import com.t8rin.ikittool.feature.svg_maker.domain.SvgManager
+import com.t8rin.ikittool.feature.svg_maker.domain.SvgParams
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.withContext
 import java.io.File

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,16 +15,16 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.recognize.text.domain
+package com.t8rin.ikittool.feature.recognize.text.domain
 
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.TessConstants.KEY_CHOP_ENABLE
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.TessConstants.KEY_EDGES_MAX_CHILDREN_PER_OUTLINE
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.TessConstants.KEY_ENABLE_NEW_SEGSEARCH
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.TessConstants.KEY_LANGUAGE_MODEL_NGRAM_ON
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.TessConstants.KEY_PRESERVE_INTERWORD_SPACES
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.TessConstants.KEY_SEGMENT_SEGCOST_RATING
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.TessConstants.KEY_TEXTORD_FORCE_MAKE_PROP_WORDS
-import com.t8rin.imagetoolbox.feature.recognize.text.domain.TessConstants.KEY_USE_NEW_STATE_COST
+import com.t8rin.ikittool.feature.recognize.text.domain.TessConstants.KEY_CHOP_ENABLE
+import com.t8rin.ikittool.feature.recognize.text.domain.TessConstants.KEY_EDGES_MAX_CHILDREN_PER_OUTLINE
+import com.t8rin.ikittool.feature.recognize.text.domain.TessConstants.KEY_ENABLE_NEW_SEGSEARCH
+import com.t8rin.ikittool.feature.recognize.text.domain.TessConstants.KEY_LANGUAGE_MODEL_NGRAM_ON
+import com.t8rin.ikittool.feature.recognize.text.domain.TessConstants.KEY_PRESERVE_INTERWORD_SPACES
+import com.t8rin.ikittool.feature.recognize.text.domain.TessConstants.KEY_SEGMENT_SEGCOST_RATING
+import com.t8rin.ikittool.feature.recognize.text.domain.TessConstants.KEY_TEXTORD_FORCE_MAKE_PROP_WORDS
+import com.t8rin.ikittool.feature.recognize.text.domain.TessConstants.KEY_USE_NEW_STATE_COST
 import kotlinx.collections.immutable.toImmutableList
 
 class TessParam(

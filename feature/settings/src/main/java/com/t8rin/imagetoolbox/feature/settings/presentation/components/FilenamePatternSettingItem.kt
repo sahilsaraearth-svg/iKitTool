@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.settings.presentation.components
+package com.t8rin.ikittool.feature.settings.presentation.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -24,7 +24,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -43,45 +43,45 @@ import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.JAVA_FORMAT_SPECIFICATION
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageInfo
-import com.t8rin.imagetoolbox.core.domain.image.model.Preset
-import com.t8rin.imagetoolbox.core.domain.saving.FilenameCreator
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Date
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Extension
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Height
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.OriginalName
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Prefix
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.PresetInfo
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Rand
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.ScaleMode
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Sequence
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Suffix
-import com.t8rin.imagetoolbox.core.domain.saving.model.FilenamePattern.Companion.Width
-import com.t8rin.imagetoolbox.core.domain.saving.model.ImageSaveTarget
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.Description
-import com.t8rin.imagetoolbox.core.resources.icons.Info
-import com.t8rin.imagetoolbox.core.resources.icons.MiniEdit
-import com.t8rin.imagetoolbox.core.settings.domain.model.FilenameBehavior
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.theme.ImageToolboxThemeForPreview
-import com.t8rin.imagetoolbox.core.ui.theme.outlineVariant
-import com.t8rin.imagetoolbox.core.ui.theme.takeColorFromScheme
-import com.t8rin.imagetoolbox.core.ui.utils.provider.SafeLocalContainerColor
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedBadge
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedModalBottomSheet
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedVerticalScroll
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.clearFocusOnTap
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItem
-import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItemOverload
-import com.t8rin.imagetoolbox.core.ui.widget.text.PatternHighlightTransformation
-import com.t8rin.imagetoolbox.core.ui.widget.text.RoundedTextField
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.core.domain.JAVA_FORMAT_SPECIFICATION
+import com.t8rin.ikittool.core.domain.image.model.ImageInfo
+import com.t8rin.ikittool.core.domain.image.model.Preset
+import com.t8rin.ikittool.core.domain.saving.FilenameCreator
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Date
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Extension
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Height
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.OriginalName
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Prefix
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.PresetInfo
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Rand
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.ScaleMode
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Sequence
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Suffix
+import com.t8rin.ikittool.core.domain.saving.model.FilenamePattern.Companion.Width
+import com.t8rin.ikittool.core.domain.saving.model.ImageSaveTarget
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.Description
+import com.t8rin.ikittool.core.resources.icons.Info
+import com.t8rin.ikittool.core.resources.icons.MiniEdit
+import com.t8rin.ikittool.core.settings.domain.model.FilenameBehavior
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.theme.iKitToolThemeForPreview
+import com.t8rin.ikittool.core.ui.theme.outlineVariant
+import com.t8rin.ikittool.core.ui.theme.takeColorFromScheme
+import com.t8rin.ikittool.core.ui.utils.provider.SafeLocalContainerColor
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedBadge
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedModalBottomSheet
+import com.t8rin.ikittool.core.ui.widget.enhanced.enhancedVerticalScroll
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.clearFocusOnTap
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItem
+import com.t8rin.ikittool.core.ui.widget.preferences.PreferenceItemOverload
+import com.t8rin.ikittool.core.ui.widget.text.PatternHighlightTransformation
+import com.t8rin.ikittool.core.ui.widget.text.RoundedTextField
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
 
 @Composable
 fun FilenamePatternSettingItem(
@@ -291,7 +291,7 @@ fun FilenamePatternSettingItem(
 
 @Composable
 @Preview
-private fun Preview() = ImageToolboxThemeForPreview(
+private fun Preview() = iKitToolThemeForPreview(
     isDarkTheme = true
 ) {
     Surface {

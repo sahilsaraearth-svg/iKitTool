@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.t8rin.imagetoolbox.buildlogic"
+group = "com.t8rin.ikittool.buildlogic"
 
 // Configure the build-logic plugins to target JDK 17
 // This matches the JDK used to build the project, and is not related to what is running on device.
@@ -49,23 +49,23 @@ gradlePlugin {
     plugins {
         register("imageToolboxLibrary") {
             id = "image.toolbox.library"
-            implementationClass = "ImageToolboxLibraryPlugin"
+            implementationClass = "iKitToolLibraryPlugin"
         }
         register("imageToolboxHiltPlugin") {
             id = "image.toolbox.hilt"
-            implementationClass = "ImageToolboxHiltPlugin"
+            implementationClass = "iKitToolHiltPlugin"
         }
         register("imageToolboxLibraryFeature") {
             id = "image.toolbox.feature"
-            implementationClass = "ImageToolboxLibraryFeaturePlugin"
+            implementationClass = "iKitToolLibraryFeaturePlugin"
         }
         register("imageToolboxLibraryComposePlugin") {
             id = "image.toolbox.compose"
-            implementationClass = "ImageToolboxLibraryComposePlugin"
+            implementationClass = "iKitToolLibraryComposePlugin"
         }
         register("imageToolboxApplicationPlugin") {
             id = "image.toolbox.application"
-            implementationClass = "ImageToolboxApplicationPlugin"
+            implementationClass = "iKitToolApplicationPlugin"
         }
     }
 }

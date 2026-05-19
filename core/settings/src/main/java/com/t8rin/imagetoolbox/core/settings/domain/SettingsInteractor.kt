@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,26 +15,26 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.settings.domain
+package com.t8rin.ikittool.core.settings.domain
 
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageScaleMode
-import com.t8rin.imagetoolbox.core.domain.image.model.Quality
-import com.t8rin.imagetoolbox.core.domain.image.model.ResizeType
-import com.t8rin.imagetoolbox.core.domain.model.ColorModel
-import com.t8rin.imagetoolbox.core.domain.model.HashingType
-import com.t8rin.imagetoolbox.core.domain.model.PerformanceClass
-import com.t8rin.imagetoolbox.core.domain.model.SystemBarsVisibility
-import com.t8rin.imagetoolbox.core.settings.domain.model.ColorHarmonizer
-import com.t8rin.imagetoolbox.core.settings.domain.model.CopyToClipboardMode
-import com.t8rin.imagetoolbox.core.settings.domain.model.DomainFontFamily
-import com.t8rin.imagetoolbox.core.settings.domain.model.FastSettingsSide
-import com.t8rin.imagetoolbox.core.settings.domain.model.FlingType
-import com.t8rin.imagetoolbox.core.settings.domain.model.NightMode
-import com.t8rin.imagetoolbox.core.settings.domain.model.ShapeType
-import com.t8rin.imagetoolbox.core.settings.domain.model.SliderType
-import com.t8rin.imagetoolbox.core.settings.domain.model.SnowfallMode
-import com.t8rin.imagetoolbox.core.settings.domain.model.SwitchType
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.ImageScaleMode
+import com.t8rin.ikittool.core.domain.image.model.Quality
+import com.t8rin.ikittool.core.domain.image.model.ResizeType
+import com.t8rin.ikittool.core.domain.model.ColorModel
+import com.t8rin.ikittool.core.domain.model.HashingType
+import com.t8rin.ikittool.core.domain.model.PerformanceClass
+import com.t8rin.ikittool.core.domain.model.SystemBarsVisibility
+import com.t8rin.ikittool.core.settings.domain.model.ColorHarmonizer
+import com.t8rin.ikittool.core.settings.domain.model.CopyToClipboardMode
+import com.t8rin.ikittool.core.settings.domain.model.DomainFontFamily
+import com.t8rin.ikittool.core.settings.domain.model.FastSettingsSide
+import com.t8rin.ikittool.core.settings.domain.model.FlingType
+import com.t8rin.ikittool.core.settings.domain.model.NightMode
+import com.t8rin.ikittool.core.settings.domain.model.ShapeType
+import com.t8rin.ikittool.core.settings.domain.model.SliderType
+import com.t8rin.ikittool.core.settings.domain.model.SnowfallMode
+import com.t8rin.ikittool.core.settings.domain.model.SwitchType
 
 interface SettingsInteractor : SimpleSettingsInteractor {
 

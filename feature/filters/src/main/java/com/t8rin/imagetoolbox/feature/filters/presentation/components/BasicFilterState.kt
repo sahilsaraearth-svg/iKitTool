@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,10 +15,10 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.filters.presentation.components
+package com.t8rin.ikittool.feature.filters.presentation.components
 
 import android.net.Uri
-import com.t8rin.imagetoolbox.core.filters.presentation.model.UiFilter
+import com.t8rin.ikittool.core.filters.presentation.model.UiFilter
 
 data class BasicFilterState(
     val uris: List<Uri>? = null,

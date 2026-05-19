@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.pdf_tools.presentation.root.components.viewer
+package com.t8rin.ikittool.feature.pdf_tools.presentation.root.components.viewer
 
 import android.annotation.SuppressLint
 import android.content.res.ColorStateList
@@ -46,7 +46,7 @@ import androidx.pdf.view.PdfView
 import androidx.pdf.view.ToolBoxView
 import androidx.pdf.viewer.fragment.PdfViewerFragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.t8rin.imagetoolbox.core.utils.makeLog
+import com.t8rin.ikittool.core.utils.makeLog
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay

@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("NOTHING_TO_INLINE")
 
-package com.t8rin.imagetoolbox.core.ui.utils.animation
+package com.t8rin.ikittool.core.ui.utils.animation
 
 import androidx.compose.animation.ContentTransform
 import androidx.compose.animation.core.AnimationSpec
@@ -43,7 +43,7 @@ import com.arkivanov.decompose.extensions.compose.stack.animation.scale
 import com.arkivanov.decompose.extensions.compose.stack.animation.slide
 import com.arkivanov.decompose.extensions.compose.stack.animation.stackAnimation
 import com.arkivanov.essenty.backhandler.BackHandler
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
 
 fun fancySlideTransition(
     isForward: Boolean,

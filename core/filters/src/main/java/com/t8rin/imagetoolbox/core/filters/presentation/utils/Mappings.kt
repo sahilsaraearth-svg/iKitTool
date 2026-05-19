@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,18 +15,18 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.filters.presentation.utils
+package com.t8rin.ikittool.core.filters.presentation.utils
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.BlurEdgeMode
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.FadeSide
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.MirrorSide
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.PaletteTransferSpace
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.PolarCoordinatesType
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.PopArtBlendingMode
-import com.t8rin.imagetoolbox.core.filters.domain.model.enums.TransferFunc
-import com.t8rin.imagetoolbox.core.resources.R
+import com.t8rin.ikittool.core.filters.domain.model.enums.BlurEdgeMode
+import com.t8rin.ikittool.core.filters.domain.model.enums.FadeSide
+import com.t8rin.ikittool.core.filters.domain.model.enums.MirrorSide
+import com.t8rin.ikittool.core.filters.domain.model.enums.PaletteTransferSpace
+import com.t8rin.ikittool.core.filters.domain.model.enums.PolarCoordinatesType
+import com.t8rin.ikittool.core.filters.domain.model.enums.PopArtBlendingMode
+import com.t8rin.ikittool.core.filters.domain.model.enums.TransferFunc
+import com.t8rin.ikittool.core.resources.R
 
 internal val PopArtBlendingMode.translatedName: String
     @Composable

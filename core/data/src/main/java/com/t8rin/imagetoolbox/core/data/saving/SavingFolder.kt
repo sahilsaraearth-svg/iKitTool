@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.data.saving
+package com.t8rin.ikittool.core.data.saving
 
 import android.content.ContentValues
 import android.content.Context
@@ -25,8 +25,8 @@ import android.os.Environment
 import android.provider.MediaStore
 import androidx.core.net.toUri
 import androidx.documentfile.provider.DocumentFile
-import com.t8rin.imagetoolbox.core.data.saving.io.StreamWriteable
-import com.t8rin.imagetoolbox.core.domain.saving.model.SaveTarget
+import com.t8rin.ikittool.core.data.saving.io.StreamWriteable
+import com.t8rin.ikittool.core.domain.saving.model.SaveTarget
 import kotlinx.coroutines.coroutineScope
 import java.io.File
 import java.io.FileOutputStream
@@ -46,7 +46,7 @@ internal data class SavingFolder private constructor(
             if (treeUri == null) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                     val type = saveTarget.mimeType.entry
-                    val path = "${Environment.DIRECTORY_DOCUMENTS}/ImageToolbox"
+                    val path = "${Environment.DIRECTORY_DOCUMENTS}/iKitTool"
                     val contentValues = ContentValues().apply {
                         put(MediaStore.MediaColumns.DISPLAY_NAME, saveTarget.filename)
                         put(
@@ -72,7 +72,7 @@ internal data class SavingFolder private constructor(
                     val imagesDir = File(
                         Environment.getExternalStoragePublicDirectory(
                             Environment.DIRECTORY_DOCUMENTS
-                        ), "ImageToolbox"
+                        ), "iKitTool"
                     )
                     if (!imagesDir.exists()) imagesDir.mkdir()
 

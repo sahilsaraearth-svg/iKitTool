@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,11 +15,11 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.settings.presentation.components
+package com.t8rin.ikittool.feature.settings.presentation.components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
-import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.ikittool.core.resources.Icons
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -28,30 +28,30 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.CheckBoxOutlineBlank
-import com.t8rin.imagetoolbox.core.resources.icons.Circle
-import com.t8rin.imagetoolbox.core.resources.icons.FloodFill
-import com.t8rin.imagetoolbox.core.resources.icons.FreeArrow
-import com.t8rin.imagetoolbox.core.resources.icons.FreeDoubleArrow
-import com.t8rin.imagetoolbox.core.resources.icons.FreeDraw
-import com.t8rin.imagetoolbox.core.resources.icons.HourglassEmpty
-import com.t8rin.imagetoolbox.core.resources.icons.Lasso
-import com.t8rin.imagetoolbox.core.resources.icons.Line
-import com.t8rin.imagetoolbox.core.resources.icons.LineArrow
-import com.t8rin.imagetoolbox.core.resources.icons.LineDoubleArrow
-import com.t8rin.imagetoolbox.core.resources.icons.Polygon
-import com.t8rin.imagetoolbox.core.resources.icons.RadioButtonUnchecked
-import com.t8rin.imagetoolbox.core.resources.icons.Spray
-import com.t8rin.imagetoolbox.core.resources.icons.Square
-import com.t8rin.imagetoolbox.core.resources.icons.Star
-import com.t8rin.imagetoolbox.core.resources.icons.TouchApp
-import com.t8rin.imagetoolbox.core.resources.icons.Triangle
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButtonGroup
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
-import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.CheckBoxOutlineBlank
+import com.t8rin.ikittool.core.resources.icons.Circle
+import com.t8rin.ikittool.core.resources.icons.FloodFill
+import com.t8rin.ikittool.core.resources.icons.FreeArrow
+import com.t8rin.ikittool.core.resources.icons.FreeDoubleArrow
+import com.t8rin.ikittool.core.resources.icons.FreeDraw
+import com.t8rin.ikittool.core.resources.icons.HourglassEmpty
+import com.t8rin.ikittool.core.resources.icons.Lasso
+import com.t8rin.ikittool.core.resources.icons.Line
+import com.t8rin.ikittool.core.resources.icons.LineArrow
+import com.t8rin.ikittool.core.resources.icons.LineDoubleArrow
+import com.t8rin.ikittool.core.resources.icons.Polygon
+import com.t8rin.ikittool.core.resources.icons.RadioButtonUnchecked
+import com.t8rin.ikittool.core.resources.icons.Spray
+import com.t8rin.ikittool.core.resources.icons.Square
+import com.t8rin.ikittool.core.resources.icons.Star
+import com.t8rin.ikittool.core.resources.icons.TouchApp
+import com.t8rin.ikittool.core.resources.icons.Triangle
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.ui.widget.enhanced.EnhancedButtonGroup
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.modifier.container
+import com.t8rin.ikittool.core.ui.widget.text.TitleItem
 
 @Composable
 fun DefaultDrawPathModeSettingItem(

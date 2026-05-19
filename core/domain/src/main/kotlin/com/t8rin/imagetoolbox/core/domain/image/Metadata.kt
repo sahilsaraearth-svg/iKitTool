@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,9 +17,9 @@
 
 @file:Suppress("NOTHING_TO_INLINE")
 
-package com.t8rin.imagetoolbox.core.domain.image
+package com.t8rin.ikittool.core.domain.image
 
-import com.t8rin.imagetoolbox.core.domain.image.model.MetadataTag
+import com.t8rin.ikittool.core.domain.image.model.MetadataTag
 
 interface Metadata {
     fun saveAttributes(): Metadata

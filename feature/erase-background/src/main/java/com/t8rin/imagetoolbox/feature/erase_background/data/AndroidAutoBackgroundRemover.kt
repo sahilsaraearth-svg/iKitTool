@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,17 +15,17 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.erase_background.data
+package com.t8rin.ikittool.feature.erase_background.data
 
 import android.graphics.Bitmap
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
-import com.t8rin.imagetoolbox.core.data.image.utils.healAlpha
-import com.t8rin.imagetoolbox.core.domain.coroutines.AppScope
-import com.t8rin.imagetoolbox.core.utils.makeLog
-import com.t8rin.imagetoolbox.feature.erase_background.domain.AutoBackgroundRemover
-import com.t8rin.imagetoolbox.feature.erase_background.domain.AutoBackgroundRemoverBackendFactory
-import com.t8rin.imagetoolbox.feature.erase_background.domain.model.BgModelType
+import com.t8rin.ikittool.core.data.image.utils.healAlpha
+import com.t8rin.ikittool.core.domain.coroutines.AppScope
+import com.t8rin.ikittool.core.utils.makeLog
+import com.t8rin.ikittool.feature.erase_background.domain.AutoBackgroundRemover
+import com.t8rin.ikittool.feature.erase_background.domain.AutoBackgroundRemoverBackendFactory
+import com.t8rin.ikittool.feature.erase_background.domain.model.BgModelType
 import com.t8rin.neural_tools.bgremover.BgRemover
 import com.t8rin.trickle.TrickleUtils
 import kotlinx.coroutines.coroutineScope

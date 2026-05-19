@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2024 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,14 +15,14 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.data.coroutines
+package com.t8rin.ikittool.core.data.coroutines
 
-import com.t8rin.imagetoolbox.core.di.DecodingDispatcher
-import com.t8rin.imagetoolbox.core.di.DefaultDispatcher
-import com.t8rin.imagetoolbox.core.di.EncodingDispatcher
-import com.t8rin.imagetoolbox.core.di.IoDispatcher
-import com.t8rin.imagetoolbox.core.di.UiDispatcher
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.di.DecodingDispatcher
+import com.t8rin.ikittool.core.di.DefaultDispatcher
+import com.t8rin.ikittool.core.di.EncodingDispatcher
+import com.t8rin.ikittool.core.di.IoDispatcher
+import com.t8rin.ikittool.core.di.UiDispatcher
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
 import javax.inject.Inject
 import kotlin.coroutines.CoroutineContext
 

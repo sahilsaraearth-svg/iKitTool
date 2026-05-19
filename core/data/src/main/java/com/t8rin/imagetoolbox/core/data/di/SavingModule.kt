@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,16 +15,16 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.data.di
+package com.t8rin.ikittool.core.data.di
 
-import com.t8rin.imagetoolbox.core.data.saving.AndroidFileController
-import com.t8rin.imagetoolbox.core.data.saving.AndroidFilenameCreator
-import com.t8rin.imagetoolbox.core.data.saving.AndroidKeepAliveService
-import com.t8rin.imagetoolbox.core.domain.image.MetadataProvider
-import com.t8rin.imagetoolbox.core.domain.saving.FileController
-import com.t8rin.imagetoolbox.core.domain.saving.FileController.Companion.toMetadataProvider
-import com.t8rin.imagetoolbox.core.domain.saving.FilenameCreator
-import com.t8rin.imagetoolbox.core.domain.saving.KeepAliveService
+import com.t8rin.ikittool.core.data.saving.AndroidFileController
+import com.t8rin.ikittool.core.data.saving.AndroidFilenameCreator
+import com.t8rin.ikittool.core.data.saving.AndroidKeepAliveService
+import com.t8rin.ikittool.core.domain.image.MetadataProvider
+import com.t8rin.ikittool.core.domain.saving.FileController
+import com.t8rin.ikittool.core.domain.saving.FileController.Companion.toMetadataProvider
+import com.t8rin.ikittool.core.domain.saving.FilenameCreator
+import com.t8rin.ikittool.core.domain.saving.KeepAliveService
 import dagger.Binds
 import dagger.Module
 import dagger.Provides

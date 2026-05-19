@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.utils.content_pickers
+package com.t8rin.ikittool.core.ui.utils.content_pickers
 
 import androidx.activity.compose.ManagedActivityResultLauncher
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -26,18 +26,18 @@ import androidx.compose.runtime.Stable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
-import com.t8rin.imagetoolbox.core.domain.model.QrType
-import com.t8rin.imagetoolbox.core.resources.Icons
-import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.CameraAlt
-import com.t8rin.imagetoolbox.core.ui.theme.onPrimaryContainerFixed
-import com.t8rin.imagetoolbox.core.ui.theme.onTertiaryContainerFixed
-import com.t8rin.imagetoolbox.core.ui.theme.primaryContainerFixed
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.utils.appContext
-import com.t8rin.imagetoolbox.core.utils.getString
-import com.t8rin.imagetoolbox.core.utils.makeLog
-import com.t8rin.imagetoolbox.core.utils.toQrType
+import com.t8rin.ikittool.core.domain.model.QrType
+import com.t8rin.ikittool.core.resources.Icons
+import com.t8rin.ikittool.core.resources.R
+import com.t8rin.ikittool.core.resources.icons.CameraAlt
+import com.t8rin.ikittool.core.ui.theme.onPrimaryContainerFixed
+import com.t8rin.ikittool.core.ui.theme.onTertiaryContainerFixed
+import com.t8rin.ikittool.core.ui.theme.primaryContainerFixed
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.utils.appContext
+import com.t8rin.ikittool.core.utils.getString
+import com.t8rin.ikittool.core.utils.makeLog
+import com.t8rin.ikittool.core.utils.toQrType
 import io.github.g00fy2.quickie.QRResult
 import io.github.g00fy2.quickie.ScanCustomCode
 import io.github.g00fy2.quickie.config.BarcodeFormat

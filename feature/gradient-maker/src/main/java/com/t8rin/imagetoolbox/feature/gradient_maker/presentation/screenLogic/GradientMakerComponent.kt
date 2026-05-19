@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.feature.gradient_maker.presentation.screenLogic
+package com.t8rin.ikittool.feature.gradient_maker.presentation.screenLogic
 
 import android.graphics.Bitmap
 import android.net.Uri
@@ -32,34 +32,34 @@ import androidx.compose.ui.graphics.TileMode
 import androidx.core.net.toUri
 import coil3.transform.Transformation
 import com.arkivanov.decompose.ComponentContext
-import com.t8rin.imagetoolbox.core.data.utils.toCoil
-import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
-import com.t8rin.imagetoolbox.core.domain.image.ImageCompressor
-import com.t8rin.imagetoolbox.core.domain.image.ImageGetter
-import com.t8rin.imagetoolbox.core.domain.image.ImageShareProvider
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
-import com.t8rin.imagetoolbox.core.domain.image.model.ImageInfo
-import com.t8rin.imagetoolbox.core.domain.model.IntegerSize
-import com.t8rin.imagetoolbox.core.domain.saving.FileController
-import com.t8rin.imagetoolbox.core.domain.saving.model.ImageSaveTarget
-import com.t8rin.imagetoolbox.core.domain.saving.model.SaveResult
-import com.t8rin.imagetoolbox.core.domain.saving.model.onSuccess
-import com.t8rin.imagetoolbox.core.domain.saving.updateProgress
-import com.t8rin.imagetoolbox.core.domain.transformation.GenericTransformation
-import com.t8rin.imagetoolbox.core.domain.utils.ListUtils.leftFrom
-import com.t8rin.imagetoolbox.core.domain.utils.ListUtils.rightFrom
-import com.t8rin.imagetoolbox.core.domain.utils.smartJob
-import com.t8rin.imagetoolbox.core.ui.utils.BaseComponent
-import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.safeAspectRatio
-import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
-import com.t8rin.imagetoolbox.core.ui.utils.state.update
-import com.t8rin.imagetoolbox.feature.gradient_maker.domain.GradientMaker
-import com.t8rin.imagetoolbox.feature.gradient_maker.domain.GradientType
-import com.t8rin.imagetoolbox.feature.gradient_maker.presentation.components.UiGradientState
-import com.t8rin.imagetoolbox.feature.gradient_maker.presentation.components.UiMeshGradientState
-import com.t8rin.imagetoolbox.feature.gradient_maker.presentation.components.model.GradientMakerType
-import com.t8rin.imagetoolbox.feature.gradient_maker.presentation.components.model.isMesh
+import com.t8rin.ikittool.core.data.utils.toCoil
+import com.t8rin.ikittool.core.domain.coroutines.DispatchersHolder
+import com.t8rin.ikittool.core.domain.image.ImageCompressor
+import com.t8rin.ikittool.core.domain.image.ImageGetter
+import com.t8rin.ikittool.core.domain.image.ImageShareProvider
+import com.t8rin.ikittool.core.domain.image.model.ImageFormat
+import com.t8rin.ikittool.core.domain.image.model.ImageInfo
+import com.t8rin.ikittool.core.domain.model.IntegerSize
+import com.t8rin.ikittool.core.domain.saving.FileController
+import com.t8rin.ikittool.core.domain.saving.model.ImageSaveTarget
+import com.t8rin.ikittool.core.domain.saving.model.SaveResult
+import com.t8rin.ikittool.core.domain.saving.model.onSuccess
+import com.t8rin.ikittool.core.domain.saving.updateProgress
+import com.t8rin.ikittool.core.domain.transformation.GenericTransformation
+import com.t8rin.ikittool.core.domain.utils.ListUtils.leftFrom
+import com.t8rin.ikittool.core.domain.utils.ListUtils.rightFrom
+import com.t8rin.ikittool.core.domain.utils.smartJob
+import com.t8rin.ikittool.core.ui.utils.BaseComponent
+import com.t8rin.ikittool.core.ui.utils.helper.AppToastHost
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.safeAspectRatio
+import com.t8rin.ikittool.core.ui.utils.navigation.Screen
+import com.t8rin.ikittool.core.ui.utils.state.update
+import com.t8rin.ikittool.feature.gradient_maker.domain.GradientMaker
+import com.t8rin.ikittool.feature.gradient_maker.domain.GradientType
+import com.t8rin.ikittool.feature.gradient_maker.presentation.components.UiGradientState
+import com.t8rin.ikittool.feature.gradient_maker.presentation.components.UiMeshGradientState
+import com.t8rin.ikittool.feature.gradient_maker.presentation.components.model.GradientMakerType
+import com.t8rin.ikittool.feature.gradient_maker.presentation.components.model.isMesh
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject

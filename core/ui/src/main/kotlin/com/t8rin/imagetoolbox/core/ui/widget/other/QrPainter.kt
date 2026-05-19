@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 
 @file:Suppress("COMPOSE_APPLIER_CALL_MISMATCH")
 
-package com.t8rin.imagetoolbox.core.ui.widget.other
+package com.t8rin.ikittool.core.ui.widget.other
 
 import android.graphics.Bitmap
 import androidx.compose.animation.core.animateDpAsState
@@ -68,35 +68,35 @@ import com.google.zxing.BarcodeFormat
 import com.google.zxing.EncodeHintType
 import com.google.zxing.MultiFormatWriter
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel
-import com.t8rin.imagetoolbox.core.domain.utils.runSuspendCatching
-import com.t8rin.imagetoolbox.core.resources.shapes.ArrowShape
-import com.t8rin.imagetoolbox.core.resources.shapes.BookmarkShape
-import com.t8rin.imagetoolbox.core.resources.shapes.BurgerShape
-import com.t8rin.imagetoolbox.core.resources.shapes.CloverShape
-import com.t8rin.imagetoolbox.core.resources.shapes.DropletShape
-import com.t8rin.imagetoolbox.core.resources.shapes.EggShape
-import com.t8rin.imagetoolbox.core.resources.shapes.ExplosionShape
-import com.t8rin.imagetoolbox.core.resources.shapes.MapShape
-import com.t8rin.imagetoolbox.core.resources.shapes.MaterialStarShape
-import com.t8rin.imagetoolbox.core.resources.shapes.OctagonShape
-import com.t8rin.imagetoolbox.core.resources.shapes.OvalShape
-import com.t8rin.imagetoolbox.core.resources.shapes.PentagonShape
-import com.t8rin.imagetoolbox.core.resources.shapes.PillShape
-import com.t8rin.imagetoolbox.core.resources.shapes.ShieldShape
-import com.t8rin.imagetoolbox.core.resources.shapes.ShurikenShape
-import com.t8rin.imagetoolbox.core.resources.shapes.SmallMaterialStarShape
-import com.t8rin.imagetoolbox.core.resources.shapes.SquircleShape
-import com.t8rin.imagetoolbox.core.settings.presentation.model.IconShape
-import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
-import com.t8rin.imagetoolbox.core.settings.presentation.utils.toShape
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ImageUtils.applyPadding
-import com.t8rin.imagetoolbox.core.ui.utils.painter.centerCrop
-import com.t8rin.imagetoolbox.core.ui.utils.painter.roundCorners
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.AutoCornersShape
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.shimmer
-import com.t8rin.imagetoolbox.core.ui.widget.other.QrCodeParams.BallShape.Shaped
-import com.t8rin.imagetoolbox.core.utils.appContext
+import com.t8rin.ikittool.core.domain.utils.runSuspendCatching
+import com.t8rin.ikittool.core.resources.shapes.ArrowShape
+import com.t8rin.ikittool.core.resources.shapes.BookmarkShape
+import com.t8rin.ikittool.core.resources.shapes.BurgerShape
+import com.t8rin.ikittool.core.resources.shapes.CloverShape
+import com.t8rin.ikittool.core.resources.shapes.DropletShape
+import com.t8rin.ikittool.core.resources.shapes.EggShape
+import com.t8rin.ikittool.core.resources.shapes.ExplosionShape
+import com.t8rin.ikittool.core.resources.shapes.MapShape
+import com.t8rin.ikittool.core.resources.shapes.MaterialStarShape
+import com.t8rin.ikittool.core.resources.shapes.OctagonShape
+import com.t8rin.ikittool.core.resources.shapes.OvalShape
+import com.t8rin.ikittool.core.resources.shapes.PentagonShape
+import com.t8rin.ikittool.core.resources.shapes.PillShape
+import com.t8rin.ikittool.core.resources.shapes.ShieldShape
+import com.t8rin.ikittool.core.resources.shapes.ShurikenShape
+import com.t8rin.ikittool.core.resources.shapes.SmallMaterialStarShape
+import com.t8rin.ikittool.core.resources.shapes.SquircleShape
+import com.t8rin.ikittool.core.settings.presentation.model.IconShape
+import com.t8rin.ikittool.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.ikittool.core.settings.presentation.utils.toShape
+import com.t8rin.ikittool.core.ui.utils.helper.ImageUtils.applyPadding
+import com.t8rin.ikittool.core.ui.utils.painter.centerCrop
+import com.t8rin.ikittool.core.ui.utils.painter.roundCorners
+import com.t8rin.ikittool.core.ui.widget.image.Picture
+import com.t8rin.ikittool.core.ui.widget.modifier.AutoCornersShape
+import com.t8rin.ikittool.core.ui.widget.modifier.shimmer
+import com.t8rin.ikittool.core.ui.widget.other.QrCodeParams.BallShape.Shaped
+import com.t8rin.ikittool.core.utils.appContext
 import io.github.alexzhirkevich.qrose.QrCodePainter
 import io.github.alexzhirkevich.qrose.options.Neighbors
 import io.github.alexzhirkevich.qrose.options.QrBallShape

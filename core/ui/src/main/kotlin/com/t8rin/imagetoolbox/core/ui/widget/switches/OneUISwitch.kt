@@ -1,5 +1,5 @@
 /*
- * ImageToolbox is an image editor for android
+ * iKitTool is an image editor for android
  * Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.apache.org/licenses/LICENSE-2.0>.
  */
 
-package com.t8rin.imagetoolbox.core.ui.widget.switches
+package com.t8rin.ikittool.core.ui.widget.switches
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.animateDpAsState
@@ -57,11 +57,11 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.ui.theme.ImageToolboxThemeForPreview
-import com.t8rin.imagetoolbox.core.ui.utils.helper.EnPreview
-import com.t8rin.imagetoolbox.core.ui.widget.enhanced.hapticsClickable
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.switches.ActualSwitchColors.Companion.forConfig
+import com.t8rin.ikittool.core.ui.theme.iKitToolThemeForPreview
+import com.t8rin.ikittool.core.ui.utils.helper.EnPreview
+import com.t8rin.ikittool.core.ui.widget.enhanced.hapticsClickable
+import com.t8rin.ikittool.core.ui.widget.modifier.ShapeDefaults
+import com.t8rin.ikittool.core.ui.widget.switches.ActualSwitchColors.Companion.forConfig
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -386,7 +386,7 @@ private val rippleRadius = 20.dp
 
 @Composable
 @EnPreview
-private fun Preview() = ImageToolboxThemeForPreview(true, keyColor = Color.Green) {
+private fun Preview() = iKitToolThemeForPreview(true, keyColor = Color.Green) {
     val colors = SwitchDefaults.colors(
         disabledUncheckedThumbColor = MaterialTheme.colorScheme.onSurface
             .copy(alpha = 0.12f)
